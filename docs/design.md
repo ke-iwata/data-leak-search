@@ -1,51 +1,50 @@
-# 情報漏洩情報 集約プラットフォーム 設計書（v0.1 ドラフト）
+# data-leak-search 設計書（v0.2 ドラフト）
 
 最終更新: 2026-10-17
 ステータス: ドラフト（レビュー待ち）
+前提: [ke-iwata/tech-research](https://github.com/ke-iwata/tech-research) と同じ作り（ビルド不要の静的サイト + 標準ライブラリのみの Python スクリプト + Claude Code のルーチンによる日次更新 + GitHub Pages）
 
 ---
 
 ## 0. この文書の目的
 
-情報漏洩（データブリーチ）に関する公開情報を一箇所に集約し、検索・追跡・通知できるプラットフォームの初期設計をまとめる。
-技術選定の根拠とトレードオフ、MVP の範囲、将来見直すべき点を明示する。
+情報漏洩（データブリーチ）に関する公開情報を毎日集め、事案（Incident）単位に整理して検索・追跡できるサイトの設計をまとめる。
+tech-research の構成を踏襲しつつ、「記事の日次ダイジェスト」ではなく「事案の台帳」を蓄積する点が主な違い。
 
 ---
 
 ## 1. スコープと前提
 
-### 1.1 扱う情報（スコープ内）
+### 1.1 扱う情報
 
 | 種別 | 例 |
 |---|---|
-| 企業・組織の公式発表 | プレスリリース「不正アクセスによる個人情報漏えいの可能性について」など |
-| 監督官庁・公的機関の公表 | 個人情報保護委員会（PPC）、金融庁、IPA、JPCERT/CC、米 HHS Breach Portal、州司法長官の通知一覧 |
-| 報道・専門メディア | Security NEXT、piyolog、ScanNetSecurity、BleepingComputer、The Record など |
-| 既存の漏洩メタデータ DB | Have I Been Pwned（HIBP）の breach 一覧 API |
-| ランサムウェアリークサイトの観測情報 | ransomware.live 等が公開している「被害組織名・グループ名・日付」のメタデータ |
+| 組織の公式発表 | 「不正アクセスによる個人情報漏えいの可能性について」等のプレスリリース・お知らせ |
+| 公的機関の公表・注意喚起 | 個人情報保護委員会（PPC）、IPA、JPCERT/CC |
+| 専門メディア・まとめ | Security NEXT、piyolog、ScanNetSecurity、海外は BleepingComputer 等（v1） |
+| 既存の漏洩メタデータ | Have I Been Pwned（HIBP）の breaches API（無料・キー不要） |
+| リークサイト観測（v1、要検討） | ransomware.live の公開 API（被害組織名・グループ・日付のメタデータのみ） |
 
-### 1.2 扱わない情報（スコープ外）— 重要
+### 1.2 扱わない情報 — 重要
 
-- **漏洩したデータそのもの**（個人情報、認証情報、ダンプファイル）は収集・保存・検索対象にしない。
-- ダークウェブやリークサイトの実データを取得・ミラーしない（上記のメタデータ観測のみ）。
-- 個人を特定した「この人の情報が漏れた」という表示はしない。メールアドレス確認は HIBP の k-anonymity API への委譲に留める（後述）。
+- **漏洩したデータそのもの**（個人情報・認証情報・ダンプ）は収集・保存・表示しない。
+- ダークウェブやリークサイトの実データを取得・ミラーしない。
+- **個人を名指ししない**。事案の主体は組織のみ。内部不正の従業員名、被害者名、報道に出た個人名は記録しない。
+- 「このメールアドレスが漏れたか」の確認機能は持たない（HIBP へのリンクに留める）。
 
-理由: 法的リスク（不正アクセス禁止法、個人情報保護法、不正競争防止法）と倫理面。メタデータ集約だけで利用者（セキュリティ担当者・法務・一般利用者）の課題の大半は解決できる。
+理由: 法的リスク（不正アクセス禁止法・個人情報保護法）と倫理面。メタデータ集約だけで「どこで・いつ・何が・どれだけ・なぜ」は把握できる。
 
-### 1.3 想定ユーザーとユースケース
+### 1.3 想定ユーザー
 
-| ユーザー | やりたいこと |
-|---|---|
-| 企業のセキュリティ/法務担当 | 取引先・競合・自社グループの漏洩事案を即日把握したい。業界動向を把握したい |
-| 情報システム担当 | 自社が使う SaaS ベンダーの漏洩を検知し、対応判断したい |
-| 研究者・メディア | 期間・業種・原因別に事案を横断検索し、統計を取りたい |
-| 一般利用者 | 自分が使っているサービスで漏洩があったか知りたい |
+まず自分用（セキュリティ動向の把握、設計の参考事例の検索）。公開はするが tech-research 同様 `noindex`。
+将来的に、取引先や利用 SaaS の漏洩履歴を調べたい人、業種別・原因別の傾向を調べたい人にも使えるようにする。
 
 ### 1.4 制約
 
-- 個人開発スタート（1 名、副業時間）。初期コストは月数千円〜1 万円程度に抑える。
-- 日本の事案を主、海外を従として開始する。日本語検索品質を優先する。
-- 情報源は原則「公開情報」。利用規約で機械収集が禁止されているサイトは RSS/API がある場合のみ利用する。
+- 1 人・副業時間・ランニングコストはほぼゼロ（GitHub Pages + ルーチン実行のみ）。
+- サーバもビルドも持たない。すべて `data/*.json` を静的に配信し、ブラウザ側で検索・集計する。
+- 日本の事案を主、海外を従として開始する。
+- 情報源は公開情報のみ。機械収集が禁止されているサイトは RSS / API がある場合に限る。
 
 ---
 
@@ -53,312 +52,355 @@
 
 ### 2.1 機能要件
 
-**MVP（最初の 2〜3 か月）**
-- F1. 情報源（RSS / HTML / API）の定期クロールと、事案（Incident）への正規化
-- F2. 事案の重複統合（同一事案を複数ソースから 1 件に束ねる）
-- F3. 全文検索＋ファセット（組織名、業種、漏洩種別、原因、期間、件数規模、国）
-- F4. 事案詳細ページ（タイムライン、出典一覧、影響データ種別、件数）
-- F5. 組織ページ（過去事案の履歴）
-- F6. 管理画面での人手レビュー（自動抽出結果の承認・修正）
+**MVP**
+- F1. 収集スクリプトが RSS / API から漏洩関連の候補記事を集め、既存事案との照合ヒントを付けて `data/raw/D.json` に書く
+- F2. 日次ルーチン（Claude Code）が候補を読み、事案の新規作成または既存事案への続報追加を行い、`data/incidents/` を更新する
+- F3. 検証・集計スクリプトが事案ファイルを検証し、一覧用インデックスと統計を生成する
+- F4. サイト: 今日のブリーフ（新規・続報・要点）、事案の検索一覧（ファセット付き）、事案詳細（タイムライン・出典）、組織ページ、統計
+- F5. 公開前の自動検証（GitHub Actions）と Pages デプロイ
 
-**v1（MVP 後 3 か月）**
-- F7. ウォッチリスト（組織名・キーワード・業種）と通知（メール / Slack / Webhook）
-- F8. 公開 API（読み取り、API キー、レート制限）
-- F9. 統計ダッシュボード（月次件数、原因別、業種別）
-- F10. メールアドレス漏洩チェック（HIBP range API への委譲）
+**v1**
+- F6. 海外ソース（HIBP は MVP から、メディアは v1）、ransomware.live 観測情報（`unconfirmed` 扱い）
+- F7. ウォッチ機能（ブラウザの localStorage に組織・キーワードを保存し、新着を強調表示。通知は持たない）
+- F8. JSON をそのまま公開 API として案内（`data/index.json`、`data/incidents/YYYY-MM.json`）
 
 **v2 以降**
-- F11. 海外ソースの拡充、多言語
-- F12. 類似事案検索（ベクトル検索）
-- F13. 組織の「リスクスコア」や SaaS ベンダー監視
+- F9. 類似事案（原因・業種・データ種別の一致による「関連事案」）
+- F10. 年次レポート（年間統計の自動生成）
 
 ### 2.2 非機能要件
 
 | 項目 | 目標 |
 |---|---|
-| データ量 | 日本の公表事案は年 1,000〜2,000 件。海外含め 5 年で 10 万件規模。出典ドキュメントは 100 万件規模 |
-| 検索レイテンシ | p95 < 300ms |
-| クロール鮮度 | 主要ソースは 15〜60 分間隔。公表から 1 時間以内に掲載 |
-| 可用性 | 99.5%（個人運営のため SLA は設けない） |
-| 正確性 | 公開事案には必ず一次出典 URL を付ける。自動抽出のみの項目は「未確認」表示 |
-| コスト | MVP 月 1 万円以内 |
-| セキュリティ | 管理画面は認証必須。収集データに PII を含まないことを前提とした上で、万一混入しても保存前に落とす |
+| データ量 | 日本の公表事案は年 1,000〜2,000 件。5 年で 1 万件。インデックス 1 件 300 バイト前後 → `index.json` は 3MB 程度（gzip 後 数百 KB） |
+| 初期表示 | `index.json` と当日ファイルのみ読み、事案本体は月別ファイルを遅延読込。初期表示 1 秒以内 |
+| 鮮度 | 1 日 1 回（朝）。公表から翌朝までに掲載 |
+| 正確性 | 事案には必ず一次出典（組織の発表 or 公的機関）または信頼できるメディアの URL を付ける。本文未読の項目は `confidence` を下げ、UI で「未確認」表示 |
+| コスト | GitHub Pages 無料枠。ルーチンは Claude Code の実行枠内 |
+| 公開リポジトリ | 持ち主の個人情報を書かない。事案に個人名を書かない |
 
 ---
 
 ## 3. 全体アーキテクチャ
 
-### 3.1 コンポーネント図
-
 ```mermaid
 flowchart LR
     subgraph Sources[情報源]
-        RSS[RSS/Atom]
-        HTML[Webページ]
-        API[外部API<br/>HIBP, ransomware.live]
+        RSS[RSS: Security NEXT / piyolog / IPA / JPCERT ...]
+        HTML[HTML: 個人情報保護委員会]
+        API[API: HIBP breaches]
     end
 
-    subgraph Ingest[収集パイプライン]
-        SCH[スケジューラ]
-        FET[フェッチャ<br/>robots/ETag対応]
-        RAW[(Raw Store<br/>オブジェクトストレージ)]
-        PAR[パーサ/抽出<br/>ルール + LLM]
-        DED[重複判定・<br/>エンティティ解決]
-        REV[人手レビュー<br/>キュー]
+    subgraph Routine[毎朝の Claude Code ルーチン]
+        COL[scripts/collect.py<br/>候補収集 + 既存事案との照合ヒント]
+        RAW[(data/raw/D.json<br/>gitignore)]
+        LLM[ルーチン本体<br/>WebFetch で本文を読み<br/>事案を作成 / 続報を追加]
+        INC[(data/incidents/YYYY-MM.json)]
+        DAY[(data/daily/D.json)]
+        STA[scripts/update_stats.py<br/>検証 + index / stats / orgs 生成]
+        GEN[(data/index.json<br/>data/stats.json<br/>data/orgs.json)]
     end
 
-    subgraph Core[コア]
-        PG[(PostgreSQL)]
-        MS[(Meilisearch)]
-        Q[(ジョブキュー)]
+    subgraph Publish[公開]
+        GH[git push main]
+        GA[GitHub Actions<br/>検証 + Pages デプロイ]
+        SITE[index.html + assets/<br/>ブラウザで検索・集計]
     end
 
-    subgraph Serve[提供]
-        APIS[API サーバ]
-        WEB[Web フロント]
-        ADM[管理画面]
-        NTF[通知ワーカー]
-    end
-
-    RSS --> FET
-    HTML --> FET
-    API --> FET
-    SCH --> Q --> FET
-    FET --> RAW --> PAR --> DED --> PG
-    DED -->|確信度が低い| REV --> PG
-    PG -->|インデクシング| MS
-    PG --> APIS
-    MS --> APIS
-    APIS --> WEB
-    APIS --> ADM
-    PG --> NTF
+    RSS --> COL
+    HTML --> COL
+    API --> COL
+    COL --> RAW --> LLM
+    GEN -.既存事案の照合に使う.-> COL
+    LLM --> INC
+    LLM --> DAY
+    INC --> STA
+    DAY --> STA
+    STA --> GEN
+    GEN --> GH --> GA --> SITE
 ```
 
-### 3.2 データフロー
+### 3.1 役割分担
 
-1. **スケジューラ**が情報源ごとの間隔でフェッチジョブをキューに投入する。
-2. **フェッチャ**が robots.txt / ETag / Last-Modified を尊重して取得し、生 HTML/JSON を**Raw Store**に保存する（再パース可能にするため原本を残す）。
-3. **パーサ**が原本から「ドキュメント」（1 記事・1 発表）を作り、ルールベース（正規表現、サイト別テンプレ）と LLM 抽出で構造化フィールドを取り出す。
-4. **重複判定**で既存事案との一致を判定し、既存に紐付けるか新規事案を作る。確信度が閾値未満なら**レビューキュー**へ。
-5. **PostgreSQL** を正とし、変更イベントで **Meilisearch** に同期する。
-6. 公開 API / Web / 管理画面は API サーバ経由でのみアクセスする。
-7. 事案の新規作成・更新イベントをウォッチリストと照合し、**通知ワーカー**が配信する。
-
----
-
-## 4. データモデル
-
-### 4.1 中核エンティティ
-
-```
-Organization 1 ──< IncidentOrganization >── 1 Incident 1 ──< IncidentSource >── 1 Document ── 1 Source
-                                              │
-                                              ├──< IncidentDataType (漏洩したデータ種別)
-                                              ├──< IncidentEvent    (タイムライン)
-                                              └──< IncidentTag
-```
-
-**Incident（事案）** — ユーザーが検索する単位
-| カラム | 型 | 説明 |
+| 担当 | やること | やらないこと |
 |---|---|---|
-| id | uuid | |
-| title | text | 正規化した見出し（例: 「○○社 不正アクセスによる顧客情報漏えい」） |
-| summary | text | 300 字程度の要約（LLM 生成、レビュー済みフラグあり） |
-| status | enum | `draft` / `published` / `merged` / `retracted` |
-| cause | enum | `unauthorized_access` / `ransomware` / `misconfiguration` / `lost_device` / `insider` / `email_misdelivery` / `third_party` / `unknown` |
-| affected_count | bigint null | 影響件数（判明分） |
-| affected_count_is_estimate | bool | |
-| occurred_at / detected_at / disclosed_at | date null | 発生 / 検知 / 公表 |
-| country | char(2) | |
-| industry | text | 業種（日本標準産業分類の大分類ベース） |
-| confidence | numeric | 自動抽出の確信度 0〜1 |
-| review_state | enum | `unreviewed` / `reviewed` / `needs_attention` |
-| merged_into_id | uuid null | 統合された場合の統合先 |
-| created_at / updated_at | timestamptz | |
+| `collect.py`（Python、標準ライブラリのみ） | RSS / API 取得、漏洩キーワードによる足切り、既存事案との照合ヒント（組織名・日付の近さ） | 本文の読解、分類の確定 |
+| ルーチン（Claude Code、`CLAUDE.md` の手順） | 候補の取捨選択、WebFetch で一次出典を読む、構造化（原因・件数・データ種別・日付）、新規 or 続報の判断、要約 | 推測で数値を埋めること、個人名の記録 |
+| `update_stats.py`（Python） | スキーマ検証、`index.json` / `stats.json` / `orgs.json` 生成 | 内容の判断 |
+| `index.html` + `assets/` | 検索・ファセット・詳細・統計の描画（すべてブラウザ側） | サーバ処理 |
+| GitHub Actions | `claude/**` → `main` マージ、`--check-only` 検証、Pages デプロイ | 収集（ルーチン環境で行う） |
 
-**Organization（組織）**
-- id, canonical_name, aliases(text[]), domain(s), country, industry, parent_id（グループ会社）
-- 名寄せキー: 法人番号（日本）、ドメイン、正規化名称
+### 3.2 tech-research との違い
 
-**Source（情報源）**
-- id, name, kind(`rss` / `html` / `api`), base_url, fetch_interval_sec, parser_name, trust_level(`official` / `authority` / `media` / `aggregator`), enabled, robots_policy
-
-**Document（取得した 1 記事・1 発表）**
-- id, source_id, url(unique), raw_object_key, title, published_at, fetched_at, content_hash, extracted(jsonb), lang
-
-**IncidentSource** — Incident と Document の多対多。`role` = `primary`（一次出典）/ `secondary`
-
-**IncidentDataType** — 漏洩したデータ種別のマスタ参照
-- 例: 氏名、住所、電話、メール、生年月日、クレカ番号、口座、パスワード（ハッシュ/平文）、マイナンバー、健康情報、社内文書
-
-**IncidentEvent（タイムライン）**
-- incident_id, occurred_at, kind(`occurred` / `detected` / `disclosed` / `updated` / `report_filed` / `resolved`), description, document_id
-
-**Watchlist / WatchlistRule / Notification**（v1）
-- user_id, rule(`organization_id` | `keyword` | `industry` | `data_type`), channel(`email` / `slack` / `webhook`), last_notified_at
-
-### 4.2 設計上の判断
-
-- **Incident と Document を分ける。** 1 事案に対して企業発表・PPC 公表・報道が複数ぶら下がる。ユーザーは事案単位で見たいが、出典の透明性は保ちたい。
-- **原本（Raw）を残す。** パーサ改善後に再抽出できる。ストレージは安価（月数十 GB で数百円）。
-- **merged_into_id で統合履歴を保つ。** 誤統合の切り戻しを可能にする。
-- **件数は「判明分」と「推定」を区別する。** 第一報と続報で数値が変わるのが常態。
-- **confidence と review_state を分ける。** 前者は機械、後者は人の状態。
+| 観点 | tech-research | data-leak-search |
+|---|---|---|
+| 蓄積の単位 | 日次ファイル（記事はその日限り） | 事案ファイル（月別）。日次ファイルは「その日の差分と要点」 |
+| 同じ話題の扱い | 1 件にまとめて終わり | 既存事案への**続報として追記**（件数の更新、原因の確定、報告書公表） |
+| 名寄せ | キーワード slug | 組織 slug（`org`）を同じ流儀で統一。`orgs.json` で履歴を引ける |
+| 集計 | キーワードのリング | 月次件数、原因別、業種別、データ種別別、規模分布 |
+| 画面 | TODAY / READ / RADAR / MARKET | TODAY / INCIDENTS / ORGS / STATS |
 
 ---
 
-## 5. 収集パイプライン詳細
+## 4. ファイル構成
 
-### 5.1 情報源の優先順位（MVP）
-
-| 優先 | ソース | 方式 | 備考 |
+| パス | 内容 | 書き手 | commit |
 |---|---|---|---|
-| 1 | 個人情報保護委員会（漏えい等報告・公表） | HTML | 権威ソース。更新頻度は低め |
-| 1 | Security NEXT | RSS | 日本の事案を網羅的に追える |
-| 1 | piyolog | RSS | 重要事案の詳細まとめ |
-| 2 | JPCERT/CC、IPA の注意喚起 | RSS | 事案より脆弱性寄りだが関連 |
-| 2 | 企業プレスリリース（PR TIMES の「お詫び」「漏えい」検索、各社 IR） | RSS / HTML | タイトル正規表現でフィルタ |
-| 2 | HIBP breaches API | API | 海外事案メタデータ。無料・公式 |
-| 3 | ransomware.live | API | リークサイト観測メタデータ |
-| 3 | 海外メディア（BleepingComputer 等） | RSS | v1 以降 |
-
-### 5.2 抽出戦略
-
-1. **サイト別パーサ**（優先）: 構造が安定しているサイトは CSS セレクタ / 正規表現で確実に取る。
-2. **LLM 抽出**（フォールバック / 補完）: 本文から以下を JSON スキーマで抽出する。
-   - 組織名、原因、影響件数、データ種別、発生日 / 検知日 / 公表日、要約
-   - プロンプトには「推測しない。本文に無い項目は null」を明記し、出力をスキーマ検証する。
-   - 1 ドキュメントあたり数円。月 3,000 ドキュメントでも数千円に収まる。
-3. **確信度**: サイト別パーサ=0.9、LLM=0.6 を初期値とし、複数ソース一致で加算する。閾値 0.75 未満はレビューキューへ。
-
-### 5.3 重複判定（エンティティ解決）
-
-- 第 1 段: 同一 URL / content_hash → 同一 Document。
-- 第 2 段: 組織名（名寄せ後）× 公表日 ±14 日 × 原因 の一致 → 同一 Incident 候補。
-- 第 3 段: 候補が複数 / 曖昧な場合は、タイトルの類似度（trigram）と LLM による「同一事案か」判定。
-- 判定結果はレビュー可能にし、誤統合は `merged_into_id` を解除して切り戻す。
-
-### 5.4 クロールの作法
-
-- robots.txt を遵守し、User-Agent に連絡先を含める。
-- 同一ホストへの同時接続は 1、間隔は 5 秒以上。
-- 条件付きリクエスト（ETag / If-Modified-Since）で帯域を節約する。
-- 失敗は指数バックオフ（1 分 → 最大 6 時間）、連続失敗で `needs_attention` に。
+| `index.html`, `assets/app.js`, `assets/style.css` | サイト本体（tech-research のポスター様式を踏襲） | 人 | する |
+| `CLAUDE.md` | 日次更新ルーチンの手順、スキーマ、運用ルール | 人 | する |
+| `data/config.json` | 情報源、原因・業種・データ種別のマスタ、漏洩キーワード、除外ルール | 人 | する |
+| `data/raw/YYYY-MM-DD.json` | 収集した候補（下書き） | `collect.py` | **しない** |
+| `data/incidents/YYYY-MM.json` | 事案の台帳。`disclosed_at` の月で分割 | ルーチン | する |
+| `data/daily/YYYY-MM-DD.json` | その日の要点・新規/続報の事案 id・収集統計 | ルーチン | する |
+| `data/index.json` | 全事案の軽量インデックス（一覧・検索用） | `update_stats.py` | する |
+| `data/stats.json` | 月次・原因別・業種別などの集計 | `update_stats.py` | する |
+| `data/orgs.json` | 組織 slug → 表示名・別名・事案 id 一覧 | `update_stats.py` | する |
+| `data/state/seen.json` | 処理済み URL（content hash 付き）。再掲防止 | `collect.py` / ルーチン | する |
+| `scripts/collect.py` | 収集 | 人 | する |
+| `scripts/update_stats.py` | 検証・集計 | 人 | する |
+| `.github/workflows/pages.yml` | tech-research と同じ（claude/** → main マージ → Pages） | 人 | する |
 
 ---
 
-## 6. API 設計（公開 API / フロント共用）
+## 5. データスキーマ
 
-REST + JSON。認証は公開読み取りは不要（レート制限あり）、ウォッチリスト等はセッション / API キー。
-
-| メソッド | パス | 説明 |
-|---|---|---|
-| GET | `/v1/incidents` | 検索。`q`, `org`, `industry`, `cause`, `data_type`, `country`, `from`, `to`, `min_count`, `sort`, `page` |
-| GET | `/v1/incidents/{id}` | 事案詳細（timeline, sources, data_types を含む） |
-| GET | `/v1/organizations/{id}` | 組織と事案履歴 |
-| GET | `/v1/organizations?q=` | 組織サジェスト |
-| GET | `/v1/stats/monthly?from=&to=&group_by=cause` | 統計 |
-| GET | `/v1/sources` | 情報源一覧（透明性のため公開） |
-| POST | `/v1/watchlists` | ウォッチリスト作成（要認証） |
-| POST | `/v1/pwned/check` | HIBP range API へのプロキシ。ハッシュ先頭 5 文字のみ外部送信 |
-
-管理 API（`/admin/*`）は別ルータ・別認証で、レビューキューの承認・統合・取り下げを提供する。
-
-レスポンス例（抜粋）:
+### 5.1 `data/config.json`（抜粋）
 
 ```json
 {
-  "id": "4f0e...",
-  "title": "株式会社サンプル 不正アクセスによる顧客情報漏えい",
-  "status": "published",
-  "cause": "unauthorized_access",
-  "affected_count": 123456,
-  "affected_count_is_estimate": false,
-  "disclosed_at": "2026-10-01",
-  "organizations": [{"id": "...", "name": "株式会社サンプル", "industry": "小売業"}],
-  "data_types": ["name", "email", "address"],
-  "sources": [
-    {"role": "primary", "url": "https://example.co.jp/news/...", "publisher": "株式会社サンプル", "published_at": "2026-10-01"},
-    {"role": "secondary", "url": "https://www.security-next.com/...", "publisher": "Security NEXT"}
+  "title": "data-leak-search",
+  "timezone": "Asia/Tokyo",
+  "causes": [
+    {"id": "unauthorized_access", "label": "不正アクセス", "color": "#C8200A"},
+    {"id": "ransomware",          "label": "ランサムウェア", "color": "#7A1FA2"},
+    {"id": "misconfiguration",    "label": "設定不備・公開設定ミス", "color": "#1849B8"},
+    {"id": "email_misdelivery",   "label": "メール誤送信", "color": "#E3B341"},
+    {"id": "lost_device",         "label": "紛失・盗難", "color": "#2DD4BF"},
+    {"id": "insider",             "label": "内部不正・持ち出し", "color": "#F778BA"},
+    {"id": "third_party",         "label": "委託先・外部サービス起因", "color": "#58A6FF"},
+    {"id": "other",               "label": "その他・不明", "color": "#8A8A8A"}
   ],
-  "review_state": "reviewed"
+  "industries": [
+    {"id": "public",     "label": "官公庁・自治体"},
+    {"id": "education",  "label": "教育"},
+    {"id": "medical",    "label": "医療・福祉"},
+    {"id": "finance",    "label": "金融・保険"},
+    {"id": "retail",     "label": "小売・EC"},
+    {"id": "manufacturing", "label": "製造"},
+    {"id": "it",         "label": "IT・通信"},
+    {"id": "service",    "label": "サービス・その他"}
+  ],
+  "data_types": [
+    {"id": "name", "label": "氏名"}, {"id": "address", "label": "住所"}, {"id": "phone", "label": "電話番号"},
+    {"id": "email", "label": "メールアドレス"}, {"id": "birthday", "label": "生年月日"},
+    {"id": "credential", "label": "ID・パスワード"}, {"id": "card", "label": "クレジットカード"},
+    {"id": "bank", "label": "口座情報"}, {"id": "mynumber", "label": "マイナンバー"},
+    {"id": "health", "label": "健康・医療情報"}, {"id": "internal_doc", "label": "社内文書・取引情報"},
+    {"id": "other", "label": "その他"}
+  ],
+  "leak_keywords": ["漏えい", "漏洩", "流出", "不正アクセス", "ランサムウェア", "紛失", "誤送信", "誤公開", "閲覧可能", "breach", "leak", "ransomware"],
+  "exclude_keywords": ["脆弱性情報", "セミナー", "製品紹介"],
+  "sources": [
+    {"id": "security_next", "name": "Security NEXT", "kind": "rss", "trust": "media",
+     "url": "https://www.security-next.com/feed"},
+    {"id": "piyolog", "name": "piyolog", "kind": "rss", "trust": "media",
+     "url": "https://piyolog.hatenadiary.jp/rss"},
+    {"id": "ipa", "name": "IPA", "kind": "rss", "trust": "authority", "url": "https://www.ipa.go.jp/security/rss/..."},
+    {"id": "jpcert", "name": "JPCERT/CC", "kind": "rss", "trust": "authority", "url": "https://www.jpcert.or.jp/rss/jpcert.rdf"},
+    {"id": "ppc", "name": "個人情報保護委員会", "kind": "html", "trust": "authority", "url": "https://www.ppc.go.jp/news/..."},
+    {"id": "hibp", "name": "Have I Been Pwned", "kind": "hibp", "trust": "aggregator",
+     "url": "https://haveibeenpwned.com/api/v3/breaches"}
+  ]
 }
 ```
 
+- `trust` は `official`（組織自身）/ `authority`（公的機関）/ `media` / `aggregator`。出典の表示順と `confidence` の初期値に使う
+- 実際の URL は `collect.py --dry-run` で取得できることを確認してから登録する（tech-research と同じ運用）
+
+### 5.2 `data/incidents/YYYY-MM.json`（事案の台帳）
+
+```json
+{
+  "month": "2026-10",
+  "incidents": [
+    {
+      "id": "2026-10-01-sample-corp",            // disclosed_at-org。一意
+      "org": "sample-corp",                       // 組織 slug。orgs.json のキー。既存 slug を優先して再利用する
+      "org_name": "株式会社サンプル",
+      "org_aliases": ["サンプル", "Sample Corp."],
+      "industry": "retail",                       // config.industries[].id
+      "country": "JP",
+      "title": "株式会社サンプル 不正アクセスによる顧客情報漏えい",
+      "summary": "EC サイトが不正アクセスを受け、顧客情報 12 万件が漏えいした可能性。クレジットカード情報を含む。",  // 2〜3 文
+      "cause": "unauthorized_access",             // config.causes[].id
+      "vector": "ECサイトの脆弱性を突かれ決済ページを改ざん",  // 原因の具体（分かる範囲、null 可）
+      "data_types": ["name", "address", "card"],  // config.data_types[].id
+      "affected": 123456,                         // 判明している件数。不明なら null
+      "affected_is_estimate": false,              // 「最大」「可能性」表記なら true
+      "occurred_at": "2026-08-10",                // 発生（期間なら開始日）。不明なら null
+      "detected_at": "2026-09-20",
+      "disclosed_at": "2026-10-01",               // 最初の公表日。ファイルの月はこれで決まる
+      "status": "disclosed",                      // disclosed / investigating / reported / closed / unconfirmed
+      "confidence": 0.9,                          // 0〜1。一次出典を本文まで読めたら 0.9、メディアのみ 0.7、見出しのみ 0.5
+      "sources": [
+        {"role": "primary", "trust": "official", "publisher": "株式会社サンプル",
+         "url": "https://example.co.jp/news/2026/1001.html", "published_at": "2026-10-01", "title": "..."},
+        {"role": "secondary", "trust": "media", "publisher": "Security NEXT",
+         "url": "https://www.security-next.com/...", "published_at": "2026-10-02", "title": "..."}
+      ],
+      "timeline": [
+        {"date": "2026-08-10", "kind": "occurred",  "text": "不正アクセスの開始（推定）", "source": 0},
+        {"date": "2026-09-20", "kind": "detected",  "text": "決済代行会社からの連絡で判明", "source": 0},
+        {"date": "2026-10-01", "kind": "disclosed", "text": "第一報を公表。EC サイトを停止", "source": 0},
+        {"date": "2026-10-15", "kind": "updated",   "text": "件数を 12 万件に修正。カード情報を含むと発表", "source": 2}
+      ],
+      "keywords": ["ec-site", "payment-skimming"], // 小文字 slug。既存 slug を優先
+      "created_at": "2026-10-02",
+      "updated_at": "2026-10-16"
+    }
+  ]
+}
+```
+
+- `timeline.kind` は `occurred` / `detected` / `disclosed` / `updated` / `report_filed`（当局へ報告・報告書公表）/ `resolved`
+- `timeline.source` は `sources` 配列のインデックス
+- 続報が来たら: `sources` に追加、`timeline` に `updated` を足し、`affected` / `cause` / `data_types` / `status` を更新、`updated_at` を更新する。**上書き前の値は timeline の text に残す**（「件数を 5 万件から 12 万件に修正」）
+- `status: "unconfirmed"` は組織の公表が確認できていないもの（v1 のリークサイト観測など）。UI では一覧の既定フィルタから外す
+
+### 5.3 `data/daily/YYYY-MM-DD.json`（その日の差分）
+
+```json
+{
+  "date": "2026-10-17",
+  "generated_at": "2026-10-17T06:10:00+09:00",
+  "stats": {"collected": 84, "candidates": 19, "sources_ok": 6, "sources_total": 6, "failed_sources": []},
+  "digest": [
+    {"text": "小売の EC サイト改ざんによるカード情報漏えいが今週 3 件。いずれも決済ページへのスクリプト埋め込み。", "incidents": ["2026-10-01-sample-corp", "..."]}
+  ],
+  "new": ["2026-10-16-foo-city", "2026-10-16-bar-hospital"],       // 今日作った事案 id
+  "updated": [{"id": "2026-10-01-sample-corp", "text": "件数を 12 万件に修正"}],
+  "skipped": [{"url": "https://...", "reason": "脆弱性情報で事案ではない"}]  // 判断の記録（任意、5 件まで）
+}
+```
+
+### 5.4 生成ファイル（`update_stats.py` が作る。手で書かない）
+
+- `data/index.json`: 全事案の軽量版 `{id, org, org_name, industry, country, title, cause, data_types, affected, disclosed_at, status, confidence, month, n_sources}` の配列 + `generated_at` + `months`（存在する月の一覧）
+- `data/stats.json`: `monthly[]`（月ごとの件数・原因別・業種別）、`by_cause`、`by_industry`、`by_data_type`、`scale_buckets`（〜1 千 / 〜1 万 / 〜10 万 / 〜100 万 / 100 万〜）、`top_affected[]`（直近 1 年の規模上位）、`recent_days[]`（直近 30 日の新規・続報件数）
+- `data/orgs.json`: `{slug: {name, aliases, industry, incidents: [id...], first, last}}`
+
 ---
 
-## 7. 検索設計
+## 6. 収集スクリプト `scripts/collect.py`
 
-- **エンジン**: Meilisearch を MVP から採用。理由は日本語トークナイズが標準で動く、ファセット・タイポ許容が設定不要、運用が軽い（単一バイナリ、数百 MB メモリ）。
-- **インデックス**: `incidents` 1 本。検索対象フィールド = title, summary, organization_names, aliases。フィルタ属性 = cause, industry, country, data_types, disclosed_at（epoch）, affected_count。
-- **同期**: PostgreSQL の更新を outbox テーブル経由でワーカーが拾い、Meilisearch に upsert する。全件再構築ジョブも用意する。
-- **PostgreSQL 側**: 管理画面や厳密検索用に `pg_trgm` を組織名に張る。
+tech-research の `collect.py` をベースに、次を変える。
 
-OpenSearch / Elasticsearch は 10 万件規模では過剰。件数が 100 万を超えるか、集計クエリが複雑になった時点で再検討する。
+1. **足切り**: タイトル + 要約に `leak_keywords` のいずれかを含み、`exclude_keywords` を含まないものだけ候補にする。`leak_score`（ヒット数）を付ける
+2. **HIBP**: `/api/v3/breaches` を取得し、`AddedDate` が `--hours` 以内のものを候補にする（`kind: "hibp"`）
+3. **PPC**: RSS が無いため HTML を取得し、一覧の `<a>` から「漏えい」「公表」を含むリンクを抜く（セレクタは `config` に持つ）
+4. **既存事案との照合ヒント**: `data/index.json` と `data/orgs.json` を読み、候補のタイトルに含まれる組織名（`org_name` / `org_aliases`）と `disclosed_at` ±30 日で一致する事案 id を `maybe_update_of: ["2026-10-01-sample-corp"]` として付ける。ルーチンはこれを見て新規か続報かを判断する（最終判断はルーチン）
+5. **処理済み判定**: `data/state/seen.json` にある URL は `seen: true` を付ける（候補からは外さない。続報の判断材料として残す）
+6. **出力**: `data/raw/D.json` に `{date, collected_at, source_status, count, candidates: [...]}`。候補は `leak_score` と `maybe_update_of` の有無で並べ替える
 
----
-
-## 8. 画面設計（UI 概要）
-
-### 8.1 画面一覧
-
-| 画面 | 主要素 |
-|---|---|
-| トップ / ダッシュボード | 直近 7 日の新着事案リスト、今月の件数・前月比、原因別の内訳、大規模事案ハイライト |
-| 検索結果 | 左: ファセット（期間、原因、業種、データ種別、国、件数規模）/ 中央: 事案カード一覧（タイトル、組織、公表日、件数、原因バッジ、出典数）/ 並び替え |
-| 事案詳細 | ヘッダ（組織・公表日・件数・原因）→ 要約 → タイムライン → 漏洩データ種別 → 出典一覧（一次 / 二次を区別）→ 関連事案 → 「情報の誤りを報告」 |
-| 組織ページ | 基本情報、事案履歴（年表）、ウォッチ登録ボタン |
-| ウォッチリスト（v1） | ルール一覧、通知先設定、通知履歴 |
-| 統計（v1） | 月次推移、原因別・業種別・データ種別別のグラフ、CSV エクスポート |
-| 管理画面 | レビューキュー（抽出結果と原文の並列表示、承認 / 修正 / 統合 / 却下）、情報源の稼働状況 |
-
-### 8.2 UI の方針
-
-- **出典を常に前面に出す。** 各数値・各日付にホバーで出典が分かる。
-- **未確認情報は明示する。** 自動抽出のみの項目はグレーの「未確認」バッジを付ける。
-- **速報性と正確性を両立する。** 新着は `draft` でも「速報」として一覧に出し、レビュー後に `published` へ。
-- **トーンは中立・事務的。** 煽らない。組織名の扱いは公表事実に基づく。
-- ダーク/ライト両対応、モバイルでファセットはドロワー化。
+HTML 抽出のための外部ライブラリは入れない（標準ライブラリの `html.parser` で足りる範囲に留める）。
 
 ---
 
-## 9. 技術スタック候補とトレードオフ
+## 7. 日次ルーチン（`CLAUDE.md` に書く手順の骨子）
 
-| 領域 | 第一候補 | 代替 | 判断理由 |
+Claude Code のルーチン（スケジュールされたタスク）から「CLAUDE.md の日次更新ルーチンを実行して」と呼ばれる前提。無人実行なので質問はせず、判断した前提は `daily` の `skipped` や timeline の text に残す。
+
+0. **main から始める**: `git fetch origin main && git checkout -B main origin/main`
+1. **収集**: `python3 scripts/collect.py`。失敗したソースは `daily.stats.failed_sources` に書く
+2. **候補の選別**: `data/raw/D.json` の候補を上から見る。
+   - 事案ではないもの（脆弱性情報、注意喚起のみ、製品記事）は `skipped` に理由を書いて捨てる
+   - `maybe_update_of` があるものは、既存事案を開いて同一事案か確かめる（組織・時期・原因が一致すれば続報）
+3. **一次出典を読む**: メディア記事の場合、本文中の組織の発表 URL を探して **WebFetch で本文を読む**。読めたら `role: "primary"` として `sources` に入れ、`confidence: 0.9`。メディアのみなら 0.7、見出しだけなら 0.5
+4. **構造化**: 5.2 のスキーマで事案を書く。
+   - `affected` は本文に書かれた数字だけ。「最大」「可能性」「約」は `affected_is_estimate: true`。無ければ `null`
+   - 日付は本文で確認できたものだけ。推測しない
+   - `org` slug は `orgs.json` の既存を最優先。新規なら小文字英数字とハイフン（例 `sample-corp`, `foo-city`, `bar-hospital`）
+   - 個人名は書かない。組織名のみ
+   - `cause` / `industry` / `data_types` は `config.json` の id のみ使う
+5. **新規 or 続報**:
+   - 新規: `data/incidents/YYYY-MM.json`（`disclosed_at` の月）に追加。無ければファイルを作る
+   - 続報: 該当事案の `sources` / `timeline` / 更新項目を書き換え、`updated_at` を更新。**変更前の値を timeline の text に残す**
+6. **`data/daily/D.json` を書く**: `digest`（1〜5 件。その日の傾向や大規模事案を 1〜2 文で）、`new`、`updated`、`skipped`
+7. **`data/state/seen.json`** に処理した URL を追加する
+8. **検証・集計・push**:
+   ```bash
+   python3 scripts/update_stats.py        # エラーなら直してやり直す
+   git add -A
+   git commit -m "data: D 日次更新（新規N件・続報N件）"
+   git push origin HEAD:main              # 拒否されたら pull --rebase → update_stats.py → push
+   ```
+   main に push できない時だけ `claude/` ブランチに push する（Actions が main にマージして公開する）
+9. **最終メッセージ**: digest と新規・続報の一覧を出す
+
+ルーチンの 1 回あたりの目安: 候補 10〜30 件、新規 0〜10 件、続報 0〜5 件、WebFetch 10〜20 回。
+
+---
+
+## 8. 画面設計
+
+tech-research の `index.html` / `style.css`（白地・黒罫・黄色のポスター様式、上部タブ、スマホは下タブ、`/` で検索、`[` `]` で日付移動）をそのまま土台にし、画面を差し替える。
+
+| 画面 | 内容 | 読むファイル |
+|---|---|---|
+| **TODAY** `#today` | その日の digest、新規事案カード（組織・業種・原因・件数・データ種別）、続報リスト（何が変わったか）、収集統計。日付セレクタで過去の日に戻れる | `daily/D.json`, `index.json`, 該当月の `incidents` |
+| **INCIDENTS** `#incidents` | 検索一覧。左（スマホはドロワー）にファセット: 期間 / 原因 / 業種 / データ種別 / 規模 / 国 / 確認状態。中央に事案カード。並び替え: 公表日 / 件数 / 更新日。全文一致検索は `title` + `org_name` + `org_aliases` + `summary` に対する部分一致（ブラウザ側、index.json を対象） | `index.json` |
+| **INCIDENT 詳細** `#incident/<id>` | ヘッダ（組織・公表日・件数・原因・ステータス）→ 要約 → 漏洩データ種別 → タイムライン → 出典一覧（primary を上に、trust のバッジ付き）→ 同じ組織の他事案 → 「誤りを報告」（GitHub Issue へのリンク） | 該当月の `incidents/YYYY-MM.json` を遅延読込 |
+| **ORGS** `#orgs`, `#org/<slug>` | 組織の一覧（事案数順）と組織ページ（履歴年表、業種、別名） | `orgs.json`, `index.json` |
+| **STATS** `#stats` | 月次件数の推移（棒）、原因別・業種別・データ種別別の内訳（横棒）、規模分布、直近 1 年の規模上位 10 件。期間は 1 年 / 3 年 / 全期間で切替 | `stats.json` |
+
+UI の方針:
+- **出典を前面に**: 件数・日付の横に出典番号を置き、クリックで出典へ。
+- **未確認を明示**: `confidence < 0.7` や `affected_is_estimate` はグレーの「未確認」「推定」バッジ。`status: unconfirmed` は既定で非表示（ファセットで表示可）。
+- **続報が分かる**: 一覧カードに「更新 10/15」バッジ。TODAY では差分文をそのまま出す。
+- **煽らない**: 中立・事務的。組織名は公表事実のみ。
+- ウォッチ（v1）: 組織 slug / キーワードを localStorage に持ち、TODAY と INCIDENTS で該当を強調する。tech-research の `store` と同じ作り。
+
+---
+
+## 9. 公開フロー
+
+`.github/workflows/pages.yml` は tech-research のものをそのまま使う。
+
+- `main` への push → `update_stats.py --check-only` で検証 → Pages デプロイ
+- `claude/**` への push → `main` にマージ → 検証 → `main` を対象に再実行して公開 → `claude/**` を削除
+- 検証に失敗したら公開しない（壊れたデータを出さない）
+
+ローカル確認: `python3 -m http.server` → http://localhost:8000
+
+---
+
+## 10. 技術的判断とトレードオフ
+
+| 判断 | 採用 | 捨てたもの | 理由・限界 |
 |---|---|---|---|
-| 言語（API・ワーカー） | **Python 3.12 + FastAPI** | Go / TypeScript (Hono) | クローラ・HTML 解析・LLM SDK のエコシステムが最も厚い。収集処理が中核のため |
-| フロント | **Next.js (App Router) + TypeScript** | SvelteKit | SSR で SEO（事案ページは検索流入が主）、エコシステム |
-| DB | **PostgreSQL 16** | — | jsonb、trigram、堅牢性。迷う余地なし |
-| 検索 | **Meilisearch** | OpenSearch / PG FTS | 7 章参照 |
-| キュー | **PostgreSQL ベース（例: procrastinate）** | Redis + RQ / Celery | MVP は DB 1 台で完結させる。Redis は v1 で通知が増えたら導入 |
-| オブジェクトストレージ | **Cloudflare R2 / S3** | ローカル FS | 原本保存。egress 無料の R2 が有利 |
-| LLM | Claude（構造化抽出） | ローカル小型モデル | 精度とコストのバランス。月数千円 |
-| ホスティング | **VPS 1 台（Docker Compose）** | Fly.io / Cloud Run | 月 1〜2 千円。10 万件規模なら十分 |
-| 監視 | Uptime Kuma + 構造化ログ + Sentry 無料枠 | Datadog | コスト |
+| 保存 | git 管理の JSON（月別） | PostgreSQL | サーバ不要・履歴が git に残る・tech-research と同じ運用。限界: 1 ファイルが数百 KB を超える月は無い想定（月 200 件 × 1.5KB = 300KB） |
+| 検索 | ブラウザ側の部分一致 + ファセット | Meilisearch | 1 万件・3MB なら十分速い。限界: 表記ゆれ・同義語には弱い → `org_aliases` と `keywords` slug で補う |
+| 抽出 | ルーチン（Claude Code）が WebFetch して構造化 | 自前の LLM パイプライン | 実行基盤もコストも持たなくて済む。限界: 1 日 1 回、1 回に扱える候補は 30 件程度 |
+| 名寄せ | 組織 slug を手で統一（既存優先） | 法人番号 API | 運用で十分。限界: 初期はゆれが出る → `orgs.json` を見て直す |
+| 重複判定 | `collect.py` のヒント + ルーチンの判断 | 自動マージ | 誤統合より見落としの方がまし。ヒントは出すが決めない |
+| 通知 | 持たない（v1 で localStorage の強調のみ） | メール / Slack | サーバが無い。必要なら GitHub Actions から Slack Webhook を叩く案を v2 で |
 
-**Go を選ばない理由**: API だけなら Go が軽快だが、パーサ・LLM 連携を別言語で書くと保守コストが倍になる。1 人開発では単一言語が優先。
-**TypeScript 一本化を選ばない理由**: 有力な選択肢だが、スクレイピングと LLM 周辺の成熟度で Python が一歩先。フロントが Next.js なのでどちらにせよ TS は書く。
-
----
-
-## 10. スケールと信頼性
-
-- **負荷見積**: 公開時の想定は 1 日 1,000〜5,000 PV、検索 QPS < 1。クロールは 1 日数千リクエスト。VPS 1 台で余裕。
-- **スケール経路**: フロント（Vercel/Cloudflare Pages）→ API（複数インスタンス + Postgres マネージド化）→ Meilisearch 分離、の順で切り出す。設計上、各コンポーネントは最初から別プロセスにしておく。
-- **バックアップ**: Postgres は日次 pg_dump を R2 へ。Raw Store がある限り Meilisearch は再構築可能。
-- **障害時の振る舞い**: Meilisearch 停止時は Postgres の `ILIKE` + trigram 検索へフォールバック（品質は落ちるが止めない）。LLM API 停止時はルール抽出のみで `confidence` を下げて登録。
-- **監視項目**: ソース別の最終成功時刻（SLA: 想定間隔 × 3 を超えたらアラート）、レビューキュー滞留数、抽出失敗率、API p95。
+**見直すタイミング**
+- `index.json` が 10MB を超えたら年別インデックスに分割する
+- 月の事案が 300 件を超え続けたら旬別ファイルに分割する
+- 候補が 1 日 50 件を超えたら `collect.py` 側の足切りを強める（`leak_score` の閾値、ソースごとの上限）
+- 海外ソースを足すと英語の組織名・業種分類の問題が出る → `country` ごとの industry マッピングを config に持つ
 
 ---
 
 ## 11. 法務・倫理・運用ポリシー
 
-- **掲載基準**: 組織自身・監督官庁・信頼できる報道のいずれかが公表した事案のみ。噂・未確認のリーク主張は掲載しない（ransomware.live 由来は「リークサイトに掲載されたとの観測」と明記し、組織の確認が取れるまで `unconfirmed` 扱い）。
-- **訂正・削除請求**: 詳細ページから報告できる導線を置く。一次出典が訂正・削除された場合は追随する。
-- **著作権**: 記事本文は転載しない。保存は内部処理用で、表示はタイトル・要約（自作）・URL のみ。
-- **利用規約遵守**: スクレイピングが禁止されたサイトは RSS/API のみ使用。
-- **個人情報**: パイプラインで PII パターン（メール、電話、カード番号）を検出したら保存前にマスクし、警告ログを残す。
-- **免責**: 「本サイトは公開情報の集約であり、正確性を保証しない」旨を明記。
+- **掲載基準**: 組織自身・公的機関・信頼できるメディアのいずれかが公表した事案のみ。噂や未確認のリーク主張は載せない。リークサイト観測（v1）は `unconfirmed` とし、組織の公表が確認できたら通常の事案に昇格する
+- **個人情報**: 個人名・個人のメールアドレス等は一切書かない。`update_stats.py` でメールアドレスとカード番号のパターンを検査し、検出したら検証エラーにする
+- **著作権**: 記事本文は転載しない。`summary` は自分の言葉で 2〜3 文、`timeline.text` は事実の要約のみ
+- **訂正**: 詳細ページから GitHub Issue へ誘導。一次出典が訂正・削除された場合は追随する（`status: closed` + timeline に記録）
+- **利用規約**: 機械収集が禁止されたサイトは RSS / API のみ。`User-Agent` にリポジトリ URL を入れる
+- **免責**: 公開情報の集約であり正確性を保証しない旨を `index.html` のフッタに明記
 
 ---
 
@@ -366,28 +408,19 @@ OpenSearch / Elasticsearch は 10 万件規模では過剰。件数が 100 万�
 
 | フェーズ | 期間目安 | ゴール |
 |---|---|---|
-| M0 設計 | 今 | 本書のレビュー、技術選定の確定 |
-| M1 骨格 | 2〜3 週 | Docker Compose（PG, Meilisearch, API, Web）、スキーマ、Security NEXT と piyolog の RSS 取り込み、一覧 / 詳細表示 |
-| M2 抽出と統合 | 3〜4 週 | LLM 抽出、重複判定、管理画面レビュー、PPC・企業発表ソース追加 |
-| M3 検索と公開 | 2〜3 週 | ファセット検索、組織ページ、SEO、公開 |
-| v1 | +3 か月 | ウォッチリスト通知、公開 API、統計、HIBP 連携 |
-| v2 | 以降 | 海外ソース、類似検索、ベンダー監視 |
+| M0 設計 | 今 | 本書のレビュー |
+| M1 骨格 | 1〜2 週 | `config.json`、`collect.py`（Security NEXT / piyolog / HIBP）、`update_stats.py`、`CLAUDE.md`、`pages.yml`。手動で 1 回ルーチンを回して 1 週間分の事案を作る |
+| M2 サイト | 1〜2 週 | TODAY / INCIDENTS / 詳細 / ORGS / STATS。tech-research の `app.js` から共通部分（状態・描画ヘルパ・日付ナビ・検索）を流用 |
+| M3 運用開始 | — | ルーチンをスケジュール登録。2 週間回して slug のゆれ・抽出の癖を `CLAUDE.md` に反映 |
+| v1 | +1〜2 か月 | PPC・IPA・JPCERT ソース、ウォッチ、ransomware.live（unconfirmed） |
+| v2 | 以降 | 関連事案、年次レポート、Actions からの通知 |
 
 ---
 
-## 13. 将来見直すポイント
+## 13. 未決事項
 
-- Meilisearch → OpenSearch への移行判断（件数 100 万、集計要件の複雑化）
-- LLM 抽出のコストが支配的になった場合のローカルモデル / 蒸留
-- ソースが 50 を超えた時点でのパーサ管理方法（宣言的なサイト定義 DSL 化）
-- 通知のファンアウトが増えた時のキュー分離（Redis / SQS）
-- マルチテナント（企業向け有料プラン）に進む場合の認可モデル
-
----
-
-## 14. 未決事項（要相談）
-
-1. 技術スタックは Python + Next.js の提案で良いか（Go / TS 一本化の希望があれば変更）。
-2. 公開対象は日本語 UI のみで始めるか、最初から英語も用意するか。
-3. ransomware.live 等の「リークサイト観測情報」を MVP に含めるか、v1 に回すか。
-4. マネタイズ想定の有無（有料 API / 企業向けウォッチリスト）。設計上はあとから足せるが、認可モデルに影響する。
+1. **リポジトリの `main` ブランチ**: まだ存在しない。`pages.yml` は `main` 前提なので、最初に `main` を作る必要がある（この作業ブランチから作ってよいか）
+2. **公開範囲**: tech-research 同様 `noindex` の自分用で始めるか、検索エンジンに載せるか。載せるなら訂正窓口の明示が先
+3. **海外事案の深さ**: HIBP の breach は MVP から入れるが、`industry` / `cause` の付与は HIBP の説明文からの推定になる。`confidence: 0.6` で入れるか、v1 まで待つか
+4. **ランサムウェアのリークサイト観測**: `unconfirmed` として載せる価値があるか。企業名が出る分、誤りのリスクも上がる
+5. **ルーチンの時刻**: tech-research と同じ朝 5〜6 時台でよいか。企業の発表は夕方が多いため、前日夕方分を翌朝に拾う形になる
