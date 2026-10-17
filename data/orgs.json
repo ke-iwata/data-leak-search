@@ -1,1 +1,66 @@
-{}
+{
+ "moonstar": {
+  "name": "株式会社ムーンスター",
+  "aliases": [
+   "ムーンスター",
+   "MOONSTAR",
+   "moonstar.co.jp"
+  ],
+  "industry": "manufacturing",
+  "country": "JP",
+  "incidents": [
+   "2026-03-26-moonstar"
+  ],
+  "first": "2026-03-26",
+  "last": "2026-03-26",
+  "affected_total": 593000
+ },
+ "aena": {
+  "name": "株式会社アエナ",
+  "aliases": [
+   "アエナ",
+   "AENA",
+   "aena.co.jp"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-10-14-aena"
+  ],
+  "first": "2026-10-14",
+  "last": "2026-10-14",
+  "affected_total": 817215
+ },
+ "sourcenext": {
+  "name": "ソースネクスト株式会社",
+  "aliases": [
+   "ソースネクスト",
+   "SOURCENEXT",
+   "sourcenext.com"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-15-sourcenext"
+  ],
+  "first": "2026-10-15",
+  "last": "2026-10-15",
+  "affected_total": 22519960
+ },
+ "bk-japan": {
+  "name": "ビーケー・ジャパン",
+  "aliases": [
+   "バーガーキング",
+   "Burger King",
+   "burgerking.co.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-10-15-bk-japan"
+  ],
+  "first": "2026-10-15",
+  "last": "2026-10-15",
+  "affected_total": 11180000
+ }
+}

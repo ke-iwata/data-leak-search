@@ -1,0 +1,100 @@
+{
+  "month": "2026-03",
+  "incidents": [
+    {
+      "id": "2026-03-26-moonstar",
+      "org": "moonstar",
+      "org_name": "株式会社ムーンスター",
+      "org_aliases": [
+        "ムーンスター",
+        "MOONSTAR",
+        "moonstar.co.jp"
+      ],
+      "industry": "manufacturing",
+      "country": "JP",
+      "title": "株式会社ムーンスター システムサーバーへの不正アクセスによる顧客情報漏えい",
+      "summary": "システムサーバーが外部から不正アクセスを受け、オンラインストア利用者の氏名・住所・電話番号・メールアドレス・過去の注文情報が漏えいした可能性。対象は最大 59 万 3 千人。注文情報を記載したなりすましメールが顧客に届いたことで窃取と判断した。",
+      "cause": "unauthorized_access",
+      "vector": "システムサーバーへの外部からの不正ログインと情報取得（技術的詳細は非公開）",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "other"
+      ],
+      "affected": 593000,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-05-14",
+      "detected_at": null,
+      "disclosed_at": "2026-03-26",
+      "status": "reported",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ムーンスター",
+          "url": "https://www.moonstar.co.jp/information/2026/10/gg.html",
+          "published_at": "2026-10-15",
+          "title": "【重要】弊社システムサーバーに対する不正アクセスの疑いに関するお知らせ【第3報】"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ムーンスター",
+          "url": "https://www.moonstar.co.jp/information/2026/10/post-4.html",
+          "published_at": "2026-10-02",
+          "title": "【重要】弊社システムサーバーに対する不正アクセスの疑いに関するお知らせ【第2報】"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/190996",
+          "published_at": "2026-10-16",
+          "title": "個人情報が流出、顧客宛のなりすましメールに過去の注文情報 - ムーンスター"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-03-26",
+          "kind": "disclosed",
+          "text": "サーバーへの不正アクセスの疑いを第 1 報として公表（第 1 報本文は未確認、第 3 報の経緯記載による）",
+          "source": 0
+        },
+        {
+          "date": "2026-05-14",
+          "kind": "occurred",
+          "text": "5 月 14 日から 19 日にかけて個人情報が漏えいした可能性が高いとされる",
+          "source": 0
+        },
+        {
+          "date": null,
+          "kind": "detected",
+          "text": "9 月 20 日前後、顧客の問い合わせで過去の注文情報を記載したなりすましメールが判明",
+          "source": 0
+        },
+        {
+          "date": "2026-10-02",
+          "kind": "updated",
+          "text": "第 2 報。顧客情報の一部が閲覧・取得され漏えいの可能性があると公表（件数は未記載）",
+          "source": 1
+        },
+        {
+          "date": "2026-10-15",
+          "kind": "updated",
+          "text": "第 3 報。対象を最大 59 万 3 千人とし、個人情報保護委員会へ報告",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "ec-site",
+        "phishing-mail",
+        "order-history"
+      ],
+      "created_at": "2026-10-17",
+      "updated_at": "2026-10-17"
+    }
+  ]
+}

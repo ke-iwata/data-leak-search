@@ -1,0 +1,236 @@
+{
+  "month": "2026-10",
+  "incidents": [
+    {
+      "id": "2026-10-15-sourcenext",
+      "org": "sourcenext",
+      "org_name": "ソースネクスト株式会社",
+      "org_aliases": [
+        "ソースネクスト",
+        "SOURCENEXT",
+        "sourcenext.com"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "ソースネクスト 会員情報管理システムへの不正アクセスによる会員情報流出の可能性",
+      "summary": "会員情報を取得する API が不正に利用され、会員情報 2,251 万 9,960 件が流出した可能性。メールアドレス・パスワード・氏名・住所などを含み、項目は会員ごとに異なる。クレジットカード情報は対象システムに保存されておらず対象外。",
+      "cause": "unauthorized_access",
+      "vector": "会員情報取得用 API の不正利用",
+      "data_types": [
+        "email",
+        "credential",
+        "name",
+        "address",
+        "phone",
+        "birthday",
+        "other"
+      ],
+      "affected": 22519960,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-10-09",
+      "detected_at": "2026-10-13",
+      "disclosed_at": "2026-10-15",
+      "status": "reported",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "ソースネクスト株式会社",
+          "url": "https://www.sourcenext.com/support/i/2026/1015_info/",
+          "published_at": "2026-10-15",
+          "title": "当社サイトへの不正アクセスによるお客様情報流出のお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191549",
+          "published_at": "2026-10-16",
+          "title": "会員情報約2252万件が流出した可能性 - ソースネクスト"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-09",
+          "kind": "occurred",
+          "text": "会員情報取得 API の不正利用が始まったとみられる",
+          "source": 0
+        },
+        {
+          "date": "2026-10-13",
+          "kind": "detected",
+          "text": "不正アクセスを確認し、同日中に封じ込めを完了",
+          "source": 0
+        },
+        {
+          "date": "2026-10-15",
+          "kind": "disclosed",
+          "text": "第一報を公表。全会員のパスワードを変更済みとし再設定を案内。個人情報保護委員会へ報告",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "api-abuse",
+        "member-info",
+        "password-reset"
+      ],
+      "created_at": "2026-10-17",
+      "updated_at": "2026-10-17"
+    },
+    {
+      "id": "2026-10-15-bk-japan",
+      "org": "bk-japan",
+      "org_name": "ビーケー・ジャパン",
+      "org_aliases": [
+        "バーガーキング",
+        "Burger King",
+        "ビーケー・ジャパン",
+        "burgerking.co.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "ビーケー・ジャパン バーガーキング公式アプリへの不正アクセスによる会員情報流出",
+      "summary": "バーガーキング公式アプリの会員情報管理システムが不正アクセスを受け、会員情報約 1,118 万件が流出。氏名・電話番号・メールアドレス・生年月日などを含む。クレジットカード番号は保持しておらず、パスワードの流出は確認されていないとしている。",
+      "cause": "unauthorized_access",
+      "vector": "公式アプリの会員情報管理システムへの不正アクセス（詳細は調査中）",
+      "data_types": [
+        "name",
+        "phone",
+        "email",
+        "birthday",
+        "other"
+      ],
+      "affected": 11180000,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-10-02",
+      "detected_at": "2026-10-13",
+      "disclosed_at": "2026-10-15",
+      "status": "reported",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "ビーケー・ジャパン",
+          "url": "https://www.burgerking.co.jp/images/notice/2026/10/15/d4d114ca-ebd7-4f3d-94ef-c4ea7a84a139.pdf",
+          "published_at": "2026-10-15",
+          "title": "公式アプリ会員情報の流出に関するお知らせ（画像 PDF のため本文未確認）"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "INTERNET Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2148486.html",
+          "published_at": "2026-10-15",
+          "title": "バーガーキング、1118万件の会員情報流出 メールや電話番号など"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191546",
+          "published_at": "2026-10-16",
+          "title": "アプリ会員の個人情報が流出、詳細を調査 - バーガーキング"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-02",
+          "kind": "occurred",
+          "text": "10 月 2 日から 7 日にかけて不正アクセスが行われた",
+          "source": 1
+        },
+        {
+          "date": "2026-10-13",
+          "kind": "detected",
+          "text": "会員情報の漏えいが判明し、アクセス元の通信を遮断",
+          "source": 1
+        },
+        {
+          "date": "2026-10-15",
+          "kind": "disclosed",
+          "text": "公表。個人情報保護委員会へ報告し、対象会員にメールで案内。公式 PDF は画像のため本文は報道で確認",
+          "source": 2
+        }
+      ],
+      "keywords": [
+        "mobile-app",
+        "member-info"
+      ],
+      "created_at": "2026-10-17",
+      "updated_at": "2026-10-17"
+    },
+    {
+      "id": "2026-10-14-aena",
+      "org": "aena",
+      "org_name": "株式会社アエナ",
+      "org_aliases": [
+        "アエナ",
+        "AENA",
+        "aena.co.jp"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "株式会社アエナ EC アプリへの不正アクセスによる会員情報流出の可能性",
+      "summary": "EC アプリが機械的な連続アクセスによる不正アクセスを受け、最大 81 万 7,215 人分の会員マイページが閲覧された可能性。氏名・住所・電話番号・生年月日やカードの下 4 桁・有効期限・名義を含むが、カード番号の全桁・セキュリティコード・パスワードは対象外としている。",
+      "cause": "unauthorized_access",
+      "vector": "EC アプリへの機械的な連続アクセスによる会員マイページの不正閲覧",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "birthday",
+        "card",
+        "other"
+      ],
+      "affected": 817215,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-10-13",
+      "disclosed_at": "2026-10-14",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社アエナ",
+          "url": "https://www.aena.co.jp/news/detail/7826/",
+          "published_at": "2026-10-14",
+          "title": "外部からの不正アクセスによるお客様情報流出の可能性について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191554",
+          "published_at": "2026-10-16",
+          "title": "ECアプリに不正アクセス、会員情報流出の可能性 - アエナ"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-13",
+          "kind": "detected",
+          "text": "システムログから会員マイページの不正閲覧が判明。EC サイトへのアクセスを遮断",
+          "source": 0
+        },
+        {
+          "date": "2026-10-14",
+          "kind": "disclosed",
+          "text": "第一報を公表。原因は調査中で、対象の可能性がある会員に個別メールで案内",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "mobile-app",
+        "ec-site",
+        "member-info"
+      ],
+      "created_at": "2026-10-17",
+      "updated_at": "2026-10-17"
+    }
+  ]
+}
