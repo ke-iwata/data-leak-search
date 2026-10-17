@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-18",
+  "generated_at": "2026-10-18T05:10:00+09:00",
+  "stats": {
+    "collected": 5,
+    "candidates": 4,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "新規なし。候補 4 件はいずれも前日に処理済みの記事（バーガーキング、アエナ、ムーンスター、IPA 相談窓口）で、続報に当たる新しい情報は無かった。"
+    }
+  ],
+  "new": [],
+  "updated": [],
+  "skipped": []
+}
