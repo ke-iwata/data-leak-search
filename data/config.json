@@ -1,0 +1,59 @@
+{
+  "title": "data-leak-search",
+  "timezone": "Asia/Tokyo",
+  "causes": [
+    {"id": "unauthorized_access", "label": "不正アクセス", "color": "#3987e5"},
+    {"id": "ransomware", "label": "ランサムウェア", "color": "#d95926"},
+    {"id": "misdelivery", "label": "誤送信・誤公開", "color": "#199e70"},
+    {"id": "lost_device", "label": "紛失・盗難", "color": "#c98500"},
+    {"id": "insider", "label": "内部不正・持ち出し", "color": "#d55181"},
+    {"id": "other", "label": "その他・不明", "color": "#8a8a8a"}
+  ],
+  "industries": [
+    {"id": "public", "label": "官公庁・自治体"},
+    {"id": "education", "label": "教育"},
+    {"id": "medical", "label": "医療・福祉"},
+    {"id": "finance", "label": "金融・保険"},
+    {"id": "retail", "label": "小売・EC"},
+    {"id": "manufacturing", "label": "製造"},
+    {"id": "it", "label": "IT・通信"},
+    {"id": "service", "label": "サービス・その他"}
+  ],
+  "data_types": [
+    {"id": "name", "label": "氏名", "sensitive": false},
+    {"id": "address", "label": "住所", "sensitive": false},
+    {"id": "phone", "label": "電話番号", "sensitive": false},
+    {"id": "email", "label": "メールアドレス", "sensitive": false},
+    {"id": "birthday", "label": "生年月日", "sensitive": false},
+    {"id": "credential", "label": "ID・パスワード", "sensitive": true},
+    {"id": "card", "label": "クレジットカード", "sensitive": true},
+    {"id": "bank", "label": "口座情報", "sensitive": true},
+    {"id": "mynumber", "label": "マイナンバー", "sensitive": true},
+    {"id": "health", "label": "健康・医療情報", "sensitive": true},
+    {"id": "internal_doc", "label": "社内文書・取引情報", "sensitive": false},
+    {"id": "other", "label": "その他", "sensitive": false}
+  ],
+  "statuses": ["disclosed", "investigating", "reported", "closed", "unconfirmed"],
+  "timeline_kinds": ["occurred", "detected", "disclosed", "updated", "report_filed", "resolved"],
+  "leak_keywords": [
+    "漏えい", "漏洩", "流出", "不正アクセス", "ランサムウェア", "紛失", "誤送信", "誤公開", "誤って", "閲覧可能", "閲覧できる状態",
+    "改ざん", "なりすまし", "持ち出し", "盗難", "置き忘れ", "情報漏", "個人情報",
+    "breach", "leak", "leaked", "ransomware", "exposed", "unauthorized access"
+  ],
+  "exclude_keywords": [
+    "セミナー", "ウェビナー", "製品紹介", "新製品", "リリースノート", "求人", "採用", "連載", "脆弱性情報", "注意喚起（メール）"
+  ],
+  "sources": [
+    {"id": "security_next", "name": "Security NEXT", "kind": "rss", "trust": "media", "url": "https://www.security-next.com/feed"},
+    {"id": "piyolog", "name": "piyolog", "kind": "rss", "trust": "media", "url": "https://piyolog.hatenadiary.jp/rss"},
+    {"id": "jpcert", "name": "JPCERT/CC", "kind": "rss", "trust": "authority", "url": "https://www.jpcert.or.jp/rss/jpcert.rdf"},
+    {"id": "ipa_alert", "name": "IPA 注意喚起", "kind": "rss", "trust": "authority", "url": "https://www.ipa.go.jp/security/alert-rss.rdf"},
+    {"id": "ppc_press", "name": "個人情報保護委員会 報道発表", "kind": "html", "trust": "authority", "url": "https://www.ppc.go.jp/news/press/", "parser": "time_link"},
+    {"id": "ppc_news", "name": "個人情報保護委員会 お知らせ", "kind": "html", "trust": "authority", "url": "https://www.ppc.go.jp/news/", "parser": "time_link"},
+    {"id": "hibp", "name": "Have I Been Pwned", "kind": "hibp", "trust": "aggregator", "url": "https://haveibeenpwned.com/api/v3/breaches"}
+  ],
+  "matching": {
+    "update_window_days": 30,
+    "min_org_name_len": 2
+  }
+}

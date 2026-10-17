@@ -1,0 +1,61 @@
+name: Publish site
+
+# main への push、または Claude Code ルーチンが push した claude/** ブランチで実行。
+# claude/** は main にマージしたあと、main を対象にこのワークフローを起動し直して公開する
+# （github-pages 環境は main からのデプロイしか受け付けず、GITHUB_TOKEN の push では再実行されないため）。
+on:
+  push:
+    branches: [main, "claude/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    if: startsWith(github.ref_name, 'claude/')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - name: Merge routine branch into main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin "${GITHUB_REF_NAME}"
+          git merge --no-edit "origin/${GITHUB_REF_NAME}"
+          python3 scripts/update_stats.py --check-only
+          git push origin main
+          git push origin --delete "${GITHUB_REF_NAME}" || true
+      - name: Publish main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --repo "${GITHUB_REPOSITORY}" --ref main
+
+  deploy:
+    if: github.ref_name == 'main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Validate data
+        run: python3 scripts/update_stats.py --check-only
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4

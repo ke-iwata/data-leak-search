@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>data-leak-search</title>
+<meta name="description" content="情報漏洩の公開情報を集約・検索する自分用サイト">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1a1a19">
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #1a1a19; color: #f0efec; font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans JP", sans-serif; }
+  main { max-width: 560px; padding: 32px 16px; }
+  h1 { font-size: 22px; margin: 0 0 8px; }
+  p { color: #c3c2b7; line-height: 1.7; margin: 0 0 12px; }
+  a { color: #5598e7; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; color: #f0efec; }
+  ul { padding-left: 1.2em; color: #c3c2b7; }
+</style>
+</head>
+<body>
+<main>
+  <h1>data-leak-search</h1>
+  <p>情報漏洩の公開情報を毎朝集めて事案台帳として蓄積するサイト。画面は準備中で、いまはデータだけ公開しています。</p>
+  <ul>
+    <li><a href="data/index.json"><code>data/index.json</code></a> 事案のインデックス</li>
+    <li><a href="data/stats.json"><code>data/stats.json</code></a> 集計</li>
+    <li><a href="data/orgs.json"><code>data/orgs.json</code></a> 組織</li>
+  </ul>
+  <p>公開情報の集約であり正確性を保証しません。誤りは <a href="https://github.com/ke-iwata/data-leak-search/issues">GitHub Issue</a> へ。</p>
+</main>
+</body>
+</html>
