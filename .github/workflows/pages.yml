@@ -54,6 +54,8 @@ jobs:
       - name: Validate data
         run: python3 scripts/update_stats.py --check-only
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true   # 初回は Pages を Actions 側で有効化する（Settings で済んでいれば何もしない）
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
