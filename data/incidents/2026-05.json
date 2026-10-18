@@ -1,0 +1,87 @@
+{
+  "month": "2026-05",
+  "incidents": [
+    {
+      "id": "2026-05-17-gites-de-france",
+      "org": "gites-de-france",
+      "org_name": "Gîtes de France",
+      "org_aliases": [
+        "Gites de France",
+        "gites-de-france.com"
+      ],
+      "industry": "service",
+      "country": "FR",
+      "title": "Gîtes de France 外部委託先システム経由の不正アクセスによる予約者情報流出",
+      "summary": "フランスの貸別荘ネットワーク Gîtes de France の一部県のサービスで予約者情報が不正に取得された。同ネットワークは原因を県の予約センターが使う外部 IT 事業者のソフトウェアとし、銀行情報は含まれないとしている。HIBP には 117,574 件のメールアドレスが氏名・電話番号・住所・予約情報とともに登録された。",
+      "cause": "unauthorized_access",
+      "vector": "一部の県予約センターが利用する外部 IT 事業者（Itea）のソフトウェア経由",
+      "data_types": [
+        "name",
+        "email",
+        "phone",
+        "address",
+        "other"
+      ],
+      "affected": 117574,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-05-16",
+      "detected_at": null,
+      "disclosed_at": "2026-05-17",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Economie Matin",
+          "url": "https://www.economiematin.fr/?p=221403",
+          "published_at": "2026-05-18",
+          "title": "Gîtes de France victime d'une cyberattaque de grande ampleur"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Clubic",
+          "url": "https://www.clubic.com/actualite-613192-hecatombe-dans-le-secteur-du-tourisme-francais-avec-plusieurs-grands-noms-frappes-par-des-fuites-de-donnees.html",
+          "published_at": "2026-05-18",
+          "title": "Hécatombe dans le secteur du tourisme français avec plusieurs grands noms frappés par des fuites de données"
+        },
+        {
+          "role": "secondary",
+          "trust": "aggregator",
+          "publisher": "Have I Been Pwned",
+          "url": "https://haveibeenpwned.com/Breach/GitesDeFrance",
+          "published_at": "2026-10-18",
+          "title": "Gîtes de France (gites-de-france.com) — 117,574 accounts"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-05-16",
+          "kind": "occurred",
+          "text": "攻撃が行われたと報道（HIBP の侵害日も同日）",
+          "source": 0
+        },
+        {
+          "date": "2026-05-17",
+          "kind": "disclosed",
+          "text": "Gîtes de France が声明で事案を認め、外部 IT 事業者が原因で一部の県のみが対象、銀行情報は取得されていないと説明。告訴の方針も報じられた。組織自身の声明 URL は確認できず",
+          "source": 0
+        },
+        {
+          "date": "2026-10-18",
+          "kind": "updated",
+          "text": "HIBP に登録。メールアドレス 117,574 件。報道では約 38.9 万人とする数字もあるが、出所（組織か攻撃者・追跡サイトか）が記事により異なり未確認のため affected には採らない",
+          "source": 2
+        }
+      ],
+      "keywords": [
+        "supply-chain",
+        "booking-info",
+        "travel"
+      ],
+      "created_at": "2026-10-19",
+      "updated_at": "2026-10-19"
+    }
+  ]
+}

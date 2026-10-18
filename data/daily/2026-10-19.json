@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-19",
+  "generated_at": "2026-10-19T05:20:00+09:00",
+  "stats": {
+    "collected": 4,
+    "candidates": 1,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "国内の新規事案はなし。HIBP に仏の貸別荘ネットワーク Gîtes de France（2026 年 5 月公表、外部 IT 事業者経由）が登録され、メールアドレス 117,574 件を含む予約者情報として台帳に追加した。",
+      "incidents": [
+        "2026-05-17-gites-de-france"
+      ]
+    }
+  ],
+  "new": [
+    "2026-05-17-gites-de-france"
+  ],
+  "updated": [],
+  "skipped": []
+}

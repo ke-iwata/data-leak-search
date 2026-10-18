@@ -15,6 +15,21 @@
   "last": "2026-03-26",
   "affected_total": 593000
  },
+ "gites-de-france": {
+  "name": "Gîtes de France",
+  "aliases": [
+   "Gites de France",
+   "gites-de-france.com"
+  ],
+  "industry": "service",
+  "country": "FR",
+  "incidents": [
+   "2026-05-17-gites-de-france"
+  ],
+  "first": "2026-05-17",
+  "last": "2026-05-17",
+  "affected_total": 117574
+ },
  "aena": {
   "name": "株式会社アエナ",
   "aliases": [

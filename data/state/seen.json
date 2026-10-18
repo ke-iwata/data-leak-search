@@ -27,6 +27,18 @@
   "incident": "2026-10-14-aena",
   "at": "2026-10-16"
  },
+ "https://www.economiematin.fr/?p=221403": {
+  "incident": "2026-05-17-gites-de-france",
+  "at": "2026-05-18"
+ },
+ "https://www.clubic.com/actualite-613192-hecatombe-dans-le-secteur-du-tourisme-francais-avec-plusieurs-grands-noms-frappes-par-des-fuites-de-donnees.html": {
+  "incident": "2026-05-17-gites-de-france",
+  "at": "2026-05-18"
+ },
+ "https://haveibeenpwned.com/Breach/GitesDeFrance": {
+  "incident": "2026-05-17-gites-de-france",
+  "at": "2026-10-18"
+ },
  "https://www.moonstar.co.jp/information/2026/10/gg.html": {
   "incident": "2026-03-26-moonstar",
   "at": "2026-10-15"
