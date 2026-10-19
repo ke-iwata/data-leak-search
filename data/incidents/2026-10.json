@@ -2,6 +2,393 @@
   "month": "2026-10",
   "incidents": [
     {
+      "id": "2026-10-09-coconala",
+      "org": "coconala",
+      "org_name": "株式会社ココナラ",
+      "org_aliases": [
+        "ココナラ",
+        "coconala",
+        "ココナラスキルマーケット",
+        "coconala.com",
+        "coconala.co.jp"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "株式会社ココナラ「ココナラスキルマーケット」への不正アクセスによる履歴書等の漏えい",
+      "summary": "スキル売買サービス「ココナラスキルマーケット」が不正アクセスを受け、一部会員が登録した履歴書 449 件と職務経歴書関連書類 1,845 件が外部に持ち出された。件数は書類の数で、対象人数は公表されていない。クレジットカード情報やパスワードは対象外。",
+      "cause": "unauthorized_access",
+      "vector": "システムの脆弱性を突いた外部からの不正アクセス（具体的な脆弱性は非公表）",
+      "data_types": [
+        "other"
+      ],
+      "affected": 2294,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-10-08",
+      "detected_at": "2026-10-08",
+      "disclosed_at": "2026-10-09",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ココナラ",
+          "url": "https://www.coconala.co.jp/news-20261009/",
+          "published_at": "2026-10-09",
+          "title": "「ココナラスキルマーケット」への不正アクセスによる個人情報漏洩に関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191329",
+          "published_at": "2026-10-19",
+          "title": "「ココナラスキルマーケット」に不正アクセス - 履歴書など流出"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-08",
+          "kind": "occurred",
+          "text": "未明に不正アクセスを検知して遮断したが、同日午後に再び不正アクセスを受ける",
+          "source": 0
+        },
+        {
+          "date": "2026-10-08",
+          "kind": "detected",
+          "text": "同日 15 時ごろ個人情報の持ち出しの形跡を確認。攻撃経路を遮断し、同日夜に脆弱性の修正を完了",
+          "source": 0
+        },
+        {
+          "date": "2026-10-09",
+          "kind": "disclosed",
+          "text": "第一報を公表。警察と個人情報保護委員会へ報告する方針。書類の記載項目は対象者への個別連絡で案内するとしている",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "resume",
+        "member-info"
+      ],
+      "created_at": "2026-10-20",
+      "updated_at": "2026-10-20"
+    },
+    {
+      "id": "2026-10-06-nimoca",
+      "org": "nimoca",
+      "org_name": "株式会社ニモカ",
+      "org_aliases": [
+        "ニモカ",
+        "nimoca",
+        "nimoca.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "株式会社ニモカ nimoca 利用履歴照会サービスへの不正アクセスによる情報漏えい",
+      "summary": "交通系 IC カード「nimoca」の利用履歴照会サービスが第三者の攻撃を受け、登録情報の一部を含む自動送信メールが不正に送られ 521 件が漏えい。対象は nimoca カード番号・生年月日・登録メールアドレスで、氏名・住所・利用履歴の漏えいは確認されていない。",
+      "cause": "unauthorized_access",
+      "vector": "公開 Web サービス（利用履歴照会）への攻撃。サービスの自動送信メール機能を悪用し登録情報入りのメールを送信させた",
+      "data_types": [
+        "birthday",
+        "email",
+        "other"
+      ],
+      "affected": 521,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-10-04",
+      "detected_at": "2026-10-04",
+      "disclosed_at": "2026-10-06",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ニモカ",
+          "url": "https://www.nimoca.jp/storage/files/information/107/20261006.pdf",
+          "published_at": "2026-10-06",
+          "title": "nimoca利用履歴照会サービスへの第三者からの不正アクセス（公開WEBサービスへの攻撃）による情報漏えい"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191145",
+          "published_at": "2026-10-19",
+          "title": "交通系IC「nimoca」の利用履歴照会サービスで個人情報が流出"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-04",
+          "kind": "occurred",
+          "text": "0 時ごろから不正アクセスが続く（17 時 40 分のサービス停止まで）",
+          "source": 0
+        },
+        {
+          "date": "2026-10-04",
+          "kind": "detected",
+          "text": "利用者から「身に覚えのないメールが届いた」との問い合わせで調査を開始。17 時 40 分に利用履歴照会サービスを停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-06",
+          "kind": "disclosed",
+          "text": "第一報を公表。漏えい 521 件",
+          "source": 0
+        },
+        {
+          "date": "2026-10-15",
+          "kind": "updated",
+          "text": "プログラムの修正とセキュリティ対策を行い、利用履歴照会サービスを再開（報道による）",
+          "source": 1
+        }
+      ],
+      "keywords": [
+        "transit-ic-card",
+        "web-service"
+      ],
+      "created_at": "2026-10-20",
+      "updated_at": "2026-10-20"
+    },
+    {
+      "id": "2026-10-16-fancl",
+      "org": "fancl",
+      "org_name": "株式会社ファンケル",
+      "org_aliases": [
+        "ファンケル",
+        "FANCL",
+        "fancl.jp",
+        "fancl.co.jp"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "株式会社ファンケル EC サイトへの不正アクセスによる会員情報漏えい",
+      "summary": "EC サイトが 10 月 3〜10 日に不正アクセスを受け、会員 368,184 名分（393,785 件）の情報が外部に漏えい。氏名・住所・電話番号・生年月日・メールアドレスのほか、一部会員のサブメールアドレス用 2 次パスワード（ハッシュ化）を含む。決済情報とメインのパスワードは対象外。子会社アテニアと同日に共同で公表。",
+      "cause": "unauthorized_access",
+      "vector": "EC サイトの一部機能が悪用された（攻撃の詳細は非開示。当該機能を停止）",
+      "data_types": [
+        "email",
+        "name",
+        "address",
+        "phone",
+        "birthday",
+        "credential",
+        "other"
+      ],
+      "affected": 368184,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-10-03",
+      "detected_at": "2026-10-15",
+      "disclosed_at": "2026-10-16",
+      "status": "reported",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ファンケル・株式会社アテニア",
+          "url": "https://www.fancl.jp/news/pdf/husei.pdf",
+          "published_at": "2026-10-16",
+          "title": "第三者による不正アクセスに伴う個人情報漏えいに関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191600",
+          "published_at": "2026-10-19",
+          "title": "ファンケルとアテニア、eコマースサイトの会員情報が流出"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-03",
+          "kind": "occurred",
+          "text": "EC サイトへの不正アクセスが始まる（10 月 10 日まで）",
+          "source": 0
+        },
+        {
+          "date": "2026-10-15",
+          "kind": "detected",
+          "text": "内部調査で不正アクセスが判明。緊急対策本部を設置し、原因となった機能を停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-16",
+          "kind": "disclosed",
+          "text": "子会社アテニアと共同で第一報を公表。同日、個人情報保護委員会と警察へ報告・相談",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "ec-site",
+        "member-info"
+      ],
+      "created_at": "2026-10-20",
+      "updated_at": "2026-10-20"
+    },
+    {
+      "id": "2026-10-16-attenir",
+      "org": "attenir",
+      "org_name": "株式会社アテニア",
+      "org_aliases": [
+        "アテニア",
+        "Attenir",
+        "attenir.co.jp"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "株式会社アテニア EC サイトへの不正アクセスによる会員情報漏えい",
+      "summary": "EC サイトが 10 月 3〜10 日に不正アクセスを受け、会員 417,312 名分（441,162 件）の情報が外部に漏えい。氏名・住所・電話番号・生年月日・メールアドレスのほか、一部会員のサブメールアドレス用 2 次パスワード（ハッシュ化）を含む。決済情報とメインのパスワードは対象外。親会社ファンケルと同日に共同で公表。",
+      "cause": "unauthorized_access",
+      "vector": "EC サイトの一部機能が悪用された（攻撃の詳細は非開示。当該機能を停止）",
+      "data_types": [
+        "email",
+        "name",
+        "address",
+        "phone",
+        "birthday",
+        "credential",
+        "other"
+      ],
+      "affected": 417312,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-10-03",
+      "detected_at": "2026-10-15",
+      "disclosed_at": "2026-10-16",
+      "status": "reported",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ファンケル・株式会社アテニア",
+          "url": "https://www.fancl.jp/news/pdf/husei.pdf",
+          "published_at": "2026-10-16",
+          "title": "第三者による不正アクセスに伴う個人情報漏えいに関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191600",
+          "published_at": "2026-10-19",
+          "title": "ファンケルとアテニア、eコマースサイトの会員情報が流出"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-03",
+          "kind": "occurred",
+          "text": "EC サイトへの不正アクセスが始まる（10 月 10 日まで）",
+          "source": 0
+        },
+        {
+          "date": "2026-10-15",
+          "kind": "detected",
+          "text": "内部調査で不正アクセスが判明。緊急対策本部を設置し、原因となった機能を停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-16",
+          "kind": "disclosed",
+          "text": "親会社ファンケルと共同で第一報を公表。同日、個人情報保護委員会と警察へ報告・相談",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "ec-site",
+        "member-info"
+      ],
+      "created_at": "2026-10-20",
+      "updated_at": "2026-10-20"
+    },
+    {
+      "id": "2026-10-16-nttsolmare",
+      "org": "nttsolmare",
+      "org_name": "NTTソルマーレ株式会社",
+      "org_aliases": [
+        "NTTソルマーレ",
+        "コミックシーモア",
+        "Comic Cmoa",
+        "cmoa.jp",
+        "nttsolmare.com"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "NTTソルマーレ 電子書籍ストア「コミックシーモア」会員情報の流出",
+      "summary": "電子書籍ストア「コミックシーモア」の会員情報管理システムに第三者が不正アクセスし、メールアドレス・ハッシュ化パスワード・生年月日・性別・ニックネームが流出。対象人数は精査中で、一部システムログも閲覧・取得された。クレジットカード情報と購入履歴の流出は確認されていない。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "email",
+        "credential",
+        "birthday",
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-15",
+      "disclosed_at": "2026-10-16",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "NTTソルマーレ株式会社",
+          "url": "https://www.nttsolmare.com/press/2026/1016.html",
+          "published_at": "2026-10-16",
+          "title": "『コミックシーモア』会員情報の流出に関するお詫びとお願い (第2報)"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "NTTソルマーレ株式会社",
+          "url": "https://www.nttsolmare.com/press/2026/1016-1.html",
+          "published_at": "2026-10-18",
+          "title": "『コミックシーモア』会員情報の流出に関するご報告（第3報）"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191552",
+          "published_at": "2026-10-19",
+          "title": "「コミックシーモア」で情報流出 - 影響など調査"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-15",
+          "kind": "detected",
+          "text": "外部からの不正アクセスの可能性が高いと判断し、11 時 35 分にサービスを停止（同日は緊急メンテナンスとして告知）。発生時期は未公表",
+          "source": 0
+        },
+        {
+          "date": "2026-10-16",
+          "kind": "disclosed",
+          "text": "第 2 報で会員情報管理システムからの流出を確認したと公表。サービス再開時に全会員へパスワード再設定を求める方針",
+          "source": 0
+        },
+        {
+          "date": "2026-10-18",
+          "kind": "updated",
+          "text": "第 3 報。侵入経路と攻撃手法を特定し対策を実施。一部システムログの閲覧・取得も判明し、対象人数は引き続き精査中。サービスは停止継続",
+          "source": 1
+        }
+      ],
+      "keywords": [
+        "e-book",
+        "member-info",
+        "password-reset"
+      ],
+      "created_at": "2026-10-20",
+      "updated_at": "2026-10-20"
+    },
+    {
       "id": "2026-10-15-sourcenext",
       "org": "sourcenext",
       "org_name": "ソースネクスト株式会社",

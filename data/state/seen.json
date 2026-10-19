@@ -1,4 +1,24 @@
 {
+ "https://www.nttsolmare.com/press/2026/1016.html": {
+  "incident": "2026-10-16-nttsolmare",
+  "at": "2026-10-16"
+ },
+ "https://www.nttsolmare.com/press/2026/1016-1.html": {
+  "incident": "2026-10-16-nttsolmare",
+  "at": "2026-10-18"
+ },
+ "https://www.security-next.com/191552": {
+  "incident": "2026-10-16-nttsolmare",
+  "at": "2026-10-19"
+ },
+ "https://www.fancl.jp/news/pdf/husei.pdf": {
+  "incident": "2026-10-16-attenir",
+  "at": "2026-10-16"
+ },
+ "https://www.security-next.com/191600": {
+  "incident": "2026-10-16-attenir",
+  "at": "2026-10-19"
+ },
  "https://www.sourcenext.com/support/i/2026/1015_info": {
   "incident": "2026-10-15-sourcenext",
   "at": "2026-10-15"
@@ -26,6 +46,22 @@
  "https://www.security-next.com/191554": {
   "incident": "2026-10-14-aena",
   "at": "2026-10-16"
+ },
+ "https://www.coconala.co.jp/news-20261009": {
+  "incident": "2026-10-09-coconala",
+  "at": "2026-10-09"
+ },
+ "https://www.security-next.com/191329": {
+  "incident": "2026-10-09-coconala",
+  "at": "2026-10-19"
+ },
+ "https://www.nimoca.jp/storage/files/information/107/20261006.pdf": {
+  "incident": "2026-10-06-nimoca",
+  "at": "2026-10-06"
+ },
+ "https://www.security-next.com/191145": {
+  "incident": "2026-10-06-nimoca",
+  "at": "2026-10-19"
  },
  "https://www.economiematin.fr/?p=221403": {
   "incident": "2026-05-17-gites-de-france",

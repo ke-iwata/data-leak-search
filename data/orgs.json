@@ -30,6 +30,40 @@
   "last": "2026-05-17",
   "affected_total": 117574
  },
+ "nimoca": {
+  "name": "株式会社ニモカ",
+  "aliases": [
+   "ニモカ",
+   "nimoca",
+   "nimoca.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-10-06-nimoca"
+  ],
+  "first": "2026-10-06",
+  "last": "2026-10-06",
+  "affected_total": 521
+ },
+ "coconala": {
+  "name": "株式会社ココナラ",
+  "aliases": [
+   "ココナラ",
+   "coconala",
+   "ココナラスキルマーケット",
+   "coconala.com",
+   "coconala.co.jp"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-09-coconala"
+  ],
+  "first": "2026-10-09",
+  "last": "2026-10-09",
+  "affected_total": 2294
+ },
  "aena": {
   "name": "株式会社アエナ",
   "aliases": [
@@ -77,5 +111,56 @@
   "first": "2026-10-15",
   "last": "2026-10-15",
   "affected_total": 11180000
+ },
+ "nttsolmare": {
+  "name": "NTTソルマーレ株式会社",
+  "aliases": [
+   "NTTソルマーレ",
+   "コミックシーモア",
+   "Comic Cmoa",
+   "cmoa.jp",
+   "nttsolmare.com"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-10-16-nttsolmare"
+  ],
+  "first": "2026-10-16",
+  "last": "2026-10-16",
+  "affected_total": 0
+ },
+ "fancl": {
+  "name": "株式会社ファンケル",
+  "aliases": [
+   "ファンケル",
+   "FANCL",
+   "fancl.jp",
+   "fancl.co.jp"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-10-16-fancl"
+  ],
+  "first": "2026-10-16",
+  "last": "2026-10-16",
+  "affected_total": 368184
+ },
+ "attenir": {
+  "name": "株式会社アテニア",
+  "aliases": [
+   "アテニア",
+   "Attenir",
+   "attenir.co.jp"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-10-16-attenir"
+  ],
+  "first": "2026-10-16",
+  "last": "2026-10-16",
+  "affected_total": 417312
  }
 }
