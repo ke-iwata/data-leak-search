@@ -1,4 +1,28 @@
 {
+ "https://www.security-next.com/191652": {
+  "incident": "2026-10-20-ymir-link",
+  "at": "2026-10-20"
+ },
+ "https://www.security-next.com/191694": {
+  "incident": "2026-10-20-nec",
+  "at": "2026-10-20"
+ },
+ "https://www.nifty.co.jp/newsrelease/nifty202610195434.htm": {
+  "incident": "2026-10-19-nifty",
+  "at": "2026-10-19"
+ },
+ "https://www.security-next.com/191648": {
+  "incident": "2026-10-19-nifty",
+  "at": "2026-10-20"
+ },
+ "https://studio.design/ja/whats-new/unauthorized-access-2026-10": {
+  "incident": "2026-10-16-studio-inc",
+  "at": "2026-10-16"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/10/20/204342": {
+  "incident": "2026-10-16-studio-inc",
+  "at": "2026-10-20"
+ },
  "https://www.nttsolmare.com/press/2026/1016.html": {
   "incident": "2026-10-16-nttsolmare",
   "at": "2026-10-16"
@@ -26,6 +50,10 @@
  "https://www.security-next.com/191549": {
   "incident": "2026-10-15-sourcenext",
   "at": "2026-10-16"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/10/20/073243": {
+  "incident": "2026-10-15-sourcenext",
+  "at": "2026-10-20"
  },
  "https://www.burgerking.co.jp/images/notice/2026/10/15/d4d114ca-ebd7-4f3d-94ef-c4ea7a84a139.pdf": {
   "incident": "2026-10-15-bk-japan",
@@ -63,6 +91,14 @@
   "incident": "2026-10-06-nimoca",
   "at": "2026-10-19"
  },
+ "https://www.gogin.co.jp/newsrelease/common/attachmentfile/attachmentfile-file-4972.pdf": {
+  "incident": "2026-09-14-sanin-godo-bank",
+  "at": "2026-09-14"
+ },
+ "https://www.security-next.com/191332": {
+  "incident": "2026-09-14-sanin-godo-bank",
+  "at": "2026-10-20"
+ },
  "https://www.economiematin.fr/?p=221403": {
   "incident": "2026-05-17-gites-de-france",
   "at": "2026-05-18"
@@ -87,8 +123,24 @@
   "incident": "2026-03-26-moonstar",
   "at": "2026-10-16"
  },
+ "https://carsat-hdf.fr/files/live/sites/carsat-hdf/files/PDF/presse/240913%20CP%20Fuite%20donn%C3%A9es%20PPAS.pdf": {
+  "incident": "2024-09-13-cnav",
+  "at": "2024-09-13"
+ },
+ "https://haveibeenpwned.com/Breach/AssuranceRetraite": {
+  "incident": "2024-09-13-cnav",
+  "at": "2026-10-20"
+ },
  "https://www.security-next.com/191572": {
   "skipped": "IPA の相談窓口開設の告知で、個別事案ではない",
   "at": "2026-10-17"
+ },
+ "https://www.security-next.com/191660": {
+  "skipped": "競技イベントの告知で事案ではない",
+  "at": "2026-10-21"
+ },
+ "https://www.security-next.com/191645": {
+  "skipped": "脆弱性情報で事案ではない",
+  "at": "2026-10-21"
  }
 }

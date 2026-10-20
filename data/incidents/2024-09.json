@@ -1,0 +1,82 @@
+{
+  "month": "2024-09",
+  "incidents": [
+    {
+      "id": "2024-09-13-cnav",
+      "org": "cnav",
+      "org_name": "Caisse nationale d'assurance vieillesse（Cnav / L'Assurance retraite）",
+      "org_aliases": [
+        "Cnav",
+        "Assurance retraite",
+        "L'Assurance retraite",
+        "lassuranceretraite.fr"
+      ],
+      "industry": "public",
+      "country": "FR",
+      "title": "仏 Assurance retraite（Cnav）提携事業者向けポータル PPAS からの受給者情報流出",
+      "summary": "Cnav が運営する社会福祉提携事業者向け請求ポータル PPAS で、事業者アカウントのなりすましにより約 37 万人分の受給者データ（住所・社会保障番号・概算の収入額）が流出した。銀行・支払い情報は含まれないとしている。HIBP にはメールアドレス 70,372 件が氏名・生年月日・電話番号などとともに登録された。",
+      "cause": "unauthorized_access",
+      "vector": "社会福祉提携事業者のアカウントのなりすましによる PPAS ポータルへのアクセス",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "birthday",
+        "other"
+      ],
+      "affected": 370000,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2024-09-13",
+      "status": "reported",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "L'Assurance retraite（Cnav）",
+          "url": "https://carsat-hdf.fr/files/live/sites/carsat-hdf/files/PDF/presse/240913%20CP%20Fuite%20donn%C3%A9es%20PPAS.pdf",
+          "published_at": "2024-09-13",
+          "title": "Le portail en ligne PPAS … a été victime d’une fuite de données"
+        },
+        {
+          "role": "secondary",
+          "trust": "aggregator",
+          "publisher": "Have I Been Pwned",
+          "url": "https://haveibeenpwned.com/Breach/AssuranceRetraite",
+          "published_at": "2026-10-20",
+          "title": "Assurance Retraite (lassuranceretraite.fr) — 70,372 accounts"
+        }
+      ],
+      "timeline": [
+        {
+          "date": null,
+          "kind": "occurred",
+          "text": "2024 年 9 月に発生（HIBP の侵害日は 2024-09-01 とされるが日は未確認）",
+          "source": 1
+        },
+        {
+          "date": "2024-09-13",
+          "kind": "disclosed",
+          "text": "プレスリリースで公表。ポータルを停止し CNIL へ届出、告訴の方針。データの多くは古いものとした（リリース本文は年の記載がなく、ファイル名と報道から 2024 年と判断）",
+          "source": 0
+        },
+        {
+          "date": "2026-10-20",
+          "kind": "updated",
+          "text": "HIBP に登録。メールアドレス 70,372 件（公表の約 37 万人は受給者数）",
+          "source": 1
+        }
+      ],
+      "keywords": [
+        "account-takeover",
+        "pension",
+        "partner-portal"
+      ],
+      "created_at": "2026-10-21",
+      "updated_at": "2026-10-21"
+    }
+  ]
+}

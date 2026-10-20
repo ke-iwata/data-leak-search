@@ -1,4 +1,21 @@
 {
+ "cnav": {
+  "name": "Caisse nationale d'assurance vieillesse（Cnav / L'Assurance retraite）",
+  "aliases": [
+   "Cnav",
+   "Assurance retraite",
+   "L'Assurance retraite",
+   "lassuranceretraite.fr"
+  ],
+  "industry": "public",
+  "country": "FR",
+  "incidents": [
+   "2024-09-13-cnav"
+  ],
+  "first": "2024-09-13",
+  "last": "2024-09-13",
+  "affected_total": 370000
+ },
  "moonstar": {
   "name": "株式会社ムーンスター",
   "aliases": [
@@ -29,6 +46,22 @@
   "first": "2026-05-17",
   "last": "2026-05-17",
   "affected_total": 117574
+ },
+ "sanin-godo-bank": {
+  "name": "株式会社山陰合同銀行",
+  "aliases": [
+   "山陰合同銀行",
+   "ごうぎん",
+   "gogin.co.jp"
+  ],
+  "industry": "finance",
+  "country": "JP",
+  "incidents": [
+   "2026-09-14-sanin-godo-bank"
+  ],
+  "first": "2026-09-14",
+  "last": "2026-09-14",
+  "affected_total": 0
  },
  "nimoca": {
   "name": "株式会社ニモカ",
@@ -112,6 +145,21 @@
   "last": "2026-10-15",
   "affected_total": 11180000
  },
+ "studio-inc": {
+  "name": "Studio株式会社",
+  "aliases": [
+   "studio.design",
+   "STUDIO（ノーコード Web 制作）"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-16-studio-inc"
+  ],
+  "first": "2026-10-16",
+  "last": "2026-10-16",
+  "affected_total": 0
+ },
  "nttsolmare": {
   "name": "NTTソルマーレ株式会社",
   "aliases": [
@@ -162,5 +210,55 @@
   "first": "2026-10-16",
   "last": "2026-10-16",
   "affected_total": 417312
+ },
+ "nifty": {
+  "name": "ニフティ株式会社",
+  "aliases": [
+   "ニフティ",
+   "@nifty",
+   "nifty.co.jp",
+   "@nifty光"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-19-nifty"
+  ],
+  "first": "2026-10-19",
+  "last": "2026-10-19",
+  "affected_total": 542513
+ },
+ "ymir-link": {
+  "name": "株式会社ユミルリンク",
+  "aliases": [
+   "ユミルリンク",
+   "Ymir Link",
+   "ymir.co.jp",
+   "Cuenote"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-20-ymir-link"
+  ],
+  "first": "2026-10-20",
+  "last": "2026-10-20",
+  "affected_total": 9000000
+ },
+ "nec": {
+  "name": "日本電気株式会社",
+  "aliases": [
+   "NEC",
+   "日本電気",
+   "jpn.nec.com"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-20-nec"
+  ],
+  "first": "2026-10-20",
+  "last": "2026-10-20",
+  "affected_total": 0
  }
 }

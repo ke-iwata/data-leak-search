@@ -400,7 +400,7 @@
       "industry": "it",
       "country": "JP",
       "title": "ソースネクスト 会員情報管理システムへの不正アクセスによる会員情報流出の可能性",
-      "summary": "会員情報を取得する API が不正に利用され、会員情報 2,251 万 9,960 件が流出した可能性。メールアドレス・パスワード・氏名・住所などを含み、項目は会員ごとに異なる。クレジットカード情報は対象システムに保存されておらず対象外。",
+      "summary": "会員情報を取得する API が不正に利用され、会員情報 2,251 万 9,960 件が流出した可能性。メールアドレス・パスワード・氏名・住所などを含み、項目は会員ごとに異なる。クレジットカード情報は対象システムに保存されておらず対象外。報道によると、パスワードは旧方式で暗号化保存されており復号された状態で流出した。",
       "cause": "unauthorized_access",
       "vector": "会員情報取得用 API の不正利用",
       "data_types": [
@@ -435,6 +435,14 @@
           "url": "https://www.security-next.com/191549",
           "published_at": "2026-10-16",
           "title": "会員情報約2252万件が流出した可能性 - ソースネクスト"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/10/20/073243",
+          "published_at": "2026-10-20",
+          "title": "ソースネクストへの不正アクセスについてまとめてみた"
         }
       ],
       "timeline": [
@@ -455,6 +463,12 @@
           "kind": "disclosed",
           "text": "第一報を公表。全会員のパスワードを変更済みとし再設定を案内。個人情報保護委員会へ報告",
           "source": 0
+        },
+        {
+          "date": "2026-10-20",
+          "kind": "updated",
+          "text": "報道取材への同社説明として、パスワードは旧システムの方式で暗号化保存（ハッシュ化ではない）され、復号された状態で流出したとされる。10 月 16 日に所轄警察署へ相談、第三者調査を準備中。件数 2,251 万 9,960 件に変更なし",
+          "source": 2
         }
       ],
       "keywords": [
@@ -463,7 +477,7 @@
         "password-reset"
       ],
       "created_at": "2026-10-17",
-      "updated_at": "2026-10-17"
+      "updated_at": "2026-10-21"
     },
     {
       "id": "2026-10-15-bk-japan",
@@ -618,6 +632,280 @@
       ],
       "created_at": "2026-10-17",
       "updated_at": "2026-10-17"
+    },
+    {
+      "id": "2026-10-19-nifty",
+      "org": "nifty",
+      "org_name": "ニフティ株式会社",
+      "org_aliases": [
+        "ニフティ",
+        "@nifty",
+        "nifty.co.jp",
+        "@nifty光"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "ニフティ 回線申込・受付管理システムへの不正アクセスによる顧客情報流出の可能性",
+      "summary": "光回線サービスの申込情報を登録する社内の管理システムが外部からアクセスを受け、2019 年以降に同社サイト以外から申し込んだ顧客の情報最大 54 万 2,513 件が流出した可能性。氏名・住所・電話番号・メールアドレス・生年月日・性別・会員 ID を含み、口座・カード情報は保存されていない。",
+      "cause": "unauthorized_access",
+      "vector": "社内の回線申込・受付管理システムへの外部からのアクセス（侵入経路は非公表）",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "birthday",
+        "other"
+      ],
+      "affected": 542513,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-10-19",
+      "disclosed_at": "2026-10-19",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "ニフティ株式会社",
+          "url": "https://www.nifty.co.jp/newsrelease/nifty202610195434.htm",
+          "published_at": "2026-10-19",
+          "title": "【第一報】当社回線申込・受付管理システムへの不正アクセスの発生について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191648",
+          "published_at": "2026-10-20",
+          "title": "社内の光回線申込受付管理システムで侵害、影響を調査 - ニフティ"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-19",
+          "kind": "detected",
+          "text": "10 時 20 分頃、管理システムへの外部からのアクセスを確認し、接続元からの通信を遮断",
+          "source": 0
+        },
+        {
+          "date": "2026-10-19",
+          "kind": "disclosed",
+          "text": "第一報を公表。対象は @nifty光・@nifty MAX光・@nifty auひかりプラスの申込者。外部専門機関と調査し、個人情報保護委員会へ報告を進めるとした",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "member-info",
+        "isp",
+        "fiber-application"
+      ],
+      "created_at": "2026-10-21",
+      "updated_at": "2026-10-21"
+    },
+    {
+      "id": "2026-10-20-ymir-link",
+      "org": "ymir-link",
+      "org_name": "株式会社ユミルリンク",
+      "org_aliases": [
+        "ユミルリンク",
+        "Ymir Link",
+        "ymir.co.jp",
+        "Cuenote"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "ユミルリンク メール配信サービスのサーバへの不正アクセスによる情報流出",
+      "summary": "メール配信サービスのサーバが脆弱性を突かれて不正アクセスを受け、複数システムからメールアドレスなどを含むデータが外部に出力された。対象は 5 システムで計約 900 万件とみられ、詳細は精査中。",
+      "cause": "unauthorized_access",
+      "vector": "サーバ上のプログラムの脆弱性を悪用して侵入し、取得した従業員の認証情報で他システムへ横展開、不正プログラムを設置してデータベースから出力",
+      "data_types": [
+        "email",
+        "other"
+      ],
+      "affected": 9000000,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-10-16",
+      "detected_at": "2026-10-16",
+      "disclosed_at": "2026-10-20",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191652",
+          "published_at": "2026-10-20",
+          "title": "複数システムに不正アクセス、個人情報が流出 - ユミルリンク"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-16",
+          "kind": "detected",
+          "text": "10 月 16 日未明、一部システムへの不正アクセスを確認。サーバをネットワークから切り離した",
+          "source": 0
+        },
+        {
+          "date": "2026-10-20",
+          "kind": "disclosed",
+          "text": "報道で判明（同社サイト上の発表本文は確認できず、日付は報道日）。5 システムからのデータ出力、計約 900 万件とされ外部専門家と調査中",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "email-delivery",
+        "vulnerability-exploit",
+        "lateral-movement"
+      ],
+      "created_at": "2026-10-21",
+      "updated_at": "2026-10-21"
+    },
+    {
+      "id": "2026-10-20-nec",
+      "org": "nec",
+      "org_name": "日本電気株式会社",
+      "org_aliases": [
+        "NEC",
+        "日本電気",
+        "jpn.nec.com"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "NEC 開発・保守委託先へのサイバー攻撃による顧客システム障害と情報流出",
+      "summary": "システム開発・保守の委託先がサイバー攻撃を受けて正規アカウントの認証情報を窃取され、委託先端末から複数の顧客環境に不正アクセスされた。一部顧客でサーバのファイルが暗号化されて障害が発生し、情報共有用クラウドストレージから顧客保有の個人情報やシステム関連情報を含むファイルが流出した。",
+      "cause": "unauthorized_access",
+      "vector": "委託先から窃取された正規アカウントの認証情報で、委託先端末から顧客環境へアクセス",
+      "data_types": [
+        "internal_doc",
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-10-20",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191694",
+          "published_at": "2026-10-20",
+          "title": "NEC委託先にサイバー攻撃 - 顧客システムで障害、個人情報流出"
+        }
+      ],
+      "timeline": [
+        {
+          "date": null,
+          "kind": "occurred",
+          "text": "2026 年 9 月下旬、委託先がサイバー攻撃を受けた",
+          "source": 0
+        },
+        {
+          "date": "2026-10-20",
+          "kind": "disclosed",
+          "text": "報道で判明（NEC の発表本文は確認できず、日付は報道日）。影響を受けた顧客には個別に連絡し、個人情報の詳細は確定後に報告するとした",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "supply-chain",
+        "contractor",
+        "cloud-storage"
+      ],
+      "created_at": "2026-10-21",
+      "updated_at": "2026-10-21"
+    },
+    {
+      "id": "2026-10-16-studio-inc",
+      "org": "studio-inc",
+      "org_name": "Studio株式会社",
+      "org_aliases": [
+        "Studio株式会社",
+        "studio.design",
+        "STUDIO（ノーコード Web 制作）"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "Studio クラウド環境への不正アクセスによる顧客情報流出の可能性",
+      "summary": "ノーコード Web サイト制作サービス「Studio」の一部機能の脆弱性を突かれ、同社クラウド環境のデータを外部から取得できる状態になっていた。アカウント情報（ユーザー名・メールアドレス・ハッシュ化パスワード）、フォーム送信内容、外部サービスの API キーなどが対象で、全登録顧客に及ぶ可能性がある。件数は精査中。",
+      "cause": "unauthorized_access",
+      "vector": "Studio の一部機能の脆弱性を悪用してクラウド環境に侵入。復号鍵も読み取られたため暗号化データも対象",
+      "data_types": [
+        "email",
+        "credential",
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-09-30",
+      "detected_at": "2026-10-13",
+      "disclosed_at": "2026-10-16",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "Studio株式会社",
+          "url": "https://studio.design/ja/whats-new/unauthorized-access-2026-10",
+          "published_at": "2026-10-16",
+          "title": "【重要】不正アクセスによる情報流出に関するお詫びとお願い（第一報）"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/10/20/204342",
+          "published_at": "2026-10-20",
+          "title": "Studioへの不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "kind": "occurred",
+          "text": "確認できている不正アクセスの期間は 9 月 30 日〜10 月 1 日（日本時間）",
+          "source": 0
+        },
+        {
+          "date": "2026-10-13",
+          "kind": "detected",
+          "text": "社内調査で不正アクセスを確認。13〜14 日に脆弱性を修正し全ユーザーをログアウト",
+          "source": 0
+        },
+        {
+          "date": "2026-10-16",
+          "kind": "disclosed",
+          "text": "第一報を公表。取得の事実は未確認だが取得されたとみなして対応。件数は続報で公表するとした",
+          "source": 0
+        },
+        {
+          "date": "2026-10-17",
+          "kind": "updated",
+          "text": "暗号鍵と認証情報を切り替え、既存データの再暗号化を開始。フォーム機能利用者向けに個人情報保護委員会への報告について案内",
+          "source": 0
+        },
+        {
+          "date": "2026-10-20",
+          "kind": "updated",
+          "text": "個人情報保護委員会と協議のうえ、利用者は個別報告または同社との共同報告を選べると案内。報道では利用企業側の公表が多数確認されている",
+          "source": 1
+        }
+      ],
+      "keywords": [
+        "saas",
+        "no-code",
+        "vulnerability-exploit",
+        "api-key-exposure"
+      ],
+      "created_at": "2026-10-21",
+      "updated_at": "2026-10-21"
     }
   ]
 }

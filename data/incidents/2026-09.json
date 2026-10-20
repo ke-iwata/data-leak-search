@@ -1,0 +1,69 @@
+{
+  "month": "2026-09",
+  "incidents": [
+    {
+      "id": "2026-09-14-sanin-godo-bank",
+      "org": "sanin-godo-bank",
+      "org_name": "株式会社山陰合同銀行",
+      "org_aliases": [
+        "山陰合同銀行",
+        "ごうぎん",
+        "gogin.co.jp"
+      ],
+      "industry": "finance",
+      "country": "JP",
+      "title": "山陰合同銀行 業務委託先での業務用パソコン紛失",
+      "summary": "業務委託先が委託業務に使用していたパソコン 1 台を紛失した。顧客のメールアドレスが保存されていた可能性があるが、氏名・住所など顧客を特定できる情報は含まれず、不正利用の形跡は確認されていないとしている。件数は公表されていない。",
+      "cause": "lost_device",
+      "vector": "業務委託先での業務用パソコン 1 台の紛失（所在不明）",
+      "data_types": [
+        "email"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-09-14",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社山陰合同銀行",
+          "url": "https://www.gogin.co.jp/newsrelease/common/attachmentfile/attachmentfile-file-4972.pdf",
+          "published_at": "2026-09-14",
+          "title": "業務委託先におけるパソコンの紛失に関するご報告とお詫び"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191332",
+          "published_at": "2026-10-20",
+          "title": "委託先が顧客のメアド保存のPCを紛失 - 山陰合同銀"
+        }
+      ],
+      "timeline": [
+        {
+          "date": null,
+          "kind": "detected",
+          "text": "2026 年 9 月上旬、業務委託先からパソコン 1 台の紛失の報告を受けた（日は非公表）",
+          "source": 0
+        },
+        {
+          "date": "2026-09-14",
+          "kind": "disclosed",
+          "text": "調査継続中だが被害拡大防止のため公表。委託先の情報管理態勢を点検するとした",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "lost-pc",
+        "contractor"
+      ],
+      "created_at": "2026-10-21",
+      "updated_at": "2026-10-21"
+    }
+  ]
+}
