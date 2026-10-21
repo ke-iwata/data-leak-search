@@ -7,6 +7,14 @@
   "incident": "2026-10-20-nec",
   "at": "2026-10-20"
  },
+ "https://www.trustbank.co.jp/newsroom/newsrelease/news261020": {
+  "incident": "2026-10-19-trustbank",
+  "at": "2026-10-20"
+ },
+ "https://www.security-next.com/191714": {
+  "incident": "2026-10-19-trustbank",
+  "at": "2026-10-21"
+ },
  "https://www.nifty.co.jp/newsrelease/nifty202610195434.htm": {
   "incident": "2026-10-19-nifty",
   "at": "2026-10-19"
@@ -34,6 +42,10 @@
  "https://www.security-next.com/191552": {
   "incident": "2026-10-16-nttsolmare",
   "at": "2026-10-19"
+ },
+ "https://www.security-next.com/191717": {
+  "incident": "2026-10-16-iwai-cosmo-securities",
+  "at": "2026-10-21"
  },
  "https://www.fancl.jp/news/pdf/husei.pdf": {
   "incident": "2026-10-16-attenir",
@@ -91,6 +103,10 @@
   "incident": "2026-10-06-nimoca",
   "at": "2026-10-19"
  },
+ "https://www.security-next.com/191595": {
+  "incident": "2026-09-29-yamato-transport",
+  "at": "2026-10-21"
+ },
  "https://www.gogin.co.jp/newsrelease/common/attachmentfile/attachmentfile-file-4972.pdf": {
   "incident": "2026-09-14-sanin-godo-bank",
   "at": "2026-09-14"
@@ -142,5 +158,13 @@
  "https://www.security-next.com/191645": {
   "skipped": "脆弱性情報で事案ではない",
   "at": "2026-10-21"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/10/21/174516": {
+  "skipped": "PHP の脆弱性情報で事案ではない",
+  "at": "2026-10-22"
+ },
+ "https://www.ppc.go.jp/news/press/2026/261021_houdou": {
+  "skipped": "地方公共団体等の定期報告に関する発表で個別事案ではない",
+  "at": "2026-10-22"
  }
 }

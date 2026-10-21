@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-22",
+  "generated_at": "2026-10-22T05:40:00+09:00",
+  "stats": {
+    "collected": 19,
+    "candidates": 8,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 2
+  },
+  "digest": [
+    {
+      "text": "ふるさと納税サイト「ふるさとチョイス」で会員情報 4,454,097 件の流出をトラストバンクが公表。ハッシュ化パスワードを含み、関連サービスは停止中。",
+      "incidents": [
+        "2026-10-19-trustbank"
+      ]
+    },
+    {
+      "text": "ヤマト運輸「クロネコ代金後払いサービス」の調査結果で、購入者情報約 526 万件などの流出が判明（報道ベース）。",
+      "incidents": [
+        "2026-09-29-yamato-transport"
+      ]
+    },
+    {
+      "text": "岩井コスモ証券でネット取引システムの委託先が侵害され顧客 4,975 人の情報が流出、意図しない取引も確認と報道。NEC・ユミルリンクに続き委託先・サービス提供元経由の大規模事案が相次ぐ。",
+      "incidents": [
+        "2026-10-16-iwai-cosmo-securities",
+        "2026-10-20-nec",
+        "2026-10-20-ymir-link"
+      ]
+    }
+  ],
+  "new": [
+    "2026-10-19-trustbank",
+    "2026-10-16-iwai-cosmo-securities",
+    "2026-09-29-yamato-transport"
+  ],
+  "updated": [],
+  "skipped": [
+    {
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/10/21/174516",
+      "reason": "PHP の脆弱性情報で事案ではない"
+    },
+    {
+      "url": "https://www.ppc.go.jp/news/press/2026/261021_houdou",
+      "reason": "地方公共団体等の定期報告に関する発表で個別事案ではない"
+    }
+  ]
+}

@@ -63,6 +63,23 @@
   "last": "2026-09-14",
   "affected_total": 0
  },
+ "yamato-transport": {
+  "name": "ヤマト運輸株式会社",
+  "aliases": [
+   "ヤマト運輸",
+   "クロネコヤマト",
+   "クロネコ代金後払いサービス",
+   "kuronekoyamato.co.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-09-29-yamato-transport"
+  ],
+  "first": "2026-09-29",
+  "last": "2026-09-29",
+  "affected_total": 5260000
+ },
  "nimoca": {
   "name": "株式会社ニモカ",
   "aliases": [
@@ -178,6 +195,21 @@
   "last": "2026-10-16",
   "affected_total": 0
  },
+ "iwai-cosmo-securities": {
+  "name": "岩井コスモ証券株式会社",
+  "aliases": [
+   "岩井コスモ証券",
+   "iwaicosmo.co.jp"
+  ],
+  "industry": "finance",
+  "country": "JP",
+  "incidents": [
+   "2026-10-16-iwai-cosmo-securities"
+  ],
+  "first": "2026-10-16",
+  "last": "2026-10-16",
+  "affected_total": 4975
+ },
  "fancl": {
   "name": "株式会社ファンケル",
   "aliases": [
@@ -210,6 +242,23 @@
   "first": "2026-10-16",
   "last": "2026-10-16",
   "affected_total": 417312
+ },
+ "trustbank": {
+  "name": "株式会社トラストバンク",
+  "aliases": [
+   "トラストバンク",
+   "ふるさとチョイス",
+   "furusato-tax.jp",
+   "trustbank.co.jp"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-19-trustbank"
+  ],
+  "first": "2026-10-19",
+  "last": "2026-10-19",
+  "affected_total": 4454097
  },
  "nifty": {
   "name": "ニフティ株式会社",

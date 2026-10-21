@@ -906,6 +906,153 @@
       ],
       "created_at": "2026-10-21",
       "updated_at": "2026-10-21"
+    },
+    {
+      "id": "2026-10-19-trustbank",
+      "org": "trustbank",
+      "org_name": "株式会社トラストバンク",
+      "org_aliases": [
+        "トラストバンク",
+        "ふるさとチョイス",
+        "furusato-tax.jp",
+        "trustbank.co.jp"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "トラストバンク「ふるさとチョイス」不正アクセスによる会員情報流出",
+      "summary": "ふるさと納税サイト「ふるさとチョイス」が第三者の不正アクセスを受け、会員情報 4,454,097 件の外部流出が確認された。氏名・住所・電話番号・メールアドレス・ハッシュ化パスワード・寄附控除試算額が対象で、関連サービスは停止中。件数は今後変動する可能性があるとしている。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "credential",
+        "other"
+      ],
+      "affected": 4454097,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-10-17",
+      "detected_at": "2026-10-19",
+      "disclosed_at": "2026-10-19",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社トラストバンク",
+          "url": "https://www.trustbank.co.jp/newsroom/newsrelease/news261020/",
+          "published_at": "2026-10-20",
+          "title": "不正アクセスによる寄附者様情報の外部流出に関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191714",
+          "published_at": "2026-10-21",
+          "title": "「ふるさとチョイス」に不正アクセス - 会員情報が流出"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-17",
+          "kind": "occurred",
+          "text": "第三者による不正アクセスが発生",
+          "source": 0
+        },
+        {
+          "date": "2026-10-19",
+          "kind": "detected",
+          "text": "通常と異なるアクセス傾向を確認し調査、不正アクセスと情報流出が判明。15 時 50 分に関連サービスを停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-19",
+          "kind": "disclosed",
+          "text": "不正アクセスの疑いに伴うサービス一時停止を公表（同社ニュースルームに掲載、本文は未確認）",
+          "source": null
+        },
+        {
+          "date": "2026-10-20",
+          "kind": "updated",
+          "text": "会員情報 4,454,097 件の外部流出を公表。個人情報保護委員会へ報告済み、警察へ 21 日に被害申告予定。再開時期は未定",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "furusato-nozei",
+        "member-info",
+        "password-reset"
+      ],
+      "created_at": "2026-10-22",
+      "updated_at": "2026-10-22"
+    },
+    {
+      "id": "2026-10-16-iwai-cosmo-securities",
+      "org": "iwai-cosmo-securities",
+      "org_name": "岩井コスモ証券株式会社",
+      "org_aliases": [
+        "岩井コスモ証券",
+        "iwaicosmo.co.jp"
+      ],
+      "industry": "finance",
+      "country": "JP",
+      "title": "岩井コスモ証券 委託先への不正アクセスによる顧客情報流出",
+      "summary": "インターネット取引システムの運用・保守委託先のシステムが第三者に侵害され、顧客 4,975 人の氏名・メールアドレスなどが流出した。報道では意図しない取引も確認されたという。口座ログインや不正取引に使える情報は含まれないと説明している。",
+      "cause": "unauthorized_access",
+      "vector": "運用・保守委託先（トレードワークス）のシステムが第三者に侵害された",
+      "data_types": [
+        "name",
+        "email"
+      ],
+      "affected": 4975,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-14",
+      "disclosed_at": "2026-10-16",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191717",
+          "published_at": "2026-10-21",
+          "title": "個人情報流出が判明、意図しない売買も - 岩井コスモ証券"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "kind": "detected",
+          "text": "インターネット取引システムの委託先システムへの侵害が判明",
+          "source": 0
+        },
+        {
+          "date": "2026-10-16",
+          "kind": "disclosed",
+          "text": "同社サイトに「外部委託先への不正アクセスに伴うお客様情報の漏洩について」を掲載（一覧で確認、本文は取得できず）",
+          "source": null
+        },
+        {
+          "date": "2026-10-20",
+          "kind": "updated",
+          "text": "同社サイトに第 2 報を掲載（本文は取得できず）。報道では流出 4,975 人、意図しない取引も確認とされる",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "securities",
+        "contractor",
+        "supply-chain",
+        "unauthorized-trading"
+      ],
+      "created_at": "2026-10-22",
+      "updated_at": "2026-10-22"
     }
   ]
 }

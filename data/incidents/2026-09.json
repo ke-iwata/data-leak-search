@@ -64,6 +64,74 @@
       ],
       "created_at": "2026-10-21",
       "updated_at": "2026-10-21"
+    },
+    {
+      "id": "2026-09-29-yamato-transport",
+      "org": "yamato-transport",
+      "org_name": "ヤマト運輸株式会社",
+      "org_aliases": [
+        "ヤマト運輸",
+        "クロネコヤマト",
+        "クロネコ代金後払いサービス",
+        "kuronekoyamato.co.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "ヤマト運輸「クロネコ代金後払いサービス」不正アクセスによる顧客情報流出",
+      "summary": "「クロネコ代金後払いサービス」が第三者の不正アクセスを受け、2018 年 10 月以降の一部利用者の氏名・住所・電話番号・商品明細など約 526 万件（うちメールアドレスを含むもの約 49 万件）、届け先情報約 5 万件、加盟店情報約 4,100 件が流出した。当初懸念された請求金額・債権残高の窃取は確認されなかった。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "other"
+      ],
+      "affected": 5260000,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-09-28",
+      "disclosed_at": "2026-09-29",
+      "status": "reported",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191595",
+          "published_at": "2026-10-21",
+          "title": "「代金後払いサービス」で個人情報が流出 - ヤマト運輸"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-28",
+          "kind": "detected",
+          "text": "同サービスが侵害されたことを確認。外部からのアクセスを制限",
+          "source": 0
+        },
+        {
+          "date": "2026-09-29",
+          "kind": "disclosed",
+          "text": "不正アクセスを公表（報道の見出しによる。同社発表本文は未確認）",
+          "source": null
+        },
+        {
+          "date": "2026-10-21",
+          "kind": "updated",
+          "text": "調査結果として購入者情報約 526 万件、届け先情報約 5 万件、加盟店情報約 4,100 件の流出を報道。請求金額・債権残高・社員氏名の窃取は確認されず。個人情報保護委員会へ報告済み",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "deferred-payment",
+        "logistics",
+        "order-history"
+      ],
+      "created_at": "2026-10-22",
+      "updated_at": "2026-10-22"
     }
   ]
 }
