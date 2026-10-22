@@ -775,10 +775,12 @@
       "industry": "it",
       "country": "JP",
       "title": "NEC 開発・保守委託先へのサイバー攻撃による顧客システム障害と情報流出",
-      "summary": "システム開発・保守の委託先がサイバー攻撃を受けて正規アカウントの認証情報を窃取され、委託先端末から複数の顧客環境に不正アクセスされた。一部顧客でサーバのファイルが暗号化されて障害が発生し、情報共有用クラウドストレージから顧客保有の個人情報やシステム関連情報を含むファイルが流出した。",
+      "summary": "システム開発・保守の委託先（再委託先）がサイバー攻撃を受けて正規アカウントの認証情報を窃取され、委託先端末から複数の顧客環境に不正アクセスされた。一部顧客でサーバのファイルが暗号化されて障害が発生し、関係者間の情報共有用クラウドストレージから顧客保有の個人情報やシステム関連情報を含むファイルが流出した。顧客の大阪大学・大阪公立大学が個別に公表している。",
       "cause": "unauthorized_access",
       "vector": "委託先から窃取された正規アカウントの認証情報で、委託先端末から顧客環境へアクセス",
       "data_types": [
+        "name",
+        "email",
         "internal_doc",
         "other"
       ],
@@ -797,6 +799,14 @@
           "url": "https://www.security-next.com/191694",
           "published_at": "2026-10-20",
           "title": "NEC委託先にサイバー攻撃 - 顧客システムで障害、個人情報流出"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/10/22/114426",
+          "published_at": "2026-10-22",
+          "title": "NEC委託先への不正アクセスについてまとめてみた"
         }
       ],
       "timeline": [
@@ -811,6 +821,12 @@
           "kind": "disclosed",
           "text": "報道で判明（NEC の発表本文は確認できず、日付は報道日）。影響を受けた顧客には個別に連絡し、個人情報の詳細は確定後に報告するとした",
           "source": 0
+        },
+        {
+          "date": "2026-10-21",
+          "kind": "updated",
+          "text": "顧客の大阪大学（77,851 人分の流出）と大阪公立大学が個別に公表。大阪大学は、未報告の再委託先が業務に関与し、NEC が契約外でクラウドストレージ上にファイルを共有・保持していたと説明。データ種別に氏名・メールアドレスを追加（変更前は internal_doc / other のみ）。NEC の発表本文は 403 で取得できず",
+          "source": 1
         }
       ],
       "keywords": [
@@ -819,7 +835,7 @@
         "cloud-storage"
       ],
       "created_at": "2026-10-21",
-      "updated_at": "2026-10-21"
+      "updated_at": "2026-10-23"
     },
     {
       "id": "2026-10-16-studio-inc",
@@ -1001,9 +1017,9 @@
       "industry": "finance",
       "country": "JP",
       "title": "岩井コスモ証券 委託先への不正アクセスによる顧客情報流出",
-      "summary": "インターネット取引システムの運用・保守委託先のシステムが第三者に侵害され、顧客 4,975 人の氏名・メールアドレスなどが流出した。報道では意図しない取引も確認されたという。口座ログインや不正取引に使える情報は含まれないと説明している。",
+      "summary": "インターネット取引システムの運用・保守委託先のシステムが第三者に侵害され、顧客 4,975 人の氏名・メールアドレスなどが流出した。売買管理システムへの攻撃で 7 口座に意図しない売買注文が出され、うち 5 口座で約定した。取引暗証番号は含まれず、パスワード等はマスキングされていたとしている。",
       "cause": "unauthorized_access",
-      "vector": "運用・保守委託先（トレードワークス）のシステムが第三者に侵害された",
+      "vector": "運用・保守委託先（トレードワークス）のシステムで一部管理機能の設定不備を突かれた。岩井コスモ証券は AI を用いて脆弱性を突いた総当たり攻撃と説明",
       "data_types": [
         "name",
         "email"
@@ -1023,6 +1039,14 @@
           "url": "https://www.security-next.com/191717",
           "published_at": "2026-10-21",
           "title": "個人情報流出が判明、意図しない売買も - 岩井コスモ証券"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/10/22/113434",
+          "published_at": "2026-10-22",
+          "title": "不正取引も行われた岩井コスモ証券への不正アクセスについてまとめてみた"
         }
       ],
       "timeline": [
@@ -1043,6 +1067,12 @@
           "kind": "updated",
           "text": "同社サイトに第 2 報を掲載（本文は取得できず）。報道では流出 4,975 人、意図しない取引も確認とされる",
           "source": 0
+        },
+        {
+          "date": "2026-10-21",
+          "kind": "updated",
+          "text": "同社が不正取引に関する報告を公表（まとめ記事で確認、同社ページは 404 で取得できず）。7 口座で意図しない売買注文、うち 5 口座で約定。原因の説明を追加（変更前の vector「運用・保守委託先（トレードワークス）のシステムが第三者に侵害された」）。委託先は一部管理機能の設定不備と開示",
+          "source": 1
         }
       ],
       "keywords": [
@@ -1052,7 +1082,416 @@
         "unauthorized-trading"
       ],
       "created_at": "2026-10-22",
-      "updated_at": "2026-10-22"
+      "updated_at": "2026-10-23"
+    },
+    {
+      "id": "2026-10-21-osaka-univ",
+      "org": "osaka-univ",
+      "org_name": "国立大学法人大阪大学",
+      "org_aliases": [
+        "大阪大学",
+        "阪大",
+        "osaka-u.ac.jp"
+      ],
+      "industry": "education",
+      "country": "JP",
+      "title": "大阪大学 委託先 NEC のクラウドストレージ経由で学生・教職員情報が流出",
+      "summary": "業務委託先の NEC がクラウドストレージで共有・保持していた大学の個人情報ファイルが第三者にダウンロードされ、卒業生・在学生・教職員 77,851 人分の氏名や大学 ID、学籍・職員番号などが流出した。業務には大学に未報告の再委託先が関与しており、ファイルは業務終了後も削除されていなかった。",
+      "cause": "unauthorized_access",
+      "vector": "委託先 NEC が未報告の再委託先と共有したクラウドストレージ上のファイルを第三者がダウンロード",
+      "data_types": [
+        "name",
+        "email",
+        "other"
+      ],
+      "affected": 77851,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-09-26",
+      "detected_at": "2026-10-09",
+      "disclosed_at": "2026-10-21",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "大阪大学",
+          "url": "https://www.osaka-u.ac.jp/ja/news/topics/2026/10/21004",
+          "published_at": "2026-10-21",
+          "title": "業務委託先における個人情報の漏えいについて"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/10/22/114426",
+          "published_at": "2026-10-22",
+          "title": "NEC委託先への不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-26",
+          "kind": "occurred",
+          "text": "個人情報を含むファイルが第三者にダウンロードされた",
+          "source": 0
+        },
+        {
+          "date": "2026-10-09",
+          "kind": "detected",
+          "text": "NEC から大学へ報告",
+          "source": 0
+        },
+        {
+          "date": "2026-10-21",
+          "kind": "disclosed",
+          "text": "第一報を公表。卒業生 59,014 人・在学生 15,035 人・教職員 3,802 人（重複除く）。二次被害は未確認",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "supply-chain",
+        "contractor",
+        "cloud-storage",
+        "university"
+      ],
+      "created_at": "2026-10-23",
+      "updated_at": "2026-10-23"
+    },
+    {
+      "id": "2026-10-21-osaka-metropolitan-univ",
+      "org": "osaka-metropolitan-univ",
+      "org_name": "大阪公立大学",
+      "org_aliases": [
+        "大阪公立大学",
+        "公立大学法人大阪",
+        "omu.ac.jp"
+      ],
+      "industry": "education",
+      "country": "JP",
+      "title": "大阪公立大学 委託先 NEC 経由のサイバー攻撃による情報基盤システム障害と情報流出",
+      "summary": "委託先 NEC の再委託先がサイバー攻撃を受け、その正規アカウントで大学の情報基盤システムに不正アクセスされて 10 月 2 日から大規模障害が発生した。NEC が利用していたクラウドストレージから大学関連の個人情報とシステム関連情報が流出し、件数は確認中。",
+      "cause": "unauthorized_access",
+      "vector": "NEC の再委託先から窃取された正規アカウントによる不正アクセス",
+      "data_types": [
+        "other",
+        "internal_doc"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-10-02",
+      "detected_at": null,
+      "disclosed_at": "2026-10-21",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "大阪公立大学",
+          "url": "https://www.omu.moe/news/2026-10-21-1d69aecb.html",
+          "published_at": "2026-10-21",
+          "title": "本学情報基盤システムにおける障害の発生について【第5報】委託先公表のサイバー攻撃事案に伴うシステム障害・情報漏洩について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/10/22/114426",
+          "published_at": "2026-10-22",
+          "title": "NEC委託先への不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-02",
+          "kind": "occurred",
+          "text": "情報基盤システムで障害が発生（再委託先への攻撃は 9 月下旬）",
+          "source": 0
+        },
+        {
+          "date": "2026-10-21",
+          "kind": "disclosed",
+          "text": "第 5 報で NEC 経由の情報流出を公表（10 月 20 日に NEC から報告）。障害に関する第 1〜4 報は確認できず、disclosed_at は流出を公表した第 5 報の日付とした。10 月 5 日会見の業務システム情報（約 13 万件）は別系統として調査継続",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "supply-chain",
+        "contractor",
+        "cloud-storage",
+        "university"
+      ],
+      "created_at": "2026-10-23",
+      "updated_at": "2026-10-23"
+    },
+    {
+      "id": "2026-10-20-mlit",
+      "org": "mlit",
+      "org_name": "国土交通省",
+      "org_aliases": [
+        "国交省",
+        "住宅省エネ2024キャンペーン",
+        "子育てエコホーム支援事業",
+        "jutaku-shoene2024.mlit.go.jp"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "国土交通省 住宅省エネ2024キャンペーン事務局システムへの不正アクセスで登録事業者情報が流出の可能性",
+      "summary": "住宅省エネ2024キャンペーン事務局（事務事業者は博報堂）のシステムで外部から不正操作が行われ、登録事業者 16,950 件・個人情報 23,918 人分が流出した可能性がある。代表者や担当者の氏名、業務用の住所・電話番号・メールアドレスなどが対象で、消費者の個人情報の流出は確認されていない。",
+      "cause": "unauthorized_access",
+      "vector": "事務局が運営するシステムへの外部からの不正操作（詳細は調査中）",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email"
+      ],
+      "affected": 23918,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-10-20",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "住宅省エネ2024キャンペーン事務局",
+          "url": "https://jutaku-shoene2024.mlit.go.jp/news/2026102001.html",
+          "published_at": "2026-10-20",
+          "title": "「住宅省エネ2024キャンペーン」の事務局における登録事業者情報の漏洩の可能性について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191780",
+          "published_at": "2026-10-22",
+          "title": "キャンペーン事務局のシステムに不正アクセス、個人情報が流出 - 国交省"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "kind": "disclosed",
+          "text": "対象事業者へメールで通知し、キャンペーンサイトで公表。全システム機能を停止（掲載日は本文に明記がなく、通知日を採用）",
+          "source": 0
+        },
+        {
+          "date": "2026-10-22",
+          "kind": "updated",
+          "text": "報道で件数（事業者 16,950 件、個人 23,918 人分、10 月 20 日時点）が判明",
+          "source": 1
+        }
+      ],
+      "keywords": [
+        "contractor",
+        "subsidy",
+        "government"
+      ],
+      "created_at": "2026-10-23",
+      "updated_at": "2026-10-23"
+    },
+    {
+      "id": "2026-10-22-recruit",
+      "org": "recruit",
+      "org_name": "株式会社リクルート",
+      "org_aliases": [
+        "リクルート",
+        "カーセンサー",
+        "カーセンサーnet",
+        "C-MATCH",
+        "carsensor.net"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "リクルート カーセンサーnet・C-MATCH へのサイバー攻撃で個人情報流出の可能性",
+      "summary": "中古車情報サイト「カーセンサーnet」と販売店向け「C-MATCH」がサイバー攻撃を受け、問い合わせ者約 321 万件、販売店関係者約 48 万件など合計最大 370 万件超の個人情報が流出した可能性がある。氏名・住所・電話番号・ログイン ID などが対象で、原因は調査中。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "credential"
+      ],
+      "affected": 3709551,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-10-17",
+      "disclosed_at": "2026-10-22",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191773",
+          "published_at": "2026-10-22",
+          "title": "リクルートの中古車情報サービスで個人情報など流出か"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-17",
+          "kind": "detected",
+          "text": "カーセンサーnet 関連システムで不審なアクセスを検知し、関連サービスを停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-22",
+          "kind": "disclosed",
+          "text": "報道で流出の可能性と件数が判明（同社の発表本文は取得できず、日付は報道日）。件数は問い合わせ者 3,210,421 件・口コミ投稿者 5,289 件・販売店関係者 483,168 件・従業員や委託先等 10,673 件の合計（いずれも最大、重複の扱いは不明）",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "web-service",
+        "service-outage",
+        "automotive"
+      ],
+      "created_at": "2026-10-23",
+      "updated_at": "2026-10-23"
+    },
+    {
+      "id": "2026-10-22-fuji-tv",
+      "org": "fuji-tv",
+      "org_name": "株式会社フジテレビジョン",
+      "org_aliases": [
+        "フジテレビ",
+        "フジテレビジョン",
+        "fujitv.co.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "フジテレビ 番組宣伝システム侵害でメディア関係者情報が流出の可能性",
+      "summary": "番組宣伝システムに第三者がアクセスし、メディア関係者の氏名・会社名・メールアドレス最大 730 件が流出した可能性がある。視聴者の個人情報は含まれないとしており、影響範囲と原因は調査中。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "email",
+        "other"
+      ],
+      "affected": 730,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-10-19",
+      "detected_at": null,
+      "disclosed_at": "2026-10-22",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191719",
+          "published_at": "2026-10-22",
+          "title": "番組宣伝システムでメディア関係者情報が流出か - フジテレビ"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-19",
+          "kind": "occurred",
+          "text": "夜間に第三者によるアクセスを確認",
+          "source": 0
+        },
+        {
+          "date": "2026-10-22",
+          "kind": "disclosed",
+          "text": "報道で判明（同社の発表は確認できず、日付は報道日）。件数は 10 月 20 日時点",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "media",
+        "business-contacts"
+      ],
+      "created_at": "2026-10-23",
+      "updated_at": "2026-10-23"
+    },
+    {
+      "id": "2026-10-21-gmo-internet",
+      "org": "gmo-internet",
+      "org_name": "GMOインターネット株式会社",
+      "org_aliases": [
+        "GMOインターネット",
+        "お名前.com",
+        "お名前.com デスクトップクラウド",
+        "onamae.com"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "GMOインターネット「お名前.com デスクトップクラウド」不正アクセスで取引口座ログイン情報が取得された可能性",
+      "summary": "FX 自動売買向け VPS「お名前.com デスクトップクラウド」で一部顧客のサーバーに不正なプログラムが設置され、サーバー内に保存された取引ツール・取引口座のログイン情報などが取得され不正に利用された可能性がある。影響の可能性があるサーバーは 26,739 件で、全プランのサーバーを停止し侵入経路を調査中。",
+      "cause": "unauthorized_access",
+      "vector": "顧客サーバー環境に第三者が不正なプログラムを設置（侵入経路は調査中）",
+      "data_types": [
+        "credential"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-20",
+      "disclosed_at": "2026-10-21",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "GMOインターネット株式会社",
+          "url": "https://www.onamae.com/news/article/11593",
+          "published_at": "2026-10-22",
+          "title": "【重要】「お名前.com デスクトップクラウド」への不正アクセスに関するお詫びとお知らせ（第2報）"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/10/23/014520",
+          "published_at": "2026-10-23",
+          "title": "お名前 .com デスクトップクラウドへの不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-19",
+          "kind": "detected",
+          "text": "顧客からの問い合わせを受けて調査を開始",
+          "source": 0
+        },
+        {
+          "date": "2026-10-20",
+          "kind": "detected",
+          "text": "一部顧客のサーバーで不正なプログラムの設置を確認し、新規申込みとコントロールパネルを停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-21",
+          "kind": "disclosed",
+          "text": "第 1 報を掲載し全プランのサーバーを順次停止。この時点では個人情報の漏えいは確認されていないとした（第 1 報本文は未取得、まとめ記事で確認）",
+          "source": 1
+        },
+        {
+          "date": "2026-10-22",
+          "kind": "updated",
+          "text": "第 2 報で取引口座のログイン情報などが取得・不正利用された可能性を公表。影響の可能性があるサーバー 26,739 件。警察に相談。件数はサーバー数のため affected には入れていない",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "vps",
+        "fx-trading",
+        "credential-theft"
+      ],
+      "created_at": "2026-10-23",
+      "updated_at": "2026-10-23"
     }
   ]
 }

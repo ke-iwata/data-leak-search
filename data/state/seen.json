@@ -1,4 +1,32 @@
 {
+ "https://www.security-next.com/191773": {
+  "incident": "2026-10-22-recruit",
+  "at": "2026-10-22"
+ },
+ "https://www.security-next.com/191719": {
+  "incident": "2026-10-22-fuji-tv",
+  "at": "2026-10-22"
+ },
+ "https://www.osaka-u.ac.jp/ja/news/topics/2026/10/21004": {
+  "incident": "2026-10-21-osaka-univ",
+  "at": "2026-10-21"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/10/22/114426": {
+  "incident": "2026-10-20-nec",
+  "at": "2026-10-22"
+ },
+ "https://www.omu.moe/news/2026-10-21-1d69aecb.html": {
+  "incident": "2026-10-21-osaka-metropolitan-univ",
+  "at": "2026-10-21"
+ },
+ "https://www.onamae.com/news/article/11593": {
+  "incident": "2026-10-21-gmo-internet",
+  "at": "2026-10-22"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/10/23/014520": {
+  "incident": "2026-10-21-gmo-internet",
+  "at": "2026-10-23"
+ },
  "https://www.security-next.com/191652": {
   "incident": "2026-10-20-ymir-link",
   "at": "2026-10-20"
@@ -6,6 +34,14 @@
  "https://www.security-next.com/191694": {
   "incident": "2026-10-20-nec",
   "at": "2026-10-20"
+ },
+ "https://jutaku-shoene2024.mlit.go.jp/news/2026102001.html": {
+  "incident": "2026-10-20-mlit",
+  "at": "2026-10-20"
+ },
+ "https://www.security-next.com/191780": {
+  "incident": "2026-10-20-mlit",
+  "at": "2026-10-22"
  },
  "https://www.trustbank.co.jp/newsroom/newsrelease/news261020": {
   "incident": "2026-10-19-trustbank",
@@ -46,6 +82,10 @@
  "https://www.security-next.com/191717": {
   "incident": "2026-10-16-iwai-cosmo-securities",
   "at": "2026-10-21"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/10/22/113434": {
+  "incident": "2026-10-16-iwai-cosmo-securities",
+  "at": "2026-10-22"
  },
  "https://www.fancl.jp/news/pdf/husei.pdf": {
   "incident": "2026-10-16-attenir",
@@ -166,5 +206,9 @@
  "https://www.ppc.go.jp/news/press/2026/261021_houdou": {
   "skipped": "地方公共団体等の定期報告に関する発表で個別事案ではない",
   "at": "2026-10-22"
+ },
+ "https://www.security-next.com/191772": {
+  "skipped": "PHP の脆弱性対応の経緯（エンバーゴ情報の漏洩）で情報漏えい事案ではない",
+  "at": "2026-10-23"
  }
 }

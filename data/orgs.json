@@ -309,5 +309,104 @@
   "first": "2026-10-20",
   "last": "2026-10-20",
   "affected_total": 0
+ },
+ "mlit": {
+  "name": "国土交通省",
+  "aliases": [
+   "国交省",
+   "住宅省エネ2024キャンペーン",
+   "子育てエコホーム支援事業",
+   "jutaku-shoene2024.mlit.go.jp"
+  ],
+  "industry": "public",
+  "country": "JP",
+  "incidents": [
+   "2026-10-20-mlit"
+  ],
+  "first": "2026-10-20",
+  "last": "2026-10-20",
+  "affected_total": 23918
+ },
+ "osaka-univ": {
+  "name": "国立大学法人大阪大学",
+  "aliases": [
+   "大阪大学",
+   "阪大",
+   "osaka-u.ac.jp"
+  ],
+  "industry": "education",
+  "country": "JP",
+  "incidents": [
+   "2026-10-21-osaka-univ"
+  ],
+  "first": "2026-10-21",
+  "last": "2026-10-21",
+  "affected_total": 77851
+ },
+ "osaka-metropolitan-univ": {
+  "name": "大阪公立大学",
+  "aliases": [
+   "公立大学法人大阪",
+   "omu.ac.jp"
+  ],
+  "industry": "education",
+  "country": "JP",
+  "incidents": [
+   "2026-10-21-osaka-metropolitan-univ"
+  ],
+  "first": "2026-10-21",
+  "last": "2026-10-21",
+  "affected_total": 0
+ },
+ "gmo-internet": {
+  "name": "GMOインターネット株式会社",
+  "aliases": [
+   "GMOインターネット",
+   "お名前.com",
+   "お名前.com デスクトップクラウド",
+   "onamae.com"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-21-gmo-internet"
+  ],
+  "first": "2026-10-21",
+  "last": "2026-10-21",
+  "affected_total": 0
+ },
+ "recruit": {
+  "name": "株式会社リクルート",
+  "aliases": [
+   "リクルート",
+   "カーセンサー",
+   "カーセンサーnet",
+   "C-MATCH",
+   "carsensor.net"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-22-recruit"
+  ],
+  "first": "2026-10-22",
+  "last": "2026-10-22",
+  "affected_total": 3709551
+ },
+ "fuji-tv": {
+  "name": "株式会社フジテレビジョン",
+  "aliases": [
+   "フジテレビ",
+   "フジテレビジョン",
+   "fujitv.co.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-10-22-fuji-tv"
+  ],
+  "first": "2026-10-22",
+  "last": "2026-10-22",
+  "affected_total": 730
  }
 }
