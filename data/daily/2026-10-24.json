@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-24",
+  "generated_at": "2026-10-24T05:30:00+09:00",
+  "stats": {
+    "collected": 16,
+    "candidates": 7,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 2
+  },
+  "digest": [
+    {
+      "text": "カプコンの共通アカウント「CAPCOM ID」が不正アクセスを受け、メールアドレス等 11,774,247 件が漏えい。196 件でパスワードが不正変更され、うち 19 件は通販サイトの登録情報も閲覧された。",
+      "incidents": [
+        "2026-10-22-capcom"
+      ]
+    },
+    {
+      "text": "セキュリティ製品のデジタルアーツで、クラウドサービス運用用の認証情報が窃取され運用環境に侵入。痕跡は 2025 年 7 月頃からで、一部顧客情報が閲覧された可能性。",
+      "incidents": [
+        "2026-10-21-digital-arts"
+      ]
+    }
+  ],
+  "new": [
+    "2026-10-21-digital-arts",
+    "2026-10-22-capcom"
+  ],
+  "updated": [],
+  "skipped": [
+    {
+      "url": "https://www.security-next.com/191830",
+      "reason": "OSS「LiteLLM」の配布パッケージへの不正プログラム混入（サプライチェーン攻撃の注意喚起）で、特定組織の漏えい事案ではない"
+    },
+    {
+      "url": "https://www.jpcert.or.jp/at/2026/at260030.html",
+      "reason": "JPCERT/CC の注意喚起の更新で、個別事案ではない"
+    }
+  ]
+}

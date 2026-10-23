@@ -7,6 +7,18 @@
   "incident": "2026-10-22-fuji-tv",
   "at": "2026-10-22"
  },
+ "https://www.capcom.co.jp/ir/news/html/261022.html": {
+  "incident": "2026-10-22-capcom",
+  "at": "2026-10-22"
+ },
+ "https://www.capcom.co.jp/ir/news/html/261023.html": {
+  "incident": "2026-10-22-capcom",
+  "at": "2026-10-23"
+ },
+ "https://www.security-next.com/191838": {
+  "incident": "2026-10-22-capcom",
+  "at": "2026-10-23"
+ },
  "https://www.osaka-u.ac.jp/ja/news/topics/2026/10/21004": {
   "incident": "2026-10-21-osaka-univ",
   "at": "2026-10-21"
@@ -25,6 +37,14 @@
  },
  "https://piyolog.hatenadiary.jp/entry/2026/10/23/014520": {
   "incident": "2026-10-21-gmo-internet",
+  "at": "2026-10-23"
+ },
+ "https://www.daj.jp/webtopics/1354": {
+  "incident": "2026-10-21-digital-arts",
+  "at": "2026-10-21"
+ },
+ "https://www.security-next.com/191844": {
+  "incident": "2026-10-21-digital-arts",
   "at": "2026-10-23"
  },
  "https://www.security-next.com/191652": {
@@ -210,5 +230,13 @@
  "https://www.security-next.com/191772": {
   "skipped": "PHP の脆弱性対応の経緯（エンバーゴ情報の漏洩）で情報漏えい事案ではない",
   "at": "2026-10-23"
+ },
+ "https://www.security-next.com/191830": {
+  "skipped": "OSS「LiteLLM」の配布パッケージへの不正プログラム混入（サプライチェーン攻撃の注意喚起）で、特定組織の漏えい事案ではない",
+  "at": "2026-10-24"
+ },
+ "https://www.jpcert.or.jp/at/2026/at260030.html": {
+  "skipped": "JPCERT/CC の注意喚起の更新で、個別事案ではない",
+  "at": "2026-10-24"
  }
 }

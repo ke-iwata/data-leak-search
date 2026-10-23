@@ -1492,6 +1492,180 @@
       ],
       "created_at": "2026-10-23",
       "updated_at": "2026-10-23"
+    },
+    {
+      "id": "2026-10-21-digital-arts",
+      "org": "digital-arts",
+      "org_name": "デジタルアーツ株式会社",
+      "org_aliases": [
+        "デジタルアーツ",
+        "Digital Arts",
+        "i-FILTER@Cloud",
+        "m-FILTER@Cloud",
+        "FINAL CODE@Cloud",
+        "daj.jp"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "デジタルアーツ クラウドサービス運用環境への不正アクセスで顧客情報閲覧の可能性",
+      "summary": "セキュリティ製品のデジタルアーツで、クラウドサービス運用用の認証情報が不正に取得され、i-FILTER@Cloud など 6 つのクラウドサービスの運用環境と社内環境に第三者が侵入していた。一部顧客の情報が閲覧された可能性があり、痕跡は 2025 年 7 月頃までさかのぼる。外部への持ち出しは公表時点で確認されていない。",
+      "cause": "unauthorized_access",
+      "vector": "クラウドサービス運用用の認証情報を不正に取得され、サービス運用環境に侵入",
+      "data_types": [
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-09",
+      "disclosed_at": "2026-10-21",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "デジタルアーツ株式会社",
+          "url": "https://www.daj.jp/webtopics/1354/",
+          "published_at": "2026-10-21",
+          "title": "当社への不正アクセスに関するお知らせとお詫び"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191844",
+          "published_at": "2026-10-23",
+          "title": "運用環境に第三者が不正侵入、1年以上前の痕跡も - デジタルアーツ"
+        }
+      ],
+      "timeline": [
+        {
+          "date": null,
+          "kind": "occurred",
+          "text": "不正アクセスの痕跡は 2025 年 7 月頃までさかのぼる（日は特定されていない）",
+          "source": 0
+        },
+        {
+          "date": "2026-10-09",
+          "kind": "detected",
+          "text": "AI を活用したシステム・製品・社内環境の総点検で不正アクセスの痕跡を発見",
+          "source": 0
+        },
+        {
+          "date": "2026-10-21",
+          "kind": "disclosed",
+          "text": "適時開示とお知らせを公表。対象は i-FILTER@Cloud など 6 クラウドサービスでオンプレミス版は対象外。認証情報の無効化・入れ替えを実施し、全利用顧客にパスワード変更を依頼。正午時点で持ち出し・二次被害は未確認",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "saas",
+        "credential-theft",
+        "security-vendor"
+      ],
+      "created_at": "2026-10-24",
+      "updated_at": "2026-10-24"
+    },
+    {
+      "id": "2026-10-22-capcom",
+      "org": "capcom",
+      "org_name": "株式会社カプコン",
+      "org_aliases": [
+        "カプコン",
+        "CAPCOM",
+        "CAPCOM ID",
+        "イーカプコン",
+        "e-Capcom",
+        "capcom.co.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "カプコン「CAPCOM ID」不正アクセスで約 1,177 万件のメールアドレス等が漏えい",
+      "summary": "オンラインサービス共通アカウント「CAPCOM ID」が不正アクセスを受け、全世界で 11,774,247 件のメールアドレスとシステム識別情報（作成日時・最終ログイン IP など）が漏えいした。うち 196 件はパスワードを不正に変更され、19 件では通販サイト「イーカプコン」のマイページから氏名・住所・電話番号・購入履歴などが閲覧された。クレジットカード情報は対象外。",
+      "cause": "unauthorized_access",
+      "vector": "CAPCOM ID への不正アクセスとパスワードの不正変更（攻撃手法は非公表）",
+      "data_types": [
+        "email",
+        "name",
+        "address",
+        "phone",
+        "birthday",
+        "other"
+      ],
+      "affected": 11774247,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-19",
+      "disclosed_at": "2026-10-22",
+      "status": "reported",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社カプコン",
+          "url": "https://www.capcom.co.jp/ir/news/html/261022.html",
+          "published_at": "2026-10-22",
+          "title": "不正アクセスによるお客様情報漏えいのお詫びとお知らせ"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社カプコン",
+          "url": "https://www.capcom.co.jp/ir/news/html/261023.html",
+          "published_at": "2026-10-23",
+          "title": "不正アクセスによるお客様情報漏えいのお詫びとお知らせ（第二報）"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191838",
+          "published_at": "2026-10-23",
+          "title": "「CAPCOM ID」で情報流出、パスワードの不正変更も - カプコン"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-19",
+          "kind": "detected",
+          "text": "不正アクセスの疑われる痕跡を確認し、アクセスを遮断して調査を開始",
+          "source": 0
+        },
+        {
+          "date": "2026-10-20",
+          "kind": "detected",
+          "text": "対策本部を設置。顧客情報の一部漏えいと一部アカウントのパスワード不正変更を確認",
+          "source": 0
+        },
+        {
+          "date": "2026-10-21",
+          "kind": "report_filed",
+          "text": "警察と個人情報保護委員会に報告",
+          "source": 0
+        },
+        {
+          "date": "2026-10-22",
+          "kind": "disclosed",
+          "text": "第一報を公表。メールアドレス等 11,774,247 件、うち 43 件は生年月日・性別・国/地域・ニックネームも漏えい。196 件でパスワードが不正変更",
+          "source": 0
+        },
+        {
+          "date": "2026-10-23",
+          "kind": "updated",
+          "text": "第二報。パスワード不正変更 196 件のうち 19 件（国内）でイーカプコンのマイページが閲覧され、氏名・住所・電話番号・購入履歴などが漏えい。影響範囲の調査は完了",
+          "source": 1
+        }
+      ],
+      "keywords": [
+        "member-info",
+        "account-takeover",
+        "ec-site",
+        "online-game"
+      ],
+      "created_at": "2026-10-24",
+      "updated_at": "2026-10-24"
     }
   ]
 }

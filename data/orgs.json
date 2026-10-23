@@ -375,6 +375,25 @@
   "last": "2026-10-21",
   "affected_total": 0
  },
+ "digital-arts": {
+  "name": "デジタルアーツ株式会社",
+  "aliases": [
+   "デジタルアーツ",
+   "Digital Arts",
+   "i-FILTER@Cloud",
+   "m-FILTER@Cloud",
+   "FINAL CODE@Cloud",
+   "daj.jp"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-21-digital-arts"
+  ],
+  "first": "2026-10-21",
+  "last": "2026-10-21",
+  "affected_total": 0
+ },
  "recruit": {
   "name": "株式会社リクルート",
   "aliases": [
@@ -408,5 +427,24 @@
   "first": "2026-10-22",
   "last": "2026-10-22",
   "affected_total": 730
+ },
+ "capcom": {
+  "name": "株式会社カプコン",
+  "aliases": [
+   "カプコン",
+   "CAPCOM",
+   "CAPCOM ID",
+   "イーカプコン",
+   "e-Capcom",
+   "capcom.co.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-10-22-capcom"
+  ],
+  "first": "2026-10-22",
+  "last": "2026-10-22",
+  "affected_total": 11774247
  }
 }
