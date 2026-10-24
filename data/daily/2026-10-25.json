@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-25",
+  "generated_at": "2026-10-25T05:15:00+09:00",
+  "stats": {
+    "collected": 4,
+    "candidates": 2,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "新規なし。候補 2 件（カプコン、デジタルアーツ）はいずれも前日までに登録済みの事案の出典で、新しい情報はなかった。",
+      "incidents": [
+        "2026-10-22-capcom",
+        "2026-10-21-digital-arts"
+      ]
+    }
+  ],
+  "new": [],
+  "updated": [],
+  "skipped": []
+}
