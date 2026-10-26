@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-27",
+  "generated_at": "2026-10-27T05:40:00+09:00",
+  "stats": {
+    "collected": 12,
+    "candidates": 4,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "佐川急便の荷物問い合わせサービス侵害は、調査結果で最大のべ約 5,323 万件（重複含む）の個人情報流出の可能性と判明。台帳の過去最大級の規模。",
+      "incidents": [
+        "2026-09-30-sagawa-express"
+      ]
+    },
+    {
+      "text": "メール配信 SaaS「ブラストメール」で全契約者の情報が流出。配信先リストを含む契約者もあり、利用企業側への波及に注意。",
+      "incidents": [
+        "2026-10-21-rakus-lite-cloud"
+      ]
+    },
+    {
+      "text": "りそな銀行の古い解約記録マイクロフィルム紛失（約 9,000 人）と、厚木市の小中学校による PTA への名簿の無断提供（約 5,500 人）も公表。",
+      "incidents": [
+        "2026-10-26-resona-bank",
+        "2026-10-26-atsugi-city"
+      ]
+    }
+  ],
+  "new": [
+    "2026-09-30-sagawa-express",
+    "2026-10-21-rakus-lite-cloud",
+    "2026-10-26-resona-bank",
+    "2026-10-26-atsugi-city"
+  ],
+  "updated": [],
+  "skipped": []
+}

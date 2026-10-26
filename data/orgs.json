@@ -80,6 +80,24 @@
   "last": "2026-09-29",
   "affected_total": 5260000
  },
+ "sagawa-express": {
+  "name": "佐川急便株式会社",
+  "aliases": [
+   "佐川急便",
+   "SAGAWA",
+   "お荷物問い合わせサービス",
+   "スマートクラブ",
+   "sagawa-exp.co.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-09-30-sagawa-express"
+  ],
+  "first": "2026-09-30",
+  "last": "2026-09-30",
+  "affected_total": 53230000
+ },
  "nimoca": {
   "name": "株式会社ニモカ",
   "aliases": [
@@ -327,6 +345,24 @@
   "last": "2026-10-20",
   "affected_total": 23918
  },
+ "rakus-lite-cloud": {
+  "name": "株式会社ラクスライトクラウド",
+  "aliases": [
+   "ラクスライトクラウド",
+   "ブラストメール",
+   "blastmail",
+   "blastmail.jp",
+   "ラクス"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-21-rakus-lite-cloud"
+  ],
+  "first": "2026-10-21",
+  "last": "2026-10-21",
+  "affected_total": 0
+ },
  "osaka-univ": {
   "name": "国立大学法人大阪大学",
   "aliases": [
@@ -446,5 +482,36 @@
   "first": "2026-10-22",
   "last": "2026-10-22",
   "affected_total": 11774247
+ },
+ "resona-bank": {
+  "name": "株式会社りそな銀行",
+  "aliases": [
+   "りそな銀行",
+   "りそな",
+   "resonabank.co.jp"
+  ],
+  "industry": "finance",
+  "country": "JP",
+  "incidents": [
+   "2026-10-26-resona-bank"
+  ],
+  "first": "2026-10-26",
+  "last": "2026-10-26",
+  "affected_total": 9000
+ },
+ "atsugi-city": {
+  "name": "厚木市",
+  "aliases": [
+   "厚木市教育委員会",
+   "city.atsugi.kanagawa.jp"
+  ],
+  "industry": "education",
+  "country": "JP",
+  "incidents": [
+   "2026-10-26-atsugi-city"
+  ],
+  "first": "2026-10-26",
+  "last": "2026-10-26",
+  "affected_total": 5464
  }
 }

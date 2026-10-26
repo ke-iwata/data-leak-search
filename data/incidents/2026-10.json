@@ -1666,6 +1666,198 @@
       ],
       "created_at": "2026-10-24",
       "updated_at": "2026-10-24"
+    },
+    {
+      "id": "2026-10-21-rakus-lite-cloud",
+      "org": "rakus-lite-cloud",
+      "org_name": "株式会社ラクスライトクラウド",
+      "org_aliases": [
+        "ラクスライトクラウド",
+        "ブラストメール",
+        "blastmail",
+        "blastmail.jp",
+        "ラクス"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "ラクスライトクラウド「ブラストメール」不正アクセスで全契約者の情報が流出",
+      "summary": "ラクスの子会社が提供するメール配信システム「ブラストメール」の API 用サーバー 2 台に第三者が侵入し、販売管理システムとサービスのデータベースからデータを持ち出した。全契約者の会社名・担当者名・電話番号・メールアドレス・契約と支払いの履歴などが流出し、一部契約者は配信先リストなども対象。サービスは停止中。",
+      "cause": "unauthorized_access",
+      "vector": "API 用サーバー 2 台に侵入してコマンドを実行し、データベースからデータを持ち出し（侵入経路は調査中）",
+      "data_types": [
+        "name",
+        "phone",
+        "email",
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-21",
+      "disclosed_at": "2026-10-21",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ラクス",
+          "url": "https://www.rakus.co.jp/news/2026/1021-3.html",
+          "published_at": "2026-10-21",
+          "title": "【第2報】当社子会社が提供する「ブラストメール」における不正アクセスによる情報漏えいおよびサービス停止について"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ラクス",
+          "url": "https://www.rakus.co.jp/news/2026/1021-2.html",
+          "published_at": "2026-10-21",
+          "title": "【第1報】当社子会社が提供する「ブラストメール」における不審なアクセスの検知およびサービス停止について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191846",
+          "published_at": "2026-10-26",
+          "title": "メール配信システムで契約者情報が流出 - ラクスグループ会社"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "kind": "detected",
+          "text": "不審なアクセスを検知し、午前 0 時 30 分からサービスを緊急停止",
+          "source": 1
+        },
+        {
+          "date": "2026-10-21",
+          "kind": "disclosed",
+          "text": "第 1 報で不審なアクセスとサービス停止を公表",
+          "source": 1
+        },
+        {
+          "date": "2026-10-21",
+          "kind": "updated",
+          "text": "第 2 報で全契約者の情報流出を公表。件数は非公表、再開時期は未定",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "email-delivery",
+        "saas",
+        "contractor"
+      ],
+      "created_at": "2026-10-27",
+      "updated_at": "2026-10-27"
+    },
+    {
+      "id": "2026-10-26-resona-bank",
+      "org": "resona-bank",
+      "org_name": "株式会社りそな銀行",
+      "org_aliases": [
+        "りそな銀行",
+        "りそな",
+        "resonabank.co.jp"
+      ],
+      "industry": "finance",
+      "country": "JP",
+      "title": "りそな銀行 口座解約の顧客情報約 9,000 人分を記録したマイクロフィルムが所在不明",
+      "summary": "1992 年 7 月〜2001 年 3 月に旧協和埼玉銀行・旧あさひ銀行羽村支店で口座を解約した約 9,000 人分の氏名・口座番号・解約理由・解約金額・最終取引日を記録したマイクロフィルム（コムフィッシュ）が所在不明。誤廃棄の可能性が高く、不正利用は確認されていないとしている。",
+      "cause": "lost_device",
+      "vector": "フィルム状の記録媒体（コムフィッシュ）の誤廃棄の可能性",
+      "data_types": [
+        "name",
+        "bank",
+        "other"
+      ],
+      "affected": 9000,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-10-26",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191783",
+          "published_at": "2026-10-26",
+          "title": "口座解約に関する顧客情報が記録された記録媒体を紛失 - りそな銀"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-26",
+          "kind": "disclosed",
+          "text": "報道で確認した公表日。検索結果の要約では同行の発表は 2026-09-28 とされるが本文未確認のため報道日を採用",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "lost-media"
+      ],
+      "created_at": "2026-10-27",
+      "updated_at": "2026-10-27"
+    },
+    {
+      "id": "2026-10-26-atsugi-city",
+      "org": "atsugi-city",
+      "org_name": "厚木市",
+      "org_aliases": [
+        "厚木市教育委員会",
+        "city.atsugi.kanagawa.jp"
+      ],
+      "industry": "education",
+      "country": "JP",
+      "title": "厚木市 市立小中学校が児童生徒・保護者の個人情報を同意なく PTA に提供",
+      "summary": "神奈川県厚木市の市立小中学校が、PTA の依頼に応じて児童生徒や保護者の名簿を本人の同意なく閲覧させていた。2025 年度は 13 校で 3,122 人分、2026 年度は 7 校で 2,342 人分。保護者からの問い合わせで判明し、個人情報保護委員会に報告した。",
+      "cause": "other",
+      "vector": "PTA の依頼に応じ、同意を得ずに児童生徒の名簿を閲覧させた",
+      "data_types": [
+        "name",
+        "phone",
+        "other"
+      ],
+      "affected": 5464,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-10-26",
+      "status": "reported",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191495",
+          "published_at": "2026-10-26",
+          "title": "小中学校がPTAに生徒の個人情報を同意なしに提供 - 厚木市"
+        }
+      ],
+      "timeline": [
+        {
+          "date": null,
+          "kind": "detected",
+          "text": "2026 年 4 月下旬〜5 月に保護者から市教育委員会へ問い合わせがあり判明",
+          "source": 0
+        },
+        {
+          "date": "2026-10-26",
+          "kind": "disclosed",
+          "text": "報道で確認した公表日（市の公表日は未確認）。件数は 2025 年度 3,122 人と 2026 年度 2,342 人の合計で、重複の有無は不明",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "school-roster",
+        "government"
+      ],
+      "created_at": "2026-10-27",
+      "updated_at": "2026-10-27"
     }
   ]
 }

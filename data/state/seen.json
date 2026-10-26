@@ -1,4 +1,12 @@
 {
+ "https://www.security-next.com/191783": {
+  "incident": "2026-10-26-resona-bank",
+  "at": "2026-10-26"
+ },
+ "https://www.security-next.com/191495": {
+  "incident": "2026-10-26-atsugi-city",
+  "at": "2026-10-26"
+ },
  "https://www.security-next.com/191773": {
   "incident": "2026-10-22-recruit",
   "at": "2026-10-22"
@@ -18,6 +26,18 @@
  "https://www.security-next.com/191838": {
   "incident": "2026-10-22-capcom",
   "at": "2026-10-23"
+ },
+ "https://www.rakus.co.jp/news/2026/1021-3.html": {
+  "incident": "2026-10-21-rakus-lite-cloud",
+  "at": "2026-10-21"
+ },
+ "https://www.rakus.co.jp/news/2026/1021-2.html": {
+  "incident": "2026-10-21-rakus-lite-cloud",
+  "at": "2026-10-21"
+ },
+ "https://www.security-next.com/191846": {
+  "incident": "2026-10-21-rakus-lite-cloud",
+  "at": "2026-10-26"
  },
  "https://www.osaka-u.ac.jp/ja/news/topics/2026/10/21004": {
   "incident": "2026-10-21-osaka-univ",
@@ -161,6 +181,14 @@
  },
  "https://www.security-next.com/191145": {
   "incident": "2026-10-06-nimoca",
+  "at": "2026-10-19"
+ },
+ "https://www.security-next.com/191906": {
+  "incident": "2026-09-30-sagawa-express",
+  "at": "2026-10-26"
+ },
+ "https://scan.netsecurity.ne.jp/article/2026/10/19/56499.html": {
+  "incident": "2026-09-30-sagawa-express",
   "at": "2026-10-19"
  },
  "https://www.security-next.com/191595": {

@@ -132,6 +132,101 @@
       ],
       "created_at": "2026-10-22",
       "updated_at": "2026-10-22"
+    },
+    {
+      "id": "2026-09-30-sagawa-express",
+      "org": "sagawa-express",
+      "org_name": "佐川急便株式会社",
+      "org_aliases": [
+        "佐川急便",
+        "SAGAWA",
+        "お荷物問い合わせサービス",
+        "スマートクラブ",
+        "sagawa-exp.co.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "佐川急便「お荷物問い合わせサービス」不正アクセスで最大のべ約 5,323 万件の個人情報が流出した可能性",
+      "summary": "同社サイトの「お荷物問い合わせサービス」が第三者に侵害され、2026 年 6 月 21 日〜9 月 30 日に預かった荷物の依頼主・届け先の氏名・住所・電話番号などが流出した可能性。運賃契約顧客やスマートクラブ会員の情報も含み、調査結果では最大のべ約 5,323 万件（重複を含む）。クレジットカード情報とパスワードは対象外とされる。",
+      "cause": "unauthorized_access",
+      "vector": "Web サイトの荷物問い合わせサービスへの第三者による不正アクセス（手口は非公表）",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "other"
+      ],
+      "affected": 53230000,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-06-21",
+      "detected_at": "2026-09-30",
+      "disclosed_at": "2026-09-30",
+      "status": "reported",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191906",
+          "published_at": "2026-10-26",
+          "title": "荷物問合サービスの侵害、流出対象件数を取りまとめ - 佐川急便"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/19/56499.html",
+          "published_at": "2026-10-19",
+          "title": "佐川急便「お荷物問い合わせサービス」に不正アクセス 第4報"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-21",
+          "kind": "occurred",
+          "text": "流出の可能性がある荷物の対象期間の開始日（侵害の開始日そのものは非公表）",
+          "source": 0
+        },
+        {
+          "date": "2026-09-30",
+          "kind": "detected",
+          "text": "お荷物問い合わせサービスへの第三者による不正アクセスを確認",
+          "source": 1
+        },
+        {
+          "date": "2026-09-30",
+          "kind": "disclosed",
+          "text": "第 1 報を公表し、サービスへのアクセスを一部制限（公式発表 www2.sagawa-exp.co.jp/information/detail/419/ は本文を取得できず、報道で確認）",
+          "source": 1
+        },
+        {
+          "date": "2026-10-01",
+          "kind": "report_filed",
+          "text": "個人情報流出の可能性が判明し、個人情報保護委員会に報告。第 2・3 報を公表し専用窓口を開設",
+          "source": 0
+        },
+        {
+          "date": "2026-10-09",
+          "kind": "updated",
+          "text": "第 4 報。件数と範囲は調査中",
+          "source": 1
+        },
+        {
+          "date": "2026-10-23",
+          "kind": "updated",
+          "text": "10 月 23 日時点の調査結果として、流出の可能性がある件数を最大のべ約 5,323 万件（重複含む）と取りまとめ",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "logistics",
+        "member-info",
+        "web-service"
+      ],
+      "created_at": "2026-10-27",
+      "updated_at": "2026-10-27"
     }
   ]
 }
