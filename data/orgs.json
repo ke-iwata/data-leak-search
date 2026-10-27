@@ -310,7 +310,7 @@
   ],
   "first": "2026-10-20",
   "last": "2026-10-20",
-  "affected_total": 9000000
+  "affected_total": 51628280
  },
  "nec": {
   "name": "日本電気株式会社",
@@ -344,6 +344,22 @@
   "first": "2026-10-20",
   "last": "2026-10-20",
   "affected_total": 23918
+ },
+ "afd": {
+  "name": "Alternative für Deutschland (AfD)",
+  "aliases": [
+   "AfD",
+   "afd.de",
+   "Alternative für Deutschland"
+  ],
+  "industry": "service",
+  "country": "DE",
+  "incidents": [
+   "2026-10-20-afd"
+  ],
+  "first": "2026-10-20",
+  "last": "2026-10-20",
+  "affected_total": 345439
  },
  "rakus-lite-cloud": {
   "name": "株式会社ラクスライトクラウド",
@@ -513,5 +529,32 @@
   "first": "2026-10-26",
   "last": "2026-10-26",
   "affected_total": 5464
+ },
+ "okayama-kekkon-suishin-kyokai": {
+  "name": "おかやま結婚推進協会",
+  "aliases": [],
+  "industry": "public",
+  "country": "JP",
+  "incidents": [
+   "2026-10-27-okayama-kekkon-suishin-kyokai"
+  ],
+  "first": "2026-10-27",
+  "last": "2026-10-27",
+  "affected_total": 26
+ },
+ "bandai-logipal": {
+  "name": "株式会社バンダイロジパル",
+  "aliases": [
+   "バンダイロジパル",
+   "一番くじONLINE"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-10-27-bandai-logipal"
+  ],
+  "first": "2026-10-27",
+  "last": "2026-10-27",
+  "affected_total": 0
  }
 }

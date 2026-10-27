@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-28",
+  "generated_at": "2026-10-28T05:30:00+09:00",
+  "stats": {
+    "collected": 18,
+    "candidates": 9,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "ユミルリンクの Cuenote FC 侵害は第二報で流出 49 システム・延べ約 5,163 万件に拡大（当初 5 システム・約 900 万件）。16 システムは件数調査中。",
+      "incidents": [
+        "2026-10-20-ymir-link"
+      ]
+    },
+    {
+      "text": "ブラストメールは配信先リスト等の漏えい契約が 345 件に。メール配信 SaaS 2 件の侵害が利用組織側の公表を連鎖させている。",
+      "incidents": [
+        "2026-10-21-rakus-lite-cloud"
+      ]
+    },
+    {
+      "text": "新規はバンダイロジパルの物流システム不正アクセス（一番くじONLINE 配送情報）、岡山県共催の婚活イベント申込者情報の誤公開、独 AfD のホスティング事業者経由のメール流出。",
+      "incidents": [
+        "2026-10-27-bandai-logipal",
+        "2026-10-27-okayama-kekkon-suishin-kyokai",
+        "2026-10-20-afd"
+      ]
+    }
+  ],
+  "new": [
+    "2026-10-27-bandai-logipal",
+    "2026-10-27-okayama-kekkon-suishin-kyokai",
+    "2026-10-20-afd"
+  ],
+  "updated": [
+    {
+      "id": "2026-10-20-ymir-link",
+      "text": "第二報で流出 49 システム・延べ 51,628,280 件に修正（約 900 万件から）。一次出典を追加"
+    },
+    {
+      "id": "2026-10-21-rakus-lite-cloud",
+      "text": "配信先リスト等の漏えい契約が 345 件に（288 件から）"
+    }
+  ],
+  "skipped": []
+}

@@ -717,21 +717,32 @@
       "industry": "it",
       "country": "JP",
       "title": "ユミルリンク メール配信サービスのサーバへの不正アクセスによる情報流出",
-      "summary": "メール配信サービスのサーバが脆弱性を突かれて不正アクセスを受け、複数システムからメールアドレスなどを含むデータが外部に出力された。対象は 5 システムで計約 900 万件とみられ、詳細は精査中。",
+      "summary": "メール配信サービス Cuenote FC のライブラリの脆弱性を悪用され、担当者の認証情報を窃取されて複数システムに不正プログラムを設置された。第二報で情報流出は FC の 49 システム（延べ約 5,163 万件、うち 16 システムは件数調査中）と Cuenote BASE の 1 システム（190 件）に拡大。メールアドレスや配信記録、利用企業担当者の氏名・住所・電話番号などを含む。",
       "cause": "unauthorized_access",
-      "vector": "サーバ上のプログラムの脆弱性を悪用して侵入し、取得した従業員の認証情報で他システムへ横展開、不正プログラムを設置してデータベースから出力",
+      "vector": "Cuenote FC 系で使うライブラリの脆弱性を悪用して担当者の認証情報を取得し、不正プログラム設置・他システムへの認証試行・セッション情報の悪用で横展開してデータベースから出力",
       "data_types": [
+        "name",
+        "address",
+        "phone",
         "email",
         "other"
       ],
-      "affected": 9000000,
+      "affected": 51628280,
       "affected_is_estimate": true,
       "occurred_at": "2026-10-16",
       "detected_at": "2026-10-16",
       "disclosed_at": "2026-10-20",
       "status": "investigating",
-      "confidence": 0.7,
+      "confidence": 0.9,
       "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ユミルリンク",
+          "url": "https://www.ymir.co.jp/info/ymir-information20261027.html",
+          "published_at": "2026-10-26",
+          "title": "当社システムへの不正なアクセスに関するご報告（第二報）"
+        },
         {
           "role": "secondary",
           "trust": "media",
@@ -739,6 +750,14 @@
           "url": "https://www.security-next.com/191652",
           "published_at": "2026-10-20",
           "title": "複数システムに不正アクセス、個人情報が流出 - ユミルリンク"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192029",
+          "published_at": "2026-10-27",
+          "title": "49システムで情報流出、横展開など確認 - ユミルリンク"
         }
       ],
       "timeline": [
@@ -746,12 +765,24 @@
           "date": "2026-10-16",
           "kind": "detected",
           "text": "10 月 16 日未明、一部システムへの不正アクセスを確認。サーバをネットワークから切り離した",
-          "source": 0
+          "source": 1
         },
         {
           "date": "2026-10-20",
           "kind": "disclosed",
           "text": "報道で判明（同社サイト上の発表本文は確認できず、日付は報道日）。5 システムからのデータ出力、計約 900 万件とされ外部専門家と調査中",
+          "source": 1
+        },
+        {
+          "date": "2026-10-25",
+          "kind": "updated",
+          "text": "新たに 42 システムで不正なデータ出力を確認",
+          "source": 0
+        },
+        {
+          "date": "2026-10-26",
+          "kind": "updated",
+          "text": "第二報を公表。情報流出は Cuenote FC の 49 システム（すべて単一企業向け、うち 16 は件数調査中）と Cuenote BASE の 1 システムに拡大。影響人数を約 900 万件から延べ 51,628,280 件（FC）に修正。侵入試行は 81 システム。第一報は 10 月 19 日付（台帳の disclosed_at は報道日の 10 月 20 日のまま）。IPA への届出を予定",
           "source": 0
         }
       ],
@@ -761,7 +792,7 @@
         "lateral-movement"
       ],
       "created_at": "2026-10-21",
-      "updated_at": "2026-10-21"
+      "updated_at": "2026-10-28"
     },
     {
       "id": "2026-10-20-nec",
@@ -1681,7 +1712,7 @@
       "industry": "it",
       "country": "JP",
       "title": "ラクスライトクラウド「ブラストメール」不正アクセスで全契約者の情報が流出",
-      "summary": "ラクスの子会社が提供するメール配信システム「ブラストメール」の API 用サーバー 2 台に第三者が侵入し、販売管理システムとサービスのデータベースからデータを持ち出した。全契約者の会社名・担当者名・電話番号・メールアドレス・契約と支払いの履歴などが流出し、一部契約者は配信先リストなども対象。サービスは停止中。",
+      "summary": "ラクスの子会社が提供するメール配信システム「ブラストメール」の API 用サーバー 2 台に第三者が侵入し、販売管理システムとサービスのデータベースからデータを持ち出した。全契約者の会社名・担当者名・電話番号・メールアドレスなどが流出し、345 契約では配信先リストなども漏えい。サービスは停止中で、利用組織側の公表が相次いでいる。",
       "cause": "unauthorized_access",
       "vector": "API 用サーバー 2 台に侵入してコマンドを実行し、データベースからデータを持ち出し（侵入経路は調査中）",
       "data_types": [
@@ -1698,6 +1729,14 @@
       "status": "investigating",
       "confidence": 0.9,
       "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ラクスライトクラウド",
+          "url": "https://info.blastmail.jp/information_20261021.html",
+          "published_at": "2026-10-27",
+          "title": "お知らせ | blastmail（10 月 27 日 12 時 30 分更新）"
+        },
         {
           "role": "primary",
           "trust": "official",
@@ -1721,6 +1760,14 @@
           "url": "https://www.security-next.com/191846",
           "published_at": "2026-10-26",
           "title": "メール配信システムで契約者情報が流出 - ラクスグループ会社"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/10/27/133851",
+          "published_at": "2026-10-27",
+          "title": "メール配信サービス「ブラストメール」への不正アクセスについてまとめてみた"
         }
       ],
       "timeline": [
@@ -1728,18 +1775,24 @@
           "date": "2026-10-21",
           "kind": "detected",
           "text": "不審なアクセスを検知し、午前 0 時 30 分からサービスを緊急停止",
-          "source": 1
+          "source": 2
         },
         {
           "date": "2026-10-21",
           "kind": "disclosed",
           "text": "第 1 報で不審なアクセスとサービス停止を公表",
-          "source": 1
+          "source": 2
         },
         {
           "date": "2026-10-21",
           "kind": "updated",
           "text": "第 2 報で全契約者の情報流出を公表。件数は非公表、再開時期は未定",
+          "source": 1
+        },
+        {
+          "date": "2026-10-27",
+          "kind": "updated",
+          "text": "契約者情報以外（配信先リスト等）の漏えいを確認した契約が 345 件に（10 月 23 日時点の 288 件から増加）。侵入経路は調査中、再開時期は未定",
           "source": 0
         }
       ],
@@ -1749,7 +1802,7 @@
         "contractor"
       ],
       "created_at": "2026-10-27",
-      "updated_at": "2026-10-27"
+      "updated_at": "2026-10-28"
     },
     {
       "id": "2026-10-26-resona-bank",
@@ -1858,6 +1911,210 @@
       ],
       "created_at": "2026-10-27",
       "updated_at": "2026-10-27"
+    },
+    {
+      "id": "2026-10-27-bandai-logipal",
+      "org": "bandai-logipal",
+      "org_name": "株式会社バンダイロジパル",
+      "org_aliases": [
+        "バンダイロジパル",
+        "一番くじONLINE"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "バンダイロジパル 物流システムへの不正アクセスで「一番くじONLINE」配送情報が流出した可能性",
+      "summary": "バンダイナムコグループで物流を担う同社のサーバーがアカウントの不正利用により不正アクセスを受け、BANDAI SPIRITS から受託した「一番くじONLINE」の配送関連情報（氏名・住所・電話番号）が流出した可能性がある。件数は調査中で、物流システムを停止して個人情報保護委員会に報告した。",
+      "cause": "unauthorized_access",
+      "vector": "第三者によるアカウントの不正利用で物流システム関連サーバーを不正操作",
+      "data_types": [
+        "name",
+        "address",
+        "phone"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-21",
+      "disclosed_at": "2026-10-27",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191994",
+          "published_at": "2026-10-27",
+          "title": "バンナム子会社に不正アクセス - 「一番くじONLINE」配送情報が流出か"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "kind": "detected",
+          "text": "物流システム関連サーバーで侵害が疑われる痕跡を発見し停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-22",
+          "kind": "updated",
+          "text": "配送関連情報を保存するサーバーで不正アクセスの痕跡を確認",
+          "source": 0
+        },
+        {
+          "date": "2026-10-26",
+          "kind": "updated",
+          "text": "個人情報保護委員会へ報告",
+          "source": 0
+        },
+        {
+          "date": "2026-10-27",
+          "kind": "disclosed",
+          "text": "報道で確認した公表日（同社の発表本文は未確認）。件数は調査中、配送先情報の不正利用は確認されていないとされる",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "logistics",
+        "account-takeover",
+        "ec-site"
+      ],
+      "created_at": "2026-10-28",
+      "updated_at": "2026-10-28"
+    },
+    {
+      "id": "2026-10-27-okayama-kekkon-suishin-kyokai",
+      "org": "okayama-kekkon-suishin-kyokai",
+      "org_name": "おかやま結婚推進協会",
+      "org_aliases": [
+        "おかやま結婚推進協会"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "おかやま結婚推進協会 婚活イベント申込フォームの設定ミスで申込者情報が閲覧可能に",
+      "summary": "岡山県と婚活イベントを共催する協会が、申込フォームの告知に応募者用ではなく編集者用の URL を設定して公開し、申込者 26 人分の氏名・居住市町村・電話番号・メールアドレスなどが閲覧可能になっていた。申込者からの問い合わせで判明し、イベントは中止した。",
+      "cause": "misdelivery",
+      "vector": "申込フォームのリンク先に編集者用 URL を誤って設定",
+      "data_types": [
+        "name",
+        "phone",
+        "email",
+        "other"
+      ],
+      "affected": 26,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-09-16",
+      "detected_at": "2026-09-26",
+      "disclosed_at": "2026-10-27",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191915",
+          "published_at": "2026-10-27",
+          "title": "婚活イベントで申込者情報を誤公開、開催中止に - 岡山県"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-16",
+          "kind": "occurred",
+          "text": "編集者用 URL を設定した申込フォームの告知を公開",
+          "source": 0
+        },
+        {
+          "date": "2026-09-26",
+          "kind": "detected",
+          "text": "申込者からの問い合わせで判明し、同日リンクを修正",
+          "source": 0
+        },
+        {
+          "date": "2026-10-27",
+          "kind": "disclosed",
+          "text": "岡山県が公表（日付は報道日）。安全に配慮しイベントを中止",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "web-form",
+        "government"
+      ],
+      "created_at": "2026-10-28",
+      "updated_at": "2026-10-28"
+    },
+    {
+      "id": "2026-10-20-afd",
+      "org": "afd",
+      "org_name": "Alternative für Deutschland (AfD)",
+      "org_aliases": [
+        "AfD",
+        "afd.de",
+        "Alternative für Deutschland"
+      ],
+      "industry": "service",
+      "country": "DE",
+      "title": "AfD ホスティング事業者への攻撃でメールボックスのデータが流出・公開",
+      "summary": "ドイツの政党 AfD が利用するホスティング事業者が攻撃を受け、メールボックスのデータが窃取されて 10 月にオンラインで公開された。HIBP は 345,439 件のメールアドレスとメール本文を収録。党は当局へ届け出たとしている。",
+      "cause": "unauthorized_access",
+      "vector": "党が利用するホスティング事業者への攻撃（手口は非公表）",
+      "data_types": [
+        "email",
+        "internal_doc"
+      ],
+      "affected": 345439,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-10-20",
+      "status": "reported",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "Alternative für Deutschland",
+          "url": "https://www.afd.de/afd-zum-daten-hack-angriff-auf-parteiensystem-und-demokratie/",
+          "published_at": "2026-10-20",
+          "title": "AfD zum Daten-Hack: Angriff auf Parteiensystem und Demokratie"
+        },
+        {
+          "role": "secondary",
+          "trust": "aggregator",
+          "publisher": "Have I Been Pwned",
+          "url": "https://haveibeenpwned.com/Breach/AfD",
+          "published_at": "2026-10-27",
+          "title": "AfD (afd.de) — 345,439 accounts"
+        }
+      ],
+      "timeline": [
+        {
+          "date": null,
+          "kind": "occurred",
+          "text": "党の発表では 2026 年 9 月末の攻撃。HIBP が引く分析では 9 月 9 日に検知、その 5 日後に再侵入",
+          "source": 0
+        },
+        {
+          "date": "2026-10-20",
+          "kind": "disclosed",
+          "text": "党が声明を公表。データは 10 月 19 日ごろ活動家サイトで公開されたとし、データ保護担当者と治安当局へ届け出",
+          "source": 0
+        },
+        {
+          "date": "2026-10-27",
+          "kind": "updated",
+          "text": "HIBP に 345,439 件のメールアドレスが登録",
+          "source": 1
+        }
+      ],
+      "keywords": [
+        "hosting-provider",
+        "leak-published"
+      ],
+      "created_at": "2026-10-28",
+      "updated_at": "2026-10-28"
     }
   ]
 }

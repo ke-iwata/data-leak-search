@@ -1,4 +1,12 @@
 {
+ "https://www.security-next.com/191915": {
+  "incident": "2026-10-27-okayama-kekkon-suishin-kyokai",
+  "at": "2026-10-27"
+ },
+ "https://www.security-next.com/191994": {
+  "incident": "2026-10-27-bandai-logipal",
+  "at": "2026-10-27"
+ },
  "https://www.security-next.com/191783": {
   "incident": "2026-10-26-resona-bank",
   "at": "2026-10-26"
@@ -27,6 +35,10 @@
   "incident": "2026-10-22-capcom",
   "at": "2026-10-23"
  },
+ "https://info.blastmail.jp/information_20261021.html": {
+  "incident": "2026-10-21-rakus-lite-cloud",
+  "at": "2026-10-27"
+ },
  "https://www.rakus.co.jp/news/2026/1021-3.html": {
   "incident": "2026-10-21-rakus-lite-cloud",
   "at": "2026-10-21"
@@ -38,6 +50,10 @@
  "https://www.security-next.com/191846": {
   "incident": "2026-10-21-rakus-lite-cloud",
   "at": "2026-10-26"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/10/27/133851": {
+  "incident": "2026-10-21-rakus-lite-cloud",
+  "at": "2026-10-27"
  },
  "https://www.osaka-u.ac.jp/ja/news/topics/2026/10/21004": {
   "incident": "2026-10-21-osaka-univ",
@@ -67,9 +83,17 @@
   "incident": "2026-10-21-digital-arts",
   "at": "2026-10-23"
  },
+ "https://www.ymir.co.jp/info/ymir-information20261027.html": {
+  "incident": "2026-10-20-ymir-link",
+  "at": "2026-10-26"
+ },
  "https://www.security-next.com/191652": {
   "incident": "2026-10-20-ymir-link",
   "at": "2026-10-20"
+ },
+ "https://www.security-next.com/192029": {
+  "incident": "2026-10-20-ymir-link",
+  "at": "2026-10-27"
  },
  "https://www.security-next.com/191694": {
   "incident": "2026-10-20-nec",
@@ -82,6 +106,14 @@
  "https://www.security-next.com/191780": {
   "incident": "2026-10-20-mlit",
   "at": "2026-10-22"
+ },
+ "https://www.afd.de/afd-zum-daten-hack-angriff-auf-parteiensystem-und-demokratie": {
+  "incident": "2026-10-20-afd",
+  "at": "2026-10-20"
+ },
+ "https://haveibeenpwned.com/Breach/AfD": {
+  "incident": "2026-10-20-afd",
+  "at": "2026-10-27"
  },
  "https://www.trustbank.co.jp/newsroom/newsrelease/news261020": {
   "incident": "2026-10-19-trustbank",
