@@ -227,6 +227,77 @@
       ],
       "created_at": "2026-10-27",
       "updated_at": "2026-10-27"
+    },
+    {
+      "id": "2026-09-21-aichi-pref",
+      "org": "aichi-pref",
+      "org_name": "愛知県",
+      "org_aliases": [
+        "愛知県",
+        "あいこんナビ",
+        "pref.aichi.jp"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "愛知県 婚活ポータル「あいこんナビ」でイベント主催団体の非公開個人情報 599 人分を誤掲載",
+      "summary": "愛知県の出会いサポートポータルサイト「あいこんナビ」で、イベント主催団体が 2018 年の掲載申請時に誤って添付した非公開ファイルが公開され、599 人分の氏名・年齢・学歴・職業・身長などが閲覧可能になっていた。県も気付かず承認・掲載していた。",
+      "cause": "misdelivery",
+      "vector": "掲載申請の申込用ファイルに非公開情報が誤添付され、県が確認できずに承認・公開",
+      "data_types": [
+        "name",
+        "other"
+      ],
+      "affected": 599,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-09-20",
+      "disclosed_at": "2026-09-21",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "愛知県",
+          "url": "https://www.pref.aichi.jp/press-release/aiconnavikisya202609.html",
+          "published_at": "2026-09-22",
+          "title": "【追加】出会いサポートポータルサイト「あいこんナビ」のイベント情報において、イベント主催団体が保有する個人情報が誤掲載されていたことについて"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191655",
+          "published_at": "2026-10-28",
+          "title": "婚活情報ポータルサイトに無関係の個人情報 - 愛知県"
+        }
+      ],
+      "timeline": [
+        {
+          "date": null,
+          "kind": "occurred",
+          "text": "2018 年の掲載申請時に非公開ファイルが誤添付され公開（日付不明）",
+          "source": 0
+        },
+        {
+          "date": "2026-09-20",
+          "kind": "detected",
+          "text": "一般の方からの連絡で判明し、同日夜に削除",
+          "source": 0
+        },
+        {
+          "date": "2026-09-21",
+          "kind": "disclosed",
+          "text": "県が公表（初報日は報道ベース）。9 月 22 日に主催団体名を追加。承認業務の委託先にダブルチェックを指導",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "government",
+        "web-form"
+      ],
+      "created_at": "2026-10-29",
+      "updated_at": "2026-10-29"
     }
   ]
 }

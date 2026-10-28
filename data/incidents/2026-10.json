@@ -2115,6 +2115,414 @@
       ],
       "created_at": "2026-10-28",
       "updated_at": "2026-10-28"
+    },
+    {
+      "id": "2026-10-26-rakuten-travel-xchange",
+      "org": "rakuten-travel-xchange",
+      "org_name": "Rakuten Travel Xchange",
+      "org_aliases": [
+        "楽天トラベル",
+        "Rakuten Travel Xchange",
+        "RTX",
+        "楽天トラベル 海外ホテル予約"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "楽天トラベル 海外ホテル予約ページへの不正アクセスで最大約 260 万件の顧客情報が対象",
+      "summary": "楽天グループ子会社の Rakuten Travel Xchange が運営する楽天トラベル海外ホテル予約ページの一部が不正アクセスを受けた。ログイン利用者最大約 260 万件の氏名・連絡先と、予約者最大約 4 万件の予約情報が対象で、うち最大約 3.6 万件はカードの発行者識別番号・下 4 桁・名義・有効期限を含む。カード番号全桁・セキュリティコード・パスワードは含まれないとしている。",
+      "cause": "unauthorized_access",
+      "vector": "海外ホテル予約サイトの一部ページへの不正アクセス（手口は非公表）",
+      "data_types": [
+        "name",
+        "email",
+        "phone",
+        "card",
+        "other"
+      ],
+      "affected": 2600000,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-09-10",
+      "disclosed_at": "2026-10-26",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "楽天グループ株式会社",
+          "url": "https://travel.rakuten.co.jp/info/announce/20261026.html",
+          "published_at": "2026-10-26",
+          "title": "海外ホテル予約サイトの一部ページならびに多言語予約サイトに関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191989",
+          "published_at": "2026-10-28",
+          "title": "複数予約サイトで侵害、顧客情報が流出か - 楽天トラベル"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-10",
+          "kind": "detected",
+          "text": "一部ページで異常を検知。9 月 15 日に原因を特定し、9 月 16 日にシステム改修を完了",
+          "source": 0
+        },
+        {
+          "date": "2026-10-26",
+          "kind": "disclosed",
+          "text": "楽天トラベルが多言語予約サイトの件と合わせて公表。対象は欧州・米加・アジア太平洋の一部エリアの予約ページ。個人情報保護委員会と海外当局へ報告",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "travel",
+        "booking-info",
+        "member-info",
+        "ec-site"
+      ],
+      "created_at": "2026-10-29",
+      "updated_at": "2026-10-29"
+    },
+    {
+      "id": "2026-10-26-rakuten-group",
+      "org": "rakuten-group",
+      "org_name": "楽天グループ株式会社",
+      "org_aliases": [
+        "楽天グループ",
+        "楽天",
+        "Rakuten",
+        "楽天トラベル 多言語予約サイト"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "楽天トラベル 多言語予約サイトへの不正アクセスで最大約 86 万件のメールアドレス等が対象",
+      "summary": "楽天グループが運営する楽天トラベルの多言語予約サイトに第三者による不正アクセスの可能性があり、ログイン利用者最大約 86 万件のメールアドレスと社内識別番号、宿泊施設スタッフ最大約 4 万アカウントの名称・メールアドレスが対象となった。海外ホテル予約ページの件とは別事象として同日に公表。",
+      "cause": "unauthorized_access",
+      "vector": "多言語予約サイトへの第三者による不正アクセス（手口は非公表）",
+      "data_types": [
+        "email",
+        "other"
+      ],
+      "affected": 900000,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-10-20",
+      "disclosed_at": "2026-10-26",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "楽天グループ株式会社",
+          "url": "https://travel.rakuten.co.jp/info/announce/20261026.html",
+          "published_at": "2026-10-26",
+          "title": "海外ホテル予約サイトの一部ページならびに多言語予約サイトに関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191989",
+          "published_at": "2026-10-28",
+          "title": "複数予約サイトで侵害、顧客情報が流出か - 楽天トラベル"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "kind": "detected",
+          "text": "不正アクセスの可能性を検知し同日原因を特定。10 月 21 日にシステム改修を完了",
+          "source": 0
+        },
+        {
+          "date": "2026-10-26",
+          "kind": "disclosed",
+          "text": "海外ホテル予約ページの件と合わせて公表。affected は利用者約 86 万件と施設スタッフ約 4 万アカウントの合計（いずれも最大）",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "travel",
+        "member-info",
+        "web-service"
+      ],
+      "created_at": "2026-10-29",
+      "updated_at": "2026-10-29"
+    },
+    {
+      "id": "2026-10-27-sony-network-communications",
+      "org": "sony-network-communications",
+      "org_name": "ソニーネットワークコミュニケーションズ株式会社",
+      "org_aliases": [
+        "So-net",
+        "ソネット",
+        "ソニーネットワークコミュニケーションズ",
+        "so-net.ne.jp",
+        "Sony Network Communications"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "So-net 会員データベースへの不正アクセスで会員情報約 258 万件とメールのパスワードが漏えい",
+      "summary": "So-net の会員データベースが外部から不正アクセスを受け、So-net 会員 2,141,986 件と plala（S コース）会員 443,495 件の氏名・電話番号・メールアドレス・生年月日・ユーザー ID 等が漏えいした。メール関連 4 サービスのメールアドレスとパスワード計 54,401 件、銀行口座情報 16 件も含まれる。So-net 会員のログインパスワードとカード情報は含まれないとしている。",
+      "cause": "unauthorized_access",
+      "vector": "会員データベースサーバーへの外部からの不正アクセス（原因は調査中）",
+      "data_types": [
+        "name",
+        "phone",
+        "email",
+        "birthday",
+        "credential",
+        "bank",
+        "other"
+      ],
+      "affected": 2585481,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-10-19",
+      "detected_at": "2026-10-23",
+      "disclosed_at": "2026-10-27",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "ソニーネットワークコミュニケーションズ株式会社",
+          "url": "https://www.so-net.ne.jp/info/2026/20261027_0001.html",
+          "published_at": "2026-10-27",
+          "title": "So-net会員データベースへの不正アクセスに伴う情報漏洩に関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192075",
+          "published_at": "2026-10-28",
+          "title": "「So-net」の会員DB侵害、個人情報流出を確認"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-19",
+          "kind": "occurred",
+          "text": "会員データベースへの不正アクセスが発生",
+          "source": 0
+        },
+        {
+          "date": "2026-10-23",
+          "kind": "detected",
+          "text": "不正アクセスを確認し、該当サーバーを停止して攻撃者の通信を遮断。10 月 24 日に漏えい項目と件数を確認",
+          "source": 0
+        },
+        {
+          "date": "2026-10-27",
+          "kind": "disclosed",
+          "text": "公表。対象メールアカウントのパスワードを同日リセット。個人情報保護委員会へ報告。affected は So-net 会員と plala（S コース）会員の合計で、メールのパスワード 54,401 件は別計上",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "isp",
+        "member-info",
+        "credential-theft"
+      ],
+      "created_at": "2026-10-29",
+      "updated_at": "2026-10-29"
+    },
+    {
+      "id": "2026-10-28-japan-airlines",
+      "org": "japan-airlines",
+      "org_name": "日本航空株式会社",
+      "org_aliases": [
+        "日本航空",
+        "JAL",
+        "日本トランスオーシャン航空",
+        "JTA",
+        "jal.co.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "JAL・JTA 委託先 Amadeus への不正アクセスで顧客約 9.2 万人の予約情報が閲覧",
+      "summary": "日本航空と日本トランスオーシャン航空は、旅客サービスシステムの委託先 Amadeus のシステムへの不正アクセスで、顧客約 9.2 万人の予約情報が外部から参照された形跡があると公表した。約 9 万人は予約番号・氏名・搭乗日・区間等、約 2,000 人はこれに加え連絡先・パスポート番号・国籍・マイレージ番号等。カード番号とパスワードは含まれないとしている。",
+      "cause": "unauthorized_access",
+      "vector": "委託先 Amadeus の旅客サービスシステムへの不正アクセス（韓国の航空会社の発表では同社システムのアカウント認証情報が使われた）",
+      "data_types": [
+        "name",
+        "email",
+        "phone",
+        "other"
+      ],
+      "affected": 92000,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-10-23",
+      "disclosed_at": "2026-10-28",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Aviation Wire",
+          "url": "https://www.aviationwire.jp/archives/353202",
+          "published_at": "2026-10-28",
+          "title": null
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/10/28/214917",
+          "published_at": "2026-10-28",
+          "title": "Amadeus の旅客サービスシステムへの不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": null,
+          "kind": "occurred",
+          "text": "侵入時期は非公表。対象は 2023 年 8 月 10 日〜2026 年 9 月 23 日に Amadeus のシステムにあった予約記録",
+          "source": 0
+        },
+        {
+          "date": "2026-10-23",
+          "kind": "detected",
+          "text": "Amadeus から JAL へ報告",
+          "source": 0
+        },
+        {
+          "date": "2026-10-28",
+          "kind": "disclosed",
+          "text": "JAL・JTA が連名で公表（JAL 公式発表は取得できず 403、報道で確認）。10 月 29 日に専用窓口を開設",
+          "source": 1
+        }
+      ],
+      "keywords": [
+        "airline",
+        "booking-info",
+        "travel",
+        "supply-chain"
+      ],
+      "created_at": "2026-10-29",
+      "updated_at": "2026-10-29"
+    },
+    {
+      "id": "2026-10-23-korean-air",
+      "org": "korean-air",
+      "org_name": "大韓航空（Korean Air）",
+      "org_aliases": [
+        "Korean Air",
+        "大韓航空",
+        "koreanair.com"
+      ],
+      "industry": "service",
+      "country": "KR",
+      "title": "大韓航空 委託先 Amadeus への不正アクセスで一部顧客の予約番号が閲覧",
+      "summary": "大韓航空は、委託先 Amadeus のシステムへの不正アクセスで一部顧客の予約番号が閲覧されたと公表した。自社データベースへの侵害はなく、Amadeus のシステムのアカウント認証情報が使われたとしている。対象人数は非公表。",
+      "cause": "unauthorized_access",
+      "vector": "委託先 Amadeus のシステムのアカウント認証情報を使ったアクセス",
+      "data_types": [
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-20",
+      "disclosed_at": "2026-10-23",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/10/28/214917",
+          "published_at": "2026-10-28",
+          "title": "Amadeus の旅客サービスシステムへの不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "kind": "detected",
+          "text": "Amadeus から通知",
+          "source": 0
+        },
+        {
+          "date": "2026-10-23",
+          "kind": "disclosed",
+          "text": "公表（公式告知は 503 で取得できず、まとめ記事で確認）。侵入時期は調査中、判明分の顧客へメールで通知",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "airline",
+        "booking-info",
+        "supply-chain"
+      ],
+      "created_at": "2026-10-29",
+      "updated_at": "2026-10-29"
+    },
+    {
+      "id": "2026-10-23-asiana-airlines",
+      "org": "asiana-airlines",
+      "org_name": "アシアナ航空（Asiana Airlines）",
+      "org_aliases": [
+        "Asiana Airlines",
+        "アシアナ航空",
+        "flyasiana.com"
+      ],
+      "industry": "service",
+      "country": "KR",
+      "title": "アシアナ航空 予約システム運営会社 Amadeus への不正アクセスで一部顧客の予約番号が閲覧",
+      "summary": "アシアナ航空は、予約・発券に使う Amadeus のシステムへの不正アクセスで一部顧客の予約番号が閲覧されたと公表した。決済は別システムのため支払情報は含まれないと報じられている。対象人数は非公表。",
+      "cause": "unauthorized_access",
+      "vector": "予約システム運営会社 Amadeus のシステムのアカウント認証情報を使ったアクセス",
+      "data_types": [
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-20",
+      "disclosed_at": "2026-10-23",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/10/28/214917",
+          "published_at": "2026-10-28",
+          "title": "Amadeus の旅客サービスシステムへの不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "kind": "detected",
+          "text": "Amadeus から通知",
+          "source": 0
+        },
+        {
+          "date": "2026-10-23",
+          "kind": "disclosed",
+          "text": "公表（公式告知は 503 で取得できず、まとめ記事で確認）。侵入時期は調査中",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "airline",
+        "booking-info",
+        "supply-chain"
+      ],
+      "created_at": "2026-10-29",
+      "updated_at": "2026-10-29"
     }
   ]
 }

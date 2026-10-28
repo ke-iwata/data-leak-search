@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-29",
+  "generated_at": "2026-10-29T05:40:00+09:00",
+  "stats": {
+    "collected": 30,
+    "candidates": 9,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 2
+  },
+  "digest": [
+    {
+      "text": "So-net 会員 DB への不正アクセスで会員情報約 258 万件（plala S コース含む）とメールのパスワード 54,401 件、銀行口座情報 16 件が漏えい。",
+      "incidents": [
+        "2026-10-27-sony-network-communications"
+      ]
+    },
+    {
+      "text": "楽天トラベルで 2 件の侵害を同日公表。海外ホテル予約ページは最大約 260 万件が対象で、うち最大約 3.6 万件はカード下 4 桁・有効期限等を含む。多言語予約サイトは最大約 86 万件。",
+      "incidents": [
+        "2026-10-26-rakuten-travel-xchange",
+        "2026-10-26-rakuten-group"
+      ]
+    },
+    {
+      "text": "航空 IT の Amadeus への不正アクセスが JAL・JTA（約 9.2 万人）と大韓航空・アシアナ航空に波及。委託先経由の連鎖公表がメール配信 SaaS に続き航空でも。",
+      "incidents": [
+        "2026-10-28-japan-airlines",
+        "2026-10-23-korean-air",
+        "2026-10-23-asiana-airlines"
+      ]
+    },
+    {
+      "text": "愛知県の婚活ポータルで 2018 年から 599 人分の非公開情報が誤掲載されていた件を 9 月公表分として追加。",
+      "incidents": [
+        "2026-09-21-aichi-pref"
+      ]
+    }
+  ],
+  "new": [
+    "2026-10-26-rakuten-travel-xchange",
+    "2026-10-26-rakuten-group",
+    "2026-10-27-sony-network-communications",
+    "2026-10-28-japan-airlines",
+    "2026-10-23-korean-air",
+    "2026-10-23-asiana-airlines",
+    "2026-09-21-aichi-pref"
+  ],
+  "updated": [],
+  "skipped": [
+    {
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/10/28/172044",
+      "reason": "PHP の脆弱性を題材にした賞金付き公開競技の突破で、組織の情報漏えい事案ではない"
+    },
+    {
+      "url": "https://www.ppc.go.jp/news/press/2026/261028_houdou",
+      "reason": "個人情報保護委員会の研究会開催の告知で事案ではない"
+    }
+  ]
+}

@@ -1,4 +1,20 @@
 {
+ "https://www.aviationwire.jp/archives/353202": {
+  "incident": "2026-10-28-japan-airlines",
+  "at": "2026-10-28"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/10/28/214917": {
+  "incident": "2026-10-23-asiana-airlines",
+  "at": "2026-10-28"
+ },
+ "https://www.so-net.ne.jp/info/2026/20261027_0001.html": {
+  "incident": "2026-10-27-sony-network-communications",
+  "at": "2026-10-27"
+ },
+ "https://www.security-next.com/192075": {
+  "incident": "2026-10-27-sony-network-communications",
+  "at": "2026-10-28"
+ },
  "https://www.security-next.com/191915": {
   "incident": "2026-10-27-okayama-kekkon-suishin-kyokai",
   "at": "2026-10-27"
@@ -10,6 +26,14 @@
  "https://www.security-next.com/191783": {
   "incident": "2026-10-26-resona-bank",
   "at": "2026-10-26"
+ },
+ "https://travel.rakuten.co.jp/info/announce/20261026.html": {
+  "incident": "2026-10-26-rakuten-group",
+  "at": "2026-10-26"
+ },
+ "https://www.security-next.com/191989": {
+  "incident": "2026-10-26-rakuten-group",
+  "at": "2026-10-28"
  },
  "https://www.security-next.com/191495": {
   "incident": "2026-10-26-atsugi-city",
@@ -227,6 +251,14 @@
   "incident": "2026-09-29-yamato-transport",
   "at": "2026-10-21"
  },
+ "https://www.pref.aichi.jp/press-release/aiconnavikisya202609.html": {
+  "incident": "2026-09-21-aichi-pref",
+  "at": "2026-09-22"
+ },
+ "https://www.security-next.com/191655": {
+  "incident": "2026-09-21-aichi-pref",
+  "at": "2026-10-28"
+ },
  "https://www.gogin.co.jp/newsrelease/common/attachmentfile/attachmentfile-file-4972.pdf": {
   "incident": "2026-09-14-sanin-godo-bank",
   "at": "2026-09-14"
@@ -298,5 +330,13 @@
  "https://www.jpcert.or.jp/at/2026/at260030.html": {
   "skipped": "JPCERT/CC の注意喚起の更新で、個別事案ではない",
   "at": "2026-10-24"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/10/28/172044": {
+  "skipped": "PHP の脆弱性を題材にした賞金付き公開競技の突破で、組織の情報漏えい事案ではない",
+  "at": "2026-10-29"
+ },
+ "https://www.ppc.go.jp/news/press/2026/261028_houdou": {
+  "skipped": "個人情報保護委員会の研究会開催の告知で事案ではない",
+  "at": "2026-10-29"
  }
 }

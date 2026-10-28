@@ -63,6 +63,21 @@
   "last": "2026-09-14",
   "affected_total": 0
  },
+ "aichi-pref": {
+  "name": "愛知県",
+  "aliases": [
+   "あいこんナビ",
+   "pref.aichi.jp"
+  ],
+  "industry": "public",
+  "country": "JP",
+  "incidents": [
+   "2026-09-21-aichi-pref"
+  ],
+  "first": "2026-09-21",
+  "last": "2026-09-21",
+  "affected_total": 599
+ },
  "yamato-transport": {
   "name": "ヤマト運輸株式会社",
   "aliases": [
@@ -499,6 +514,38 @@
   "last": "2026-10-22",
   "affected_total": 11774247
  },
+ "korean-air": {
+  "name": "大韓航空（Korean Air）",
+  "aliases": [
+   "Korean Air",
+   "大韓航空",
+   "koreanair.com"
+  ],
+  "industry": "service",
+  "country": "KR",
+  "incidents": [
+   "2026-10-23-korean-air"
+  ],
+  "first": "2026-10-23",
+  "last": "2026-10-23",
+  "affected_total": 0
+ },
+ "asiana-airlines": {
+  "name": "アシアナ航空（Asiana Airlines）",
+  "aliases": [
+   "Asiana Airlines",
+   "アシアナ航空",
+   "flyasiana.com"
+  ],
+  "industry": "service",
+  "country": "KR",
+  "incidents": [
+   "2026-10-23-asiana-airlines"
+  ],
+  "first": "2026-10-23",
+  "last": "2026-10-23",
+  "affected_total": 0
+ },
  "resona-bank": {
   "name": "株式会社りそな銀行",
   "aliases": [
@@ -515,6 +562,39 @@
   "last": "2026-10-26",
   "affected_total": 9000
  },
+ "rakuten-travel-xchange": {
+  "name": "Rakuten Travel Xchange",
+  "aliases": [
+   "楽天トラベル",
+   "RTX",
+   "楽天トラベル 海外ホテル予約"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-10-26-rakuten-travel-xchange"
+  ],
+  "first": "2026-10-26",
+  "last": "2026-10-26",
+  "affected_total": 2600000
+ },
+ "rakuten-group": {
+  "name": "楽天グループ株式会社",
+  "aliases": [
+   "楽天グループ",
+   "楽天",
+   "Rakuten",
+   "楽天トラベル 多言語予約サイト"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-10-26-rakuten-group"
+  ],
+  "first": "2026-10-26",
+  "last": "2026-10-26",
+  "affected_total": 900000
+ },
  "atsugi-city": {
   "name": "厚木市",
   "aliases": [
@@ -529,6 +609,24 @@
   "first": "2026-10-26",
   "last": "2026-10-26",
   "affected_total": 5464
+ },
+ "sony-network-communications": {
+  "name": "ソニーネットワークコミュニケーションズ株式会社",
+  "aliases": [
+   "So-net",
+   "ソネット",
+   "ソニーネットワークコミュニケーションズ",
+   "so-net.ne.jp",
+   "Sony Network Communications"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-27-sony-network-communications"
+  ],
+  "first": "2026-10-27",
+  "last": "2026-10-27",
+  "affected_total": 2585481
  },
  "okayama-kekkon-suishin-kyokai": {
   "name": "おかやま結婚推進協会",
@@ -556,5 +654,23 @@
   "first": "2026-10-27",
   "last": "2026-10-27",
   "affected_total": 0
+ },
+ "japan-airlines": {
+  "name": "日本航空株式会社",
+  "aliases": [
+   "日本航空",
+   "JAL",
+   "日本トランスオーシャン航空",
+   "JTA",
+   "jal.co.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-10-28-japan-airlines"
+  ],
+  "first": "2026-10-28",
+  "last": "2026-10-28",
+  "affected_total": 92000
  }
 }
