@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-30",
+  "generated_at": "2026-10-30T05:20:00+09:00",
+  "stats": {
+    "collected": 18,
+    "candidates": 9,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 2
+  },
+  "digest": [
+    {
+      "text": "ドトールコーヒーの社内システムに不正アクセス。都内 4 店舗の従業員・退職者 951 人分の氏名・住所・銀行口座番号などが持ち出された可能性。顧客情報への影響は確認されていない。",
+      "incidents": [
+        "2026-10-26-doutor-coffee"
+      ]
+    }
+  ],
+  "new": [
+    "2026-10-26-doutor-coffee"
+  ],
+  "updated": [],
+  "skipped": [
+    {
+      "url": "https://www.security-next.com/191987",
+      "reason": "ギフティの不正アクセスによる電子ギフト不正発行（被害額約 5.5 億円）。個人情報の流出は確認されていないと公表しており、情報漏えい事案ではない"
+    },
+    {
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/10/29/170430",
+      "reason": "AI エージェントの指示ファイル経由の乗っ取りに関する試験・観測のまとめで、組織の情報漏えい事案ではない"
+    }
+  ]
+}

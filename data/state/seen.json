@@ -35,6 +35,14 @@
   "incident": "2026-10-26-rakuten-group",
   "at": "2026-10-28"
  },
+ "https://www.doutor.co.jp/news/newsrelease/detail/20261026144748.html": {
+  "incident": "2026-10-26-doutor-coffee",
+  "at": "2026-10-26"
+ },
+ "https://www.security-next.com/192077": {
+  "incident": "2026-10-26-doutor-coffee",
+  "at": "2026-10-29"
+ },
  "https://www.security-next.com/191495": {
   "incident": "2026-10-26-atsugi-city",
   "at": "2026-10-26"
@@ -338,5 +346,13 @@
  "https://www.ppc.go.jp/news/press/2026/261028_houdou": {
   "skipped": "個人情報保護委員会の研究会開催の告知で事案ではない",
   "at": "2026-10-29"
+ },
+ "https://www.security-next.com/191987": {
+  "skipped": "ギフティの不正アクセスによる電子ギフト不正発行（被害額約 5.5 億円）。個人情報の流出は確認されていないと公表しており、情報漏えい事案ではない",
+  "at": "2026-10-30"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/10/29/170430": {
+  "skipped": "AI エージェントの指示ファイル経由の乗っ取りに関する試験・観測のまとめで、組織の情報漏えい事案ではない",
+  "at": "2026-10-30"
  }
 }

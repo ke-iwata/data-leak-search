@@ -2523,6 +2523,75 @@
       ],
       "created_at": "2026-10-29",
       "updated_at": "2026-10-29"
+    },
+    {
+      "id": "2026-10-26-doutor-coffee",
+      "org": "doutor-coffee",
+      "org_name": "株式会社ドトールコーヒー",
+      "org_aliases": [
+        "ドトールコーヒー",
+        "ドトール",
+        "Doutor Coffee",
+        "doutor.co.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "ドトールコーヒー 社内システムへの不正アクセスで従業員・退職者の個人情報が流出した可能性",
+      "summary": "ドトールコーヒーは、従業員情報を保管する社内システムの一部が外部の第三者から不正アクセスを受け、都内 4 店舗に勤務した従業員・退職者計 951 人の個人情報が閲覧・持ち出された可能性があると公表した。銀行口座番号を含む。顧客情報への不正アクセスは確認されていないとしている。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "birthday",
+        "address",
+        "email",
+        "phone",
+        "bank"
+      ],
+      "affected": 951,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-10-20",
+      "disclosed_at": "2026-10-26",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ドトールコーヒー",
+          "url": "https://www.doutor.co.jp/news/newsrelease/detail/20261026144748.html",
+          "published_at": "2026-10-26",
+          "title": "当社の従業員及び退職者の皆様へのお知らせ 当社システムの一部に対する不正アクセスについて"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192077",
+          "published_at": "2026-10-29",
+          "title": "従業員の個人情報が流出した可能性 - ドトールコーヒー"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "kind": "detected",
+          "text": "社内システムの一部への不正アクセスを検知。侵入経路・発生時期は非公表",
+          "source": 0
+        },
+        {
+          "date": "2026-10-26",
+          "kind": "disclosed",
+          "text": "従業員・退職者向けに公表。個人情報保護委員会へ報告し、事実関係を調査中。件数 951 人は閲覧・持ち出しの可能性がある人数",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "employee-info"
+      ],
+      "created_at": "2026-10-30",
+      "updated_at": "2026-10-30"
     }
   ]
 }

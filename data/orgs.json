@@ -595,6 +595,23 @@
   "last": "2026-10-26",
   "affected_total": 900000
  },
+ "doutor-coffee": {
+  "name": "株式会社ドトールコーヒー",
+  "aliases": [
+   "ドトールコーヒー",
+   "ドトール",
+   "Doutor Coffee",
+   "doutor.co.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-10-26-doutor-coffee"
+  ],
+  "first": "2026-10-26",
+  "last": "2026-10-26",
+  "affected_total": 951
+ },
  "atsugi-city": {
   "name": "厚木市",
   "aliases": [
