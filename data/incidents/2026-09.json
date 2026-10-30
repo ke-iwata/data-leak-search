@@ -298,6 +298,83 @@
       ],
       "created_at": "2026-10-29",
       "updated_at": "2026-10-29"
+    },
+    {
+      "id": "2026-09-17-aichi-pref",
+      "org": "aichi-pref",
+      "org_name": "愛知県",
+      "org_aliases": [
+        "愛知県",
+        "愛知県精神保健福祉センター",
+        "pref.aichi.jp"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "愛知県 精神保健福祉センターで精神障害者保健福祉手帳などの申請書類 233 件を紛失",
+      "summary": "愛知県精神保健福祉センターで、精神障害者保健福祉手帳の申請書類 79 件と自立支援医療受給者証の申請書類 154 件（実人数 172 人）を紛失した。氏名・住所・個人番号・診断書の内容などを含む。漏えいは確認されておらず、誤廃棄などによる紛失とみられる。",
+      "cause": "lost_device",
+      "vector": "文書管理の不備により、簿冊に綴じられていなかった申請書類を誤廃棄などで紛失したとみられる",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "birthday",
+        "mynumber",
+        "health",
+        "other"
+      ],
+      "affected": 172,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-09-17",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "愛知県",
+          "url": "https://www.pref.aichi.jp/press-release/20260917.html",
+          "published_at": "2026-09-17",
+          "title": "精神保健福祉センターにおける精神障害者保健福祉手帳申請書類等の紛失及び誤った等級による手帳の交付について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191557",
+          "published_at": "2026-10-30",
+          "title": "精神保健福祉センターで申請書類を紛失 - 愛知県"
+        }
+      ],
+      "timeline": [
+        {
+          "date": null,
+          "kind": "detected",
+          "text": "2025 年 11 月、職員が 2023 年度の簿冊を確認した際に書類の欠落が判明（日付不明）。その後 2023〜2025 年度の簿冊でも追加の欠落を確認",
+          "source": 0
+        },
+        {
+          "date": null,
+          "kind": "updated",
+          "text": "2025 年 12 月〜2026 年 8 月に元職員への聞き取りや捜索を行ったが見つからず紛失と判断。8〜9 月に対象者へ電話または文書で謝罪",
+          "source": 0
+        },
+        {
+          "date": "2026-09-17",
+          "kind": "disclosed",
+          "text": "県が公表。手帳 79 件・受給者証 154 件（実人数 172 人）。等級を誤った手帳の交付 4 件も併せて公表",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "government",
+        "lost-media",
+        "health-info"
+      ],
+      "created_at": "2026-10-31",
+      "updated_at": "2026-10-31"
     }
   ]
 }

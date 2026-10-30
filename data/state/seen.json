@@ -1,4 +1,8 @@
 {
+ "https://www.security-next.com/192210": {
+  "incident": "2026-10-28-matsuya-foods",
+  "at": "2026-10-30"
+ },
  "https://www.aviationwire.jp/archives/353202": {
   "incident": "2026-10-28-japan-airlines",
   "at": "2026-10-28"
@@ -267,6 +271,14 @@
   "incident": "2026-09-21-aichi-pref",
   "at": "2026-10-28"
  },
+ "https://www.pref.aichi.jp/press-release/20260917.html": {
+  "incident": "2026-09-17-aichi-pref",
+  "at": "2026-09-17"
+ },
+ "https://www.security-next.com/191557": {
+  "incident": "2026-09-17-aichi-pref",
+  "at": "2026-10-30"
+ },
  "https://www.gogin.co.jp/newsrelease/common/attachmentfile/attachmentfile-file-4972.pdf": {
   "incident": "2026-09-14-sanin-godo-bank",
   "at": "2026-09-14"
@@ -354,5 +366,17 @@
  "https://piyolog.hatenadiary.jp/entry/2026/10/29/170430": {
   "skipped": "AI エージェントの指示ファイル経由の乗っ取りに関する試験・観測のまとめで、組織の情報漏えい事案ではない",
   "at": "2026-10-30"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/10/30/230303": {
+  "skipped": "Binance の不正出金（暗号資産の流出）のまとめ。資金の窃取で、個人情報など情報の漏えい事案としては確認できない",
+  "at": "2026-10-31"
+ },
+ "https://www.security-next.com/192212": {
+  "skipped": "経産省 電力・ガス取引監視等委員会の関連サイトへのサイバー攻撃。情報流出の有無は調査中で未確認のため見送り（続報で漏えいが判明すれば登録）",
+  "at": "2026-10-31"
+ },
+ "https://www.security-next.com/192237": {
+  "skipped": "ヤマハ製ルータの脆弱性情報で事案ではない",
+  "at": "2026-10-31"
  }
 }

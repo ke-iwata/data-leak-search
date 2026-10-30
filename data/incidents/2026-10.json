@@ -2592,6 +2592,71 @@
       ],
       "created_at": "2026-10-30",
       "updated_at": "2026-10-30"
+    },
+    {
+      "id": "2026-10-28-matsuya-foods",
+      "org": "matsuya-foods",
+      "org_name": "株式会社松屋フーズ",
+      "org_aliases": [
+        "松屋フーズ",
+        "松屋フーズホールディングス",
+        "松屋",
+        "松弁ネット",
+        "matsuyafoods.co.jp"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "松屋フーズ 公式アプリの管理システムが侵害され会員情報など約 238 万件が流出",
+      "summary": "松屋フーズの公式アプリの管理システムが第三者に侵害され、「松弁ネット」「モバイルオーダー」「松弁デリバリー」利用者の氏名・住所・電話番号など 237 万 7,127 件と、アプリ会員の生年月日・メールアドレス・暗号化パスワードなど最大 3,000 件が流出した。関連サービスを停止し、原因を調査中。",
+      "cause": "unauthorized_access",
+      "vector": "公式アプリの管理システムへの第三者による侵害（詳細は調査中）",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "birthday",
+        "credential",
+        "other"
+      ],
+      "affected": 2380127,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-10-28",
+      "disclosed_at": "2026-10-28",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192210",
+          "published_at": "2026-10-30",
+          "title": "アプリの管理システムが侵害、会員情報流出 - 松屋"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-28",
+          "kind": "detected",
+          "text": "外部からのアクセスを検知し、アプリやウェブサイトなど関連サービスを停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-28",
+          "kind": "disclosed",
+          "text": "流出を公表（公表日は報道ベース。組織の発表ページはサイトが 503 で読めず未確認）。個人情報保護委員会に報告。影響件数は 237 万 7,127 件＋アプリ会員 2,000 件（最大 3,000 件）の合計の上限値",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "member-info",
+        "mobile-app",
+        "food-service"
+      ],
+      "created_at": "2026-10-31",
+      "updated_at": "2026-10-31"
     }
   ]
 }

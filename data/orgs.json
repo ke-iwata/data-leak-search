@@ -66,17 +66,19 @@
  "aichi-pref": {
   "name": "愛知県",
   "aliases": [
-   "あいこんナビ",
-   "pref.aichi.jp"
+   "愛知県精神保健福祉センター",
+   "pref.aichi.jp",
+   "あいこんナビ"
   ],
   "industry": "public",
   "country": "JP",
   "incidents": [
-   "2026-09-21-aichi-pref"
+   "2026-09-21-aichi-pref",
+   "2026-09-17-aichi-pref"
   ],
-  "first": "2026-09-21",
+  "first": "2026-09-17",
   "last": "2026-09-21",
-  "affected_total": 599
+  "affected_total": 771
  },
  "yamato-transport": {
   "name": "ヤマト運輸株式会社",
@@ -671,6 +673,24 @@
   "first": "2026-10-27",
   "last": "2026-10-27",
   "affected_total": 0
+ },
+ "matsuya-foods": {
+  "name": "株式会社松屋フーズ",
+  "aliases": [
+   "松屋フーズ",
+   "松屋フーズホールディングス",
+   "松屋",
+   "松弁ネット",
+   "matsuyafoods.co.jp"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-10-28-matsuya-foods"
+  ],
+  "first": "2026-10-28",
+  "last": "2026-10-28",
+  "affected_total": 2380127
  },
  "japan-airlines": {
   "name": "日本航空株式会社",

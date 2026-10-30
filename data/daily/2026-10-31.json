@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-31",
+  "generated_at": "2026-10-31T05:40:00+09:00",
+  "stats": {
+    "collected": 14,
+    "candidates": 7,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 3
+  },
+  "digest": [
+    {
+      "text": "松屋フーズの公式アプリ管理システムが侵害され、松弁ネット・モバイルオーダーなどの利用者情報 237 万件超とアプリ会員最大 3,000 件が流出。関連サービスを停止して調査中。",
+      "incidents": [
+        "2026-10-28-matsuya-foods"
+      ]
+    },
+    {
+      "text": "愛知県精神保健福祉センターで手帳・自立支援医療の申請書類 233 件（172 人分、個人番号・診断書の内容を含む）を紛失していたことが報道で表面化（県の公表は 9 月 17 日）。",
+      "incidents": [
+        "2026-09-17-aichi-pref"
+      ]
+    }
+  ],
+  "new": [
+    "2026-10-28-matsuya-foods",
+    "2026-09-17-aichi-pref"
+  ],
+  "updated": [],
+  "skipped": [
+    {
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/10/30/230303",
+      "reason": "Binance の不正出金（暗号資産の流出）のまとめ。資金の窃取で、個人情報など情報の漏えい事案としては確認できない"
+    },
+    {
+      "url": "https://www.security-next.com/192212",
+      "reason": "経産省 電力・ガス取引監視等委員会の関連サイトへのサイバー攻撃。情報流出の有無は調査中で未確認のため見送り（続報で漏えいが判明すれば登録）"
+    },
+    {
+      "url": "https://www.security-next.com/192237",
+      "reason": "ヤマハ製ルータの脆弱性情報で事案ではない"
+    }
+  ]
+}
