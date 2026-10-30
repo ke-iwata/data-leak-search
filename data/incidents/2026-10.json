@@ -2657,6 +2657,60 @@
       ],
       "created_at": "2026-10-31",
       "updated_at": "2026-10-31"
+    },
+    {
+      "id": "2026-10-30-ryohin-keikaku",
+      "org": "ryohin-keikaku",
+      "org_name": "株式会社良品計画",
+      "org_aliases": [
+        "良品計画",
+        "無印良品",
+        "MUJI",
+        "MUJIアプリ",
+        "ryohin-keikaku.jp"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "良品計画 「MUJIアプリ」への不正アクセスで利用者情報最大約 2,726 万件が流出の可能性",
+      "summary": "無印良品の公式アプリ「MUJIアプリ」に外部から不正アクセスがあり、退会者を含む最大約 2,726 万件のメールアドレス・生年月日・性別が流出した可能性がある。クレジットカード情報・氏名・住所・電話番号は含まれないとしている。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "email",
+        "birthday",
+        "other"
+      ],
+      "affected": 27260000,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-10-30",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2152666.html",
+          "published_at": "2026-10-30",
+          "title": "無印良品、「MUJIアプリ」の利用者情報最大約2726万件が不正アクセスにより流出の可能性"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-30",
+          "kind": "disclosed",
+          "text": "良品計画が公表（発表ページ ryohin-keikaku.jp/news/articles/2026_1030_01 は 429 で読めず、報道ベース）。アクセスを遮断し修正を適用済み。該当者に順次個別連絡の予定。件数は「最大約 2,726 万件」",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "member-info",
+        "mobile-app"
+      ],
+      "created_at": "2026-10-31",
+      "updated_at": "2026-10-31"
     }
   ]
 }

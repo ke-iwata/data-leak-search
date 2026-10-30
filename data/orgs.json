@@ -709,5 +709,23 @@
   "first": "2026-10-28",
   "last": "2026-10-28",
   "affected_total": 92000
+ },
+ "ryohin-keikaku": {
+  "name": "株式会社良品計画",
+  "aliases": [
+   "良品計画",
+   "無印良品",
+   "MUJI",
+   "MUJIアプリ",
+   "ryohin-keikaku.jp"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-10-30-ryohin-keikaku"
+  ],
+  "first": "2026-10-30",
+  "last": "2026-10-30",
+  "affected_total": 27260000
  }
 }
