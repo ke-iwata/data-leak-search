@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-01",
+  "generated_at": "2026-11-01T05:15:00+09:00",
+  "stats": {
+    "collected": 5,
+    "candidates": 5,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "新規なし。収集した候補 5 件はいずれも前日までに処理済みの URL（愛知県・松屋フーズは登録済み事案の出典、Binance・経産省・ヤマハ製ルータは見送り済み）で、続報に当たる新しい情報もなかった。",
+      "incidents": []
+    }
+  ],
+  "new": [],
+  "updated": [],
+  "skipped": []
+}
