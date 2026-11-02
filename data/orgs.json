@@ -532,6 +532,23 @@
   "last": "2026-10-23",
   "affected_total": 0
  },
+ "good-smile-company": {
+  "name": "株式会社グッドスマイルカンパニー",
+  "aliases": [
+   "グッドスマイルカンパニー",
+   "グッスマ",
+   "Good Smile Company",
+   "goodsmile.com"
+  ],
+  "industry": "manufacturing",
+  "country": "JP",
+  "incidents": [
+   "2026-10-23-good-smile-company"
+  ],
+  "first": "2026-10-23",
+  "last": "2026-10-23",
+  "affected_total": 2800
+ },
  "asiana-airlines": {
   "name": "アシアナ航空（Asiana Airlines）",
   "aliases": [
@@ -727,5 +744,20 @@
   "first": "2026-10-30",
   "last": "2026-10-30",
   "affected_total": 27260000
+ },
+ "mofa": {
+  "name": "外務省",
+  "aliases": [
+   "Ministry of Foreign Affairs of Japan",
+   "mofa.go.jp"
+  ],
+  "industry": "public",
+  "country": "JP",
+  "incidents": [
+   "2026-10-30-mofa"
+  ],
+  "first": "2026-10-30",
+  "last": "2026-10-30",
+  "affected_total": 3600
  }
 }

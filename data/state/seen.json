@@ -3,6 +3,14 @@
   "incident": "2026-10-30-ryohin-keikaku",
   "at": "2026-10-30"
  },
+ "https://internet.watch.impress.co.jp/docs/news/2152757.html": {
+  "incident": "2026-10-30-mofa",
+  "at": "2026-10-30"
+ },
+ "https://www.security-next.com/192256": {
+  "incident": "2026-10-30-mofa",
+  "at": "2026-11-02"
+ },
  "https://www.security-next.com/192210": {
   "incident": "2026-10-28-matsuya-foods",
   "at": "2026-10-30"
@@ -54,6 +62,14 @@
  "https://www.security-next.com/191495": {
   "incident": "2026-10-26-atsugi-city",
   "at": "2026-10-26"
+ },
+ "https://www.gamebusiness.jp/article/2026/10/30/28497.html": {
+  "incident": "2026-10-23-good-smile-company",
+  "at": "2026-10-30"
+ },
+ "https://www.security-next.com/191996": {
+  "incident": "2026-10-23-good-smile-company",
+  "at": "2026-11-02"
  },
  "https://www.security-next.com/191773": {
   "incident": "2026-10-22-recruit",
@@ -382,5 +398,9 @@
  "https://www.security-next.com/192237": {
   "skipped": "ヤマハ製ルータの脆弱性情報で事案ではない",
   "at": "2026-10-31"
+ },
+ "https://www.security-next.com/192287": {
+  "skipped": "IPA の相談窓口強化の告知で事案ではない",
+  "at": "2026-11-03"
  }
 }

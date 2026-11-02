@@ -2711,6 +2711,158 @@
       ],
       "created_at": "2026-10-31",
       "updated_at": "2026-10-31"
+    },
+    {
+      "id": "2026-10-23-good-smile-company",
+      "org": "good-smile-company",
+      "org_name": "株式会社グッドスマイルカンパニー",
+      "org_aliases": [
+        "グッドスマイルカンパニー",
+        "グッスマ",
+        "Good Smile Company",
+        "goodsmile.com"
+      ],
+      "industry": "manufacturing",
+      "country": "JP",
+      "title": "グッドスマイルカンパニー 公式ショップへの不正アクセスでクレジットカード情報など流出の可能性",
+      "summary": "フィギュアメーカーの EC サイト「グッドスマイルカンパニー公式ショップ」が、システムの脆弱性を突かれて管理者権限を奪われ、決済ページに不正プログラムを設置された。約 2,800 人分のカード名義・番号・有効期限・セキュリティコードが流出した可能性があり、会員情報も閲覧された可能性がある。",
+      "cause": "unauthorized_access",
+      "vector": "システムの一部の脆弱性を悪用して管理者権限を不正取得し、カード決済ページに不正プログラムを設置",
+      "data_types": [
+        "name",
+        "card",
+        "other"
+      ],
+      "affected": 2800,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-10-19",
+      "detected_at": "2026-10-23",
+      "disclosed_at": "2026-10-23",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "GameBusiness.jp",
+          "url": "https://www.gamebusiness.jp/article/2026/10/30/28497.html",
+          "published_at": "2026-10-30",
+          "title": "クレカ番号全16桁、セキュリティコードまで漏えいの可能性ーグッドスマイルカンパニーの不正アクセス問題、対象となる2,800名に個別連絡"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191996",
+          "published_at": "2026-11-02",
+          "title": "ECサイトに不正アクセス、会員情報流出 - フィギュアメーカー"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-19",
+          "kind": "occurred",
+          "text": "管理情報への不正アクセスが始まる（22 日 23 時ごろまで複数回）",
+          "source": 0
+        },
+        {
+          "date": "2026-10-21",
+          "kind": "occurred",
+          "text": "カード決済ページに不正プログラムが置かれた期間の開始（23 日 7 時まで）",
+          "source": 0
+        },
+        {
+          "date": "2026-10-23",
+          "kind": "detected",
+          "text": "保守委託事業者からの連絡で判明し、サイトを閉鎖",
+          "source": 0
+        },
+        {
+          "date": "2026-10-23",
+          "kind": "disclosed",
+          "text": "第一報を公表（公式 X・サイトの告知。告知本文は未読、報道ベース）",
+          "source": 0
+        },
+        {
+          "date": "2026-10-29",
+          "kind": "updated",
+          "text": "第 3 報でカード情報流出の可能性がある約 2,800 人を特定し、個別連絡すると公表",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "ec-site",
+        "payment-skimming",
+        "vulnerability-exploit",
+        "member-info"
+      ],
+      "created_at": "2026-11-03",
+      "updated_at": "2026-11-03"
+    },
+    {
+      "id": "2026-10-30-mofa",
+      "org": "mofa",
+      "org_name": "外務省",
+      "org_aliases": [
+        "外務省",
+        "Ministry of Foreign Affairs of Japan",
+        "mofa.go.jp"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "外務省 外部接続ネットワークへの不正アクセスで個人情報約 3,600 件が漏えいの可能性",
+      "summary": "外務省の外部とやり取りできるネットワークに不正アクセスがあり、氏名・メールアドレスなど約 3,600 件（うち約 900 件は省外の関係者）が漏えいした可能性がある。機密性の高い情報を扱う閉域ネットワークや領事システムは対象外としている。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "email"
+      ],
+      "affected": 3600,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-07-27",
+      "disclosed_at": "2026-10-30",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2152757.html",
+          "published_at": "2026-10-30",
+          "title": "外務省に不正アクセス、約3600件の個人情報が漏えいの可能性"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192256",
+          "published_at": "2026-11-02",
+          "title": "外務省のネットワークで侵害 - 個人情報流出の可能性"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-27",
+          "kind": "detected",
+          "text": "不正アクセスを検知し、遮断と認証情報の無効化を実施。外部の専門事業者と調査",
+          "source": 0
+        },
+        {
+          "date": "2026-10-30",
+          "kind": "disclosed",
+          "text": "外務省が公表（報道発表 mofa.go.jp/mofaj/press/release/pressit_000001_04395.html は 403 で読めず、報道ベース）。二次被害は確認されていない",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "government",
+        "network-intrusion"
+      ],
+      "created_at": "2026-11-03",
+      "updated_at": "2026-11-03"
     }
   ]
 }

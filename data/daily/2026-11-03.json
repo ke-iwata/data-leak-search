@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-03",
+  "generated_at": "2026-11-03T05:30:00+09:00",
+  "stats": {
+    "collected": 10,
+    "candidates": 3,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 1
+  },
+  "digest": [
+    {
+      "text": "グッドスマイルカンパニーの公式ショップで決済ページ改ざん。約 2,800 人分のカード番号・セキュリティコードが流出した可能性。",
+      "incidents": [
+        "2026-10-23-good-smile-company"
+      ]
+    },
+    {
+      "text": "外務省の外部接続ネットワークに不正アクセス（7 月検知）。氏名・メールアドレスなど約 3,600 件が漏えいの可能性。",
+      "incidents": [
+        "2026-10-30-mofa"
+      ]
+    }
+  ],
+  "new": [
+    "2026-10-23-good-smile-company",
+    "2026-10-30-mofa"
+  ],
+  "updated": [],
+  "skipped": [
+    {
+      "url": "https://www.security-next.com/192287",
+      "reason": "IPA の相談窓口強化の告知で事案ではない"
+    }
+  ]
+}
