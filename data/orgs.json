@@ -16,6 +16,22 @@
   "last": "2024-09-13",
   "affected_total": 370000
  },
+ "harvard-univ": {
+  "name": "Harvard University",
+  "aliases": [
+   "Harvard",
+   "ハーバード大学",
+   "harvard.edu"
+  ],
+  "industry": "education",
+  "country": "US",
+  "incidents": [
+   "2025-11-22-harvard-univ"
+  ],
+  "first": "2025-11-22",
+  "last": "2025-11-22",
+  "affected_total": 850537
+ },
  "moonstar": {
   "name": "株式会社ムーンスター",
   "aliases": [

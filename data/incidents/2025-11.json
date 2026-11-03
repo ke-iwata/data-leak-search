@@ -1,0 +1,41 @@
+{
+  "month": "2025-11",
+  "incidents": [
+    {
+      "id": "2025-11-22-harvard-univ",
+      "org": "harvard-univ",
+      "org_name": "Harvard University",
+      "org_aliases": ["Harvard", "ハーバード大学", "harvard.edu"],
+      "industry": "education",
+      "country": "US",
+      "title": "米ハーバード大学 ボイスフィッシングによる卒業生・寄付者情報の流出",
+      "summary": "電話を使ったフィッシング（ボイスフィッシング）を受け、卒業生・寄付関連部門（Alumni Affairs and Development）が使う情報システムに不正アクセスがあった。卒業生・寄付者・保護者や一部の学生・教職員の連絡先、寄付・行事参加の記録、経歴情報が対象で、社会保障番号・パスワード・カード情報は含まれないとしている。2026 年 11 月に HIBP へメールアドレス約 85 万件が登録された。",
+      "cause": "unauthorized_access",
+      "vector": "電話によるフィッシング（ボイスフィッシング）で卒業生・寄付関連部門のシステムにアクセスされた",
+      "data_types": ["name", "address", "phone", "email", "birthday", "other"],
+      "affected": 850537,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2025-11-18",
+      "disclosed_at": "2025-11-22",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {"role": "secondary", "trust": "media", "publisher": "BleepingComputer",
+         "url": "https://www.bleepingcomputer.com/news/security/harvard-university-discloses-data-breach-affecting-alumni-donors/",
+         "published_at": "2025-11-24", "title": "Harvard University discloses data breach affecting alumni, donors"},
+        {"role": "secondary", "trust": "aggregator", "publisher": "Have I Been Pwned",
+         "url": "https://haveibeenpwned.com/Breach/Harvard",
+         "published_at": "2026-11-03", "title": "Harvard (harvard.edu) — 850,537 accounts"}
+      ],
+      "timeline": [
+        {"date": "2025-11-18", "kind": "detected", "text": "ボイスフィッシングによる不正アクセスを検知し、アクセスを遮断", "source": 0},
+        {"date": "2025-11-22", "kind": "disclosed", "text": "大学が通知を公表し、対象者への連絡を開始。影響人数は公表されていない（大学の告知ページ huit.harvard.edu は 403 で読めず、報道本文で確認）", "source": 0},
+        {"date": "2026-11-03", "kind": "updated", "text": "HIBP に登録。メールアドレス 850,537 件（大学の公表人数ではないため affected は推定扱い）。HIBP は恐喝グループによる公開と関連付けている", "source": 1}
+      ],
+      "keywords": ["university", "phishing-call", "donor-info", "leak-published"],
+      "created_at": "2026-11-04",
+      "updated_at": "2026-11-04"
+    }
+  ]
+}

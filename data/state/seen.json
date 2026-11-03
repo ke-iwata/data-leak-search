@@ -331,6 +331,14 @@
   "incident": "2026-03-26-moonstar",
   "at": "2026-10-16"
  },
+ "https://www.bleepingcomputer.com/news/security/harvard-university-discloses-data-breach-affecting-alumni-donors": {
+  "incident": "2025-11-22-harvard-univ",
+  "at": "2025-11-24"
+ },
+ "https://haveibeenpwned.com/Breach/Harvard": {
+  "incident": "2025-11-22-harvard-univ",
+  "at": "2026-11-03"
+ },
  "https://carsat-hdf.fr/files/live/sites/carsat-hdf/files/PDF/presse/240913%20CP%20Fuite%20donn%C3%A9es%20PPAS.pdf": {
   "incident": "2024-09-13-cnav",
   "at": "2024-09-13"

@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T06:10:00+09:00",
+  "stats": {"collected": 4, "candidates": 3, "sources_ok": 7, "sources_total": 7, "failed_sources": [], "skipped_count": 0},
+  "digest": [
+    {"text": "米ハーバード大学の卒業生・寄付者システムへのボイスフィッシング被害（2025 年 11 月公表）が HIBP に登録。メールアドレス約 85 万件。", "incidents": ["2025-11-22-harvard-univ"]}
+  ],
+  "new": ["2025-11-22-harvard-univ"],
+  "updated": [],
+  "skipped": []
+}
