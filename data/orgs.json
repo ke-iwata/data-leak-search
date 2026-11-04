@@ -113,6 +113,21 @@
   "last": "2026-09-29",
   "affected_total": 5260000
  },
+ "shizuoka-pref": {
+  "name": "静岡県教育委員会",
+  "aliases": [
+   "静岡県",
+   "pref.shizuoka.jp"
+  ],
+  "industry": "education",
+  "country": "JP",
+  "incidents": [
+   "2026-09-29-shizuoka-pref"
+  ],
+  "first": "2026-09-29",
+  "last": "2026-09-29",
+  "affected_total": 621
+ },
  "sagawa-express": {
   "name": "佐川急便株式会社",
   "aliases": [
@@ -743,6 +758,23 @@
   "last": "2026-10-28",
   "affected_total": 92000
  },
+ "arara": {
+  "name": "アララ株式会社",
+  "aliases": [
+   "アララ",
+   "アララメッセージ",
+   "アララ メッセージ",
+   "arara.com"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-28-arara"
+  ],
+  "first": "2026-10-28",
+  "last": "2026-10-28",
+  "affected_total": 77000000
+ },
  "ryohin-keikaku": {
   "name": "株式会社良品計画",
   "aliases": [
@@ -775,5 +807,39 @@
   "first": "2026-10-30",
   "last": "2026-10-30",
   "affected_total": 3600
+ },
+ "club-tourism": {
+  "name": "クラブツーリズム株式会社",
+  "aliases": [
+   "クラブツーリズム",
+   "Club Tourism",
+   "club-tourism.co.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-10-31-club-tourism"
+  ],
+  "first": "2026-10-31",
+  "last": "2026-10-31",
+  "affected_total": 4320000
+ },
+ "istyle": {
+  "name": "株式会社アイスタイル",
+  "aliases": [
+   "アイスタイル",
+   "@cosme",
+   "アットコスメ",
+   "istyle.co.jp",
+   "cosme.net"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-11-02-istyle"
+  ],
+  "first": "2026-11-02",
+  "last": "2026-11-02",
+  "affected_total": 3000000
  }
 }

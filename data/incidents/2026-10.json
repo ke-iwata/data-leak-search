@@ -2811,9 +2811,9 @@
       "industry": "public",
       "country": "JP",
       "title": "外務省 外部接続ネットワークへの不正アクセスで個人情報約 3,600 件が漏えいの可能性",
-      "summary": "外務省の外部とやり取りできるネットワークに不正アクセスがあり、氏名・メールアドレスなど約 3,600 件（うち約 900 件は省外の関係者）が漏えいした可能性がある。機密性の高い情報を扱う閉域ネットワークや領事システムは対象外としている。",
+      "summary": "外務省の外部とやり取りできるネットワークに不正アクセスがあり、氏名・メールアドレスなど約 3,600 件（省外の関係者約 900 件、職員約 2,700 件）が漏えいした可能性がある。メールサービスの認証情報が窃取されたとみられる。機密性の高い情報を扱う閉域ネットワークや領事システムは対象外としている。",
       "cause": "unauthorized_access",
-      "vector": null,
+      "vector": "メールサービスの認証情報を第三者に窃取され、外部接続ネットワークに侵入されたとみられる（報道）",
       "data_types": [
         "name",
         "email"
@@ -2841,6 +2841,14 @@
           "url": "https://www.security-next.com/192256",
           "published_at": "2026-11-02",
           "title": "外務省のネットワークで侵害 - 個人情報流出の可能性"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/04/132901",
+          "published_at": "2026-11-04",
+          "title": "外務省の外部接続ネットワークへの不正アクセスについてまとめてみた"
         }
       ],
       "timeline": [
@@ -2855,14 +2863,195 @@
           "kind": "disclosed",
           "text": "外務省が公表（報道発表 mofa.go.jp/mofaj/press/release/pressit_000001_04395.html は 403 で読めず、報道ベース）。二次被害は確認されていない",
           "source": 0
+        },
+        {
+          "date": "2026-11-05",
+          "kind": "updated",
+          "text": "報道の整理により、侵入経路はメールサービスの認証情報の窃取とみられること（vector は null から更新）、内訳は職員約 2,700 件と判明。二次被害は未確認",
+          "source": 2
         }
       ],
       "keywords": [
         "government",
-        "network-intrusion"
+        "network-intrusion",
+        "credential-theft"
       ],
       "created_at": "2026-11-03",
-      "updated_at": "2026-11-03"
+      "updated_at": "2026-11-05"
+    },
+    {
+      "id": "2026-10-28-arara",
+      "org": "arara",
+      "org_name": "アララ株式会社",
+      "org_aliases": [
+        "アララ",
+        "アララメッセージ",
+        "アララ メッセージ",
+        "arara.com"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "アララ メール配信サービス「アララ メッセージ」への不正アクセスによる情報流出",
+      "summary": "メール配信サービス「アララ メッセージ」が不正アクセスを受け、共用環境の管理画面から契約企業 61 社分のメールアドレス 3,386,187 件などが持ち出されたほか、同サービス経由で契約企業環境のサーバー 97 台（最大約 380 社）からメールアドレス約 7,700 万件と会員情報が持ち出された。クレジットカード会社を装う不審メール最大約 713 万通の送信にも悪用され、10 月 31 日に全サービスを停止した。件数は区分間の重複があり合算されていない。",
+      "cause": "unauthorized_access",
+      "vector": "Web サーバーの脆弱性とシステム環境の問題を突かれ、共用環境の管理画面への不正ログインとデータ出力機能の悪用、さらに同サービス経由で多数のサーバーに侵入（侵入経路・開始時期は調査中）",
+      "data_types": [
+        "email",
+        "name",
+        "birthday",
+        "phone",
+        "address",
+        "other"
+      ],
+      "affected": 77000000,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-10-27",
+      "detected_at": "2026-10-28",
+      "disclosed_at": "2026-10-28",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "アララ株式会社",
+          "url": "https://www.arara.com/dcms_media/other/arara_20261102__.pdf",
+          "published_at": "2026-11-02",
+          "title": "当社が提供する「アララメッセ－ジ」への不正アクセスによる情報流出およびサービス停止について（第２報）"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "アララ株式会社",
+          "url": "https://www.arara.com/news/info/20261029_arara",
+          "published_at": "2026-10-29",
+          "title": "当社が提供する「アララメッセージ」への不正アクセスによる情報流出およびサービス停止について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/05/015717",
+          "published_at": "2026-11-05",
+          "title": "アララのメール配信サービス「アララ メッセージ」への不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-27",
+          "kind": "occurred",
+          "text": "第三者による偵察とみられるアクセス。10 月 27〜28 日に共用環境の管理画面へ不正ログインしデータを持ち出し",
+          "source": 0
+        },
+        {
+          "date": "2026-10-28",
+          "kind": "detected",
+          "text": "不審メール送信（クレジットカード会社を装う）の不正利用を確認し、共用環境を緊急停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-28",
+          "kind": "disclosed",
+          "text": "サービス停止とメールアドレス約 301 万件の流出を告知（am.arara.com のお知らせ、piyolog による）",
+          "source": 2
+        },
+        {
+          "date": "2026-10-29",
+          "kind": "updated",
+          "text": "第 1 報を公表。原因は Web サーバーの脆弱性とし、個人情報保護委員会へ速報、警察へ通報",
+          "source": 1
+        },
+        {
+          "date": "2026-10-31",
+          "kind": "updated",
+          "text": "サービス経由で契約企業環境のサーバー 97 台からの持ち出しを把握し、アララ メッセージの提供をすべて停止",
+          "source": 0
+        },
+        {
+          "date": "2026-11-02",
+          "kind": "updated",
+          "text": "第 2 報。共用環境分を約 301 万件から 3,386,187 件（61 社、重複除く）と顧客データ最大 411,827 件（5 社）に修正。契約企業環境分はメールアドレス約 7,700 万件（精査中、最大約 380 社）、不審メール最大約 713 万通。原因にシステム環境の問題を追加",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "email-delivery",
+        "supply-chain",
+        "vulnerability-exploit",
+        "phishing-mail"
+      ],
+      "created_at": "2026-11-05",
+      "updated_at": "2026-11-05"
+    },
+    {
+      "id": "2026-10-31-club-tourism",
+      "org": "club-tourism",
+      "org_name": "クラブツーリズム株式会社",
+      "org_aliases": [
+        "クラブツーリズム",
+        "Club Tourism",
+        "club-tourism.co.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "クラブツーリズム 不正アクセスでインターネット会員の個人情報約 432 万件が漏えいの可能性",
+      "summary": "サーバーへの外部からの不正アクセスにより、インターネット予約システムに登録した会員の氏名・住所・電話番号・生年月日・メールアドレス・緊急連絡先など約 432 万件が漏えいした可能性。ログインパスワード、旅券情報、クレジットカード情報、口座番号は含まれないとしている。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "birthday",
+        "other"
+      ],
+      "affected": 4320000,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-10-30",
+      "disclosed_at": "2026-10-31",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "クラブツーリズム株式会社",
+          "url": "https://www.club-tourism.co.jp/jpn/news/2026/1031/",
+          "published_at": "2026-10-31",
+          "title": "不正アクセスによる個人情報漏えいに関するお詫びとお知らせについて（第１信）"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192254",
+          "published_at": "2026-11-04",
+          "title": "ネット登録会員の個人情報が流出した可能性 - クラブツーリズム"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-30",
+          "kind": "detected",
+          "text": "5 時 45 分に外部からの不正アクセスを検知。サーバーを隔離し攻撃元との通信を遮断、Web サイトを一時停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-31",
+          "kind": "disclosed",
+          "text": "第 1 信を公表。警察に相談し、個人情報保護委員会と監督官庁に報告。外部調査機関と調査中",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "member-info",
+        "travel",
+        "booking-info"
+      ],
+      "created_at": "2026-11-05",
+      "updated_at": "2026-11-05"
     }
   ]
 }

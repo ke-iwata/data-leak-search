@@ -375,6 +375,74 @@
       ],
       "created_at": "2026-10-31",
       "updated_at": "2026-10-31"
+    },
+    {
+      "id": "2026-09-29-shizuoka-pref",
+      "org": "shizuoka-pref",
+      "org_name": "静岡県教育委員会",
+      "org_aliases": [
+        "静岡県",
+        "静岡県教育委員会",
+        "pref.shizuoka.jp"
+      ],
+      "industry": "education",
+      "country": "JP",
+      "title": "静岡県 県立学校 6 校で生徒指導要録 621 人分を紛失",
+      "summary": "県立学校 6 校で、卒業生 621 人分の生徒指導要録（学籍に関する記録、保存期間 20 年）が所在不明となった。1 校での判明を受けた全県立学校の調査で 5 校が新たに判明。外部流出は確認されていない。",
+      "cause": "lost_device",
+      "vector": "紙の生徒指導要録の所在不明。経緯は特定されていないが、データ移行時や校舎建替時に発生した可能性",
+      "data_types": [
+        "name",
+        "birthday",
+        "address",
+        "other"
+      ],
+      "affected": 621,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-06-30",
+      "disclosed_at": "2026-09-29",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "静岡県教育委員会",
+          "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/085/493/0929kyouikokoteisei.pdf",
+          "published_at": "2026-09-29",
+          "title": "【訂正】県立学校６校における生徒指導要録の紛失について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192171",
+          "published_at": "2026-11-04",
+          "title": "県立学校6校で生徒指導要録が所在不明 - 静岡県"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-30",
+          "kind": "detected",
+          "text": "卒業生からの証明書発行申請を受けて確認したところ、1 校で 55 人分の所在不明が判明。その後の全県立学校調査で 5 校 566 人分が判明",
+          "source": 0
+        },
+        {
+          "date": "2026-09-29",
+          "kind": "disclosed",
+          "text": "県教育委員会が公表。同日、合計を 625 人分から 621 人分に訂正。文書管理体制の強化と改善指導を実施",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "lost-media",
+        "school-roster",
+        "government"
+      ],
+      "created_at": "2026-11-05",
+      "updated_at": "2026-11-05"
     }
   ]
 }

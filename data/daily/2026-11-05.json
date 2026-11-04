@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-05",
+  "generated_at": "2026-11-05T06:10:00+09:00",
+  "stats": {
+    "collected": 11,
+    "candidates": 6,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "メール配信サービス「アララ メッセージ」で不正アクセス。契約企業環境からメールアドレス約 7,700 万件が持ち出され、全サービス停止。Cuenote（ユミルリンク）に続くメール配信基盤の大規模被害。",
+      "incidents": [
+        "2026-10-28-arara",
+        "2026-10-20-ymir-link"
+      ]
+    },
+    {
+      "text": "会員情報の大規模漏えいが続く。クラブツーリズムのネット会員約 432 万件（可能性）、@cosme の会員約 300 万人分。",
+      "incidents": [
+        "2026-10-31-club-tourism",
+        "2026-11-02-istyle"
+      ]
+    },
+    {
+      "text": "静岡県の県立学校 6 校で生徒指導要録 621 人分が所在不明（9 月 29 日公表）。",
+      "incidents": [
+        "2026-09-29-shizuoka-pref"
+      ]
+    }
+  ],
+  "new": [
+    "2026-10-28-arara",
+    "2026-10-31-club-tourism",
+    "2026-11-02-istyle",
+    "2026-09-29-shizuoka-pref"
+  ],
+  "updated": [
+    {
+      "id": "2026-10-30-mofa",
+      "text": "侵入経路（メールサービスの認証情報窃取とみられる）と職員分約 2,700 件の内訳を追記"
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/04/191450",
+      "reason": "既存事案 2026-10-20-ymir-link のまとめ記事。第二報以降の事業者側の新事実なし"
+    }
+  ]
+}

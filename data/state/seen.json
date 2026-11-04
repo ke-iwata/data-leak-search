@@ -1,4 +1,20 @@
 {
+ "https://www.istyle.co.jp/news/info/2026/11/1102.html": {
+  "incident": "2026-11-02-istyle",
+  "at": "2026-11-02"
+ },
+ "https://www.security-next.com/192337": {
+  "incident": "2026-11-02-istyle",
+  "at": "2026-11-04"
+ },
+ "https://www.club-tourism.co.jp/jpn/news/2026/1031": {
+  "incident": "2026-10-31-club-tourism",
+  "at": "2026-10-31"
+ },
+ "https://www.security-next.com/192254": {
+  "incident": "2026-10-31-club-tourism",
+  "at": "2026-11-04"
+ },
  "https://internet.watch.impress.co.jp/docs/news/2152666.html": {
   "incident": "2026-10-30-ryohin-keikaku",
   "at": "2026-10-30"
@@ -11,6 +27,10 @@
   "incident": "2026-10-30-mofa",
   "at": "2026-11-02"
  },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/04/132901": {
+  "incident": "2026-10-30-mofa",
+  "at": "2026-11-04"
+ },
  "https://www.security-next.com/192210": {
   "incident": "2026-10-28-matsuya-foods",
   "at": "2026-10-30"
@@ -22,6 +42,18 @@
  "https://piyolog.hatenadiary.jp/entry/2026/10/28/214917": {
   "incident": "2026-10-23-asiana-airlines",
   "at": "2026-10-28"
+ },
+ "https://www.arara.com/dcms_media/other/arara_20261102__.pdf": {
+  "incident": "2026-10-28-arara",
+  "at": "2026-11-02"
+ },
+ "https://www.arara.com/news/info/20261029_arara": {
+  "incident": "2026-10-28-arara",
+  "at": "2026-10-29"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/05/015717": {
+  "incident": "2026-10-28-arara",
+  "at": "2026-11-05"
  },
  "https://www.so-net.ne.jp/info/2026/20261027_0001.html": {
   "incident": "2026-10-27-sony-network-communications",
@@ -283,6 +315,14 @@
   "incident": "2026-09-29-yamato-transport",
   "at": "2026-10-21"
  },
+ "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/085/493/0929kyouikokoteisei.pdf": {
+  "incident": "2026-09-29-shizuoka-pref",
+  "at": "2026-09-29"
+ },
+ "https://www.security-next.com/192171": {
+  "incident": "2026-09-29-shizuoka-pref",
+  "at": "2026-11-04"
+ },
  "https://www.pref.aichi.jp/press-release/aiconnavikisya202609.html": {
   "incident": "2026-09-21-aichi-pref",
   "at": "2026-09-22"
@@ -410,5 +450,9 @@
  "https://www.security-next.com/192287": {
   "skipped": "IPA の相談窓口強化の告知で事案ではない",
   "at": "2026-11-03"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/04/191450": {
+  "skipped": "既存事案 2026-10-20-ymir-link のまとめ記事。第二報以降の事業者側の新事実なし",
+  "at": "2026-11-05"
  }
 }
