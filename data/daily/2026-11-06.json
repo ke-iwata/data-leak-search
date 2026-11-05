@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-06",
+  "generated_at": "2026-11-06T06:10:00+09:00",
+  "stats": {
+    "collected": 16,
+    "candidates": 10,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "デニーズアプリで旧アプリからの移行処理の不備を突かれ、第三者が認証情報を不正作成。会員のメールアドレス・生年月日などが漏えいした可能性があり、対象人数は調査中。",
+      "incidents": [
+        "2026-11-03-dennys-japan"
+      ]
+    },
+    {
+      "text": "委託先の設定不備による露出が 2 件。資さんうどんの従業員・退職者情報（5 年分）と、福岡県の介護職場認証制度で法人役員 183 人分。",
+      "incidents": [
+        "2026-10-27-sukesan",
+        "2026-09-29-fukuoka-pref"
+      ]
+    },
+    {
+      "text": "自治体で記録媒体・書類の紛失が相次ぐ。東京都水道局の外付けHDD 4 台（1,932 人分）と委託先の書類（84 軒分）、奈良県の業務用 USB メモリ（363 人分）。",
+      "incidents": [
+        "2026-10-23-tokyo-waterworks",
+        "2026-10-26-tokyo-waterworks",
+        "2026-11-05-nara-pref"
+      ]
+    }
+  ],
+  "new": [
+    "2026-11-03-dennys-japan",
+    "2026-10-27-sukesan",
+    "2026-09-29-fukuoka-pref",
+    "2026-10-23-tokyo-waterworks",
+    "2026-10-26-tokyo-waterworks",
+    "2026-11-05-nara-pref"
+  ],
+  "updated": [],
+  "skipped": [
+    {
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/05/133509",
+      "reason": "「勝利の女神：NIKKE」PC ランチャー改ざんによる不正プログラム配布。組織が保有するデータの漏えいは公表されておらず、情報窃取の実績も不明のため事案としない"
+    }
+  ]
+}

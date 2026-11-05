@@ -3052,6 +3052,222 @@
       ],
       "created_at": "2026-11-05",
       "updated_at": "2026-11-05"
+    },
+    {
+      "id": "2026-10-27-sukesan",
+      "org": "sukesan",
+      "org_name": "株式会社資さん",
+      "org_aliases": [
+        "資さん",
+        "資さんうどん",
+        "sukesanudon.com"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "資さん 委託先サーバの設定不備で従業員・退職者情報が閲覧可能だった可能性",
+      "summary": "うどん店チェーン「資さんうどん」を運営する資さんで、サーバ管理を委託する事業者の設定不備により、2021 年 10 月から 2026 年 10 月に在籍した従業員・退職者の個人情報が外部から閲覧できた可能性がある。第 2 報では閲覧に認証が必要で、実際の漏えいは確認されていないとしている。",
+      "cause": "other",
+      "vector": "委託先が管理するサーバの一部設定不備",
+      "data_types": [
+        "name",
+        "phone",
+        "birthday",
+        "internal_doc",
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-10-27",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社資さん",
+          "url": "https://www.sukesanudon.com/news/news-8014/",
+          "published_at": "2026-10-27",
+          "title": "【従業員および退職者の皆様への重要なお知らせ】委託先サーバーの設定不備による個人情報漏洩の可能性について"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社資さん",
+          "url": "https://www.sukesanudon.com/news/news-8023/",
+          "published_at": "2026-10-29",
+          "title": "【第2報】従業員および退職者の皆様への重要なお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192260",
+          "published_at": "2026-11-05",
+          "title": "サーバ設定不備、従業員情報流出の可能性 - 資さんうどん"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-27",
+          "kind": "disclosed",
+          "text": "第一報を公表。氏名・生年月日・性別・電話番号・賃金履歴・勤怠実績など（一部は退職理由・入退社日・社会保険加入履歴）が対象。設定変更済みで個人情報保護委員会に報告",
+          "source": 0
+        },
+        {
+          "date": "2026-10-29",
+          "kind": "updated",
+          "text": "第 2 報。格納領域の閲覧には認証が必要で、改ざんや漏えいの痕跡は確認されていないが可能性は排除できないとした。口座情報は含まれない",
+          "source": 1
+        }
+      ],
+      "keywords": [
+        "employee-info",
+        "contractor",
+        "food-service"
+      ],
+      "created_at": "2026-11-06",
+      "updated_at": "2026-11-06"
+    },
+    {
+      "id": "2026-10-23-tokyo-waterworks",
+      "org": "tokyo-waterworks",
+      "org_name": "東京都水道局",
+      "org_aliases": [
+        "都水道局",
+        "waterworks.metro.tokyo.lg.jp"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "東京都水道局 個人情報を含む外付けHDD 4 台を紛失",
+      "summary": "東京都水道局の執務室の施錠キャビネットで保管していた外付けハードディスク 4 台が所在不明となった。用地の管理・活用に関する資料などを記録しており、企業・国・自治体関係者と地域住民等の計 1,932 人分の個人情報（大部分は氏名のみ、一部住所・電話番号）を含む。",
+      "cause": "lost_device",
+      "vector": "施錠キャビネット内の HDD 本体が所在不明（収納箱のみ残存）",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "internal_doc"
+      ],
+      "affected": 1932,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-02",
+      "disclosed_at": "2026-10-23",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "東京都水道局",
+          "url": "https://www.waterworks.metro.tokyo.lg.jp/information/press/r8/10/2026102301",
+          "published_at": "2026-10-23",
+          "title": "個人情報を含む情報を記録した外付けハードディスクの紛失について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192391",
+          "published_at": "2026-11-05",
+          "title": "個人情報が保存されたHDDや書類を紛失 - 都水道局"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-02",
+          "kind": "detected",
+          "text": "空き容量確認のためキャビネットを開けた際、HDD 4 台の収納箱のみで本体がないことが判明",
+          "source": 0
+        },
+        {
+          "date": "2026-10-23",
+          "kind": "disclosed",
+          "text": "公表。該当者に連絡・謝罪。二次被害は確認されていないとしている",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "lost-media",
+        "government"
+      ],
+      "created_at": "2026-11-06",
+      "updated_at": "2026-11-06"
+    },
+    {
+      "id": "2026-10-26-tokyo-waterworks",
+      "org": "tokyo-waterworks",
+      "org_name": "東京都水道局",
+      "org_aliases": [
+        "都水道局",
+        "waterworks.metro.tokyo.lg.jp"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "東京都水道局 家屋調査の委託先社員が個人情報書類を電車内で紛失",
+      "summary": "多摩地区の家屋損害調査を受託した事業者の社員が、個人情報を記載した書類の入った鞄を電車内に置き忘れて紛失した。84 軒分の氏名・住所・電話番号・対応記録が含まれる。",
+      "cause": "lost_device",
+      "vector": "委託先社員が書類入りの鞄を電車内に置き忘れ",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "other"
+      ],
+      "affected": 84,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-10-20",
+      "detected_at": "2026-10-20",
+      "disclosed_at": "2026-10-26",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "東京都水道局",
+          "url": "https://www.metro.tokyo.lg.jp/ja/information/press/2026/10/2026102601",
+          "published_at": "2026-10-26",
+          "title": "家屋調査に係る個人情報の紛失について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192391",
+          "published_at": "2026-11-05",
+          "title": "個人情報が保存されたHDDや書類を紛失 - 都水道局"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-20",
+          "kind": "occurred",
+          "text": "委託先社員が鞄の紛失に気付き、鉄道会社の忘れ物センターに照会",
+          "source": 0
+        },
+        {
+          "date": "2026-10-22",
+          "kind": "detected",
+          "text": "見つからず、受託者から水道局へ報告",
+          "source": 0
+        },
+        {
+          "date": "2026-10-26",
+          "kind": "disclosed",
+          "text": "公表。対象者へ電話連絡し、10 月 23 日から個別訪問で謝罪・説明",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "lost-media",
+        "contractor",
+        "government"
+      ],
+      "created_at": "2026-11-06",
+      "updated_at": "2026-11-06"
     }
   ]
 }

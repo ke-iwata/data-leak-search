@@ -71,6 +71,151 @@
       ],
       "created_at": "2026-11-05",
       "updated_at": "2026-11-05"
+    },
+    {
+      "id": "2026-11-03-dennys-japan",
+      "org": "dennys-japan",
+      "org_name": "株式会社デニーズジャパン",
+      "org_aliases": [
+        "デニーズジャパン",
+        "デニーズ",
+        "デニーズアプリ",
+        "dennys.co.jp"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "デニーズジャパン「デニーズアプリ」への不正アクセスで会員情報漏えいの可能性",
+      "summary": "旧デニーズアプリから新アプリへの移行処理の不備により、第三者が認証情報を不正に作成して一部顧客のアカウントにアクセスできる状態になっていた。会員コード、メールアドレス、生年月日、性別、居住都道府県などが漏えいした可能性があり、対象人数は調査中。",
+      "cause": "unauthorized_access",
+      "vector": "旧アプリから新アプリへの移行処理で第三者が認証情報を不正に作成",
+      "data_types": [
+        "email",
+        "birthday",
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-30",
+      "disclosed_at": "2026-11-03",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社デニーズジャパン",
+          "url": "https://www.dennys.co.jp/dennys-japan/pdf/261103.pdf",
+          "published_at": "2026-11-03",
+          "title": "【重要】デニーズアプリへの不正アクセスに関するお詫びとお知らせ（第一報）"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192388",
+          "published_at": "2026-11-05",
+          "title": "第三者が認証情報を不正作成か、アプリ移行処理に不備 - デニーズ"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-07",
+          "kind": "occurred",
+          "text": "現時点で調査結果が出ているのはこの日のアクセス記録。他の期間も調査中",
+          "source": 0
+        },
+        {
+          "date": "2026-10-30",
+          "kind": "detected",
+          "text": "不審なアクセスの調査で旧アプリの認証情報が不正に作成されていたことが判明。同日システムを改修",
+          "source": 0
+        },
+        {
+          "date": "2026-10-31",
+          "kind": "updated",
+          "text": "確認された不正な認証情報を無効化し、個人情報保護委員会へ速報",
+          "source": 0
+        },
+        {
+          "date": "2026-11-03",
+          "kind": "disclosed",
+          "text": "第一報を公表。氏名・住所・電話番号・パスワード・カード情報は保持していないとしている",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "mobile-app",
+        "member-info",
+        "food-service",
+        "account-takeover"
+      ],
+      "created_at": "2026-11-06",
+      "updated_at": "2026-11-06"
+    },
+    {
+      "id": "2026-11-05-nara-pref",
+      "org": "nara-pref",
+      "org_name": "奈良県",
+      "org_aliases": [
+        "奈良県庁",
+        "pref.nara.lg.jp"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "奈良県 医薬品医療機器申請関連の業務用USBメモリが所在不明",
+      "summary": "奈良県で、医薬品医療機器申請・審査システムと県端末の間のデータ受け渡しに使う業務用 USB メモリが所在不明となった。製造業許可を持つ法人の管理者・役員等の個人情報 363 人分が保存されていた可能性があり、データは暗号化されているという。",
+      "cause": "lost_device",
+      "vector": "使用後に所定の保管場所へ返却する規定が徹底されていなかった",
+      "data_types": [
+        "name",
+        "address",
+        "birthday",
+        "internal_doc"
+      ],
+      "affected": 363,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-09-09",
+      "disclosed_at": "2026-11-05",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191606",
+          "published_at": "2026-11-05",
+          "title": "個人情報含む業務用USBメモリが所在不明に - 奈良県"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-25",
+          "kind": "occurred",
+          "text": "端末の使用ログで確認できる最後の県端末への接続",
+          "source": 0
+        },
+        {
+          "date": "2026-09-09",
+          "kind": "detected",
+          "text": "保管状況の調査で所在不明が判明",
+          "source": 0
+        },
+        {
+          "date": "2026-11-05",
+          "kind": "disclosed",
+          "text": "Security NEXT が報道（県の公表日は確認できず、報道日を公表日として記録）。関係者に説明・謝罪",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "lost-media",
+        "government"
+      ],
+      "created_at": "2026-11-06",
+      "updated_at": "2026-11-06"
     }
   ]
 }

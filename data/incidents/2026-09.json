@@ -443,6 +443,79 @@
       ],
       "created_at": "2026-11-05",
       "updated_at": "2026-11-05"
+    },
+    {
+      "id": "2026-09-29-fukuoka-pref",
+      "org": "fukuoka-pref",
+      "org_name": "福岡県",
+      "org_aliases": [
+        "福岡県庁",
+        "pref.fukuoka.lg.jp",
+        "福岡県働きやすい介護職場認証制度"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "福岡県 介護職場認証制度の申請用ファイル設定不備で法人役員情報が閲覧可能に",
+      "summary": "「福岡県働きやすい介護職場認証制度」の委託事業者がウェブサイトに掲載した申請用ファイルが閲覧専用ではなく編集・保存可能な設定になっており、入力された 24 法人の役員 183 人分の氏名・生年月日・性別・役職が第三者から閲覧できる状態だった。閲覧数は不明。",
+      "cause": "other",
+      "vector": "委託事業者が申請用ファイルをオンラインで編集・保存できる設定で掲載",
+      "data_types": [
+        "name",
+        "birthday",
+        "other"
+      ],
+      "affected": 183,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-08-21",
+      "detected_at": "2026-09-17",
+      "disclosed_at": "2026-09-29",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "福岡県",
+          "url": "https://www.pref.fukuoka.lg.jp/press-release/nkojinjyouhou.html",
+          "published_at": "2026-09-29",
+          "title": "福岡県働きやすい介護職場認証制度事業における個人情報の漏えい事案について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192081",
+          "published_at": "2026-11-05",
+          "title": "申請用ファイルに不備、サイト上に個人情報が残存 - 福岡県"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-21",
+          "kind": "occurred",
+          "text": "申請受付開始。受付期間中（9 月 17 日まで）閲覧可能な状態が続いた",
+          "source": 0
+        },
+        {
+          "date": "2026-09-17",
+          "kind": "detected",
+          "text": "申請予定者からのダウンロード方法の問い合わせを受けて県が確認し判明。委託事業者にファイル削除を指示",
+          "source": 0
+        },
+        {
+          "date": "2026-09-29",
+          "kind": "disclosed",
+          "text": "公表。対象 24 法人に電話で説明・謝罪",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "web-form",
+        "contractor",
+        "government"
+      ],
+      "created_at": "2026-11-06",
+      "updated_at": "2026-11-06"
     }
   ]
 }
