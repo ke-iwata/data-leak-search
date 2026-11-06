@@ -216,6 +216,281 @@
       ],
       "created_at": "2026-11-06",
       "updated_at": "2026-11-06"
+    },
+    {
+      "id": "2026-11-05-ntt-docomo",
+      "org": "ntt-docomo",
+      "org_name": "株式会社NTTドコモ",
+      "org_aliases": [
+        "NTTドコモ",
+        "ドコモ",
+        "docomo",
+        "ドコモオンラインショップ",
+        "My docomo",
+        "docomo.ne.jp"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "NTTドコモ ドコモオンラインショップ・My docomo への不正アクセスによる顧客情報流出",
+      "summary": "ドコモオンラインショップと My docomo のサーバーが外部から不正アクセスを受け、最大約 30 万件の顧客情報が流出した。氏名・生年月日・連絡先・本人確認書類の番号・契約情報などが含まれ、一部の顧客は口座情報や勤務先情報も対象。侵入経路は調査中で、両サービスは緊急メンテナンスで手続きを停止している。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "birthday",
+        "address",
+        "phone",
+        "email",
+        "bank",
+        "other"
+      ],
+      "affected": 300000,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-11-04",
+      "disclosed_at": "2026-11-05",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社NTTドコモ",
+          "url": "https://www.docomo.ne.jp/info/notice/page/261106_00_m.html",
+          "published_at": "2026-11-06",
+          "title": "【お詫び】ドコモオンラインショップ、My docomoの緊急メンテナンス実施について/当社サーバーへの不正アクセスによるお客さま情報流出に関するお知らせ（第三報）"
+        },
+        {
+          "role": "secondary",
+          "trust": "official",
+          "publisher": "株式会社NTTドコモ",
+          "url": "https://www.docomo.ne.jp/info/notice/page/261105_03_m.html",
+          "published_at": "2026-11-05",
+          "title": "【お詫び】ドコモオンラインショップ、My docomoの緊急メンテナンス実施について/当社サーバーへの不正アクセスによるお客さま情報流出に関するお知らせ（第二報）"
+        },
+        {
+          "role": "secondary",
+          "trust": "official",
+          "publisher": "株式会社NTTドコモ",
+          "url": "https://www.docomo.ne.jp/info/notice/page/261105_02_m.html",
+          "published_at": "2026-11-05",
+          "title": "【お詫び】ドコモオンラインショップ、My docomoの緊急メンテナンス実施について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192453",
+          "published_at": "2026-11-06",
+          "title": "「ドコモオンラインショップ」と「My docomo」で個人情報が流出"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-04",
+          "kind": "detected",
+          "text": "外部からの不正アクセスを確認",
+          "source": 0
+        },
+        {
+          "date": "2026-11-05",
+          "kind": "disclosed",
+          "text": "午前 1 時ごろから両サービスの手続きを停止し、同日朝に緊急メンテナンスを告知。夕方の第二報で顧客情報の流出を公表",
+          "source": 2
+        },
+        {
+          "date": "2026-11-06",
+          "kind": "updated",
+          "text": "第三報で流出情報の項目と原因の記載を更新。件数は最大約 30 万件、新たな流出は確認されていないとし、侵入経路は調査継続。復旧時期は未定",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "member-info",
+        "web-service",
+        "mobile-carrier"
+      ],
+      "created_at": "2026-11-07",
+      "updated_at": "2026-11-07"
+    },
+    {
+      "id": "2026-11-02-nojima",
+      "org": "nojima",
+      "org_name": "株式会社ノジマ",
+      "org_aliases": [
+        "ノジマ",
+        "ノジマオンライン",
+        "nojima.co.jp",
+        "online.nojima.co.jp"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "ノジマ ノジマオンライン会員管理システムへの不正アクセスによる会員情報漏えい",
+      "summary": "EC サイト「ノジマオンライン」の会員管理システムが第三者の不正アクセスを受け、同サイトと中古スマホ買取サイトの会員情報約 700 万件が漏えいした。氏名・生年月日・住所・電話番号・メールアドレス・ログイン ID・暗号化されたパスワードなどが含まれ、クレジットカード情報は保持していないとしている。両サイトのサービスを一時休止した。",
+      "cause": "unauthorized_access",
+      "vector": "EC サイトの会員管理システムへの第三者による不正アクセス（手口は調査中）",
+      "data_types": [
+        "name",
+        "birthday",
+        "address",
+        "phone",
+        "email",
+        "credential",
+        "other"
+      ],
+      "affected": 7000000,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-11-01",
+      "detected_at": "2026-11-01",
+      "disclosed_at": "2026-11-02",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ノジマ",
+          "url": "https://www.nojima.co.jp/wp-content/uploads/2026/11/fa47750556e505f2ddb83dc080a6420f.pdf",
+          "published_at": "2026-11-02",
+          "title": "ノジマオンラインの不正アクセスに伴う個人情報漏えいに関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192339",
+          "published_at": "2026-11-06",
+          "title": "ECサイトの会員管理システムで個人情報が流出 - ノジマ"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-01",
+          "kind": "detected",
+          "text": "会員管理システムへの不正アクセスを検知。同日中に個人情報が外部へ漏えいしたことを確認",
+          "source": 0
+        },
+        {
+          "date": "2026-11-02",
+          "kind": "disclosed",
+          "text": "公表。ノジマオンラインと中古スマホ買取サイトを一時休止。警察に相談し、個人情報保護委員会への報告を準備",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "ec-site",
+        "member-info"
+      ],
+      "created_at": "2026-11-07",
+      "updated_at": "2026-11-07"
+    },
+    {
+      "id": "2026-11-06-saitama-shimin-iryo-hospital",
+      "org": "saitama-shimin-iryo-hospital",
+      "org_name": "社会医療法人さいたま市民医療センター",
+      "org_aliases": [
+        "さいたま市民医療センター",
+        "scmc.or.jp"
+      ],
+      "industry": "medical",
+      "country": "JP",
+      "title": "さいたま市民医療センター 手術画像を保存した記録媒体の紛失",
+      "summary": "さいたま市民医療センターで、外科手術の手術部位や採取した検体の画像約 200 枚を保存した記録媒体を紛失した。媒体はパスワードで保護されておらず、検体画像には患者 ID を記した紙片が写り込んでいた。院外への持ち出しは確認されていないが、可能性は否定できないとしている。",
+      "cause": "lost_device",
+      "vector": "パスワード保護のない記録媒体に手術画像を保存していた",
+      "data_types": [
+        "health",
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-11-06",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192393",
+          "published_at": "2026-11-06",
+          "title": "手術画像を保存した記録媒体を紛失 - さいたま市民医療センター"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-06",
+          "kind": "disclosed",
+          "text": "Security NEXT が報道（センターの公表日は確認できず、報道日を公表日として記録。公式サイトは 503 で読めず）。紛失・発見の時期は不明。画像は約 200 枚で、対象患者数は記載なし。対象患者に説明・謝罪",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "lost-media",
+        "health-info"
+      ],
+      "created_at": "2026-11-07",
+      "updated_at": "2026-11-07"
+    },
+    {
+      "id": "2026-11-06-saitama-shimin-iryo-hospital-web",
+      "org": "saitama-shimin-iryo-hospital",
+      "org_name": "社会医療法人さいたま市民医療センター",
+      "org_aliases": [
+        "さいたま市民医療センター",
+        "scmc.or.jp"
+      ],
+      "industry": "medical",
+      "country": "JP",
+      "title": "さいたま市民医療センター 職員専用ページのファイルが第三者から閲覧可能な状態に",
+      "summary": "さいたま市民医療センターのウェブサイトで、職員専用ページに過去に保存された一部ファイルが、権限のない第三者から直接アクセスできる状態だった。マニュアル内の患者の写真 2 枚と職員 2 名の氏名・電話番号が含まれていた。",
+      "cause": "misdelivery",
+      "vector": "職員専用ページのファイルにアクセス制限がかかっておらず直接アクセスできた",
+      "data_types": [
+        "name",
+        "phone",
+        "health",
+        "internal_doc"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": "2018-07-20",
+      "detected_at": null,
+      "disclosed_at": "2026-11-06",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192393",
+          "published_at": "2026-11-06",
+          "title": "手術画像を保存した記録媒体を紛失 - さいたま市民医療センター"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2018-07-20",
+          "kind": "occurred",
+          "text": "対象ファイルが職員専用ページにアップロードされた日",
+          "source": 0
+        },
+        {
+          "date": "2026-11-06",
+          "kind": "disclosed",
+          "text": "Security NEXT が記録媒体紛失とあわせて報道（センターの公表日は確認できず、報道日を公表日として記録）。対象は患者の写真 2 枚と職員 2 名の情報",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "web-misconfiguration",
+        "health-info"
+      ],
+      "created_at": "2026-11-07",
+      "updated_at": "2026-11-07"
     }
   ]
 }

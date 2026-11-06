@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-07",
+  "generated_at": "2026-11-07T06:10:00+09:00",
+  "stats": {
+    "collected": 16,
+    "candidates": 9,
+    "sources_ok": 5,
+    "sources_total": 7,
+    "failed_sources": [
+      "ppc_press",
+      "ppc_news"
+    ],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "大手 EC・通信で大規模な会員情報流出が続く。ノジマオンライン等の会員情報約 700 万件、ドコモオンラインショップ・My docomo の顧客情報最大約 30 万件（一部は口座情報を含む）。いずれも侵入経路は調査中でサービスを停止。",
+      "incidents": [
+        "2026-11-02-nojima",
+        "2026-11-05-ntt-docomo"
+      ]
+    },
+    {
+      "text": "ヤクルト本社のホームページへの不正アクセスで、問い合わせフォーム利用者などの個人情報が 39,505 件に確定（第 3 報）。",
+      "incidents": [
+        "2026-10-26-yakult"
+      ]
+    },
+    {
+      "text": "さいたま市民医療センターで手術画像約 200 枚を保存した記録媒体を紛失。あわせて職員専用ページのファイルが第三者から閲覧可能だったことも判明。",
+      "incidents": [
+        "2026-11-06-saitama-shimin-iryo-hospital",
+        "2026-11-06-saitama-shimin-iryo-hospital-web"
+      ]
+    }
+  ],
+  "new": [
+    "2026-11-05-ntt-docomo",
+    "2026-11-02-nojima",
+    "2026-10-26-yakult",
+    "2026-11-06-saitama-shimin-iryo-hospital",
+    "2026-11-06-saitama-shimin-iryo-hospital-web"
+  ],
+  "updated": [],
+  "skipped": []
+}

@@ -3268,6 +3268,104 @@
       ],
       "created_at": "2026-11-06",
       "updated_at": "2026-11-06"
+    },
+    {
+      "id": "2026-10-26-yakult",
+      "org": "yakult",
+      "org_name": "株式会社ヤクルト本社",
+      "org_aliases": [
+        "ヤクルト",
+        "ヤクルト本社",
+        "たのしい給食",
+        "yakult.co.jp"
+      ],
+      "industry": "manufacturing",
+      "country": "JP",
+      "title": "ヤクルト本社 ホームページへの不正アクセスによる問い合わせフォーム利用者等の個人情報漏えい",
+      "summary": "ヤクルト本社のホームページが不正アクセスを受け、問い合わせフォーム利用者、給食サイト「たのしい給食」会員、報道関係者向けフォーム利用者、化粧品キャンペーン応募者などの個人情報 39,505 件が漏えいした。氏名・住所・電話番号・メールアドレス・問い合わせ内容のほか、給食サイト会員の暗号化されたパスワードを含む。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "credential",
+        "other"
+      ],
+      "affected": 39505,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-26",
+      "disclosed_at": "2026-10-26",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ヤクルト本社",
+          "url": "https://www.yakult.co.jp/maintenance/news/pdf/20261104.pdf",
+          "published_at": "2026-11-04",
+          "title": "当社ホームページへの不正アクセスによる個人情報漏えいに関するお詫びとお知らせ【第３報】"
+        },
+        {
+          "role": "secondary",
+          "trust": "official",
+          "publisher": "株式会社ヤクルト本社",
+          "url": "https://www.yakult.co.jp/maintenance/news/pdf/20261026.pdf",
+          "published_at": "2026-10-26",
+          "title": "当社ホームページへの不正アクセスの発生について【第１報】"
+        },
+        {
+          "role": "secondary",
+          "trust": "official",
+          "publisher": "株式会社ヤクルト本社",
+          "url": "https://www.yakult.co.jp/maintenance/news/pdf/20261030.pdf",
+          "published_at": "2026-10-30",
+          "title": "当社ホームページへの不正アクセスによる個人情報漏えいに関するお詫びとお知らせ【第２報】"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192342",
+          "published_at": "2026-11-06",
+          "title": "問い合わせフォーム利用者などの個人情報が流出 - ヤクルト"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-26",
+          "kind": "detected",
+          "text": "ホームページへの不正アクセスを確認し、ホームページの機能を停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-26",
+          "kind": "disclosed",
+          "text": "第 1 報で不正アクセスの発生を公表。顧客情報への影響は調査中としていた",
+          "source": 1
+        },
+        {
+          "date": "2026-10-30",
+          "kind": "updated",
+          "text": "第 2 報で個人情報約 4 万件の漏えいを公表（本文は未確認、件数は第 3 報の記載による）",
+          "source": 2
+        },
+        {
+          "date": "2026-11-04",
+          "kind": "updated",
+          "text": "第 3 報で件数を約 4 万件から 39,505 件に確定。化粧品キャンペーン応募者 354 件と対応社員 59 件の氏名を対象に追加。個人情報保護委員会へ報告、警察へ相談済み",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "web-form",
+        "member-info"
+      ],
+      "created_at": "2026-11-07",
+      "updated_at": "2026-11-07"
     }
   ]
 }

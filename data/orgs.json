@@ -628,6 +628,23 @@
   "last": "2026-10-23",
   "affected_total": 0
  },
+ "yakult": {
+  "name": "株式会社ヤクルト本社",
+  "aliases": [
+   "ヤクルト",
+   "ヤクルト本社",
+   "たのしい給食",
+   "yakult.co.jp"
+  ],
+  "industry": "manufacturing",
+  "country": "JP",
+  "incidents": [
+   "2026-10-26-yakult"
+  ],
+  "first": "2026-10-26",
+  "last": "2026-10-26",
+  "affected_total": 39505
+ },
  "resona-bank": {
   "name": "株式会社りそな銀行",
   "aliases": [
@@ -872,6 +889,23 @@
   "last": "2026-10-31",
   "affected_total": 4320000
  },
+ "nojima": {
+  "name": "株式会社ノジマ",
+  "aliases": [
+   "ノジマ",
+   "ノジマオンライン",
+   "nojima.co.jp",
+   "online.nojima.co.jp"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-11-02-nojima"
+  ],
+  "first": "2026-11-02",
+  "last": "2026-11-02",
+  "affected_total": 7000000
+ },
  "istyle": {
   "name": "株式会社アイスタイル",
   "aliases": [
@@ -907,6 +941,25 @@
   "last": "2026-11-03",
   "affected_total": 0
  },
+ "ntt-docomo": {
+  "name": "株式会社NTTドコモ",
+  "aliases": [
+   "NTTドコモ",
+   "ドコモ",
+   "docomo",
+   "ドコモオンラインショップ",
+   "My docomo",
+   "docomo.ne.jp"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-11-05-ntt-docomo"
+  ],
+  "first": "2026-11-05",
+  "last": "2026-11-05",
+  "affected_total": 300000
+ },
  "nara-pref": {
   "name": "奈良県",
   "aliases": [
@@ -921,5 +974,21 @@
   "first": "2026-11-05",
   "last": "2026-11-05",
   "affected_total": 363
+ },
+ "saitama-shimin-iryo-hospital": {
+  "name": "社会医療法人さいたま市民医療センター",
+  "aliases": [
+   "さいたま市民医療センター",
+   "scmc.or.jp"
+  ],
+  "industry": "medical",
+  "country": "JP",
+  "incidents": [
+   "2026-11-06-saitama-shimin-iryo-hospital-web",
+   "2026-11-06-saitama-shimin-iryo-hospital"
+  ],
+  "first": "2026-11-06",
+  "last": "2026-11-06",
+  "affected_total": 0
  }
 }
