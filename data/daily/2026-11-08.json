@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-08",
+  "generated_at": "2026-11-08T06:10:00+09:00",
+  "stats": {
+    "collected": 3,
+    "candidates": 3,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "新規なし。候補 3 件（ノジマ・ヤクルト・さいたま市民医療センター）はいずれも既に記録済みの事案の出典で、処理済み URL。",
+      "incidents": []
+    }
+  ],
+  "new": [],
+  "updated": [],
+  "skipped": []
+}
