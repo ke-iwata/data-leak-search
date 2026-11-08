@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-09",
+  "generated_at": "2026-11-09T05:10:00+09:00",
+  "stats": {
+    "collected": 0,
+    "candidates": 0,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "新規なし。週末で各情報源の新着が 0 件（Security NEXT の最新記事も 11/6 付）。",
+      "incidents": []
+    }
+  ],
+  "new": [],
+  "updated": [],
+  "skipped": []
+}
