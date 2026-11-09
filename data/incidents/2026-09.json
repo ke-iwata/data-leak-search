@@ -516,6 +516,94 @@
       ],
       "created_at": "2026-11-06",
       "updated_at": "2026-11-06"
+    },
+    {
+      "id": "2026-09-11-rohto",
+      "org": "rohto",
+      "org_name": "ロート製薬株式会社",
+      "org_aliases": [
+        "ロート製薬",
+        "Rohto",
+        "rohto.co.jp"
+      ],
+      "industry": "manufacturing",
+      "country": "JP",
+      "title": "ロート製薬 通信販売の電話システムへの不正アクセスによる顧客情報漏えい",
+      "summary": "通信販売の顧客対応に使う電話システムのアカウント情報が第三者に不正利用され、電話システム経由で顧客管理システムの情報も取得された。2,797,545 人分の氏名・住所・電話番号が漏えいし、通話音声データには 9,715 人分のクレジットカード番号と有効期限が含まれていた。",
+      "cause": "unauthorized_access",
+      "vector": "電話システムのアカウント情報を不正利用され、同システム経由で顧客管理システムの情報を取得された",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "card"
+      ],
+      "affected": 2797545,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-09-10",
+      "disclosed_at": "2026-09-11",
+      "status": "reported",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "ロート製薬株式会社",
+          "url": "https://www.rohto.co.jp/news/whatsnew/2026/1106_01",
+          "published_at": "2026-11-06",
+          "title": "不正アクセスによるお客様の個人データ漏えいに関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "official",
+          "publisher": "ロート製薬株式会社",
+          "url": "https://www.rohto.co.jp/news/whatsnew/2026/0911_01",
+          "published_at": "2026-09-11",
+          "title": "当社システムにおける不正アクセスの可能性について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192493",
+          "published_at": "2026-11-09",
+          "title": "不正アクセスで個人情報流出、通話音声にクレカ情報も - ロート製薬"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-10",
+          "kind": "detected",
+          "text": "電話システムの事業者から不審なアクセスの報告を受け、アカウント停止やパスワード変更を実施",
+          "source": 0
+        },
+        {
+          "date": "2026-09-11",
+          "kind": "disclosed",
+          "text": "通信販売システムへの不正アクセスの可能性を公表（9 月 15 日に調査状況を続報）",
+          "source": 1
+        },
+        {
+          "date": "2026-09-15",
+          "kind": "report_filed",
+          "text": "個人情報保護委員会に報告（9 月 14 日に警察へ被害申告）",
+          "source": 0
+        },
+        {
+          "date": "2026-11-06",
+          "kind": "updated",
+          "text": "外部調査（10 月 16 日完了）の結果、2,797,545 人分の漏えいと、通話音声 9,715 人分にカード番号・有効期限が含まれていたことを公表。電話でのカード番号聴取を停止",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "ec-site",
+        "contact-center",
+        "credential-theft"
+      ],
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
     }
   ]
 }

@@ -1,7 +1,15 @@
 {
+ "https://www.security-next.com/192347": {
+  "incident": "2026-11-09-imari-city",
+  "at": "2026-11-09"
+ },
  "https://www.security-next.com/192393": {
   "incident": "2026-11-06-saitama-shimin-iryo-hospital",
   "at": "2026-11-06"
+ },
+ "https://www.security-next.com/192491": {
+  "incident": "2026-11-06-jnsa",
+  "at": "2026-11-09"
  },
  "https://www.docomo.ne.jp/info/notice/page/261106_00_m.html": {
   "incident": "2026-11-05-ntt-docomo",
@@ -19,6 +27,10 @@
   "incident": "2026-11-05-ntt-docomo",
   "at": "2026-11-06"
  },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/09/090504": {
+  "incident": "2026-11-05-ntt-docomo",
+  "at": "2026-11-09"
+ },
  "https://www.security-next.com/191606": {
   "incident": "2026-11-05-nara-pref",
   "at": "2026-11-05"
@@ -30,6 +42,10 @@
  "https://www.security-next.com/192388": {
   "incident": "2026-11-03-dennys-japan",
   "at": "2026-11-05"
+ },
+ "https://www.security-next.com/192460": {
+  "incident": "2026-11-02-wills",
+  "at": "2026-11-09"
  },
  "https://www.nojima.co.jp/wp-content/uploads/2026/11/fa47750556e505f2ddb83dc080a6420f.pdf": {
   "incident": "2026-11-02-nojima",
@@ -94,6 +110,10 @@
  "https://piyolog.hatenadiary.jp/entry/2026/11/05/015717": {
   "incident": "2026-10-28-arara",
   "at": "2026-11-05"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/09/230435": {
+  "incident": "2026-10-13-arcadia",
+  "at": "2026-11-09"
  },
  "https://www.sukesanudon.com/news/news-8014": {
   "incident": "2026-10-27-sukesan",
@@ -170,6 +190,10 @@
  "https://www.security-next.com/191495": {
   "incident": "2026-10-26-atsugi-city",
   "at": "2026-10-26"
+ },
+ "https://igreks.jp/archives/782": {
+  "incident": "2026-10-24-igreks",
+  "at": "2026-10-24"
  },
  "https://www.waterworks.metro.tokyo.lg.jp/information/press/r8/10/2026102301": {
   "incident": "2026-10-23-tokyo-waterworks",
@@ -367,6 +391,10 @@
   "incident": "2026-10-14-aena",
   "at": "2026-10-16"
  },
+ "https://raiden.site.ktaiwork.jp/archives/4597": {
+  "incident": "2026-10-13-arcadia",
+  "at": "2026-10-13"
+ },
  "https://www.coconala.co.jp/news-20261009": {
   "incident": "2026-10-09-coconala",
   "at": "2026-10-09"
@@ -434,6 +462,18 @@
  "https://www.security-next.com/191332": {
   "incident": "2026-09-14-sanin-godo-bank",
   "at": "2026-10-20"
+ },
+ "https://www.rohto.co.jp/news/whatsnew/2026/1106_01": {
+  "incident": "2026-09-11-rohto",
+  "at": "2026-11-06"
+ },
+ "https://www.rohto.co.jp/news/whatsnew/2026/0911_01": {
+  "incident": "2026-09-11-rohto",
+  "at": "2026-09-11"
+ },
+ "https://www.security-next.com/192493": {
+  "incident": "2026-09-11-rohto",
+  "at": "2026-11-09"
  },
  "https://www.economiematin.fr/?p=221403": {
   "incident": "2026-05-17-gites-de-france",

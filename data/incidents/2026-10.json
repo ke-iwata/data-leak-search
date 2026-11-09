@@ -1712,7 +1712,7 @@
       "industry": "it",
       "country": "JP",
       "title": "ラクスライトクラウド「ブラストメール」不正アクセスで全契約者の情報が流出",
-      "summary": "ラクスの子会社が提供するメール配信システム「ブラストメール」の API 用サーバー 2 台に第三者が侵入し、販売管理システムとサービスのデータベースからデータを持ち出した。全契約者の会社名・担当者名・電話番号・メールアドレスなどが流出し、345 契約では配信先リストなども漏えい。サービスは停止中で、利用組織側の公表が相次いでいる。",
+      "summary": "ラクスの子会社が提供するメール配信システム「ブラストメール」の API 用サーバー 2 台に第三者が侵入し、販売管理システムとサービスのデータベースからデータを持ち出した。全契約者の会社名・担当者名・電話番号・メールアドレスなどが流出し、421 契約では配信先リストなども漏えい。サービスは停止中で、利用組織側の公表が相次いでいる。",
       "cause": "unauthorized_access",
       "vector": "API 用サーバー 2 台に侵入してコマンドを実行し、データベースからデータを持ち出し（侵入経路は調査中）",
       "data_types": [
@@ -1768,6 +1768,14 @@
           "url": "https://piyolog.hatenadiary.jp/entry/2026/10/27/133851",
           "published_at": "2026-10-27",
           "title": "メール配信サービス「ブラストメール」への不正アクセスについてまとめてみた"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/09/230435",
+          "published_at": "2026-11-09",
+          "title": "相次ぐメール配信サービスへの不正アクセスについてまとめてみた"
         }
       ],
       "timeline": [
@@ -1794,6 +1802,12 @@
           "kind": "updated",
           "text": "契約者情報以外（配信先リスト等）の漏えいを確認した契約が 345 件に（10 月 23 日時点の 288 件から増加）。侵入経路は調査中、再開時期は未定",
           "source": 0
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "updated",
+          "text": "契約者情報以外の漏えいを確認した契約が 421 件に（10 月 27 日時点の 345 件から増加）",
+          "source": 5
         }
       ],
       "keywords": [
@@ -1802,7 +1816,7 @@
         "contractor"
       ],
       "created_at": "2026-10-27",
-      "updated_at": "2026-10-28"
+      "updated_at": "2026-11-10"
     },
     {
       "id": "2026-10-26-resona-bank",
@@ -2892,7 +2906,7 @@
       "industry": "it",
       "country": "JP",
       "title": "アララ メール配信サービス「アララ メッセージ」への不正アクセスによる情報流出",
-      "summary": "メール配信サービス「アララ メッセージ」が不正アクセスを受け、共用環境の管理画面から契約企業 61 社分のメールアドレス 3,386,187 件などが持ち出されたほか、同サービス経由で契約企業環境のサーバー 97 台（最大約 380 社）からメールアドレス約 7,700 万件と会員情報が持ち出された。クレジットカード会社を装う不審メール最大約 713 万通の送信にも悪用され、10 月 31 日に全サービスを停止した。件数は区分間の重複があり合算されていない。",
+      "summary": "メール配信サービス「アララ メッセージ」が Web サーバーの脆弱性などを突かれて不正アクセスを受け、共用環境と契約企業環境からメールアドレス計 81,329,467 件（区分間の重複を除く。うち属性情報つき 47,044,380 件）と、契約企業が登録した氏名・生年月日・電話番号・住所などが持ち出された。クレジットカード会社を装う不審メール最大約 713 万通の送信にも悪用され、10 月 31 日に全サービスを停止した。",
       "cause": "unauthorized_access",
       "vector": "Web サーバーの脆弱性とシステム環境の問題を突かれ、共用環境の管理画面への不正ログインとデータ出力機能の悪用、さらに同サービス経由で多数のサーバーに侵入（侵入経路・開始時期は調査中）",
       "data_types": [
@@ -2903,7 +2917,7 @@
         "address",
         "other"
       ],
-      "affected": 77000000,
+      "affected": 81329467,
       "affected_is_estimate": true,
       "occurred_at": "2026-10-27",
       "detected_at": "2026-10-28",
@@ -2934,6 +2948,14 @@
           "url": "https://piyolog.hatenadiary.jp/entry/2026/11/05/015717",
           "published_at": "2026-11-05",
           "title": "アララのメール配信サービス「アララ メッセージ」への不正アクセスについてまとめてみた"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/09/230435",
+          "published_at": "2026-11-09",
+          "title": "相次ぐメール配信サービスへの不正アクセスについてまとめてみた"
         }
       ],
       "timeline": [
@@ -2972,6 +2994,12 @@
           "kind": "updated",
           "text": "第 2 報。共用環境分を約 301 万件から 3,386,187 件（61 社、重複除く）と顧客データ最大 411,827 件（5 社）に修正。契約企業環境分はメールアドレス約 7,700 万件（精査中、最大約 380 社）、不審メール最大約 713 万通。原因にシステム環境の問題を追加",
           "source": 0
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "updated",
+          "text": "メールアドレスの件数を、区分ごとの公表値（共用環境 3,386,187 件・契約企業環境 約 7,700 万件）から重複を除いた 81,329,467 件（属性情報つき 47,044,380 件）に更新",
+          "source": 3
         }
       ],
       "keywords": [
@@ -2981,7 +3009,7 @@
         "phishing-mail"
       ],
       "created_at": "2026-11-05",
-      "updated_at": "2026-11-05"
+      "updated_at": "2026-11-10"
     },
     {
       "id": "2026-10-31-club-tourism",
@@ -3366,6 +3394,176 @@
       ],
       "created_at": "2026-11-07",
       "updated_at": "2026-11-07"
+    },
+    {
+      "id": "2026-10-13-arcadia",
+      "org": "arcadia",
+      "org_name": "株式会社アルカディア",
+      "org_aliases": [
+        "アルカディア",
+        "SpeeCAN RAIDEN",
+        "SpeeCAN",
+        "NET119",
+        "119RAIDEN"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "アルカディア メール配信サービス「SpeeCAN RAIDEN」への不正アクセスによる情報漏えいの可能性",
+      "summary": "メール配信サービス「SpeeCAN RAIDEN」のメール送信 API アカウントがパスワード総当たりで侵害され、フィッシングの疑いがあるメール 1,423,428 通が配信された。メールアドレス約 313.6 万件などが漏えいした可能性があり、NET119・119RAIDEN にも影響が及んだ。",
+      "cause": "unauthorized_access",
+      "vector": "メディアサーバーのパストラバーサル脆弱性で設定ファイルのシークレットキーが流出し、API アカウントへの総当たりも行われた",
+      "data_types": [
+        "name",
+        "email",
+        "phone",
+        "birthday",
+        "address",
+        "other"
+      ],
+      "affected": 3136000,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-10-11",
+      "detected_at": "2026-10-11",
+      "disclosed_at": "2026-10-13",
+      "status": "reported",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社アルカディア",
+          "url": "https://raiden.site.ktaiwork.jp/archives/4597",
+          "published_at": "2026-10-13",
+          "title": "不正アクセスによる個人情報漏えいの可能性に関して"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/09/230435",
+          "published_at": "2026-11-09",
+          "title": "相次ぐメール配信サービスへの不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-11",
+          "kind": "occurred",
+          "text": "6 時台にアクセスが始まり、16 時 30 分に不審な動きを確認",
+          "source": 1
+        },
+        {
+          "date": "2026-10-13",
+          "kind": "disclosed",
+          "text": "第 1 報を公表しサービスを緊急停止。同日未明に不正メール 1,423,428 通が配信された",
+          "source": 0
+        },
+        {
+          "date": "2026-10-16",
+          "kind": "updated",
+          "text": "NET119・119RAIDEN を影響範囲に追加",
+          "source": 0
+        },
+        {
+          "date": "2026-10-23",
+          "kind": "report_filed",
+          "text": "個人情報保護委員会へ報告し報告書を公開。10 月 22〜23 日に再度の不正送信があり、URL 解析の脆弱性を修正",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "email-delivery",
+        "saas",
+        "phishing-mail",
+        "vulnerability-exploit"
+      ],
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    },
+    {
+      "id": "2026-10-24-igreks",
+      "org": "igreks",
+      "org_name": "株式会社イグレックス",
+      "org_aliases": [
+        "イグレックス",
+        "ワイメール",
+        "Y-Mail",
+        "igreks.jp"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "イグレックス メール配信サービス「ワイメール」への不正侵入による個人情報漏えい",
+      "summary": "メール配信サービス「ワイメール」のポータルサーバーに不正侵入され、流出したセットアップ用スクリプトなどを使って顧客の配信環境にも侵入された。氏名・メールアドレスなど 22,527 件が漏えいまたはそのおそれがあり、フィッシングメール 1,341,744 通が送信された。",
+      "cause": "unauthorized_access",
+      "vector": "ポータルサーバーへの不正侵入で流出したセットアップ用スクリプトや認証情報を使い、顧客の配信環境に侵入",
+      "data_types": [
+        "name",
+        "email"
+      ],
+      "affected": 22527,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-10-24",
+      "disclosed_at": "2026-10-24",
+      "status": "reported",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社イグレックス",
+          "url": "https://igreks.jp/archives/782",
+          "published_at": "2026-10-24",
+          "title": "ワイメールへの不正アクセスに関するお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/09/230435",
+          "published_at": "2026-11-09",
+          "title": "相次ぐメール配信サービスへの不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-24",
+          "kind": "detected",
+          "text": "外部からの異常トラフィックを検知し、3 時 50 分ごろ緊急メンテナンスを開始",
+          "source": 0
+        },
+        {
+          "date": "2026-10-24",
+          "kind": "disclosed",
+          "text": "不審な通信とフィッシングメール送信の可能性を公表。全顧客環境の認証情報をリセット",
+          "source": 0
+        },
+        {
+          "date": "2026-10-28",
+          "kind": "report_filed",
+          "text": "個人情報保護委員会へ速報",
+          "source": 0
+        },
+        {
+          "date": "2026-11-03",
+          "kind": "updated",
+          "text": "第 19 報で被害件数（個人情報 22,527 件、フィッシングメール 1,341,744 通）を公表",
+          "source": 0
+        },
+        {
+          "date": "2026-11-08",
+          "kind": "updated",
+          "text": "11 月 7 日に顧客環境を復旧（一部制限付き）。第 23 報で補償方針を公表",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "email-delivery",
+        "saas",
+        "phishing-mail"
+      ],
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
     }
   ]
 }

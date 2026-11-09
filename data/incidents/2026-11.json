@@ -232,9 +232,9 @@
       "industry": "it",
       "country": "JP",
       "title": "NTTドコモ ドコモオンラインショップ・My docomo への不正アクセスによる顧客情報流出",
-      "summary": "ドコモオンラインショップと My docomo のサーバーが外部から不正アクセスを受け、最大約 30 万件の顧客情報が流出した。氏名・生年月日・連絡先・本人確認書類の番号・契約情報などが含まれ、一部の顧客は口座情報や勤務先情報も対象。侵入経路は調査中で、両サービスは緊急メンテナンスで手続きを停止している。",
+      "summary": "ドコモオンラインショップと My docomo が外部から不正アクセスを受け、最大 29 万 4,839 回線分（解約者を含む）の顧客情報が流出した。氏名・生年月日・連絡先・本人確認書類の番号・契約情報などが含まれ、一部の顧客は口座情報や勤務先情報も対象。d アカウントを入口に社内システムの連動の仕組みが悪用されたとされ、詳細は調査中。",
       "cause": "unauthorized_access",
-      "vector": null,
+      "vector": "d アカウントを入口に、社内の複数システムの連動の仕組みを悪用して顧客情報を機械的に検索・取得（認証の突破ではないとされる）",
       "data_types": [
         "name",
         "birthday",
@@ -244,9 +244,9 @@
         "bank",
         "other"
       ],
-      "affected": 300000,
+      "affected": 294839,
       "affected_is_estimate": true,
-      "occurred_at": null,
+      "occurred_at": "2026-11-04",
       "detected_at": "2026-11-04",
       "disclosed_at": "2026-11-05",
       "status": "investigating",
@@ -283,6 +283,14 @@
           "url": "https://www.security-next.com/192453",
           "published_at": "2026-11-06",
           "title": "「ドコモオンラインショップ」と「My docomo」で個人情報が流出"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/09/090504",
+          "published_at": "2026-11-09",
+          "title": "ドコモオンラインショップとMy docomoへの不正アクセスについてまとめてみた"
         }
       ],
       "timeline": [
@@ -303,6 +311,18 @@
           "kind": "updated",
           "text": "第三報で流出情報の項目と原因の記載を更新。件数は最大約 30 万件、新たな流出は確認されていないとし、侵入経路は調査継続。復旧時期は未定",
           "source": 0
+        },
+        {
+          "date": "2026-11-06",
+          "kind": "updated",
+          "text": "記者会見で件数を最大 29 万 4,839 回線（個人 20 万 4,157・法人 9 万 682）と説明（それまでの公表は最大約 30 万件）。入口は d アカウントで、複数システムの連動の仕組みを悪用されたとした。11 月 4 日 7 時ごろから閾値未満の動きがあったことも判明",
+          "source": 4
+        },
+        {
+          "date": "2026-11-08",
+          "kind": "updated",
+          "text": "予防的に停止していた ahamo サイトを再開",
+          "source": 4
         }
       ],
       "keywords": [
@@ -311,7 +331,7 @@
         "mobile-carrier"
       ],
       "created_at": "2026-11-07",
-      "updated_at": "2026-11-07"
+      "updated_at": "2026-11-10"
     },
     {
       "id": "2026-11-02-nojima",
@@ -491,6 +511,188 @@
       ],
       "created_at": "2026-11-07",
       "updated_at": "2026-11-07"
+    },
+    {
+      "id": "2026-11-02-wills",
+      "org": "wills",
+      "org_name": "株式会社ウィルズ",
+      "org_aliases": [
+        "ウィルズ",
+        "ネットマイル",
+        "netmile",
+        "すぐたま",
+        "wills-net.co.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "ウィルズ ポイント交換サービス「ネットマイル」への不正アクセスによる会員情報流出の可能性",
+      "summary": "ポイント交換サービス「ネットマイル」のシステム環境が第三者の不正アクセスを受け、退会者を含む最大約 549 万人分の氏名・メールアドレス・特典交換に関する情報が流出した可能性がある。「ネットマイル」と「すぐたま」を停止し、原因と影響範囲を調査中。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "email",
+        "other"
+      ],
+      "affected": 5490000,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-11-02",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192460",
+          "published_at": "2026-11-09",
+          "title": "「ネットマイル」で会員情報流出の可能性 - 影響など調査"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "kind": "disclosed",
+          "text": "不正アクセスによる会員情報流出の可能性を適時開示で公表（日付は二次情報による）。ネットマイルとすぐたまを停止",
+          "source": null
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "updated",
+          "text": "報道時点で原因・影響範囲は調査中。公開・拡散や二次被害は確認されていないとしている",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "member-info",
+        "point-service"
+      ],
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    },
+    {
+      "id": "2026-11-06-jnsa",
+      "org": "jnsa",
+      "org_name": "特定非営利活動法人日本ネットワークセキュリティ協会",
+      "org_aliases": [
+        "日本ネットワークセキュリティ協会",
+        "JNSA",
+        "jnsa.org",
+        "情報セキュリティ理解度チェック"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "JNSA 情報セキュリティ理解度チェックサービスへの不正アクセスによる個人情報流出の可能性",
+      "summary": "JNSA が運営する「情報セキュリティ理解度チェックサービス」が侵害され、導入組織の管理者の氏名・メールアドレス・組織情報や、利用者 ID・ハッシュ化パスワードなど最大 15,128 件が流出した可能性がある。10 月 30 日夜ごろからアクセスされていた可能性があり、侵入経路は調査中。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "email",
+        "credential",
+        "other"
+      ],
+      "affected": 15128,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-10-30",
+      "detected_at": "2026-11-04",
+      "disclosed_at": "2026-11-06",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192491",
+          "published_at": "2026-11-09",
+          "title": "JNSAのセキュ理解度チェックサービスで侵害 - 影響など調査"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-30",
+          "kind": "occurred",
+          "text": "同日夜ごろから不正アクセスを受けていた可能性",
+          "source": 0
+        },
+        {
+          "date": "2026-11-04",
+          "kind": "detected",
+          "text": "サービスの侵害を確認",
+          "source": 0
+        },
+        {
+          "date": "2026-11-06",
+          "kind": "disclosed",
+          "text": "流出の可能性を公表（日付は二次情報による）。同日、個人情報保護委員会へ報告",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "saas",
+        "security-vendor",
+        "credential-theft"
+      ],
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
+    },
+    {
+      "id": "2026-11-09-imari-city",
+      "org": "imari-city",
+      "org_name": "伊万里市",
+      "org_aliases": [
+        "佐賀県伊万里市",
+        "city.imari.lg.jp"
+      ],
+      "industry": "education",
+      "country": "JP",
+      "title": "伊万里市 市内中学校で生徒の学習記録ファイルを紛失",
+      "summary": "佐賀県伊万里市の市内中学校で、生徒 1 学年分の学習記録と評価に関する資料を含むファイルが所在不明になった。校内を複数回捜索したが見つかっておらず、学校は対象生徒と保護者に説明・謝罪した。",
+      "cause": "lost_device",
+      "vector": "紙の学習記録ファイルの所在不明",
+      "data_types": [
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-09-30",
+      "disclosed_at": "2026-11-09",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192347",
+          "published_at": "2026-11-09",
+          "title": "中学校で生徒の個人情報含む学習記録ファイルを紛失 - 伊万里市"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-30",
+          "kind": "detected",
+          "text": "教員がファイルが見当たらないことに気付く",
+          "source": 0
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "disclosed",
+          "text": "報道で判明（市の公表日は未確認のため報道日を記録）。件数は「1 学年分」とのみ",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "lost-media",
+        "school-roster"
+      ],
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
     }
   ]
 }

@@ -63,6 +63,22 @@
   "last": "2026-05-17",
   "affected_total": 117574
  },
+ "rohto": {
+  "name": "ロート製薬株式会社",
+  "aliases": [
+   "ロート製薬",
+   "Rohto",
+   "rohto.co.jp"
+  ],
+  "industry": "manufacturing",
+  "country": "JP",
+  "incidents": [
+   "2026-09-11-rohto"
+  ],
+  "first": "2026-09-11",
+  "last": "2026-09-11",
+  "affected_total": 2797545
+ },
  "sanin-godo-bank": {
   "name": "株式会社山陰合同銀行",
   "aliases": [
@@ -195,6 +211,24 @@
   "first": "2026-10-09",
   "last": "2026-10-09",
   "affected_total": 2294
+ },
+ "arcadia": {
+  "name": "株式会社アルカディア",
+  "aliases": [
+   "アルカディア",
+   "SpeeCAN RAIDEN",
+   "SpeeCAN",
+   "NET119",
+   "119RAIDEN"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-13-arcadia"
+  ],
+  "first": "2026-10-13",
+  "last": "2026-10-13",
+  "affected_total": 3136000
  },
  "aena": {
   "name": "株式会社アエナ",
@@ -628,6 +662,23 @@
   "last": "2026-10-23",
   "affected_total": 0
  },
+ "igreks": {
+  "name": "株式会社イグレックス",
+  "aliases": [
+   "イグレックス",
+   "ワイメール",
+   "Y-Mail",
+   "igreks.jp"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-24-igreks"
+  ],
+  "first": "2026-10-24",
+  "last": "2026-10-24",
+  "affected_total": 22527
+ },
  "yakult": {
   "name": "株式会社ヤクルト本社",
   "aliases": [
@@ -838,7 +889,7 @@
   ],
   "first": "2026-10-28",
   "last": "2026-10-28",
-  "affected_total": 77000000
+  "affected_total": 81329467
  },
  "ryohin-keikaku": {
   "name": "株式会社良品計画",
@@ -888,6 +939,24 @@
   "first": "2026-10-31",
   "last": "2026-10-31",
   "affected_total": 4320000
+ },
+ "wills": {
+  "name": "株式会社ウィルズ",
+  "aliases": [
+   "ウィルズ",
+   "ネットマイル",
+   "netmile",
+   "すぐたま",
+   "wills-net.co.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-11-02-wills"
+  ],
+  "first": "2026-11-02",
+  "last": "2026-11-02",
+  "affected_total": 5490000
  },
  "nojima": {
   "name": "株式会社ノジマ",
@@ -958,7 +1027,7 @@
   ],
   "first": "2026-11-05",
   "last": "2026-11-05",
-  "affected_total": 300000
+  "affected_total": 294839
  },
  "nara-pref": {
   "name": "奈良県",
@@ -989,6 +1058,38 @@
   ],
   "first": "2026-11-06",
   "last": "2026-11-06",
+  "affected_total": 0
+ },
+ "jnsa": {
+  "name": "特定非営利活動法人日本ネットワークセキュリティ協会",
+  "aliases": [
+   "日本ネットワークセキュリティ協会",
+   "JNSA",
+   "jnsa.org",
+   "情報セキュリティ理解度チェック"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-11-06-jnsa"
+  ],
+  "first": "2026-11-06",
+  "last": "2026-11-06",
+  "affected_total": 15128
+ },
+ "imari-city": {
+  "name": "伊万里市",
+  "aliases": [
+   "佐賀県伊万里市",
+   "city.imari.lg.jp"
+  ],
+  "industry": "education",
+  "country": "JP",
+  "incidents": [
+   "2026-11-09-imari-city"
+  ],
+  "first": "2026-11-09",
+  "last": "2026-11-09",
   "affected_total": 0
  }
 }
