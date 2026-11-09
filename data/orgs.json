@@ -1077,6 +1077,24 @@
   "last": "2026-11-06",
   "affected_total": 15128
  },
+ "nitori": {
+  "name": "株式会社ニトリホールディングス",
+  "aliases": [
+   "ニトリ",
+   "ニトリネット",
+   "NITORI",
+   "nitori-net.jp",
+   "nitorihd.co.jp"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-11-09-nitori"
+  ],
+  "first": "2026-11-09",
+  "last": "2026-11-09",
+  "affected_total": 37620000
+ },
  "imari-city": {
   "name": "伊万里市",
   "aliases": [

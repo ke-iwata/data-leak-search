@@ -693,6 +693,69 @@
       ],
       "created_at": "2026-11-10",
       "updated_at": "2026-11-10"
+    },
+    {
+      "id": "2026-11-09-nitori",
+      "org": "nitori",
+      "org_name": "株式会社ニトリホールディングス",
+      "org_aliases": [
+        "ニトリ",
+        "ニトリネット",
+        "NITORI",
+        "nitori-net.jp",
+        "nitorihd.co.jp"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "ニトリホールディングス 不正アクセスで個人・法人会員の情報最大 3,762 万件が流出の可能性",
+      "summary": "ニトリの管理システムが不正アクセスを受け、ニトリネットや EC モールの公式ショップで注文した個人・法人会員の情報が最大 3,762 万件流出した可能性がある。氏名・住所・電話番号・メールアドレス・生年月日などが含まれ、クレジットカード情報とログインパスワードは含まれないとしている。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "birthday",
+        "other"
+      ],
+      "affected": 37620000,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-11-06",
+      "disclosed_at": "2026-11-09",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2154931.html",
+          "published_at": "2026-11-09",
+          "title": "ニトリ、不正アクセスにより個人・法人会員の情報最大3762万件が流出の可能性"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-06",
+          "kind": "detected",
+          "text": "管理システムへの不正アクセスが判明。その後の調査で 10 月中旬〜下旬にも不正アクセスがあった可能性を確認",
+          "source": 0
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "disclosed",
+          "text": "流出の可能性を公表（プレスリリース PDF は未読、報道ベース）。原因は調査中で、対象者にメールか郵便で順次連絡する予定",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "member-info",
+        "ec-site"
+      ],
+      "created_at": "2026-11-10",
+      "updated_at": "2026-11-10"
     }
   ]
 }

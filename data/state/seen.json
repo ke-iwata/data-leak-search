@@ -1,4 +1,8 @@
 {
+ "https://internet.watch.impress.co.jp/docs/news/2154931.html": {
+  "incident": "2026-11-09-nitori",
+  "at": "2026-11-09"
+ },
  "https://www.security-next.com/192347": {
   "incident": "2026-11-09-imari-city",
   "at": "2026-11-09"
@@ -74,6 +78,10 @@
  "https://internet.watch.impress.co.jp/docs/news/2152666.html": {
   "incident": "2026-10-30-ryohin-keikaku",
   "at": "2026-10-30"
+ },
+ "https://www.itmedia.co.jp/news/article/2611/09/2000003038": {
+  "incident": "2026-10-30-ryohin-keikaku",
+  "at": "2026-11-09"
  },
  "https://internet.watch.impress.co.jp/docs/news/2152757.html": {
   "incident": "2026-10-30-mofa",
