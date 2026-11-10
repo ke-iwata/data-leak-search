@@ -3593,6 +3593,91 @@
       ],
       "created_at": "2026-11-10",
       "updated_at": "2026-11-10"
+    },
+    {
+      "id": "2026-10-19-h2o-retailing",
+      "org": "h2o-retailing",
+      "org_name": "エイチ・ツー・オー リテイリング株式会社",
+      "org_aliases": [
+        "エイチ・ツー・オー リテイリング",
+        "H2Oリテイリング",
+        "阪急阪神百貨店",
+        "H2O ID",
+        "HANKYU HANSHIN E-STORES",
+        "Remo Order",
+        "h2o-retailing.co.jp"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "エイチ・ツー・オー リテイリング 阪急阪神百貨店の予約サイト経由の不正アクセスで顧客情報が流出",
+      "summary": "阪急百貨店・阪神百貨店の予約サイトを経由して顧客管理システムに第三者がアクセスし、会員組織「H2O ID」の会員情報約 126 万件（報道）と、予約フォームの申し込み情報 6,243 件が漏えいした。公式通販サイト HANKYU HANSHIN E-STORES と Remo Order では、第 2 報時点で顧客情報の漏えいは確認されていない。",
+      "cause": "unauthorized_access",
+      "vector": "イベント等の予約サイトを経由して顧客管理システムにアクセスされた",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "birthday",
+        "other"
+      ],
+      "affected": 1266243,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-10-16",
+      "detected_at": null,
+      "disclosed_at": "2026-10-19",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "エイチ・ツー・オー リテイリング株式会社",
+          "url": "https://data.swcms.net/file/h2o-retailing/ja/news/auto_20261030561547/pdfFile.pdf",
+          "published_at": "2026-10-30",
+          "title": "第三者による不正アクセス発生について（第2報）"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/191650",
+          "published_at": "2026-11-10",
+          "title": "関連サイトで侵害、個人情報が流出 - 阪急阪神百貨店"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-16",
+          "kind": "occurred",
+          "text": "予約サイトを経由して顧客管理システムへのアクセス",
+          "source": 1
+        },
+        {
+          "date": "2026-10-19",
+          "kind": "disclosed",
+          "text": "第 1 報を公表（第 1 報本文は未読。日付は第 2 報の記載による）。通信を遮断し関連サイトを停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-30",
+          "kind": "updated",
+          "text": "第 2 報。予約サイトの申し込み情報 6,243 件（予約総数 188,590 件の約 3%）の漏えいが新たに判明。E-STORES / Remo Order の顧客情報の外部漏えいは確認されず",
+          "source": 0
+        },
+        {
+          "date": "2026-11-10",
+          "kind": "updated",
+          "text": "報道で H2O ID 会員の個人情報約 126 万件の流出が伝えられる。affected は約 126 万件と 6,243 件の合計（概数）",
+          "source": 1
+        }
+      ],
+      "keywords": [
+        "member-info",
+        "ec-site"
+      ],
+      "created_at": "2026-11-11",
+      "updated_at": "2026-11-11"
     }
   ]
 }

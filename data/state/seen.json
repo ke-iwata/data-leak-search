@@ -1,7 +1,19 @@
 {
+ "https://www.security-next.com/192157": {
+  "incident": "2026-11-10-hana-cupid",
+  "at": "2026-11-10"
+ },
+ "https://www.security-next.com/192495": {
+  "incident": "2026-11-10-doutor-coffee",
+  "at": "2026-11-10"
+ },
  "https://internet.watch.impress.co.jp/docs/news/2154931.html": {
   "incident": "2026-11-09-nitori",
   "at": "2026-11-09"
+ },
+ "https://www.security-next.com/192572": {
+  "incident": "2026-11-09-nitori",
+  "at": "2026-11-10"
  },
  "https://www.security-next.com/192347": {
   "incident": "2026-11-09-imari-city",
@@ -330,6 +342,14 @@
  "https://www.security-next.com/191648": {
   "incident": "2026-10-19-nifty",
   "at": "2026-10-20"
+ },
+ "https://data.swcms.net/file/h2o-retailing/ja/news/auto_20261030561547/pdfFile.pdf": {
+  "incident": "2026-10-19-h2o-retailing",
+  "at": "2026-10-30"
+ },
+ "https://www.security-next.com/191650": {
+  "incident": "2026-10-19-h2o-retailing",
+  "at": "2026-11-10"
  },
  "https://studio.design/ja/whats-new/unauthorized-access-2026-10": {
   "incident": "2026-10-16-studio-inc",

@@ -393,6 +393,26 @@
   "last": "2026-10-19",
   "affected_total": 542513
  },
+ "h2o-retailing": {
+  "name": "エイチ・ツー・オー リテイリング株式会社",
+  "aliases": [
+   "エイチ・ツー・オー リテイリング",
+   "H2Oリテイリング",
+   "阪急阪神百貨店",
+   "H2O ID",
+   "HANKYU HANSHIN E-STORES",
+   "Remo Order",
+   "h2o-retailing.co.jp"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-10-19-h2o-retailing"
+  ],
+  "first": "2026-10-19",
+  "last": "2026-10-19",
+  "affected_total": 1266243
+ },
  "ymir-link": {
   "name": "株式会社ユミルリンク",
   "aliases": [
@@ -751,16 +771,18 @@
    "ドトールコーヒー",
    "ドトール",
    "Doutor Coffee",
-   "doutor.co.jp"
+   "doutor.co.jp",
+   "ドトールオンラインショップ"
   ],
   "industry": "service",
   "country": "JP",
   "incidents": [
+   "2026-11-10-doutor-coffee",
    "2026-10-26-doutor-coffee"
   ],
   "first": "2026-10-26",
-  "last": "2026-10-26",
-  "affected_total": 951
+  "last": "2026-11-10",
+  "affected_total": 25722
  },
  "atsugi-city": {
   "name": "厚木市",
@@ -1109,5 +1131,21 @@
   "first": "2026-11-09",
   "last": "2026-11-09",
   "affected_total": 0
+ },
+ "hana-cupid": {
+  "name": "花キューピット",
+  "aliases": [
+   "インターネット花キューピット",
+   "ビジネス花キューピット",
+   "i879.com"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-11-10-hana-cupid"
+  ],
+  "first": "2026-11-10",
+  "last": "2026-11-10",
+  "affected_total": 4238242
  }
 }

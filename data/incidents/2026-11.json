@@ -734,6 +734,14 @@
           "url": "https://internet.watch.impress.co.jp/docs/news/2154931.html",
           "published_at": "2026-11-09",
           "title": "ニトリ、不正アクセスにより個人・法人会員の情報最大3762万件が流出の可能性"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192572",
+          "published_at": "2026-11-10",
+          "title": "システム侵害で顧客情報流出の可能性 - ニトリグループ"
         }
       ],
       "timeline": [
@@ -748,6 +756,12 @@
           "kind": "disclosed",
           "text": "流出の可能性を公表（プレスリリース PDF は未読、報道ベース）。原因は調査中で、対象者にメールか郵便で順次連絡する予定",
           "source": 0
+        },
+        {
+          "date": "2026-11-10",
+          "kind": "updated",
+          "text": "報道で漏えい項目を補足（性別・会員番号、法人会員の組織名・部署名・担当者情報、注文データ）。件数は最大 3,762 万件のまま",
+          "source": 1
         }
       ],
       "keywords": [
@@ -755,7 +769,139 @@
         "ec-site"
       ],
       "created_at": "2026-11-10",
-      "updated_at": "2026-11-10"
+      "updated_at": "2026-11-11"
+    },
+    {
+      "id": "2026-11-10-doutor-coffee",
+      "org": "doutor-coffee",
+      "org_name": "株式会社ドトールコーヒー",
+      "org_aliases": [
+        "ドトールコーヒー",
+        "ドトール",
+        "ドトールオンラインショップ",
+        "doutor.co.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "ドトールコーヒー 通販サイト「ドトールオンラインショップ」への不正アクセスで会員情報流出の可能性",
+      "summary": "ドトールオンラインショップの管理画面に第三者がアクセスし、2026 年 10 月 25 日までに会員登録した顧客の会員情報 2 万 4,762 件と届け先情報 9 件が流出した可能性がある。10 月公表の従業員情報の事案とは別のシステム。",
+      "cause": "unauthorized_access",
+      "vector": "通販サイトの管理画面への不正アクセス",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "birthday",
+        "other"
+      ],
+      "affected": 24771,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-10-24",
+      "detected_at": "2026-10-28",
+      "disclosed_at": "2026-11-10",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192495",
+          "published_at": "2026-11-10",
+          "title": "ドトール、通販サイトでも侵害 - 会員情報流出の可能性"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-24",
+          "kind": "occurred",
+          "text": "10 月 24〜25 日に管理画面への不正アクセス",
+          "source": 0
+        },
+        {
+          "date": "2026-10-28",
+          "kind": "detected",
+          "text": "決済代行会社から不審な動きの指摘を受けて判明。サイトを一時停止",
+          "source": 0
+        },
+        {
+          "date": "2026-11-10",
+          "kind": "disclosed",
+          "text": "報道日を公表日とした（組織の発表文は未確認）。警察に相談し、個人情報保護委員会へ報告",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "ec-site",
+        "member-info"
+      ],
+      "created_at": "2026-11-11",
+      "updated_at": "2026-11-11"
+    },
+    {
+      "id": "2026-11-10-hana-cupid",
+      "org": "hana-cupid",
+      "org_name": "花キューピット",
+      "org_aliases": [
+        "花キューピット",
+        "インターネット花キューピット",
+        "ビジネス花キューピット",
+        "i879.com"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "花キューピット 管理システム侵害で EC サイト利用者のログイン ID・メールアドレス等が流出",
+      "summary": "生花配達サービス花キューピットの管理システムが第三者に侵害され、EC サイト「インターネット花キューピット」「ビジネス花キューピット」でメールアドレスを登録した顧客のログイン ID、パスワードのハッシュ値、メールアドレスなど 423 万 8,242 件が流出した可能性がある。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "email",
+        "credential"
+      ],
+      "affected": 4238242,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-10-14",
+      "detected_at": null,
+      "disclosed_at": "2026-11-10",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192157",
+          "published_at": "2026-11-10",
+          "title": "「花キューピット」のECサイトで侵害 - 利用者メアドなど流出"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "kind": "occurred",
+          "text": "10 月 14〜15 日に管理システムへの侵害",
+          "source": 0
+        },
+        {
+          "date": "2026-10-28",
+          "kind": "updated",
+          "text": "利用者へのメール連絡を順次開始。個人情報保護委員会へ報告",
+          "source": 0
+        },
+        {
+          "date": "2026-11-10",
+          "kind": "disclosed",
+          "text": "報道日を公表日とした（組織の発表文は未確認、公式サイトは取得時 503）",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "ec-site",
+        "member-info"
+      ],
+      "created_at": "2026-11-11",
+      "updated_at": "2026-11-11"
     }
   ]
 }
