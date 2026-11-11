@@ -3678,6 +3678,165 @@
       ],
       "created_at": "2026-11-11",
       "updated_at": "2026-11-11"
+    },
+    {
+      "id": "2026-10-09-fireworks-ai",
+      "org": "fireworks-ai",
+      "org_name": "Fireworks AI, Inc.",
+      "org_aliases": [
+        "Fireworks AI",
+        "Fireworks",
+        "fireworks.ai"
+      ],
+      "industry": "it",
+      "country": "US",
+      "title": "Fireworks AI 内部認証情報の不正使用とクラウド事業者経由の侵入で顧客データが流出",
+      "summary": "AI 推論基盤の Fireworks AI で内部認証情報が不正使用され、一部顧客の評価ジョブ用のシークレット（API キー等）が取得された。10 月 24 日には第三者クラウド事業者経由で開発マシンに侵入され、請求先住所などの請求情報、一部アカウントのデータセット・モデルの重みにもアクセスされた。カード番号は保管しておらず影響はないとしている。",
+      "cause": "unauthorized_access",
+      "vector": "内部認証情報の不正使用、および開発マシンをホストする第三者クラウド事業者の侵害を経由した侵入（LLMJacking を行う金銭目的のグループとの関連を指摘）",
+      "data_types": [
+        "credential",
+        "address",
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-06",
+      "disclosed_at": "2026-10-09",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "Fireworks AI",
+          "url": "https://fireworks.ai/security/bulletins/october-2026-security-incident-update",
+          "published_at": "2026-11-09",
+          "title": "Update on October 2026 security incident"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "Fireworks AI",
+          "url": "https://fireworks.ai/security/bulletins/october-2026-security-incident",
+          "published_at": "2026-10-09",
+          "title": "October 2026 security incident"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/11/125745",
+          "published_at": "2026-11-11",
+          "title": "Notion AIのチャット記録が委託先から流出した可能性についてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-06",
+          "kind": "detected",
+          "text": "内部認証情報の不正使用を特定し封じ込めを開始（米国時間）。10 月 7 日に影響顧客への通知開始",
+          "source": 2
+        },
+        {
+          "date": "2026-10-09",
+          "kind": "disclosed",
+          "text": "第 1 報のセキュリティ告知を公表。当時はシークレットのみが取得されたとしていた（第 1 報の本文は未取得、更新版の記述で確認）",
+          "source": 0
+        },
+        {
+          "date": "2026-10-24",
+          "kind": "updated",
+          "text": "10 月 23 日の第三者クラウド事業者のインシデントを足がかりに開発マシンへ侵入され、同日検知",
+          "source": 0
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "updated",
+          "text": "続報を公表。影響範囲をシークレットのみから、請求情報・リソースのメタデータ・一部アカウントのデータセットとモデルの重みに拡大",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "credential-theft",
+        "api-key-exposure",
+        "supply-chain",
+        "generative-ai"
+      ],
+      "created_at": "2026-11-12",
+      "updated_at": "2026-11-12"
+    },
+    {
+      "id": "2026-10-16-jkk-tokyo",
+      "org": "jkk-tokyo",
+      "org_name": "東京都住宅供給公社",
+      "org_aliases": [
+        "東京都住宅供給公社",
+        "JKK東京",
+        "JKK 東京"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "東京都住宅供給公社 都営住宅自治会長宛て通知の宛名誤りで氏名が漏えい",
+      "summary": "都営住宅の維持管理を受託する東京都住宅供給公社が、自治会長宛てに送った排水管清掃の申込方法変更の通知 1,997 通のうち 846 通で宛名の住所を誤った。770 通が別の居住者に届き、自治会長 770 名分の氏名が漏えいした。",
+      "cause": "misdelivery",
+      "vector": "表計算ファイルの名簿から宛名ラベルを作る際、住棟・号室を誤った欄から引用し、確認しないまま発送",
+      "data_types": [
+        "name"
+      ],
+      "affected": 770,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-09-28",
+      "detected_at": "2026-10-13",
+      "disclosed_at": "2026-10-16",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "authority",
+          "publisher": "東京都",
+          "url": "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026101605",
+          "published_at": "2026-10-16",
+          "title": "個人情報の漏えいについて"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192673",
+          "published_at": "2026-11-11",
+          "title": "自治会長の住所を誤記載、別人宛に発送 - 東京都"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-28",
+          "kind": "occurred",
+          "text": "自治会長宛て通知 1,997 通を発送（うち 846 通が宛名誤り、76 通は宛先不明で返送）",
+          "source": 0
+        },
+        {
+          "date": "2026-10-13",
+          "kind": "detected",
+          "text": "誤送付を受けた居住者からの連絡で判明",
+          "source": 0
+        },
+        {
+          "date": "2026-10-16",
+          "kind": "disclosed",
+          "text": "東京都住宅政策本部が公表。対象者へ個別に謝罪・説明し、複数人での確認を徹底するとした",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "government",
+        "contractor",
+        "postal-mail"
+      ],
+      "created_at": "2026-11-12",
+      "updated_at": "2026-11-12"
     }
   ]
 }

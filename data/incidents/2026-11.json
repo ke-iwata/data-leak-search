@@ -902,6 +902,257 @@
       ],
       "created_at": "2026-11-11",
       "updated_at": "2026-11-11"
+    },
+    {
+      "id": "2026-11-09-raksul",
+      "org": "raksul",
+      "org_name": "ラクスル株式会社",
+      "org_aliases": [
+        "ラクスル",
+        "RAKSUL",
+        "raksul.com",
+        "ラクスル パッケージ"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "ラクスル 認証情報の不正取得による入稿データ・個人情報の漏えいのおそれ",
+      "summary": "ネット印刷サービス「ラクスル」で、システムの認証情報が不正に取得され、保管データの一部に外部からアクセスできる状態になっていた。入稿された印刷データや請求書・Web 郵便などに含まれる氏名・会社名・住所・電話番号・メールアドレスなどが漏えいしたおそれがある。カード情報・ログイン ID・パスワードの漏えいはないとしており、件数は集計中。",
+      "cause": "unauthorized_access",
+      "vector": "システムの認証情報が不正に取得され、保管データの一部に外部からアクセスできる状態になった",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "internal_doc"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-11-08",
+      "disclosed_at": "2026-11-09",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "ラクスル株式会社",
+          "url": "https://corp.raksul.com/news/press/261109_unauthorized-access/",
+          "published_at": "2026-11-09",
+          "title": "当社システムへの不正アクセスによる個人情報漏えいのおそれについて"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2154881.html",
+          "published_at": "2026-11-09",
+          "title": "ラクスルに不正アクセス 入稿データの個人情報漏えいのおそれ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192575",
+          "published_at": "2026-11-11",
+          "title": "ネット印刷サービス「ラクスル」で侵害 - 個人情報や印刷データが流出か"
+        }
+      ],
+      "timeline": [
+        {
+          "date": null,
+          "kind": "occurred",
+          "text": "対象期間の開始は調査中（終わりは 2026 年 11 月 8 日）",
+          "source": 0
+        },
+        {
+          "date": "2026-11-08",
+          "kind": "detected",
+          "text": "0 時 20 分ごろ不正アクセスが発覚。認証情報の無効化とアカウント停止、データ入稿を伴う一部サービスを停止",
+          "source": 0
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "disclosed",
+          "text": "漏えいのおそれを公表。7 時から一部サービスを順次再開（ラクスル パッケージなどは停止継続）。個人情報保護委員会へ報告予定",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "credential-theft",
+        "web-service",
+        "business-contacts"
+      ],
+      "created_at": "2026-11-12",
+      "updated_at": "2026-11-12"
+    },
+    {
+      "id": "2026-11-08-teket",
+      "org": "teket",
+      "org_name": "株式会社teket",
+      "org_aliases": [
+        "teket",
+        "テケト",
+        "teket.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "teket 電子チケットサービスへの不正アクセスで会員情報が流出",
+      "summary": "電子チケットサービス「teket」の会員情報等を管理するシステムが不正アクセスを受け、顧客情報の一部が第三者に流出したことが確認された。全会員の氏名・メールアドレスに加え、登録・購入した会員は生年月日・住所・電話番号・チケット情報も対象で、パスワードとカード情報は流出項目に含まれていないとされる。件数は精査中で、サービス全体を停止している。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "email",
+        "birthday",
+        "address",
+        "phone",
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-11-05",
+      "disclosed_at": "2026-11-08",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/11/075305",
+          "published_at": "2026-11-11",
+          "title": "電子チケットサービス「teket」への不正アクセスについてまとめてみた"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社teket",
+          "url": "https://corporate.teket.jp/news/privacy_261108",
+          "published_at": null,
+          "title": "【重要】不正アクセスによる情報流出に関するお詫びとお知らせ（第一報）"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-05",
+          "kind": "detected",
+          "text": "外部からの不正アクセスの可能性が高いと判断し、20 時 30 分にサービスを停止して遮断対応を開始",
+          "source": 0
+        },
+        {
+          "date": "2026-11-06",
+          "kind": "updated",
+          "text": "会員情報等を管理するシステムへの不正アクセスと顧客情報の一部流出を確認。主催者側でも販売延期などの影響",
+          "source": 0
+        },
+        {
+          "date": "2026-11-08",
+          "kind": "disclosed",
+          "text": "第一報を公表し利用者へメール連絡（組織の発表ページは本文を取得できず、まとめ記事で内容を確認）",
+          "source": 0
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "updated",
+          "text": "コーポレートサイトに案内ページを開設。多数の主催者・自治体施設が利用者向けに告知。11 月 11 日時点で再開時期は未定",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "member-info",
+        "web-service",
+        "service-outage"
+      ],
+      "created_at": "2026-11-12",
+      "updated_at": "2026-11-12"
+    },
+    {
+      "id": "2026-11-09-notion",
+      "org": "notion",
+      "org_name": "Notion Labs, Inc.",
+      "org_aliases": [
+        "Notion",
+        "Notion AI",
+        "notion.com",
+        "notion.so"
+      ],
+      "industry": "it",
+      "country": "US",
+      "title": "Notion 委託先 Fireworks AI の侵害で Notion AI のチャット記録が流出した可能性",
+      "summary": "Notion が Insights 機能の分類などに利用していた AI 推論基盤の委託先 Fireworks AI で不正アクセスがあり、Insights 機能で使われた Notion AI のチャット記録が流出した可能性がある。影響はワークスペース全体の 1% 未満で、Notion 自身のシステムの侵害ではないとしている。",
+      "cause": "unauthorized_access",
+      "vector": "委託先 Fireworks AI のシステムへの不正アクセス（第三者クラウド事業者経由の侵入を含む）",
+      "data_types": [
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-11-06",
+      "disclosed_at": "2026-11-09",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "Notion",
+          "url": "https://www.notion.com/security/advisories/security-incident-involving-a-third-party-ai-vendor",
+          "published_at": "2026-11-09",
+          "title": "Security incident involving a third-party AI vendor"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/11/125745",
+          "published_at": "2026-11-11",
+          "title": "Notion AIのチャット記録が委託先から流出した可能性についてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "kind": "detected",
+          "text": "Fireworks から一部データへのアクセスの通知。この時点では合成テストデータのみで顧客データは含まれないと判断",
+          "source": 0
+        },
+        {
+          "date": "2026-11-03",
+          "kind": "updated",
+          "text": "Fireworks との接続を遮断し、Fireworks 上のデータを削除",
+          "source": 0
+        },
+        {
+          "date": "2026-11-06",
+          "kind": "updated",
+          "text": "Fireworks から顧客データへの不正アクセスの可能性が通知され、社内調査を開始",
+          "source": 0
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "disclosed",
+          "text": "影響ワークスペースのオーナーへ連絡しアドバイザリを公表。Insights 機能を無効化",
+          "source": 0
+        },
+        {
+          "date": "2026-11-10",
+          "kind": "updated",
+          "text": "アドバイザリの表現を更新（事実の変更なし）。日本語ヘルプも公開",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "supply-chain",
+        "contractor",
+        "saas",
+        "generative-ai"
+      ],
+      "created_at": "2026-11-12",
+      "updated_at": "2026-11-12"
     }
   ]
 }

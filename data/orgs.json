@@ -194,6 +194,22 @@
   "last": "2026-10-06",
   "affected_total": 521
  },
+ "fireworks-ai": {
+  "name": "Fireworks AI, Inc.",
+  "aliases": [
+   "Fireworks AI",
+   "Fireworks",
+   "fireworks.ai"
+  ],
+  "industry": "it",
+  "country": "US",
+  "incidents": [
+   "2026-10-09-fireworks-ai"
+  ],
+  "first": "2026-10-09",
+  "last": "2026-10-09",
+  "affected_total": 0
+ },
  "coconala": {
   "name": "株式会社ココナラ",
   "aliases": [
@@ -310,6 +326,21 @@
   "first": "2026-10-16",
   "last": "2026-10-16",
   "affected_total": 0
+ },
+ "jkk-tokyo": {
+  "name": "東京都住宅供給公社",
+  "aliases": [
+   "JKK東京",
+   "JKK 東京"
+  ],
+  "industry": "public",
+  "country": "JP",
+  "incidents": [
+   "2026-10-16-jkk-tokyo"
+  ],
+  "first": "2026-10-16",
+  "last": "2026-10-16",
+  "affected_total": 770
  },
  "iwai-cosmo-securities": {
   "name": "岩井コスモ証券株式会社",
@@ -1098,6 +1129,56 @@
   "first": "2026-11-06",
   "last": "2026-11-06",
   "affected_total": 15128
+ },
+ "teket": {
+  "name": "株式会社teket",
+  "aliases": [
+   "teket",
+   "テケト",
+   "teket.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-11-08-teket"
+  ],
+  "first": "2026-11-08",
+  "last": "2026-11-08",
+  "affected_total": 0
+ },
+ "raksul": {
+  "name": "ラクスル株式会社",
+  "aliases": [
+   "ラクスル",
+   "RAKSUL",
+   "raksul.com",
+   "ラクスル パッケージ"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-11-09-raksul"
+  ],
+  "first": "2026-11-09",
+  "last": "2026-11-09",
+  "affected_total": 0
+ },
+ "notion": {
+  "name": "Notion Labs, Inc.",
+  "aliases": [
+   "Notion",
+   "Notion AI",
+   "notion.com",
+   "notion.so"
+  ],
+  "industry": "it",
+  "country": "US",
+  "incidents": [
+   "2026-11-09-notion"
+  ],
+  "first": "2026-11-09",
+  "last": "2026-11-09",
+  "affected_total": 0
  },
  "nitori": {
   "name": "株式会社ニトリホールディングス",

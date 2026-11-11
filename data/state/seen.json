@@ -7,6 +7,26 @@
   "incident": "2026-11-10-doutor-coffee",
   "at": "2026-11-10"
  },
+ "https://corp.raksul.com/news/press/261109_unauthorized-access": {
+  "incident": "2026-11-09-raksul",
+  "at": "2026-11-09"
+ },
+ "https://www.watch.impress.co.jp/docs/news/2154881.html": {
+  "incident": "2026-11-09-raksul",
+  "at": "2026-11-09"
+ },
+ "https://www.security-next.com/192575": {
+  "incident": "2026-11-09-raksul",
+  "at": "2026-11-11"
+ },
+ "https://www.notion.com/security/advisories/security-incident-involving-a-third-party-ai-vendor": {
+  "incident": "2026-11-09-notion",
+  "at": "2026-11-09"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/11/125745": {
+  "incident": "2026-10-09-fireworks-ai",
+  "at": "2026-11-11"
+ },
  "https://internet.watch.impress.co.jp/docs/news/2154931.html": {
   "incident": "2026-11-09-nitori",
   "at": "2026-11-09"
@@ -18,6 +38,14 @@
  "https://www.security-next.com/192347": {
   "incident": "2026-11-09-imari-city",
   "at": "2026-11-09"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/11/075305": {
+  "incident": "2026-11-08-teket",
+  "at": "2026-11-11"
+ },
+ "https://corporate.teket.jp/news/privacy_261108": {
+  "incident": "2026-11-08-teket",
+  "at": "2026-11-08"
  },
  "https://www.security-next.com/192393": {
   "incident": "2026-11-06-saitama-shimin-iryo-hospital",
@@ -371,6 +399,14 @@
   "incident": "2026-10-16-nttsolmare",
   "at": "2026-10-19"
  },
+ "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026101605": {
+  "incident": "2026-10-16-jkk-tokyo",
+  "at": "2026-10-16"
+ },
+ "https://www.security-next.com/192673": {
+  "incident": "2026-10-16-jkk-tokyo",
+  "at": "2026-11-11"
+ },
  "https://www.security-next.com/191717": {
   "incident": "2026-10-16-iwai-cosmo-securities",
   "at": "2026-10-21"
@@ -422,6 +458,14 @@
  "https://raiden.site.ktaiwork.jp/archives/4597": {
   "incident": "2026-10-13-arcadia",
   "at": "2026-10-13"
+ },
+ "https://fireworks.ai/security/bulletins/october-2026-security-incident-update": {
+  "incident": "2026-10-09-fireworks-ai",
+  "at": "2026-11-09"
+ },
+ "https://fireworks.ai/security/bulletins/october-2026-security-incident": {
+  "incident": "2026-10-09-fireworks-ai",
+  "at": "2026-10-09"
  },
  "https://www.coconala.co.jp/news-20261009": {
   "incident": "2026-10-09-coconala",
@@ -614,5 +658,13 @@
  "https://piyolog.hatenadiary.jp/entry/2026/11/05/133509": {
   "skipped": "「勝利の女神：NIKKE」PC ランチャー改ざんによる不正プログラム配布。組織が保有するデータの漏えいは公表されておらず、情報窃取の実績も不明のため事案としない",
   "at": "2026-11-06"
+ },
+ "https://haveibeenpwned.com/Breach/YouHack": {
+  "skipped": "2013 年のハッキングフォーラムの侵害を HIBP が登録したもの。組織・公的機関・メディアの公表を確認できず",
+  "at": "2026-11-12"
+ },
+ "https://haveibeenpwned.com/Breach/SberSpasibo": {
+  "skipped": "HIBP の記載も「allegedly」で未確認のリーク主張。組織の公表を確認できず",
+  "at": "2026-11-12"
  }
 }

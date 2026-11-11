@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-12",
+  "generated_at": "2026-11-12T05:40:00+09:00",
+  "stats": {
+    "collected": 20,
+    "candidates": 8,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "電子チケットの teket とネット印刷のラクスルで不正アクセスが相次いで公表された。teket は会員情報の流出を確認してサービス全体を停止中、ラクスルは入稿データ中の個人情報が漏えいしたおそれ。いずれも件数は集計中。",
+      "incidents": ["2026-11-08-teket", "2026-11-09-raksul"]
+    },
+    {
+      "text": "AI 推論基盤 Fireworks AI の侵害が委託元に波及。Notion は Insights 機能で使った Notion AI のチャット記録が流出した可能性を公表した（ワークスペースの 1% 未満）。",
+      "incidents": ["2026-11-09-notion", "2026-10-09-fireworks-ai"]
+    },
+    {
+      "text": "東京都住宅供給公社が都営住宅の自治会長宛て通知の宛名を誤り、770 名分の氏名が別の居住者に届いた（10 月 16 日公表分を今回登録）。",
+      "incidents": ["2026-10-16-jkk-tokyo"]
+    }
+  ],
+  "new": [
+    "2026-11-08-teket",
+    "2026-11-09-raksul",
+    "2026-11-09-notion",
+    "2026-10-09-fireworks-ai",
+    "2026-10-16-jkk-tokyo"
+  ],
+  "updated": [],
+  "skipped": [
+    {"url": "https://haveibeenpwned.com/Breach/YouHack", "reason": "2013 年のハッキングフォーラムの侵害を HIBP が登録したもの。組織・公的機関・メディアの公表を確認できず"},
+    {"url": "https://haveibeenpwned.com/Breach/SberSpasibo", "reason": "HIBP の記載も「allegedly」で未確認のリーク主張。組織の公表を確認できず"}
+  ]
+}
