@@ -1153,6 +1153,293 @@
       ],
       "created_at": "2026-11-12",
       "updated_at": "2026-11-12"
+    },
+    {
+      "id": "2026-11-10-jcci",
+      "org": "jcci",
+      "org_name": "日本商工会議所",
+      "org_aliases": [
+        "日商",
+        "商工会議所ネット試験",
+        "kentei.ne.jp",
+        "jcci.or.jp"
+      ],
+      "industry": "education",
+      "country": "JP",
+      "title": "日本商工会議所 ネット試験管理システムへの不正アクセスで受験者情報漏えいの可能性",
+      "summary": "簿記など 8 種類の商工会議所ネット試験で使う外部サーバー（試験管理システム）に不正なプログラムが設置され、2022 年 4 月以降の受験者最大約 98 万人分（約 197 万件）の情報が漏えいした可能性がある。氏名・生年月日・合否結果・得点のほか任意入力の連絡先を含む。決済情報は含まれず、漏えいや不正利用の事実は確認されていないとしている。",
+      "cause": "unauthorized_access",
+      "vector": "試験管理システムの外部サーバーに不正なプログラム（ファイル）を設置された。脆弱性の詳細は非公表",
+      "data_types": [
+        "name",
+        "birthday",
+        "address",
+        "phone",
+        "email",
+        "other"
+      ],
+      "affected": 980000,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-11-01",
+      "detected_at": "2026-11-04",
+      "disclosed_at": "2026-11-10",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "日本商工会議所",
+          "url": "https://www.kentei.ne.jp/51816",
+          "published_at": "2026-11-10",
+          "title": "商工会議所ネット試験管理システムへの不正アクセスによる受験者情報（個人情報）漏えいの可能性について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192652",
+          "published_at": "2026-11-12",
+          "title": "試験管理システムで侵害、受験者情報流出の可能性 - 日商"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-01",
+          "kind": "occurred",
+          "text": "試験管理システムの外部サーバーに不正なプログラムが設置された",
+          "source": 0
+        },
+        {
+          "date": "2026-11-04",
+          "kind": "detected",
+          "text": "システム管理会社からの報告で不正アクセスを確認。不正ファイルを削除し同日深夜にパッチを適用",
+          "source": 0
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "updated",
+          "text": "最大約 98 万人分（約 197 万件）の受験者情報が漏えいした可能性が判明し、個人情報保護委員会へ報告",
+          "source": 0
+        },
+        {
+          "date": "2026-11-10",
+          "kind": "disclosed",
+          "text": "公表。対象は 2022 年 4 月 1 日〜2026 年 11 月 4 日のネット試験受験者。試験は通常どおり実施",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "vulnerability-exploit",
+        "web-service",
+        "hosting-provider"
+      ],
+      "created_at": "2026-11-13",
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "2026-11-09-branjista-solution",
+      "org": "branjista-solution",
+      "org_name": "ブランジスタソリューション",
+      "org_aliases": [
+        "まとまるEC店長",
+        "ec-tencho.jp",
+        "ブランジスタソリューション"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "ブランジスタソリューション「まとまるEC店長」への不正アクセスで利用店舗の注文情報漏えいの可能性",
+      "summary": "ネットショップ一元管理サービス「まとまるEC店長」のサーバーで注文情報を照会する不審なプログラムが見つかり、利用企業 373 社の注文情報 21,873 件（重複除く）が流出した可能性がある。実際の注文情報を使った偽の返金案内メールが購入者に届いたことが発端で、利用店舗の清川屋も最大 392 件の流出可能性を公表した。",
+      "cause": "unauthorized_access",
+      "vector": "サーバー上に不審なプログラムと注文情報を照会するスクリプトが設置された。侵入経路は調査中",
+      "data_types": [
+        "name",
+        "address",
+        "email",
+        "other"
+      ],
+      "affected": 21873,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-11-01",
+      "detected_at": null,
+      "disclosed_at": "2026-11-09",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/12/113829",
+          "published_at": "2026-11-12",
+          "title": "「まとまるEC店長」への不正アクセスについてまとめてみた"
+        },
+        {
+          "role": "secondary",
+          "trust": "official",
+          "publisher": "株式会社清川屋",
+          "url": "https://www.kiyokawaya.co.jp/information/6545/",
+          "published_at": "2026-11-11",
+          "title": "【重要】不正アクセスによる情報流出に関するお詫びとお知らせ（第一報）"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-01",
+          "kind": "occurred",
+          "text": "不正アクセス（2,400 件分に関係）",
+          "source": 0
+        },
+        {
+          "date": "2026-11-06",
+          "kind": "updated",
+          "text": "再度の不正アクセス（19,524 件分に関係）",
+          "source": 0
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "disclosed",
+          "text": "提供元が第一報を公表。実際の注文情報を使い LINE 登録へ誘導する偽の返金案内メールが Yahoo!ショッピング・Qoo10 の注文で報告されていた。提供元の公式発表ページは取得時 503 で未読",
+          "source": 0
+        },
+        {
+          "date": "2026-11-10",
+          "kind": "updated",
+          "text": "第二報で影響を利用企業 373 社・21,873 件（重複除く）と公表。楽天市場との API 連携を一時停止。スクリプトを隔離し DB パスワードを変更",
+          "source": 0
+        },
+        {
+          "date": "2026-11-11",
+          "kind": "updated",
+          "text": "利用店舗の清川屋が第一報を公表。流出可能性は最大 392 件で、注文日時・注文番号・メールアドレスの流出を確認",
+          "source": 1
+        }
+      ],
+      "keywords": [
+        "saas",
+        "ec-site",
+        "order-history",
+        "phishing-mail"
+      ],
+      "created_at": "2026-11-13",
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "2026-11-06-shiseido",
+      "org": "shiseido",
+      "org_name": "株式会社資生堂",
+      "org_aliases": [
+        "資生堂",
+        "Shiseido",
+        "Facial Condition Analyzer",
+        "Beauty Alive Circulation Check"
+      ],
+      "industry": "manufacturing",
+      "country": "JP",
+      "title": "資生堂 オンライン肌測定システムへの不正アクセスで顧客情報 2,515 件が漏えい",
+      "summary": "グループの肌測定サービスで使うオンライン肌測定システム「Facial Condition Analyzer（FCA）」が外部の第三者に侵害され、システム内の情報の一部が改ざん・外部へ持ち出された。氏名・メールアドレス・年齢・性別・会員 ID・問診データ・肌測定結果など 2,515 件が漏えいした。顔画像は対象外。",
+      "cause": "unauthorized_access",
+      "vector": "オンライン肌測定システム（FCA）への外部からの侵害。経路は非公表",
+      "data_types": [
+        "name",
+        "email",
+        "health",
+        "other"
+      ],
+      "affected": 2515,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-27",
+      "disclosed_at": "2026-11-06",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192582",
+          "published_at": "2026-11-12",
+          "title": "肌測定システムで個人情報や測定結果が流出 - 資生堂"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-27",
+          "kind": "detected",
+          "text": "肌測定システムへの侵害を確認。オンラインストアと店頭の肌測定サービス「Beauty Alive Circulation Check」を停止",
+          "source": 0
+        },
+        {
+          "date": "2026-11-06",
+          "kind": "disclosed",
+          "text": "漏えい 2,515 件を公表（公表日は複数の二次報道による。資生堂の発表本文は未確認）",
+          "source": null
+        }
+      ],
+      "keywords": [
+        "health-info",
+        "member-info",
+        "web-service"
+      ],
+      "created_at": "2026-11-13",
+      "updated_at": "2026-11-13"
+    },
+    {
+      "id": "2026-11-12-tamura-city",
+      "org": "tamura-city",
+      "org_name": "田村市",
+      "org_aliases": [
+        "福島県田村市",
+        "city.tamura.lg.jp"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "田村市 保育施設職員がサポート詐欺被害、パソコン内の個人情報流出の可能性",
+      "summary": "市の幼児保育施設の職員がインターネット利用中に表示された偽のウイルス感染警告に従い、遠隔操作ソフトをダウンロードさせられた。パソコン内の保育活動の写真や行事アンケートに記載された氏名などが流出した可能性がある。件数は報道されていない。",
+      "cause": "unauthorized_access",
+      "vector": "サポート詐欺の偽警告から遠隔操作ソフトを導入させられ、パソコンを外部から操作された",
+      "data_types": [
+        "name",
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-10-24",
+      "detected_at": null,
+      "disclosed_at": "2026-11-12",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192344",
+          "published_at": "2026-11-12",
+          "title": "保育施設職員が偽警告でサポート詐欺被害 - 田村市"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-24",
+          "kind": "occurred",
+          "text": "職員がサポート詐欺の偽警告に従い遠隔操作ソフトをダウンロード",
+          "source": 0
+        },
+        {
+          "date": "2026-11-12",
+          "kind": "disclosed",
+          "text": "報道で判明（市の公表日・公表ページは未確認のため報道日を公表日として扱う）。市は研修強化で再発防止とする",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "support-scam",
+        "remote-access-tool"
+      ],
+      "created_at": "2026-11-13",
+      "updated_at": "2026-11-13"
     }
   ]
 }

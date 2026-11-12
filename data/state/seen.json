@@ -1,4 +1,16 @@
 {
+ "https://www.security-next.com/192344": {
+  "incident": "2026-11-12-tamura-city",
+  "at": "2026-11-12"
+ },
+ "https://www.kentei.ne.jp/51816": {
+  "incident": "2026-11-10-jcci",
+  "at": "2026-11-10"
+ },
+ "https://www.security-next.com/192652": {
+  "incident": "2026-11-10-jcci",
+  "at": "2026-11-12"
+ },
  "https://www.security-next.com/192157": {
   "incident": "2026-11-10-hana-cupid",
   "at": "2026-11-10"
@@ -39,6 +51,14 @@
   "incident": "2026-11-09-imari-city",
   "at": "2026-11-09"
  },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/12/113829": {
+  "incident": "2026-11-09-branjista-solution",
+  "at": "2026-11-12"
+ },
+ "https://www.kiyokawaya.co.jp/information/6545": {
+  "incident": "2026-11-09-branjista-solution",
+  "at": "2026-11-11"
+ },
  "https://piyolog.hatenadiary.jp/entry/2026/11/11/075305": {
   "incident": "2026-11-08-teket",
   "at": "2026-11-11"
@@ -46,6 +66,10 @@
  "https://corporate.teket.jp/news/privacy_261108": {
   "incident": "2026-11-08-teket",
   "at": "2026-11-08"
+ },
+ "https://www.security-next.com/192582": {
+  "incident": "2026-11-06-shiseido",
+  "at": "2026-11-12"
  },
  "https://www.security-next.com/192393": {
   "incident": "2026-11-06-saitama-shimin-iryo-hospital",

@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-13",
+  "generated_at": "2026-11-13T05:40:00+09:00",
+  "stats": {
+    "collected": 13,
+    "candidates": 5,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "日本商工会議所のネット試験管理システムに不正なプログラムが設置され、簿記など 8 試験の受験者最大約 98 万人分（約 197 万件）の情報が漏えいした可能性。",
+      "incidents": [
+        "2026-11-10-jcci"
+      ]
+    },
+    {
+      "text": "EC 一元管理 SaaS「まとまるEC店長」で利用企業 373 社の注文情報 21,873 件が流出した可能性。実際の注文情報を使った偽の返金メールが購入者に届いている。",
+      "incidents": [
+        "2026-11-09-branjista-solution"
+      ]
+    },
+    {
+      "text": "資生堂のオンライン肌測定システムが侵害され問診・測定結果を含む 2,515 件が漏えい。田村市では保育施設職員がサポート詐欺で遠隔操作ソフトを入れさせられた。",
+      "incidents": [
+        "2026-11-06-shiseido",
+        "2026-11-12-tamura-city"
+      ]
+    }
+  ],
+  "new": [
+    "2026-11-10-jcci",
+    "2026-11-09-branjista-solution",
+    "2026-11-06-shiseido",
+    "2026-11-12-tamura-city"
+  ],
+  "updated": [],
+  "skipped": []
+}

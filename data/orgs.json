@@ -1097,6 +1097,23 @@
   "last": "2026-11-05",
   "affected_total": 363
  },
+ "shiseido": {
+  "name": "株式会社資生堂",
+  "aliases": [
+   "資生堂",
+   "Shiseido",
+   "Facial Condition Analyzer",
+   "Beauty Alive Circulation Check"
+  ],
+  "industry": "manufacturing",
+  "country": "JP",
+  "incidents": [
+   "2026-11-06-shiseido"
+  ],
+  "first": "2026-11-06",
+  "last": "2026-11-06",
+  "affected_total": 2515
+ },
  "saitama-shimin-iryo-hospital": {
   "name": "社会医療法人さいたま市民医療センター",
   "aliases": [
@@ -1213,6 +1230,38 @@
   "last": "2026-11-09",
   "affected_total": 0
  },
+ "branjista-solution": {
+  "name": "ブランジスタソリューション",
+  "aliases": [
+   "まとまるEC店長",
+   "ec-tencho.jp"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-11-09-branjista-solution"
+  ],
+  "first": "2026-11-09",
+  "last": "2026-11-09",
+  "affected_total": 21873
+ },
+ "jcci": {
+  "name": "日本商工会議所",
+  "aliases": [
+   "日商",
+   "商工会議所ネット試験",
+   "kentei.ne.jp",
+   "jcci.or.jp"
+  ],
+  "industry": "education",
+  "country": "JP",
+  "incidents": [
+   "2026-11-10-jcci"
+  ],
+  "first": "2026-11-10",
+  "last": "2026-11-10",
+  "affected_total": 980000
+ },
  "hana-cupid": {
   "name": "花キューピット",
   "aliases": [
@@ -1228,5 +1277,20 @@
   "first": "2026-11-10",
   "last": "2026-11-10",
   "affected_total": 4238242
+ },
+ "tamura-city": {
+  "name": "田村市",
+  "aliases": [
+   "福島県田村市",
+   "city.tamura.lg.jp"
+  ],
+  "industry": "public",
+  "country": "JP",
+  "incidents": [
+   "2026-11-12-tamura-city"
+  ],
+  "first": "2026-11-12",
+  "last": "2026-11-12",
+  "affected_total": 0
  }
 }
