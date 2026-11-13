@@ -1292,5 +1292,21 @@
   "first": "2026-11-12",
   "last": "2026-11-12",
   "affected_total": 0
+ },
+ "cyber-security-cloud": {
+  "name": "株式会社サイバーセキュリティクラウド",
+  "aliases": [
+   "サイバーセキュリティクラウド",
+   "Cyber Security Cloud",
+   "cscloud.co.jp"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-11-12-cyber-security-cloud"
+  ],
+  "first": "2026-11-12",
+  "last": "2026-11-12",
+  "affected_total": 0
  }
 }

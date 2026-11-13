@@ -1440,6 +1440,79 @@
       ],
       "created_at": "2026-11-13",
       "updated_at": "2026-11-13"
+    },
+    {
+      "id": "2026-11-12-cyber-security-cloud",
+      "org": "cyber-security-cloud",
+      "org_name": "株式会社サイバーセキュリティクラウド",
+      "org_aliases": [
+        "サイバーセキュリティクラウド",
+        "Cyber Security Cloud",
+        "cscloud.co.jp"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "サイバーセキュリティクラウド 流出した認証情報で GitHub 開発環境に不正アクセス、一部顧客情報漏えいのおそれ",
+      "summary": "従業員 1 名が業務で使う GitHub の認証情報が外部に流出し、第三者がこれを使って開発環境にアクセスしたとみられる。一部顧客の会社名・担当者名・メールアドレスやサービス利用に伴う通信関連情報が漏えいしたおそれがある。件数は調査中で、サービスへの影響は確認されていない。",
+      "cause": "unauthorized_access",
+      "vector": "従業員の GitHub 認証情報が外部に流出し、第三者がそれを使って開発環境にアクセス（流出経路は調査中）",
+      "data_types": [
+        "name",
+        "email",
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-11-05",
+      "disclosed_at": "2026-11-12",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社サイバーセキュリティクラウド",
+          "url": "https://www.cscloud.co.jp/news/info/20261112-2/",
+          "published_at": "2026-11-12",
+          "title": "当社開発環境における情報漏えいのおそれに関するお知らせとお詫び（第一報）"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192847",
+          "published_at": "2026-11-13",
+          "title": "認証情報が漏洩、GitHub環境に不正アクセス - CSC"
+        }
+      ],
+      "timeline": [
+        {
+          "date": null,
+          "kind": "detected",
+          "text": "外部の組織から、従業員の GitHub 認証情報が流出しているとの連絡を受けた（連絡日は非公表）",
+          "source": 0
+        },
+        {
+          "date": "2026-11-05",
+          "kind": "detected",
+          "text": "GitHub のアクセスログで第三者によるとみられる不審なアクセスを確認。認証情報を失効させ、GitHub 上の他サービスの認証情報も変更",
+          "source": 0
+        },
+        {
+          "date": "2026-11-12",
+          "kind": "disclosed",
+          "text": "第一報を公表。ログの保存期間の制約で侵入期間は特定できず、外部専門機関とフォレンジック調査中。個人情報保護委員会などに報告済み",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "credential-theft",
+        "source-code-repository",
+        "security-vendor"
+      ],
+      "created_at": "2026-11-14",
+      "updated_at": "2026-11-14"
     }
   ]
 }

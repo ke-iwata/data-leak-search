@@ -3,6 +3,14 @@
   "incident": "2026-11-12-tamura-city",
   "at": "2026-11-12"
  },
+ "https://www.cscloud.co.jp/news/info/20261112-2": {
+  "incident": "2026-11-12-cyber-security-cloud",
+  "at": "2026-11-12"
+ },
+ "https://www.security-next.com/192847": {
+  "incident": "2026-11-12-cyber-security-cloud",
+  "at": "2026-11-13"
+ },
  "https://www.kentei.ne.jp/51816": {
   "incident": "2026-11-10-jcci",
   "at": "2026-11-10"
@@ -146,6 +154,14 @@
  "https://www.itmedia.co.jp/news/article/2611/09/2000003038": {
   "incident": "2026-10-30-ryohin-keikaku",
   "at": "2026-11-09"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/13/162738": {
+  "incident": "2026-10-30-ryohin-keikaku",
+  "at": "2026-11-13"
+ },
+ "https://www.security-next.com/192851": {
+  "incident": "2026-10-30-ryohin-keikaku",
+  "at": "2026-11-13"
  },
  "https://internet.watch.impress.co.jp/docs/news/2152757.html": {
   "incident": "2026-10-30-mofa",
@@ -690,5 +706,9 @@
  "https://haveibeenpwned.com/Breach/SberSpasibo": {
   "skipped": "HIBP の記載も「allegedly」で未確認のリーク主張。組織の公表を確認できず",
   "at": "2026-11-12"
+ },
+ "https://haveibeenpwned.com/Breach/CastleRAT": {
+  "skipped": "Europol によるマルウェア基盤摘発で得られた感染端末由来のメールアドレス・パスワード。特定組織の漏えい事案ではないため対象外",
+  "at": "2026-11-14"
  }
 }

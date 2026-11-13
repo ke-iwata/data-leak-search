@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-14",
+  "generated_at": "2026-11-14T05:30:00+09:00",
+  "stats": {
+    "collected": 16,
+    "candidates": 7,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 1
+  },
+  "digest": [
+    {
+      "text": "良品計画の不正アクセスは第四報までに区分が整理され、会員情報最大約 2,726 万件に加え、削除漏れで残っていた MUJI Card 番号約 109 万件（有効約 34.5 万件）と代引き届け先約 44 万件が対象に。",
+      "incidents": ["2026-10-30-ryohin-keikaku"]
+    },
+    {
+      "text": "セキュリティ企業のサイバーセキュリティクラウドで、従業員の GitHub 認証情報の流出を起点に開発環境へ不正アクセス。一部顧客の担当者名・メールアドレスなどが漏えいしたおそれ（件数は調査中）。",
+      "incidents": ["2026-11-12-cyber-security-cloud"]
+    }
+  ],
+  "new": ["2026-11-12-cyber-security-cloud"],
+  "updated": [
+    {"id": "2026-10-30-ryohin-keikaku", "text": "第四報までの区分（MUJI Card 番号約 109 万件・代引き届け先約 44 万件など）を反映し、card を追加、発生・検知日を 2026-10-29 に設定"}
+  ],
+  "skipped": [
+    {"url": "https://haveibeenpwned.com/Breach/CastleRAT", "reason": "Europol によるマルウェア基盤摘発で得られた感染端末由来のメールアドレス・パスワード。特定組織の漏えい事案ではないため対象外"}
+  ]
+}
