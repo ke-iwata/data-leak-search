@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-16",
+  "generated_at": "2026-11-16T05:10:00+09:00",
+  "stats": {
+    "collected": 0,
+    "candidates": 0,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "新規なし。週末（11/14 夕方〜11/16 早朝）の収集期間で、全 7 情報源とも新着 0 件。",
+      "incidents": []
+    }
+  ],
+  "new": [],
+  "updated": [],
+  "skipped": []
+}
