@@ -1,4 +1,12 @@
 {
+ "https://www.r-ccs.riken.jp/outreach/topics/20261116-1/index.html": {
+  "incident": "2026-11-16-riken",
+  "at": "2026-11-16"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/17/030254": {
+  "incident": "2026-11-16-riken",
+  "at": "2026-11-17"
+ },
  "https://www.security-next.com/192344": {
   "incident": "2026-11-12-tamura-city",
   "at": "2026-11-12"
@@ -10,6 +18,14 @@
  "https://www.security-next.com/192847": {
   "incident": "2026-11-12-cyber-security-cloud",
   "at": "2026-11-13"
+ },
+ "https://www.yasukuni.or.jp/news_detail.html?id=734": {
+  "incident": "2026-11-11-yasukuni-shrine",
+  "at": "2026-11-11"
+ },
+ "https://www.security-next.com/192746": {
+  "incident": "2026-11-11-yasukuni-shrine",
+  "at": "2026-11-16"
  },
  "https://www.kentei.ne.jp/51816": {
   "incident": "2026-11-10-jcci",
@@ -267,6 +283,18 @@
   "incident": "2026-10-26-rakuten-group",
   "at": "2026-10-28"
  },
+ "https://www.jprouso.or.jp/system/servlet/yusei.UserMain?method=show_detail&clause_id=18457": {
+  "incident": "2026-10-26-jp-rouso",
+  "at": "2026-11-06"
+ },
+ "https://scan.netsecurity.ne.jp/article/2026/11/05/56677.html": {
+  "incident": "2026-10-26-jp-rouso",
+  "at": "2026-11-05"
+ },
+ "https://www.security-next.com/192465": {
+  "incident": "2026-10-26-jp-rouso",
+  "at": "2026-11-16"
+ },
  "https://www.doutor.co.jp/news/newsrelease/detail/20261026144748.html": {
   "incident": "2026-10-26-doutor-coffee",
   "at": "2026-10-26"
@@ -514,6 +542,18 @@
  "https://www.security-next.com/191329": {
   "incident": "2026-10-09-coconala",
   "at": "2026-10-19"
+ },
+ "https://bank.82group.jp/file.jsp?id=release/2026/pdf/news20261019.pdf": {
+  "incident": "2026-10-08-hachijuni-nagano-bank",
+  "at": "2026-10-19"
+ },
+ "https://bank.82group.jp/file.jsp?id=release/2026/pdf/news20261008.pdf": {
+  "incident": "2026-10-08-hachijuni-nagano-bank",
+  "at": "2026-10-08"
+ },
+ "https://www.security-next.com/192395": {
+  "incident": "2026-10-08-hachijuni-nagano-bank",
+  "at": "2026-11-16"
  },
  "https://www.nimoca.jp/storage/files/information/107/20261006.pdf": {
   "incident": "2026-10-06-nimoca",

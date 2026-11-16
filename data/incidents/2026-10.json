@@ -3872,6 +3872,179 @@
       ],
       "created_at": "2026-11-12",
       "updated_at": "2026-11-12"
+    },
+    {
+      "id": "2026-10-08-hachijuni-nagano-bank",
+      "org": "hachijuni-nagano-bank",
+      "org_name": "株式会社八十二長野銀行",
+      "org_aliases": [
+        "八十二長野銀行",
+        "八十二長野銀",
+        "八十二銀行",
+        "bank.82group.jp"
+      ],
+      "industry": "finance",
+      "country": "JP",
+      "title": "八十二長野銀行 職員メールアカウントがフィッシングで不正アクセス、取引先情報漏えいのおそれ",
+      "summary": "職員 1 名が海外企業を装うフィッシングメール（正規の認証機能を悪用する手口）で認証操作を行い、メールアカウントが第三者に不正アクセスされた。閲覧されたメールから、個人 34 名の氏名・勤務先・電話番号・メールアドレス、法人取引先 627 社の社名や取引情報、関係機関 11 機関の情報が漏えいした可能性がある。口座情報や暗証番号の漏えいは確認されていない。",
+      "cause": "unauthorized_access",
+      "vector": "海外企業を装うフィッシングメールで職員が認証操作を行い、メールアカウントが乗っ取られた",
+      "data_types": [
+        "name",
+        "phone",
+        "email",
+        "internal_doc",
+        "other"
+      ],
+      "affected": 34,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-10-07",
+      "detected_at": "2026-10-07",
+      "disclosed_at": "2026-10-08",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社八十二長野銀行",
+          "url": "https://bank.82group.jp/file.jsp?id=release/2026/pdf/news20261019.pdf",
+          "published_at": "2026-10-19",
+          "title": "不正アクセスによるお客さま情報漏えいのお詫びとご報告（第２報）"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社八十二長野銀行",
+          "url": "https://bank.82group.jp/file.jsp?id=release/2026/pdf/news20261008.pdf",
+          "published_at": "2026-10-08",
+          "title": "不正アクセスによるお客さま情報漏えいのお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192395",
+          "published_at": "2026-11-16",
+          "title": "フィッシング被害で個人情報流出の可能性 - 八十二長野銀"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-07",
+          "kind": "occurred",
+          "text": "職員がフィッシングメールで認証操作を行い、メールアカウントが不正アクセスを受けた。同日中にアクセスを遮断",
+          "source": 0
+        },
+        {
+          "date": "2026-10-08",
+          "kind": "disclosed",
+          "text": "第一報を公表。流出した可能性のあるメールアドレスを 35 件と説明（第 2 報の注記による。第一報の本文は未確認）",
+          "source": 0
+        },
+        {
+          "date": "2026-10-19",
+          "kind": "updated",
+          "text": "第 2 報。ログ解析で範囲を特定し、個人 34 名・法人取引先 627 社（社名と海外拠点名 531 社、取引情報 96 社）・関係機関 11 機関（メールアドレス 35 件）に拡大。他アカウントへの不正アクセスや不正利用の申し出は無し",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "phishing-mail",
+        "account-takeover",
+        "business-contacts"
+      ],
+      "created_at": "2026-11-17",
+      "updated_at": "2026-11-17"
+    },
+    {
+      "id": "2026-10-26-jp-rouso",
+      "org": "jp-rouso",
+      "org_name": "日本郵政グループ労働組合",
+      "org_aliases": [
+        "JP労組",
+        "ＪＰ労組",
+        "日本郵政グループ労組",
+        "jprouso.or.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "JP労組 委託先のメールマガジン配信システムに不正アクセス、組合員情報 2.7 万件漏えい",
+      "summary": "運用を委託していた業者のサーバー上にある、2019 年ごろまで使っていたメールマガジン配信システムが第三者の不正アクセスを受け、登録者の組合員情報が漏えいした。対象は 27,139 名で、地方本部名・氏名・組合員番号・性別・生年月日・メールアドレスを含む。住所・電話番号・パスワード・口座情報は含まれない。",
+      "cause": "unauthorized_access",
+      "vector": "委託業者が運用するメールマガジン配信システム（過去に利用）への不正アクセス",
+      "data_types": [
+        "name",
+        "birthday",
+        "email",
+        "other"
+      ],
+      "affected": 27139,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-10-26",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "日本郵政グループ労働組合",
+          "url": "https://www.jprouso.or.jp/system/servlet/yusei.UserMain?method=show_detail&clause_id=18457",
+          "published_at": "2026-11-06",
+          "title": "【更新】組合員情報漏えいに関するお知らせとお詫び"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56677.html",
+          "published_at": "2026-11-05",
+          "title": "日本郵政グループ労働組合に不正アクセス、4万件以上の組合員情報が漏えい"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192465",
+          "published_at": "2026-11-16",
+          "title": "過去利用した委託先メルマガシステムが侵害 - JP労組"
+        }
+      ],
+      "timeline": [
+        {
+          "date": null,
+          "kind": "detected",
+          "text": "ホームページの運用委託業者からの報告で判明（判明日は非公表）",
+          "source": 1
+        },
+        {
+          "date": "2026-10-26",
+          "kind": "disclosed",
+          "text": "第一報を公表（ScanNetSecurity の記事による。見出しでは 4 万件以上）",
+          "source": 1
+        },
+        {
+          "date": "2026-10-29",
+          "kind": "report_filed",
+          "text": "個人情報保護委員会へ報告",
+          "source": 0
+        },
+        {
+          "date": "2026-11-06",
+          "kind": "updated",
+          "text": "お知らせを更新し、対象者を 27,139 名と公表（報道の「4 万件以上」から修正とみられる）。委託業者と調査を継続",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "email-delivery",
+        "contractor",
+        "member-info"
+      ],
+      "created_at": "2026-11-17",
+      "updated_at": "2026-11-17"
     }
   ]
 }

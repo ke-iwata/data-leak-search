@@ -194,6 +194,23 @@
   "last": "2026-10-06",
   "affected_total": 521
  },
+ "hachijuni-nagano-bank": {
+  "name": "株式会社八十二長野銀行",
+  "aliases": [
+   "八十二長野銀行",
+   "八十二長野銀",
+   "八十二銀行",
+   "bank.82group.jp"
+  ],
+  "industry": "finance",
+  "country": "JP",
+  "incidents": [
+   "2026-10-08-hachijuni-nagano-bank"
+  ],
+  "first": "2026-10-08",
+  "last": "2026-10-08",
+  "affected_total": 34
+ },
  "fireworks-ai": {
   "name": "Fireworks AI, Inc.",
   "aliases": [
@@ -796,6 +813,23 @@
   "last": "2026-10-26",
   "affected_total": 900000
  },
+ "jp-rouso": {
+  "name": "日本郵政グループ労働組合",
+  "aliases": [
+   "JP労組",
+   "ＪＰ労組",
+   "日本郵政グループ労組",
+   "jprouso.or.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-10-26-jp-rouso"
+  ],
+  "first": "2026-10-26",
+  "last": "2026-10-26",
+  "affected_total": 27139
+ },
  "doutor-coffee": {
   "name": "株式会社ドトールコーヒー",
   "aliases": [
@@ -1278,6 +1312,23 @@
   "last": "2026-11-10",
   "affected_total": 4238242
  },
+ "yasukuni-shrine": {
+  "name": "靖國神社",
+  "aliases": [
+   "靖国神社",
+   "靖國神社オンライン授与品・頒布品サイト",
+   "yasukuni.or.jp",
+   "yasukuni.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-11-11-yasukuni-shrine"
+  ],
+  "first": "2026-11-11",
+  "last": "2026-11-11",
+  "affected_total": 14500
+ },
  "tamura-city": {
   "name": "田村市",
   "aliases": [
@@ -1308,5 +1359,25 @@
   "first": "2026-11-12",
   "last": "2026-11-12",
   "affected_total": 0
+ },
+ "riken": {
+  "name": "国立研究開発法人理化学研究所",
+  "aliases": [
+   "理化学研究所",
+   "理研",
+   "RIKEN",
+   "富岳",
+   "理究",
+   "r-ccs.riken.jp",
+   "riken.jp"
+  ],
+  "industry": "public",
+  "country": "JP",
+  "incidents": [
+   "2026-11-16-riken"
+  ],
+  "first": "2026-11-16",
+  "last": "2026-11-16",
+  "affected_total": 4222
  }
 }

@@ -1513,6 +1513,159 @@
       ],
       "created_at": "2026-11-14",
       "updated_at": "2026-11-14"
+    },
+    {
+      "id": "2026-11-11-yasukuni-shrine",
+      "org": "yasukuni-shrine",
+      "org_name": "靖國神社",
+      "org_aliases": [
+        "靖国神社",
+        "靖國神社オンライン授与品・頒布品サイト",
+        "yasukuni.or.jp",
+        "yasukuni.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "靖國神社 オンライン授与品・頒布品サイトに不正アクセス、会員情報約 1.45 万件漏えい",
+      "summary": "通信販売の「オンライン授与品・頒布品サイト」が外部から不正アクセスを受け、会員の氏名・メールアドレス・パスワードのハッシュ値と生成用の補助情報・アカウント管理情報が漏えいした。件数は約 14,500 件で調査中。カード情報（決済代行経由）や住所・電話番号・購入履歴は含まれないとしている。",
+      "cause": "unauthorized_access",
+      "vector": "通販サイトへの外部からの不正アクセス（手口はサイト管理会社と調査中）",
+      "data_types": [
+        "name",
+        "email",
+        "credential",
+        "other"
+      ],
+      "affected": 14500,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-10-28",
+      "disclosed_at": "2026-11-11",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "靖國神社",
+          "url": "https://www.yasukuni.or.jp/news_detail.html?id=734",
+          "published_at": "2026-11-11",
+          "title": "靖國神社オンライン授与品・頒布品サイトへの不正アクセスによる個人情報漏洩のお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192746",
+          "published_at": "2026-11-16",
+          "title": "通信販売サイトで個人情報が流出 - 靖国神社"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-28",
+          "kind": "detected",
+          "text": "不正アクセスが判明し、同日サイトの公開を停止",
+          "source": 0
+        },
+        {
+          "date": "2026-11-11",
+          "kind": "disclosed",
+          "text": "第一報を公表。対象者へメールで個別連絡し、パスワードを使い回している利用者に変更を依頼。同日、別件としてメールマガジン配信委託先（ブラストメール）への不正アクセスも告知（氏名・メールアドレスの漏えいは未確認）",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "ec-site",
+        "member-info",
+        "password-reset"
+      ],
+      "created_at": "2026-11-17",
+      "updated_at": "2026-11-17"
+    },
+    {
+      "id": "2026-11-16-riken",
+      "org": "riken",
+      "org_name": "国立研究開発法人理化学研究所",
+      "org_aliases": [
+        "理化学研究所",
+        "理研",
+        "RIKEN",
+        "富岳",
+        "理究",
+        "r-ccs.riken.jp",
+        "riken.jp"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "理化学研究所 スパコン「富岳」運用系システムに不正アクセス、利用者の認証情報など持ち出し",
+      "summary": "スーパーコンピュータ「富岳」の運用系システムが外部から不正アクセスを受け、利用者のホームディレクトリ内のファイルの一部と認証システムの登録情報が持ち出された、または持ち出された可能性がある。利用者の氏名・メールアドレスや、利用者が保存していた理研外のスパコン・サービスへの接続用認証情報が含まれる。対象は「富岳」の登録利用者最大 4,222 名と「理究」の最大 375 名で、富岳は運用を停止して調査中。",
+      "cause": "unauthorized_access",
+      "vector": "富岳の運用系システム（ユーザー認証に関わるシステムと報道）への外部からの不正アクセス。手口は調査中",
+      "data_types": [
+        "name",
+        "email",
+        "credential",
+        "other"
+      ],
+      "affected": 4222,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-11-12",
+      "detected_at": "2026-11-13",
+      "disclosed_at": "2026-11-16",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "理化学研究所 計算科学研究センター",
+          "url": "https://www.r-ccs.riken.jp/outreach/topics/20261116-1/index.html",
+          "published_at": "2026-11-16",
+          "title": "スーパーコンピュータ「富岳」および「理究（りきゅう）」への不正アクセスによる個人情報漏えいの可能性について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/17/030254",
+          "published_at": "2026-11-17",
+          "title": "スーパーコンピューター「富岳」への不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-12",
+          "kind": "occurred",
+          "text": "外部の第三者による不正アクセス",
+          "source": 0
+        },
+        {
+          "date": "2026-11-13",
+          "kind": "detected",
+          "text": "不正アクセスを確認。同日、文部科学省に報告（報道による）",
+          "source": 0
+        },
+        {
+          "date": "2026-11-14",
+          "kind": "updated",
+          "text": "午前 4 時 30 分に外部からのアクセスを遮断し、富岳の運用を停止。利用者へメールで通知（通知は報道による）",
+          "source": 0
+        },
+        {
+          "date": "2026-11-16",
+          "kind": "disclosed",
+          "text": "公表。対象は富岳の登録利用者最大 4,222 名、理究の最大 375 名（重複の有無は不明のため affected は富岳の数）。非公開の研究成果の漏えい有無は確認中と報道",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "supercomputer",
+        "credential-theft",
+        "service-outage"
+      ],
+      "created_at": "2026-11-17",
+      "updated_at": "2026-11-17"
     }
   ]
 }
