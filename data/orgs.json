@@ -344,6 +344,22 @@
   "last": "2026-10-16",
   "affected_total": 0
  },
+ "mitsubishi-gas-chemical": {
+  "name": "三菱ガス化学株式会社",
+  "aliases": [
+   "三菱ガス化学",
+   "MGC",
+   "mgc.co.jp"
+  ],
+  "industry": "manufacturing",
+  "country": "JP",
+  "incidents": [
+   "2026-10-16-mitsubishi-gas-chemical"
+  ],
+  "first": "2026-10-16",
+  "last": "2026-10-16",
+  "affected_total": 2093
+ },
  "jkk-tokyo": {
   "name": "東京都住宅供給公社",
   "aliases": [
@@ -830,6 +846,21 @@
   "last": "2026-10-26",
   "affected_total": 27139
  },
+ "furukawa-electric-power-systems": {
+  "name": "古河電工パワーシステムズ株式会社",
+  "aliases": [
+   "古河電工パワーシステムズ",
+   "feps.co.jp"
+  ],
+  "industry": "manufacturing",
+  "country": "JP",
+  "incidents": [
+   "2026-10-26-furukawa-electric-power-systems"
+  ],
+  "first": "2026-10-26",
+  "last": "2026-10-26",
+  "affected_total": 0
+ },
  "doutor-coffee": {
   "name": "株式会社ドトールコーヒー",
   "aliases": [
@@ -977,6 +1008,24 @@
   "first": "2026-10-28",
   "last": "2026-10-28",
   "affected_total": 81329467
+ },
+ "ntt-smile-energy": {
+  "name": "株式会社NTTスマイルエナジー",
+  "aliases": [
+   "NTTスマイルエナジー",
+   "エコめがね",
+   "スマイルeポイント",
+   "nttse.com",
+   "eco-megane.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-10-29-ntt-smile-energy"
+  ],
+  "first": "2026-10-29",
+  "last": "2026-10-29",
+  "affected_total": 0
  },
  "ryohin-keikaku": {
   "name": "株式会社良品計画",
@@ -1358,6 +1407,42 @@
   ],
   "first": "2026-11-12",
   "last": "2026-11-12",
+  "affected_total": 0
+ },
+ "plaid": {
+  "name": "株式会社プレイド",
+  "aliases": [
+   "プレイド",
+   "PLAID",
+   "KARTE",
+   "plaid.co.jp",
+   "karte.io"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-11-13-plaid"
+  ],
+  "first": "2026-11-13",
+  "last": "2026-11-13",
+  "affected_total": 79249
+ },
+ "pocketchange": {
+  "name": "株式会社ポケットチェンジ",
+  "aliases": [
+   "ポケットチェンジ",
+   "Pokepay",
+   "ポケペイ",
+   "pokepay.jp",
+   "ほくペイ"
+  ],
+  "industry": "finance",
+  "country": "JP",
+  "incidents": [
+   "2026-11-14-pocketchange"
+  ],
+  "first": "2026-11-14",
+  "last": "2026-11-14",
   "affected_total": 0
  },
  "riken": {

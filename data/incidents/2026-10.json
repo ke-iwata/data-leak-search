@@ -4045,6 +4045,240 @@
       ],
       "created_at": "2026-11-17",
       "updated_at": "2026-11-17"
+    },
+    {
+      "id": "2026-10-16-mitsubishi-gas-chemical",
+      "org": "mitsubishi-gas-chemical",
+      "org_name": "三菱ガス化学株式会社",
+      "org_aliases": [
+        "三菱ガス化学",
+        "MGC",
+        "mgc.co.jp"
+      ],
+      "industry": "manufacturing",
+      "country": "JP",
+      "title": "三菱ガス化学 委託先が元従業員ら 2,093 名の情報を含むファイルをメール誤送信",
+      "summary": "人事関連システムの導入を委託していた事業者が、委託業務の資料を別会社宛てのメールに誤って添付して送信した。元従業員 2,092 名と現従業員 1 名の氏名・社員番号が含まれる。送信先では未開封のまま削除されたことを確認している。",
+      "cause": "misdelivery",
+      "vector": "委託先が別会社宛てメールに委託業務のファイルを誤添付",
+      "data_types": [
+        "name",
+        "other"
+      ],
+      "affected": 2093,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-09-16",
+      "detected_at": "2026-09-16",
+      "disclosed_at": "2026-10-16",
+      "status": "reported",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192498",
+          "published_at": "2026-11-17",
+          "title": "従業員情報含むファイルをメールで誤送信 - 三菱ガス化学"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-16",
+          "kind": "occurred",
+          "text": "委託先が別会社宛てのメールにファイルを誤添付して送信",
+          "source": 0
+        },
+        {
+          "date": "2026-09-16",
+          "kind": "detected",
+          "text": "送信先からの連絡で判明。削除を依頼し未開封のまま削除されたことを確認",
+          "source": 0
+        },
+        {
+          "date": "2026-10-15",
+          "kind": "report_filed",
+          "text": "個人情報保護委員会へ報告",
+          "source": 0
+        },
+        {
+          "date": "2026-10-16",
+          "kind": "disclosed",
+          "text": "公表（公表日は別メディアの報道による。組織の発表ページは未確認）",
+          "source": null
+        }
+      ],
+      "keywords": [
+        "email-misdelivery",
+        "contractor",
+        "employee-info"
+      ],
+      "created_at": "2026-11-18",
+      "updated_at": "2026-11-18"
+    },
+    {
+      "id": "2026-10-26-furukawa-electric-power-systems",
+      "org": "furukawa-electric-power-systems",
+      "org_name": "古河電工パワーシステムズ株式会社",
+      "org_aliases": [
+        "古河電工パワーシステムズ",
+        "feps.co.jp"
+      ],
+      "industry": "manufacturing",
+      "country": "JP",
+      "title": "古河電工パワーシステムズ 防災製品部の出荷管理システムに不正アクセスの疑い",
+      "summary": "防災製品部の出荷管理用ウェブシステムで異常を検知し、外部からの不正アクセスの疑いを確認した。発注者や製品送付先の会社名・担当者名・住所・電話番号が閲覧・取得された可能性がある。件数と流出の有無は外部専門機関と調査中。",
+      "cause": "unauthorized_access",
+      "vector": "出荷管理用ウェブシステムへの外部からの不正アクセスの疑い。原因は調査中",
+      "data_types": [
+        "name",
+        "address",
+        "phone"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-14",
+      "disclosed_at": "2026-10-26",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "古河電工パワーシステムズ株式会社",
+          "url": "https://www.feps.co.jp/news/20261026/",
+          "published_at": "2026-10-26",
+          "title": "個人情報漏えいの可能性に関するお知らせとお詫び"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192962",
+          "published_at": "2026-11-17",
+          "title": "防災製品部の出荷管理システムで侵害か - 古河電工グループ会社"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "kind": "detected",
+          "text": "システムの異常を検知し不正アクセスの疑いを確認。同日システムと関連サーバを停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-26",
+          "kind": "disclosed",
+          "text": "個人情報漏えいの可能性を公表。関係機関へ報告済み、件数は精査中",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "web-service",
+        "business-contacts"
+      ],
+      "created_at": "2026-11-18",
+      "updated_at": "2026-11-18"
+    },
+    {
+      "id": "2026-10-29-ntt-smile-energy",
+      "org": "ntt-smile-energy",
+      "org_name": "株式会社NTTスマイルエナジー",
+      "org_aliases": [
+        "NTTスマイルエナジー",
+        "エコめがね",
+        "スマイルeポイント",
+        "nttse.com",
+        "eco-megane.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "NTTスマイルエナジー 太陽光発電遠隔監視「エコめがね」に不正アクセス、ポイント不正交換も",
+      "summary": "太陽光発電の遠隔監視サービス「エコめがね」のサーバーがソフトウェアの脆弱性を突かれて不正アクセスを受け、顧客 DB も攻撃された。氏名・住所・電話番号・メールアドレス・ログイン ID とパスワードが流出した可能性があるとしたが、第 3 報時点で外部流出の痕跡は未確認。「スマイルeポイント」がデジタルギフトコードに不正交換された。",
+      "cause": "unauthorized_access",
+      "vector": "ソフトウェアの脆弱性を悪用した不正アクセス（ログ解析で確認）",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "credential"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-10-28",
+      "detected_at": "2026-10-28",
+      "disclosed_at": "2026-10-29",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社NTTスマイルエナジー",
+          "url": "https://nttse.com/news/pressrelease/2026/10-30/3288/",
+          "published_at": "2026-10-30",
+          "title": "太陽光発電遠隔監視サービス『エコめがね』サービスのシステム停止および個人情報漏洩の可能性に関するお詫びとお知らせ"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社NTTスマイルエナジー",
+          "url": "https://nttse.com/news/pressrelease/2026/11-06/3292/",
+          "published_at": "2026-11-06",
+          "title": "「エコめがね」への不正アクセス調査状況について（2報）"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社NTTスマイルエナジー",
+          "url": "https://nttse.com/news/pressrelease/2026/11-13/3310/",
+          "published_at": "2026-11-13",
+          "title": "『エコめがね』への不正アクセス調査状況について（第3報）"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192657",
+          "published_at": "2026-11-17",
+          "title": "太陽光発電遠隔監視サービスで侵害 - ポイント不正交換も"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-28",
+          "kind": "detected",
+          "text": "20:20 にウェブサーバーへの不審なアクセスを検知し、サービス画面を緊急停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-29",
+          "kind": "disclosed",
+          "text": "0:10 に第一報を掲載。その後クラウド環境の全サーバーの通信を遮断し顧客 DB サーバーを停止",
+          "source": 0
+        },
+        {
+          "date": "2026-11-06",
+          "kind": "updated",
+          "text": "第 2 報でスマイルeポイントのデジタルギフトコードへの不正交換を公表",
+          "source": 1
+        },
+        {
+          "date": "2026-11-13",
+          "kind": "updated",
+          "text": "第 3 報。ソフトウェアの脆弱性を悪用した侵入と確認。個人情報の外部流出の痕跡は未確認。個人情報保護委員会に速報済み。一部サービスは 12 月上旬再開予定",
+          "source": 2
+        }
+      ],
+      "keywords": [
+        "vulnerability-exploit",
+        "point-service",
+        "web-service"
+      ],
+      "created_at": "2026-11-18",
+      "updated_at": "2026-11-18"
     }
   ]
 }

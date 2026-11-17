@@ -7,6 +7,30 @@
   "incident": "2026-11-16-riken",
   "at": "2026-11-17"
  },
+ "https://pokepay.jp/ja/entries/142": {
+  "incident": "2026-11-14-pocketchange",
+  "at": "2026-11-14"
+ },
+ "https://www.city.kita.lg.jp/business/industry/1011327/1027058.html": {
+  "incident": "2026-11-14-pocketchange",
+  "at": "2026-11-16"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/17/192656": {
+  "incident": "2026-11-14-pocketchange",
+  "at": "2026-11-17"
+ },
+ "https://plaid.co.jp/news/20261116": {
+  "incident": "2026-11-13-plaid",
+  "at": "2026-11-16"
+ },
+ "https://plaid.co.jp/news/20261113": {
+  "incident": "2026-11-13-plaid",
+  "at": "2026-11-13"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/18/010752": {
+  "incident": "2026-11-13-plaid",
+  "at": "2026-11-18"
+ },
  "https://www.security-next.com/192344": {
   "incident": "2026-11-12-tamura-city",
   "at": "2026-11-12"
@@ -191,6 +215,22 @@
   "incident": "2026-10-30-mofa",
   "at": "2026-11-04"
  },
+ "https://nttse.com/news/pressrelease/2026/10-30/3288": {
+  "incident": "2026-10-29-ntt-smile-energy",
+  "at": "2026-10-30"
+ },
+ "https://nttse.com/news/pressrelease/2026/11-06/3292": {
+  "incident": "2026-10-29-ntt-smile-energy",
+  "at": "2026-11-06"
+ },
+ "https://nttse.com/news/pressrelease/2026/11-13/3310": {
+  "incident": "2026-10-29-ntt-smile-energy",
+  "at": "2026-11-13"
+ },
+ "https://www.security-next.com/192657": {
+  "incident": "2026-10-29-ntt-smile-energy",
+  "at": "2026-11-17"
+ },
  "https://www.security-next.com/192210": {
   "incident": "2026-10-28-matsuya-foods",
   "at": "2026-10-30"
@@ -294,6 +334,14 @@
  "https://www.security-next.com/192465": {
   "incident": "2026-10-26-jp-rouso",
   "at": "2026-11-16"
+ },
+ "https://www.feps.co.jp/news/20261026": {
+  "incident": "2026-10-26-furukawa-electric-power-systems",
+  "at": "2026-10-26"
+ },
+ "https://www.security-next.com/192962": {
+  "incident": "2026-10-26-furukawa-electric-power-systems",
+  "at": "2026-11-17"
  },
  "https://www.doutor.co.jp/news/newsrelease/detail/20261026144748.html": {
   "incident": "2026-10-26-doutor-coffee",
@@ -466,6 +514,10 @@
  "https://www.security-next.com/191552": {
   "incident": "2026-10-16-nttsolmare",
   "at": "2026-10-19"
+ },
+ "https://www.security-next.com/192498": {
+  "incident": "2026-10-16-mitsubishi-gas-chemical",
+  "at": "2026-11-17"
  },
  "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026101605": {
   "incident": "2026-10-16-jkk-tokyo",
@@ -750,5 +802,9 @@
  "https://haveibeenpwned.com/Breach/CastleRAT": {
   "skipped": "Europol によるマルウェア基盤摘発で得られた感染端末由来のメールアドレス・パスワード。特定組織の漏えい事案ではないため対象外",
   "at": "2026-11-14"
+ },
+ "https://www.security-next.com/192972": {
+  "skipped": "証券会社をかたるフィッシングの注意喚起で事案ではない",
+  "at": "2026-11-18"
  }
 }

@@ -1666,6 +1666,193 @@
       ],
       "created_at": "2026-11-17",
       "updated_at": "2026-11-17"
+    },
+    {
+      "id": "2026-11-13-plaid",
+      "org": "plaid",
+      "org_name": "株式会社プレイド",
+      "org_aliases": [
+        "プレイド",
+        "PLAID",
+        "KARTE",
+        "plaid.co.jp",
+        "karte.io"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "プレイド CX プラットフォーム「KARTE」に不正アクセス、利用企業のアカウント情報や顧客データが漏えい",
+      "summary": "CX プラットフォーム「KARTE」のサーバーの脆弱性を突かれ、システム・DB 接続用の認証情報が窃取されてデータが外部に読み出された。KARTE アカウントのメールアドレス 79,249 件、外部サービス連携用の認証情報、利用企業が取り込んだ顧客データの一部が漏えい。利用企業側でも個人情報への影響の公表が相次ぎ、KARTE は全サービスを停止して調査中。",
+      "cause": "unauthorized_access",
+      "vector": "サーバーの脆弱性を悪用して認証情報を窃取し、DB からデータを読み出し。窃取した認証情報で同社アカウントを乗っ取り管理画面にも侵入",
+      "data_types": [
+        "email",
+        "credential",
+        "other"
+      ],
+      "affected": 79249,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-11-13",
+      "detected_at": "2026-11-13",
+      "disclosed_at": "2026-11-13",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社プレイド",
+          "url": "https://plaid.co.jp/news/20261116/",
+          "published_at": "2026-11-16",
+          "title": "不正アクセスによる個人情報を含む可能性のある情報等の漏えいに関するお詫びとお知らせ"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社プレイド",
+          "url": "https://plaid.co.jp/news/20261113/",
+          "published_at": "2026-11-13",
+          "title": "当社サービスへの不正アクセスに関するご報告"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/18/010752",
+          "published_at": "2026-11-18",
+          "title": "プレイドのCXプラットフォーム「KARTE」への不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-13",
+          "kind": "occurred",
+          "text": "未明に第三者がシステムへ侵入",
+          "source": 0
+        },
+        {
+          "date": "2026-11-13",
+          "kind": "detected",
+          "text": "8:59 に不正アクセスを検知。同日 15:23 頃までに認証情報を無効化し通信を遮断",
+          "source": 0
+        },
+        {
+          "date": "2026-11-13",
+          "kind": "disclosed",
+          "text": "不正アクセスを公表し KARTE の全サービスを停止",
+          "source": 1
+        },
+        {
+          "date": "2026-11-16",
+          "kind": "updated",
+          "text": "情報漏えいを確認したと公表。アカウントのメールアドレス 79,249 件、外部連携用認証情報（件数調査中）、利用企業の取り込み顧客データの一部。個人情報保護委員会への報告と警察への相談を実施",
+          "source": 0
+        },
+        {
+          "date": "2026-11-17",
+          "kind": "updated",
+          "text": "まとめ記事時点で利用企業 34 組織が影響を公表（うち 30 組織が個人情報への影響）。サービス再開時期は未定",
+          "source": 2
+        }
+      ],
+      "keywords": [
+        "saas",
+        "supply-chain",
+        "vulnerability-exploit",
+        "credential-theft"
+      ],
+      "created_at": "2026-11-18",
+      "updated_at": "2026-11-18"
+    },
+    {
+      "id": "2026-11-14-pocketchange",
+      "org": "pocketchange",
+      "org_name": "株式会社ポケットチェンジ",
+      "org_aliases": [
+        "ポケットチェンジ",
+        "Pokepay",
+        "ポケペイ",
+        "pokepay.jp",
+        "ほくペイ"
+      ],
+      "industry": "finance",
+      "country": "JP",
+      "title": "ポケットチェンジ 電子マネー基盤「Pokepay（Enterprise）」に不正アクセス、加盟店申込情報が取得された可能性",
+      "summary": "電子マネー基盤「Pokepay（Enterprise）」のシステムに第三者の不正アクセスがあり、全サービスを一時停止した。大学生協電子マネーや自治体のデジタル地域通貨も停止。利用者の個人情報の流出は確認されていないが、北区は「ほくペイ」加盟店の申込情報（代表者の生年月日・住所・電話番号・メールアドレス・振込口座）が取得された可能性があるとしている。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "birthday",
+        "address",
+        "phone",
+        "email",
+        "bank"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-11-14",
+      "disclosed_at": "2026-11-14",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ポケットチェンジ",
+          "url": "https://pokepay.jp/ja/entries/142",
+          "published_at": "2026-11-14",
+          "title": "【重要】不正アクセスの確認に伴うサービス一時停止のお知らせ（第一報）"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "北区",
+          "url": "https://www.city.kita.lg.jp/business/industry/1011327/1027058.html",
+          "published_at": "2026-11-16",
+          "title": "ほくペイサービスの不正アクセス"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/17/192656",
+          "published_at": "2026-11-17",
+          "title": "電子マネー基盤「Pokepay」への不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-14",
+          "kind": "detected",
+          "text": "第三者による不正アクセスを確認。20 時頃から Pokepay（Enterprise）の全サービスを予防的に停止",
+          "source": 0
+        },
+        {
+          "date": "2026-11-14",
+          "kind": "disclosed",
+          "text": "第一報を公表。ショップ向け Pokepay は影響なしとして継続",
+          "source": 0
+        },
+        {
+          "date": "2026-11-15",
+          "kind": "updated",
+          "text": "Pokepay（Enterprise）が 16:40 に再開。クレジットカード・BankPay チャージなど外部連携機能は停止継続",
+          "source": 2
+        },
+        {
+          "date": "2026-11-16",
+          "kind": "updated",
+          "text": "北区が「ほくペイ」加盟店の申込情報が取得された可能性を公表。利用者の個人情報の流出は確認されていない",
+          "source": 1
+        }
+      ],
+      "keywords": [
+        "supply-chain",
+        "mobile-app",
+        "service-outage"
+      ],
+      "created_at": "2026-11-18",
+      "updated_at": "2026-11-18"
     }
   ]
 }

@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-18",
+  "generated_at": "2026-11-18T06:00:00+09:00",
+  "stats": {
+    "collected": 15,
+    "candidates": 9,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "プレイドの CX 基盤「KARTE」に不正アクセス。アカウントのメールアドレス 79,249 件と外部連携用認証情報、利用企業の顧客データの一部が漏えいし、利用企業 30 組織以上が個人情報への影響を公表する供給網型の事案に。",
+      "incidents": [
+        "2026-11-13-plaid"
+      ]
+    },
+    {
+      "text": "電子マネー基盤「Pokepay（Enterprise）」も不正アクセスで停止し、大学生協電子マネーや自治体のデジタル地域通貨に波及。北区は加盟店申込情報が取得された可能性を公表。",
+      "incidents": [
+        "2026-11-14-pocketchange"
+      ]
+    },
+    {
+      "text": "10 月公表分の追加: NTTスマイルエナジー「エコめがね」は脆弱性悪用の侵入でポイント不正交換、古河電工パワーシステムズは出荷管理システムへの不正アクセス疑い、三菱ガス化学は委託先のメール誤送信で元従業員ら 2,093 名分。",
+      "incidents": [
+        "2026-10-29-ntt-smile-energy",
+        "2026-10-26-furukawa-electric-power-systems",
+        "2026-10-16-mitsubishi-gas-chemical"
+      ]
+    }
+  ],
+  "new": [
+    "2026-11-13-plaid",
+    "2026-11-14-pocketchange",
+    "2026-10-16-mitsubishi-gas-chemical",
+    "2026-10-26-furukawa-electric-power-systems",
+    "2026-10-29-ntt-smile-energy"
+  ],
+  "updated": [],
+  "skipped": [
+    {
+      "url": "https://www.security-next.com/192972",
+      "reason": "証券会社をかたるフィッシングの注意喚起で事案ではない"
+    }
+  ]
+}
