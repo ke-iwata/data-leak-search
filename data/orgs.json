@@ -941,6 +941,23 @@
   "last": "2026-10-27",
   "affected_total": 26
  },
+ "japan-post": {
+  "name": "日本郵便株式会社",
+  "aliases": [
+   "日本郵便",
+   "Japan Post",
+   "JP Business Tool Box",
+   "post.japanpost.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-10-27-japan-post"
+  ],
+  "first": "2026-10-27",
+  "last": "2026-10-27",
+  "affected_total": 4807
+ },
  "bandai-logipal": {
   "name": "株式会社バンダイロジパル",
   "aliases": [
@@ -1464,5 +1481,21 @@
   "first": "2026-11-16",
   "last": "2026-11-16",
   "affected_total": 4222
+ },
+ "rakuten-securities": {
+  "name": "楽天証券株式会社",
+  "aliases": [
+   "楽天証券",
+   "Rakuten Securities",
+   "rakuten-sec.co.jp"
+  ],
+  "industry": "finance",
+  "country": "JP",
+  "incidents": [
+   "2026-11-17-rakuten-securities"
+  ],
+  "first": "2026-11-17",
+  "last": "2026-11-17",
+  "affected_total": 15720000
  }
 }

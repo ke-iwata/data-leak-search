@@ -1,4 +1,16 @@
 {
+ "https://www.rakuten-sec.co.jp/web/info/info20261117-02.html": {
+  "incident": "2026-11-17-rakuten-securities",
+  "at": "2026-11-17"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/18/100525": {
+  "incident": "2026-11-17-rakuten-securities",
+  "at": "2026-11-18"
+ },
+ "https://www.security-next.com/193015": {
+  "incident": "2026-11-17-rakuten-securities",
+  "at": "2026-11-18"
+ },
  "https://www.r-ccs.riken.jp/outreach/topics/20261116-1/index.html": {
   "incident": "2026-11-16-riken",
   "at": "2026-11-16"
@@ -6,6 +18,10 @@
  "https://piyolog.hatenadiary.jp/entry/2026/11/17/030254": {
   "incident": "2026-11-16-riken",
   "at": "2026-11-17"
+ },
+ "https://www.security-next.com/192952": {
+  "incident": "2026-11-16-riken",
+  "at": "2026-11-18"
  },
  "https://pokepay.jp/ja/entries/142": {
   "incident": "2026-11-14-pocketchange",
@@ -281,6 +297,14 @@
  },
  "https://www.security-next.com/191915": {
   "incident": "2026-10-27-okayama-kekkon-suishin-kyokai",
+  "at": "2026-10-27"
+ },
+ "https://www.security-next.com/192585": {
+  "incident": "2026-10-27-japan-post",
+  "at": "2026-11-18"
+ },
+ "https://www.logi-today.com/1015473": {
+  "incident": "2026-10-27-japan-post",
   "at": "2026-10-27"
  },
  "https://www.security-next.com/191994": {

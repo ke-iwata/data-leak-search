@@ -4279,6 +4279,87 @@
       ],
       "created_at": "2026-11-18",
       "updated_at": "2026-11-18"
+    },
+    {
+      "id": "2026-10-27-japan-post",
+      "org": "japan-post",
+      "org_name": "日本郵便株式会社",
+      "org_aliases": [
+        "日本郵便",
+        "Japan Post",
+        "JP Business Tool Box",
+        "post.japanpost.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "日本郵便 法人向けサイト「JP Business Tool Box」の不具合で発注元情報最大 4,807 件が閲覧可能に",
+      "summary": "法人顧客向けサイト「JP Business Tool Box」の送り状注文機能でアプリケーションの不具合があり、送り状ラベルの発注元情報が別の顧客から閲覧できる状態になっていた。法人名・部署名・担当者名・住所・電話番号・メールアドレス最大 4,807 件が閲覧された可能性があり、ダウンロードや利用の形跡は確認されていないとしている。",
+      "cause": "other",
+      "vector": "送り状注文機能のアプリケーション不具合により他顧客の発注元情報が閲覧可能に",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email"
+      ],
+      "affected": 4807,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-10-08",
+      "disclosed_at": "2026-10-27",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192585",
+          "published_at": "2026-11-18",
+          "title": "法人顧客向けサイトで顧客情報が閲覧可能に - 日本郵便"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "LOGISTICS TODAY",
+          "url": "https://www.logi-today.com/1015473",
+          "published_at": "2026-10-27",
+          "title": "日本郵便 送り状注文・集荷依頼機能の再開"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-08",
+          "kind": "detected",
+          "text": "閲覧された可能性を検知し、19 時過ぎにサービス全体を停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-09",
+          "kind": "updated",
+          "text": "送り状注文機能などを除き他の機能を再開",
+          "source": 1
+        },
+        {
+          "date": "2026-10-27",
+          "kind": "disclosed",
+          "text": "不具合修正を終え送り状注文・集荷依頼機能を再開と発表。閲覧可能だった期間は不明。一部報道では 10 月 13 日に第一報とされるが本文未確認のため disclosed_at は確認できた 10/27 とした。日本郵便の発表ページは見つからず",
+          "source": 1
+        },
+        {
+          "date": "2026-11-18",
+          "kind": "updated",
+          "text": "対象顧客へ書面で個別に連絡したと報道",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "logistics",
+        "business-contacts",
+        "web-misconfiguration"
+      ],
+      "created_at": "2026-11-19",
+      "updated_at": "2026-11-19"
     }
   ]
 }

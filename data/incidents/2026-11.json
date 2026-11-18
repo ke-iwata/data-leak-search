@@ -1599,9 +1599,9 @@
       "industry": "public",
       "country": "JP",
       "title": "理化学研究所 スパコン「富岳」運用系システムに不正アクセス、利用者の認証情報など持ち出し",
-      "summary": "スーパーコンピュータ「富岳」の運用系システムが外部から不正アクセスを受け、利用者のホームディレクトリ内のファイルの一部と認証システムの登録情報が持ち出された、または持ち出された可能性がある。利用者の氏名・メールアドレスや、利用者が保存していた理研外のスパコン・サービスへの接続用認証情報が含まれる。対象は「富岳」の登録利用者最大 4,222 名と「理究」の最大 375 名で、富岳は運用を停止して調査中。",
+      "summary": "スーパーコンピュータ「富岳」の運用系システムが外部から不正アクセスを受け、利用者のホームディレクトリ内のファイルの一部と認証システムの登録情報が持ち出された、または持ち出された可能性がある。利用者の氏名・メールアドレスや、利用者が保存していた理研外のスパコン・サービスへの接続用認証情報が含まれる。対象は「富岳」の登録利用者最大 4,222 名と「理究」の最大 375 名で、富岳は運用を停止して調査中。侵入は公開されていた稼働状況ダッシュボードを足がかりとし、攻撃者が取得した認証情報の一部で他システムへの接続を試みていたことも確認されたと報じられた。",
       "cause": "unauthorized_access",
-      "vector": "富岳の運用系システム（ユーザー認証に関わるシステムと報道）への外部からの不正アクセス。手口は調査中",
+      "vector": "インターネット上に公開されていた稼働状況ダッシュボードの Web ページを足がかりに運用系の内部ネットワークへ侵入し、複数サーバを不正操作（報道）",
       "data_types": [
         "name",
         "email",
@@ -1631,6 +1631,14 @@
           "url": "https://piyolog.hatenadiary.jp/entry/2026/11/17/030254",
           "published_at": "2026-11-17",
           "title": "スーパーコンピューター「富岳」への不正アクセスについてまとめてみた"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192952",
+          "published_at": "2026-11-18",
+          "title": "理研「富岳」で侵害 - 窃取情報で他システムへの攻撃試行も"
         }
       ],
       "timeline": [
@@ -1657,15 +1665,22 @@
           "kind": "disclosed",
           "text": "公表。対象は富岳の登録利用者最大 4,222 名、理究の最大 375 名（重複の有無は不明のため affected は富岳の数）。非公開の研究成果の漏えい有無は確認中と報道",
           "source": 0
+        },
+        {
+          "date": "2026-11-18",
+          "kind": "updated",
+          "text": "報道で侵入経路と他システムへの接続試行が判明。持ち出し対象に利用者の研究データも含むとされた。vector を「富岳の運用系システム（ユーザー認証に関わるシステムと報道）への外部からの不正アクセス。手口は調査中」から更新。理研の公表ページ（11/16 掲載）には同記載なし",
+          "source": 2
         }
       ],
       "keywords": [
         "supercomputer",
         "credential-theft",
-        "service-outage"
+        "service-outage",
+        "lateral-movement"
       ],
       "created_at": "2026-11-17",
-      "updated_at": "2026-11-17"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "2026-11-13-plaid",
@@ -1853,6 +1868,92 @@
       ],
       "created_at": "2026-11-18",
       "updated_at": "2026-11-18"
+    },
+    {
+      "id": "2026-11-17-rakuten-securities",
+      "org": "rakuten-securities",
+      "org_name": "楽天証券株式会社",
+      "org_aliases": [
+        "楽天証券",
+        "Rakuten Securities",
+        "rakuten-sec.co.jp"
+      ],
+      "industry": "finance",
+      "country": "JP",
+      "title": "楽天証券 テスト環境への不正アクセスで最大約 1,572 万口座分の顧客情報漏えいのおそれ",
+      "summary": "テスト用サーバーが第三者による不正アクセスを受け、社内システム更新のために置いていた退会者を含む実際の顧客情報が外部へ漏えいしたおそれがある。最大約 447 万口座は氏名・住所・生年月日・連絡先・勤務先・出金先口座・申告年収や金融資産・商品別残高など、別の最大約 1,125 万口座はお客様コードとログイン ID。ログインパスワードや暗証番号の漏えい、不正取引は公表時点で確認されていない。",
+      "cause": "unauthorized_access",
+      "vector": "テスト環境のサーバーへの第三者による不正アクセス（実顧客データを一定期間テスト環境に配置。原因・経緯は調査中）",
+      "data_types": [
+        "name",
+        "birthday",
+        "address",
+        "phone",
+        "email",
+        "bank",
+        "credential",
+        "other"
+      ],
+      "affected": 15720000,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-11-11",
+      "detected_at": "2026-11-16",
+      "disclosed_at": "2026-11-17",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "楽天証券株式会社",
+          "url": "https://www.rakuten-sec.co.jp/web/info/info20261117-02.html",
+          "published_at": "2026-11-17",
+          "title": "当社お客様の情報漏えいの可能性に関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/18/100525",
+          "published_at": "2026-11-18",
+          "title": "楽天証券への不正アクセスについてまとめてみた"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/193015",
+          "published_at": "2026-11-18",
+          "title": "年収や資産情報など個人情報流出の可能性 - 楽天証券"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-11",
+          "kind": "occurred",
+          "text": "テスト環境のシステム内で管理していた情報の一部が外部へ漏えいしたおそれ",
+          "source": 0
+        },
+        {
+          "date": "2026-11-16",
+          "kind": "detected",
+          "text": "一部システムへの第三者による不正アクセスの可能性を検知し、該当箇所へのアクセスを遮断・修正",
+          "source": 0
+        },
+        {
+          "date": "2026-11-17",
+          "kind": "disclosed",
+          "text": "公表。区分 1 最大約 447 万口座（個人情報・申告年収等）と区分 2 最大約 1,125 万口座（コード・ログイン ID のみ）で重複なし、affected は合計。ログイン ID は楽天 ID とは別管理。対象者へ個別連絡",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "securities",
+        "test-environment",
+        "member-info"
+      ],
+      "created_at": "2026-11-19",
+      "updated_at": "2026-11-19"
     }
   ]
 }
