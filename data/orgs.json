@@ -457,6 +457,25 @@
   "last": "2026-10-19",
   "affected_total": 542513
  },
+ "jetro": {
+  "name": "独立行政法人日本貿易振興機構",
+  "aliases": [
+   "日本貿易振興機構",
+   "ジェトロ",
+   "JETRO",
+   "jetro.go.jp",
+   "e-Venue"
+  ],
+  "industry": "public",
+  "country": "JP",
+  "incidents": [
+   "2026-10-27-jetro",
+   "2026-10-19-jetro"
+  ],
+  "first": "2026-10-19",
+  "last": "2026-10-27",
+  "affected_total": 10289
+ },
  "h2o-retailing": {
   "name": "エイチ・ツー・オー リテイリング株式会社",
   "aliases": [
@@ -1395,6 +1414,22 @@
   "last": "2026-11-11",
   "affected_total": 14500
  },
+ "openlogi": {
+  "name": "株式会社オープンロジ",
+  "aliases": [
+   "オープンロジ",
+   "OPENLOGI",
+   "openlogi.com"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-11-11-openlogi"
+  ],
+  "first": "2026-11-11",
+  "last": "2026-11-11",
+  "affected_total": 0
+ },
  "tamura-city": {
   "name": "田村市",
   "aliases": [
@@ -1443,6 +1478,24 @@
   "first": "2026-11-13",
   "last": "2026-11-13",
   "affected_total": 79249
+ },
+ "kose": {
+  "name": "株式会社コーセー",
+  "aliases": [
+   "コーセー",
+   "KOSÉ",
+   "KOSE",
+   "Maison KOSÉ",
+   "kose.co.jp"
+  ],
+  "industry": "manufacturing",
+  "country": "JP",
+  "incidents": [
+   "2026-11-13-kose"
+  ],
+  "first": "2026-11-13",
+  "last": "2026-11-13",
+  "affected_total": 28098
  },
  "pocketchange": {
   "name": "株式会社ポケットチェンジ",
@@ -1497,5 +1550,22 @@
   "first": "2026-11-17",
   "last": "2026-11-17",
   "affected_total": 15720000
+ },
+ "osaki-electric": {
+  "name": "大崎電気工業株式会社",
+  "aliases": [
+   "大崎電気工業",
+   "大崎電気",
+   "Osaki Electric",
+   "osaki.co.jp"
+  ],
+  "industry": "manufacturing",
+  "country": "JP",
+  "incidents": [
+   "2026-11-18-osaki-electric"
+  ],
+  "first": "2026-11-18",
+  "last": "2026-11-18",
+  "affected_total": 0
  }
 }

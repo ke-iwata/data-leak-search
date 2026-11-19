@@ -4360,6 +4360,154 @@
       ],
       "created_at": "2026-11-19",
       "updated_at": "2026-11-19"
+    },
+    {
+      "id": "2026-10-19-jetro",
+      "org": "jetro",
+      "org_name": "独立行政法人日本貿易振興機構",
+      "org_aliases": [
+        "日本貿易振興機構",
+        "ジェトロ",
+        "JETRO",
+        "jetro.go.jp"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "ジェトロ ウェブサイトへの不正アクセスで企業担当者や職員の個人情報が漏えい",
+      "summary": "一部のウェブサイトが 10 月 14 日から不正アクセスを受け、企業名や企業担当者のメールアドレスなど 743 件の漏えいを公表。続報でイベントカレンダー登録者 142 件、職員・元職員 9,252 件、委託先担当者 19 件の計 9,413 件の追加漏えいを確認した。原因は調査中。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "email",
+        "other"
+      ],
+      "affected": 10156,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-10-14",
+      "detected_at": null,
+      "disclosed_at": "2026-10-19",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "独立行政法人日本貿易振興機構",
+          "url": "https://www.jetro.go.jp/news/releases/2026/a6deaac68f2dbe3b.html",
+          "published_at": "2026-10-19",
+          "title": "当機構ウェブサイトへの不正アクセスについて"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "独立行政法人日本貿易振興機構",
+          "url": "https://www.jetro.go.jp/news/announcement/2026/d475b9fab8ba23e5.html",
+          "published_at": "2026-11-06",
+          "title": "当機構ウェブサイトへの不正アクセスについて（続報）"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192759",
+          "published_at": "2026-11-19",
+          "title": "JETROの一部サイトに不正アクセス - 個人情報が流出"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "kind": "occurred",
+          "text": "一部ウェブサイトへの不正アクセスが始まる",
+          "source": 0
+        },
+        {
+          "date": "2026-10-17",
+          "kind": "updated",
+          "text": "被害拡大防止のため該当サイトの公開を停止し、臨時サイトを開設",
+          "source": 0
+        },
+        {
+          "date": "2026-10-19",
+          "kind": "disclosed",
+          "text": "企業名・企業担当者のメールアドレスなど 743 件の漏えいを公表。対象者に通知",
+          "source": 0
+        },
+        {
+          "date": "2026-11-06",
+          "kind": "updated",
+          "text": "続報。イベントカレンダー登録者 142 件、職員・元職員 9,252 件、保守・ページ制作委託先担当者 19 件の計 9,413 件の追加漏えいを確認。affected は第 1 報 743 件との合計 10,156 件（重複の有無は不明のため推定扱い）",
+          "source": 1
+        }
+      ],
+      "keywords": [
+        "web-service",
+        "employee-info",
+        "business-contacts"
+      ],
+      "created_at": "2026-11-20",
+      "updated_at": "2026-11-20"
+    },
+    {
+      "id": "2026-10-27-jetro",
+      "org": "jetro",
+      "org_name": "独立行政法人日本貿易振興機構",
+      "org_aliases": [
+        "日本貿易振興機構",
+        "ジェトロ",
+        "JETRO",
+        "e-Venue"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "ジェトロ 商談マッチングシステム「e-Venue」に不正アクセス、最大 133 人分の個人情報漏えいの可能性",
+      "summary": "委託先が構築・運用する国際ビジネスマッチングシステム「e-Venue」が 9 月 24・25 日と 10 月 14 日に不正アクセスを受け、非公開情報が取得された。氏名・メールアドレス・電話番号・FAX 番号など最大 133 人分が漏えいした可能性。サービスを停止して調査中。",
+      "cause": "unauthorized_access",
+      "vector": "外部環境で委託先が運用するシステムに第三者が不正アクセスし、非公開情報を取得",
+      "data_types": [
+        "name",
+        "email",
+        "phone"
+      ],
+      "affected": 133,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-09-24",
+      "detected_at": null,
+      "disclosed_at": "2026-10-27",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "独立行政法人日本貿易振興機構",
+          "url": "https://www.jetro.go.jp/news/announcement/2026/5eebe72f41bc2230.html",
+          "published_at": "2026-10-27",
+          "title": "e-Venueへの不正アクセスによる個人情報漏えいの可能性について"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-24",
+          "kind": "occurred",
+          "text": "9 月 24・25 日と 10 月 14 日に不正アクセス",
+          "source": 0
+        },
+        {
+          "date": "2026-10-27",
+          "kind": "disclosed",
+          "text": "最大 133 人分の漏えいの可能性を公表。e-Venue を停止",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "contractor",
+        "business-contacts",
+        "web-service"
+      ],
+      "created_at": "2026-11-20",
+      "updated_at": "2026-11-20"
     }
   ]
 }

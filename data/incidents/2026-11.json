@@ -1735,6 +1735,14 @@
           "url": "https://piyolog.hatenadiary.jp/entry/2026/11/18/010752",
           "published_at": "2026-11-18",
           "title": "プレイドのCXプラットフォーム「KARTE」への不正アクセスについてまとめてみた"
+        },
+        {
+          "role": "secondary",
+          "trust": "official",
+          "publisher": "株式会社コーセー",
+          "url": "https://koseholdings.co.jp/ja/kose/urgent/10304/",
+          "published_at": "2026-11-19",
+          "title": "当社が利用する株式会社プレイドのサービスへの不正アクセスによるお客さまの個人情報漏えいに関するお詫びとお知らせ"
         }
       ],
       "timeline": [
@@ -1767,6 +1775,12 @@
           "kind": "updated",
           "text": "まとめ記事時点で利用企業 34 組織が影響を公表（うち 30 組織が個人情報への影響）。サービス再開時期は未定",
           "source": 2
+        },
+        {
+          "date": "2026-11-19",
+          "kind": "updated",
+          "text": "利用企業のコーセーが ADDICTION ブランドサイト会員 139,990 人分の氏名（かな）の漏えいを公表。事案全体の影響人数（アカウントのメールアドレス 79,249 件）は変更なし",
+          "source": 3
         }
       ],
       "keywords": [
@@ -1776,7 +1790,7 @@
         "credential-theft"
       ],
       "created_at": "2026-11-18",
-      "updated_at": "2026-11-18"
+      "updated_at": "2026-11-20"
     },
     {
       "id": "2026-11-14-pocketchange",
@@ -1954,6 +1968,254 @@
       ],
       "created_at": "2026-11-19",
       "updated_at": "2026-11-19"
+    },
+    {
+      "id": "2026-11-11-openlogi",
+      "org": "openlogi",
+      "org_name": "株式会社オープンロジ",
+      "org_aliases": [
+        "オープンロジ",
+        "OPENLOGI",
+        "openlogi.com"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "オープンロジ 物流代行システムへの不正アクセスで荷主の出荷データ（お届け先情報）が持ち出し",
+      "summary": "物流代行（フルフィルメント）サービスのシステムが不正アクセスを受け、荷主から預かる出荷データの一部が外部に持ち出された。お届け先の氏名・住所・電話番号・メールアドレスや商品・注文情報が対象で、第 2 報で対象期間が 2017 年までさかのぼって拡大。総件数は未公表で、委託元の荷主各社が自社顧客への影響を相次いで公表している。",
+      "cause": "unauthorized_access",
+      "vector": "詳細は未公表。外部専門機関と調査中",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-11-08",
+      "detected_at": null,
+      "disclosed_at": "2026-11-11",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社オープンロジ",
+          "url": "https://corp.openlogi.com/news/notice/notice-20261117/",
+          "published_at": "2026-11-17",
+          "title": "【重要】当社システムへの不正アクセスによる個人情報漏えいに関するお詫びとお知らせ（第2報）"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社オープンロジ",
+          "url": "https://corp.openlogi.com/news/notice/notice-20261111/",
+          "published_at": "2026-11-11",
+          "title": "当社システムへの不正アクセスに関するお詫びとお知らせ（第1報）"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/19/183634",
+          "published_at": "2026-11-19",
+          "title": "物流代行サービス「オープンロジ」への不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-08",
+          "kind": "occurred",
+          "text": "11 月 8〜9 日に第三者がシステムへ不正アクセスし、出荷データの一部を持ち出し",
+          "source": 2
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "updated",
+          "text": "把握した侵入経路を遮断し緊急メンテナンスを実施（検知の経緯は未公表）",
+          "source": 2
+        },
+        {
+          "date": "2026-11-10",
+          "kind": "updated",
+          "text": "警察に被害を届け出",
+          "source": 0
+        },
+        {
+          "date": "2026-11-11",
+          "kind": "disclosed",
+          "text": "第 1 報。2026 年 4 月 8 日〜11 月 8 日の出荷依頼分のお届け先情報・商品情報が対象",
+          "source": 1
+        },
+        {
+          "date": "2026-11-12",
+          "kind": "report_filed",
+          "text": "個人情報保護委員会へ速報",
+          "source": 0
+        },
+        {
+          "date": "2026-11-17",
+          "kind": "updated",
+          "text": "第 2 報。2017 年 10 月 27 日〜2024 年 11 月 25 日と 2026 年 11 月 9 日の出荷依頼分を対象に追加し、商品金額・送料・注文番号・追跡番号も対象に。カード番号は保有しておらず対象外。件数は荷主ごとに確認中",
+          "source": 0
+        },
+        {
+          "date": "2026-11-19",
+          "kind": "updated",
+          "text": "まとめ記事時点で荷主・委託元 99 件の公表を確認。荷主ごとに件数の単位・対象期間が異なり合算不可",
+          "source": 2
+        }
+      ],
+      "keywords": [
+        "logistics",
+        "supply-chain",
+        "order-history"
+      ],
+      "created_at": "2026-11-20",
+      "updated_at": "2026-11-20"
+    },
+    {
+      "id": "2026-11-13-kose",
+      "org": "kose",
+      "org_name": "株式会社コーセー",
+      "org_aliases": [
+        "コーセー",
+        "KOSÉ",
+        "KOSE",
+        "Maison KOSÉ",
+        "kose.co.jp"
+      ],
+      "industry": "manufacturing",
+      "country": "JP",
+      "title": "コーセー Maison KOSÉ の店頭体験・レッスン予約システムに不正アクセス、個人情報 28,098 件が漏えい",
+      "summary": "Maison KOSÉ 銀座・表参道の店頭体験・レッスン予約システムでアクセス制御の不備を突かれ、会員の個人情報 28,098 件が読み出された。氏名・住所・電話番号・メールアドレス・生年月日・性別が対象で、パスワードとカード情報は含まない。同じシステムを使う JILL STUART のレッスン予約も予防的に停止。",
+      "cause": "unauthorized_access",
+      "vector": "予約システムのアクセス制御の不備を悪用し、会員の個人情報を短時間に連続して読み出し",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "birthday",
+        "other"
+      ],
+      "affected": 28098,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-11-09",
+      "detected_at": "2026-11-10",
+      "disclosed_at": "2026-11-13",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社コーセー",
+          "url": "https://koseholdings.co.jp/ja/kose/urgent/10275/",
+          "published_at": "2026-11-13",
+          "title": "Maison KOSÉ銀座およびMaison KOSÉ表参道の店頭体験・レッスン予約システムをご利用のお客さまの個人情報漏えいに関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/193020",
+          "published_at": "2026-11-19",
+          "title": "店頭体験レッスン予約システムで個人情報が流出 - コーセー"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-09",
+          "kind": "occurred",
+          "text": "会員の個人情報を読み出すリクエストが短時間に連続して発生",
+          "source": 0
+        },
+        {
+          "date": "2026-11-10",
+          "kind": "detected",
+          "text": "不正な読み出しを確認し、予約システムを停止",
+          "source": 0
+        },
+        {
+          "date": "2026-11-13",
+          "kind": "disclosed",
+          "text": "28,098 件の漏えいを公表。個人情報保護委員会と警察に報告済み。対象者にはメールで通知",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "booking-info",
+        "member-info",
+        "web-service"
+      ],
+      "created_at": "2026-11-20",
+      "updated_at": "2026-11-20"
+    },
+    {
+      "id": "2026-11-18-osaki-electric",
+      "org": "osaki-electric",
+      "org_name": "大崎電気工業株式会社",
+      "org_aliases": [
+        "大崎電気工業",
+        "大崎電気",
+        "Osaki Electric",
+        "osaki.co.jp"
+      ],
+      "industry": "manufacturing",
+      "country": "JP",
+      "title": "大崎電気工業 ランサムウェア攻撃で生産関連システムが停止、情報流出の有無を調査中",
+      "summary": "ランサムウェア攻撃でサーバーのデータが暗号化され、埼玉事業所と関連生産拠点 2 社の生産関連システムを停止。スマートメーターの生産・出荷が止まっている。データが外部に流出した可能性も含めて外部専門機関と調査中で、現時点で情報漏えいは確認されていない。",
+      "cause": "ransomware",
+      "vector": "ランサムウェアによりサーバーのデータが暗号化（侵入経路は未公表）",
+      "data_types": [],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-11-17",
+      "disclosed_at": "2026-11-18",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "大崎電気工業株式会社",
+          "url": "https://www.osaki.co.jp/ja/notice/20261118.html",
+          "published_at": "2026-11-18",
+          "title": "ランサムウェアによるサイバー攻撃に伴う生産停止に関するお知らせ（第一報）"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/193088",
+          "published_at": "2026-11-19",
+          "title": "ランサム攻撃で生産関連システムが停止、出荷に影響 - 大崎電気工業"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-17",
+          "kind": "detected",
+          "text": "午前にサーバーのデータの暗号化を確認し、正午から外部ネットワークとの接続を遮断。生産関連システムを停止",
+          "source": 0
+        },
+        {
+          "date": "2026-11-18",
+          "kind": "disclosed",
+          "text": "第一報を公表。スマートメーター等の生産・出荷を停止、再開時期は未定。情報流出の可能性を含め調査中。警察・関係当局に相談・報告",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "service-outage",
+        "network-intrusion"
+      ],
+      "created_at": "2026-11-20",
+      "updated_at": "2026-11-20"
     }
   ]
 }

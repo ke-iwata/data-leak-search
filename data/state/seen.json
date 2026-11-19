@@ -1,4 +1,12 @@
 {
+ "https://www.osaki.co.jp/ja/notice/20261118.html": {
+  "incident": "2026-11-18-osaki-electric",
+  "at": "2026-11-18"
+ },
+ "https://www.security-next.com/193088": {
+  "incident": "2026-11-18-osaki-electric",
+  "at": "2026-11-19"
+ },
  "https://www.rakuten-sec.co.jp/web/info/info20261117-02.html": {
   "incident": "2026-11-17-rakuten-securities",
   "at": "2026-11-17"
@@ -47,6 +55,18 @@
   "incident": "2026-11-13-plaid",
   "at": "2026-11-18"
  },
+ "https://koseholdings.co.jp/ja/kose/urgent/10304": {
+  "incident": "2026-11-13-plaid",
+  "at": "2026-11-19"
+ },
+ "https://koseholdings.co.jp/ja/kose/urgent/10275": {
+  "incident": "2026-11-13-kose",
+  "at": "2026-11-13"
+ },
+ "https://www.security-next.com/193020": {
+  "incident": "2026-11-13-kose",
+  "at": "2026-11-19"
+ },
  "https://www.security-next.com/192344": {
   "incident": "2026-11-12-tamura-city",
   "at": "2026-11-12"
@@ -66,6 +86,18 @@
  "https://www.security-next.com/192746": {
   "incident": "2026-11-11-yasukuni-shrine",
   "at": "2026-11-16"
+ },
+ "https://corp.openlogi.com/news/notice/notice-20261117": {
+  "incident": "2026-11-11-openlogi",
+  "at": "2026-11-17"
+ },
+ "https://corp.openlogi.com/news/notice/notice-20261111": {
+  "incident": "2026-11-11-openlogi",
+  "at": "2026-11-11"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/19/183634": {
+  "incident": "2026-11-11-openlogi",
+  "at": "2026-11-19"
  },
  "https://www.kentei.ne.jp/51816": {
   "incident": "2026-11-10-jcci",
@@ -299,6 +331,10 @@
   "incident": "2026-10-27-okayama-kekkon-suishin-kyokai",
   "at": "2026-10-27"
  },
+ "https://www.jetro.go.jp/news/announcement/2026/5eebe72f41bc2230.html": {
+  "incident": "2026-10-27-jetro",
+  "at": "2026-10-27"
+ },
  "https://www.security-next.com/192585": {
   "incident": "2026-10-27-japan-post",
   "at": "2026-11-18"
@@ -510,6 +546,18 @@
  "https://www.security-next.com/191648": {
   "incident": "2026-10-19-nifty",
   "at": "2026-10-20"
+ },
+ "https://www.jetro.go.jp/news/releases/2026/a6deaac68f2dbe3b.html": {
+  "incident": "2026-10-19-jetro",
+  "at": "2026-10-19"
+ },
+ "https://www.jetro.go.jp/news/announcement/2026/d475b9fab8ba23e5.html": {
+  "incident": "2026-10-19-jetro",
+  "at": "2026-11-06"
+ },
+ "https://www.security-next.com/192759": {
+  "incident": "2026-10-19-jetro",
+  "at": "2026-11-19"
  },
  "https://data.swcms.net/file/h2o-retailing/ja/news/auto_20261030561547/pdfFile.pdf": {
   "incident": "2026-10-19-h2o-retailing",
