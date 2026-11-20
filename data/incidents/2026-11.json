@@ -1743,6 +1743,14 @@
           "url": "https://koseholdings.co.jp/ja/kose/urgent/10304/",
           "published_at": "2026-11-19",
           "title": "当社が利用する株式会社プレイドのサービスへの不正アクセスによるお客さまの個人情報漏えいに関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "official",
+          "publisher": "株式会社三井住友銀行",
+          "url": "https://www.smbc.co.jp/news/pdf/j20261120_01.pdf",
+          "published_at": "2026-11-20",
+          "title": "業務委託先への不正アクセスによる情報漏えいについて"
         }
       ],
       "timeline": [
@@ -1781,6 +1789,12 @@
           "kind": "updated",
           "text": "利用企業のコーセーが ADDICTION ブランドサイト会員 139,990 人分の氏名（かな）の漏えいを公表。事案全体の影響人数（アカウントのメールアドレス 79,249 件）は変更なし",
           "source": 3
+        },
+        {
+          "date": "2026-11-20",
+          "kind": "updated",
+          "text": "利用企業の三井住友銀行が顧客の生年月日・属性の区分値など最大約 1,400 万件（個人特定不可）の漏えいを公表。事案全体の影響人数（アカウントのメールアドレス 79,249 件）は変更なし",
+          "source": 4
         }
       ],
       "keywords": [
@@ -1790,7 +1804,7 @@
         "credential-theft"
       ],
       "created_at": "2026-11-18",
-      "updated_at": "2026-11-20"
+      "updated_at": "2026-11-21"
     },
     {
       "id": "2026-11-14-pocketchange",
@@ -2851,6 +2865,72 @@
         "contractor",
         "supply-chain",
         "government"
+      ],
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "2026-11-20-smbc",
+      "org": "smbc",
+      "org_name": "株式会社三井住友銀行",
+      "org_aliases": [
+        "三井住友銀行",
+        "三井住友銀",
+        "SMBC",
+        "Sumitomo Mitsui Banking Corporation",
+        "smbc.co.jp"
+      ],
+      "industry": "finance",
+      "country": "JP",
+      "title": "三井住友銀行 委託先プレイド「KARTE」への不正アクセスで顧客属性情報が最大約 1,400 万件漏えい",
+      "summary": "ホームページとアプリのお知らせ表示に使うプレイドの「KARTE」が不正アクセスを受け、同行顧客の生年月日、年齢帯・性別・電話番号登録有無の区分値、お知らせ要否の判定フラグが最大約 1,400 万件漏えいした。氏名などとは紐づいておらず個人は特定できないとし、氏名・住所・連絡先・口座番号・暗証番号・ネットバンキングの ID とパスワードは含まれない。",
+      "cause": "unauthorized_access",
+      "vector": "業務委託先プレイドの CX プラットフォーム「KARTE」への不正アクセス（委託先経由）",
+      "data_types": [
+        "birthday",
+        "other"
+      ],
+      "affected": 14000000,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-11-13",
+      "detected_at": "2026-11-13",
+      "disclosed_at": "2026-11-20",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社三井住友銀行",
+          "url": "https://www.smbc.co.jp/news/pdf/j20261120_01.pdf",
+          "published_at": "2026-11-20",
+          "title": "業務委託先への不正アクセスによる情報漏えいについて"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-13",
+          "kind": "detected",
+          "text": "プレイドから不正アクセスの発生とサービス停止の報告を受領",
+          "source": 0
+        },
+        {
+          "date": "2026-11-19",
+          "kind": "updated",
+          "text": "プレイドから漏えい範囲の報告を受け、同行で範囲を確認",
+          "source": 0
+        },
+        {
+          "date": "2026-11-20",
+          "kind": "disclosed",
+          "text": "最大約 1,400 万件の漏えいを公表。資産や取引への影響は確認されていない。関係当局へ報告予定",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "supply-chain",
+        "saas",
+        "web-service"
       ],
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"

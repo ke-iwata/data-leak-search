@@ -1712,6 +1712,24 @@
   "last": "2026-11-19",
   "affected_total": 75505
  },
+ "smbc": {
+  "name": "株式会社三井住友銀行",
+  "aliases": [
+   "三井住友銀行",
+   "三井住友銀",
+   "SMBC",
+   "Sumitomo Mitsui Banking Corporation",
+   "smbc.co.jp"
+  ],
+  "industry": "finance",
+  "country": "JP",
+  "incidents": [
+   "2026-11-20-smbc"
+  ],
+  "first": "2026-11-20",
+  "last": "2026-11-20",
+  "affected_total": 14000000
+ },
  "digital-agency": {
   "name": "デジタル庁",
   "aliases": [
