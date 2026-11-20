@@ -865,6 +865,22 @@
   "last": "2026-10-26",
   "affected_total": 27139
  },
+ "gunosy": {
+  "name": "株式会社Gunosy",
+  "aliases": [
+   "Gunosy",
+   "グノシー",
+   "gunosy.co.jp"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-10-26-gunosy"
+  ],
+  "first": "2026-10-26",
+  "last": "2026-10-26",
+  "affected_total": 132
+ },
  "furukawa-electric-power-systems": {
   "name": "古河電工パワーシステムズ株式会社",
   "aliases": [
@@ -1282,6 +1298,23 @@
   "last": "2026-11-08",
   "affected_total": 0
  },
+ "waseda-univ": {
+  "name": "早稲田大学",
+  "aliases": [
+   "早大",
+   "Waseda University",
+   "MyWaseda",
+   "waseda.jp"
+  ],
+  "industry": "education",
+  "country": "JP",
+  "incidents": [
+   "2026-11-09-waseda-univ"
+  ],
+  "first": "2026-11-09",
+  "last": "2026-11-09",
+  "affected_total": 3342
+ },
  "raksul": {
   "name": "ラクスル株式会社",
   "aliases": [
@@ -1364,6 +1397,24 @@
   "last": "2026-11-09",
   "affected_total": 21873
  },
+ "soft99": {
+  "name": "株式会社ソフト９９コーポレーション",
+  "aliases": [
+   "ソフト99",
+   "ソフト９９",
+   "SOFT99",
+   "soft99.co.jp",
+   "ソフト99公式オンラインショップ"
+  ],
+  "industry": "manufacturing",
+  "country": "JP",
+  "incidents": [
+   "2026-11-10-soft99"
+  ],
+  "first": "2026-11-10",
+  "last": "2026-11-10",
+  "affected_total": 136968
+ },
  "jcci": {
   "name": "日本商工会議所",
   "aliases": [
@@ -1430,6 +1481,24 @@
   "last": "2026-11-11",
   "affected_total": 0
  },
+ "usmh": {
+  "name": "ユナイテッド・スーパーマーケット・ホールディングス株式会社",
+  "aliases": [
+   "USMH",
+   "ユナイテッド・スーパーマーケット・ホールディングス",
+   "Scan&Go ignica",
+   "ignica",
+   "usmh.co.jp"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-11-12-usmh"
+  ],
+  "first": "2026-11-12",
+  "last": "2026-11-12",
+  "affected_total": 64003
+ },
  "tamura-city": {
   "name": "田村市",
   "aliases": [
@@ -1444,6 +1513,22 @@
   "first": "2026-11-12",
   "last": "2026-11-12",
   "affected_total": 0
+ },
+ "goqsystem": {
+  "name": "株式会社GoQSystem",
+  "aliases": [
+   "GoQSystem",
+   "GoQ System",
+   "goq.co.jp"
+  ],
+  "industry": "it",
+  "country": "JP",
+  "incidents": [
+   "2026-11-12-goqsystem"
+  ],
+  "first": "2026-11-12",
+  "last": "2026-11-12",
+  "affected_total": 4367390
  },
  "cyber-security-cloud": {
   "name": "株式会社サイバーセキュリティクラウド",
@@ -1460,6 +1545,23 @@
   "first": "2026-11-12",
   "last": "2026-11-12",
   "affected_total": 0
+ },
+ "yamada-denki": {
+  "name": "株式会社ヤマダデンキ",
+  "aliases": [
+   "ヤマダデンキ",
+   "ヤマダ電機",
+   "Yamada Denki",
+   "yamada-denki.jp"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-11-13-yamada-denki"
+  ],
+  "first": "2026-11-13",
+  "last": "2026-11-13",
+  "affected_total": 3500000
  },
  "plaid": {
   "name": "株式会社プレイド",
@@ -1551,6 +1653,20 @@
   "last": "2026-11-17",
   "affected_total": 15720000
  },
+ "shintoku-town": {
+  "name": "新得町",
+  "aliases": [
+   "shintoku-town.jp"
+  ],
+  "industry": "public",
+  "country": "JP",
+  "incidents": [
+   "2026-11-18-shintoku-town"
+  ],
+  "first": "2026-11-18",
+  "last": "2026-11-18",
+  "affected_total": 6001
+ },
  "osaki-electric": {
   "name": "大崎電気工業株式会社",
   "aliases": [
@@ -1566,6 +1682,51 @@
   ],
   "first": "2026-11-18",
   "last": "2026-11-18",
+  "affected_total": 0
+ },
+ "iwamizawa-city": {
+  "name": "岩見沢市",
+  "aliases": [
+   "city.iwamizawa.hokkaido.jp"
+  ],
+  "industry": "public",
+  "country": "JP",
+  "incidents": [
+   "2026-11-18-iwamizawa-city"
+  ],
+  "first": "2026-11-18",
+  "last": "2026-11-18",
+  "affected_total": 0
+ },
+ "rumoi-city": {
+  "name": "留萌市",
+  "aliases": [
+   "e-rumoi.jp"
+  ],
+  "industry": "public",
+  "country": "JP",
+  "incidents": [
+   "2026-11-19-rumoi-city"
+  ],
+  "first": "2026-11-19",
+  "last": "2026-11-19",
+  "affected_total": 75505
+ },
+ "digital-agency": {
+  "name": "デジタル庁",
+  "aliases": [
+   "Digital Agency",
+   "digital.go.jp",
+   "ガバメントソリューションサービス",
+   "GSS"
+  ],
+  "industry": "public",
+  "country": "JP",
+  "incidents": [
+   "2026-11-20-digital-agency"
+  ],
+  "first": "2026-11-20",
+  "last": "2026-11-20",
   "affected_total": 0
  }
 }

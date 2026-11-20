@@ -2216,6 +2216,644 @@
       ],
       "created_at": "2026-11-20",
       "updated_at": "2026-11-20"
+    },
+    {
+      "id": "2026-11-12-goqsystem",
+      "org": "goqsystem",
+      "org_name": "株式会社GoQSystem",
+      "org_aliases": [
+        "GoQSystem",
+        "GoQ System",
+        "goq.co.jp"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "GoQSystem 受注管理システムへの不正アクセスで注文データ約 498 万件を持ち出し",
+      "summary": "受注管理システム「GoQSystem」がお問い合わせフォームの脆弱性を突かれ、預かっていた注文データの一部が外部に持ち出された。対象は利用店舗 1,694 社・注文 4,984,595 件・本人 4,367,390 名で、注文者・届け先の氏名、住所、電話番号、メールアドレス、注文内容を含む。カード情報は保有しておらず対象外としている。",
+      "cause": "unauthorized_access",
+      "vector": "システムに設置していたお問い合わせフォームの脆弱性を悪用された",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "other"
+      ],
+      "affected": 4367390,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-11-10",
+      "detected_at": null,
+      "disclosed_at": "2026-11-12",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社GoQSystem",
+          "url": "https://goq.co.jp/security-incident-2.html",
+          "published_at": "2026-11-13",
+          "title": "当社システムへの不正アクセスによる個人情報漏えいに関するお詫びとお知らせ（第二報：対象規模および今後の対応について）"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/20/225808",
+          "published_at": "2026-11-20",
+          "title": "受注管理システム「GoQSystem」への不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-10",
+          "kind": "occurred",
+          "text": "11 月 10 日から 11 日にかけて不正アクセス。期間より前の注文データも対象",
+          "source": 1
+        },
+        {
+          "date": "2026-11-11",
+          "kind": "detected",
+          "text": "不正アクセスの経路を遮断し、サービスを一時停止",
+          "source": 1
+        },
+        {
+          "date": "2026-11-12",
+          "kind": "disclosed",
+          "text": "第一報で不正アクセスと注文データの持ち出しを公表",
+          "source": 1
+        },
+        {
+          "date": "2026-11-13",
+          "kind": "updated",
+          "text": "第二報で対象規模（1,694 社・注文 4,984,595 件・4,367,390 名）と侵入経路（問い合わせフォームの脆弱性）を公表。同日に個人情報保護委員会へ速報",
+          "source": 0
+        },
+        {
+          "date": "2026-11-19",
+          "kind": "updated",
+          "text": "特設ページを更新。店舗と同社の連名で個人情報保護委員会に報告する方針、店舗向けの対象者通知機能を案内。楽天市場・STORES の API 連携は未復旧（11 月 18 日時点）",
+          "source": 1
+        }
+      ],
+      "keywords": [
+        "saas",
+        "supply-chain",
+        "order-history",
+        "web-form"
+      ],
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "2026-11-20-digital-agency",
+      "org": "digital-agency",
+      "org_name": "デジタル庁",
+      "org_aliases": [
+        "デジタル庁",
+        "Digital Agency",
+        "digital.go.jp",
+        "ガバメントソリューションサービス",
+        "GSS"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "デジタル庁 GSS のファイル共有サービス上のファイルが漏えいした可能性",
+      "summary": "政府共通のネットワーク環境 GSS で提供するファイル共有サービスで、正規の共有相手以外からファイルにアクセスされた可能性を検知した。アップロードされていたファイルの一部が漏えいした可能性があり、個人情報が含まれる可能性もある。件数や内容は調査中で、サービスは停止している。",
+      "cause": "unauthorized_access",
+      "vector": "ファイル共有サービス上のファイルに正規の共有相手以外からアクセス（手段は未公表）",
+      "data_types": [
+        "internal_doc",
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-07-30",
+      "detected_at": "2026-11-12",
+      "disclosed_at": "2026-11-20",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "デジタル庁",
+          "url": "https://www.digital.go.jp/press/a966ee61-478c-4194-8f13-f97599fae986",
+          "published_at": "2026-11-20",
+          "title": "ガバメントソリューションサービスで提供しているファイル共有サービス上のファイルの漏えいの可能性について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/21/002438",
+          "published_at": "2026-11-21",
+          "title": "デジタル庁が運用するGSSのファイル共有サービスからの情報漏えい可能性についてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-30",
+          "kind": "occurred",
+          "text": "この日から 11 月 12 日までの不審なアクセスを確認（詳細な期間は調査中）",
+          "source": 0
+        },
+        {
+          "date": "2026-11-12",
+          "kind": "detected",
+          "text": "正規の共有相手以外からのアクセスの可能性を検知。外部との通信を遮断し、サービスを停止",
+          "source": 0
+        },
+        {
+          "date": "2026-11-20",
+          "kind": "disclosed",
+          "text": "漏えいの可能性を公表。個人情報保護委員会へ報告済み、警察等と連携して調査中。GSS は 25 の政府機関が利用（外務省・防衛省は不使用）",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "government",
+        "cloud-storage"
+      ],
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "2026-11-09-waseda-univ",
+      "org": "waseda-univ",
+      "org_name": "早稲田大学",
+      "org_aliases": [
+        "早稲田大学",
+        "早大",
+        "Waseda University",
+        "MyWaseda",
+        "waseda.jp"
+      ],
+      "industry": "education",
+      "country": "JP",
+      "title": "早稲田大学 MyWaseda のユーザー情報管理システムに不正アクセス、延べ 3,342 件が取得",
+      "summary": "ポータル「MyWaseda」のログインに使うユーザー情報を管理するシステムに第三者が侵入し、職員等のユーザー情報 3,261 件と教職員・学生・卒業生等の個別情報 81 件（延べ 3,342 件）が取得された。氏名、メールアドレス、教職員番号、所属部署名、暗号化されたパスワードなどを含む。PHP の脆弱性対応で状況を確認する中で判明し、侵入経路は調査中。",
+      "cause": "unauthorized_access",
+      "vector": "ユーザー情報管理システムへの侵入（侵入経路は調査中）",
+      "data_types": [
+        "name",
+        "email",
+        "credential",
+        "other"
+      ],
+      "affected": 3342,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-08-31",
+      "detected_at": null,
+      "disclosed_at": "2026-11-09",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "早稲田大学",
+          "url": "https://www.waseda.jp/top/?p=124183",
+          "published_at": "2026-11-09",
+          "title": "不正アクセスによる個人情報漏えいについて"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192578",
+          "published_at": "2026-11-21",
+          "title": "個人情報管理システムが侵害、脆弱性対応中に判明 - 早稲田大"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-31",
+          "kind": "occurred",
+          "text": "この日に行われた不正アクセスの痕跡を確認",
+          "source": 0
+        },
+        {
+          "date": null,
+          "kind": "detected",
+          "text": "PHP の脆弱性への対応でシステムを確認する中で侵入を把握（日付は未公表）。システム停止、外部通信の制限、関連サービスの利用制限を実施",
+          "source": 0
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "disclosed",
+          "text": "公表。件数は延べ 3,342 件（同一人物が複数アドレスを持つ場合があり実人数とは一致しない）。卒業生向け Waseda ID サービスを一時停止",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "university",
+        "employee-info"
+      ],
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "2026-11-10-soft99",
+      "org": "soft99",
+      "org_name": "株式会社ソフト９９コーポレーション",
+      "org_aliases": [
+        "ソフト99",
+        "ソフト９９",
+        "SOFT99",
+        "soft99.co.jp",
+        "ソフト99公式オンラインショップ"
+      ],
+      "industry": "manufacturing",
+      "country": "JP",
+      "title": "ソフト99 公式オンラインショップへの不正アクセスで最大 13.7 万人の個人情報漏えいの可能性",
+      "summary": "公式オンラインショップの問い合わせフォームの画像添付機能からプログラムファイルをアップロードされ、サーバー内の調査や設定ファイルの読み取りが行われた。会員登録・購入客 136,968 人の氏名、住所、連絡先、生年月日、購買情報とカード情報の一部（下 4 桁・有効期限・名義）が流出した可能性がある。サイトを停止して調査中。",
+      "cause": "unauthorized_access",
+      "vector": "問い合わせフォームの画像添付機能からプログラムファイルをアップロードされ、外部から命令を送り込めるファイルを設置された",
+      "data_types": [
+        "name",
+        "address",
+        "email",
+        "phone",
+        "birthday",
+        "card",
+        "other"
+      ],
+      "affected": 136968,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-11-05",
+      "disclosed_at": "2026-11-10",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ソフト９９コーポレーション",
+          "url": "https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20261110/20261110571360.pdf",
+          "published_at": "2026-11-10",
+          "title": "ソフト９９公式オンラインショップへの不正アクセスによる個人情報漏えいの可能性に関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192805",
+          "published_at": "2026-11-20",
+          "title": "通販サイト内に不正ファイル、個人情報流出の可能性 - ソフト99"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-05",
+          "kind": "detected",
+          "text": "委託先から公式オンラインショップで不審な動きがあると連絡",
+          "source": 0
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "report_filed",
+          "text": "個人情報保護委員会へ報告",
+          "source": 0
+        },
+        {
+          "date": "2026-11-10",
+          "kind": "disclosed",
+          "text": "適時開示で公表。サイトを停止し、対象者と件数の詳細を確認中",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "ec-site",
+        "web-form",
+        "member-info"
+      ],
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "2026-11-13-yamada-denki",
+      "org": "yamada-denki",
+      "org_name": "株式会社ヤマダデンキ",
+      "org_aliases": [
+        "ヤマダデンキ",
+        "ヤマダ電機",
+        "Yamada Denki",
+        "yamada-denki.jp"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "ヤマダデンキ リフォーム管理システムに不正アクセス、最大 350 万件に影響の可能性",
+      "summary": "リフォーム管理システムが第三者に侵害され、顧客の氏名、住所、電話番号、リフォームの実施履歴や見積もりデータなど最大 350 万件が流出した可能性がある。外部からのアクセスを遮断し、原因と影響範囲を調査中。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "other"
+      ],
+      "affected": 3500000,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-11-12",
+      "disclosed_at": "2026-11-13",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261113de75739",
+          "published_at": "2026-11-13",
+          "title": "ヤマダデンキ リフォーム管理システムに不正アクセス"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192867",
+          "published_at": "2026-11-20",
+          "title": "リフォーム管理システムに不正アクセス - ヤマダデンキ"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-12",
+          "kind": "detected",
+          "text": "リフォーム管理システムへの侵害が判明し、外部からのアクセスを遮断",
+          "source": 1
+        },
+        {
+          "date": "2026-11-13",
+          "kind": "disclosed",
+          "text": "最大 350 万件の情報が影響を受けた可能性を公表（同社の公表ページは未確認、報道本文で確認）。同社を装った連絡への注意を呼びかけ",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "member-info",
+        "order-history"
+      ],
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "2026-11-12-usmh",
+      "org": "usmh",
+      "org_name": "ユナイテッド・スーパーマーケット・ホールディングス株式会社",
+      "org_aliases": [
+        "USMH",
+        "ユナイテッド・スーパーマーケット・ホールディングス",
+        "Scan&Go ignica",
+        "ignica",
+        "usmh.co.jp"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "USMH 買い物アプリ「Scan&Go ignica」に不正アクセス、64,003 アカウントの氏名・メールアドレス流出の可能性",
+      "summary": "セルフ会計アプリ「Scan&Go ignica」のシステムが第三者に不正アクセスされ、システム内に個人情報を含むファイルがあった。約 240 万アカウントのうち 64,003 アカウントの氏名とメールアドレスが流出した可能性がある。外部への取得は確認されておらず、カード情報・住所・電話番号・生年月日は対象ファイルに含まれない。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "name",
+        "email"
+      ],
+      "affected": 64003,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-11-12",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "ユナイテッド・スーパーマーケット・ホールディングス株式会社",
+          "url": "https://www.usmh.co.jp/wp-content/uploads/2026/11/us_20261112.pdf",
+          "published_at": "2026-11-12",
+          "title": "不正アクセスによる個人情報流出の可能性に関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192800",
+          "published_at": "2026-11-20",
+          "title": "買い物アプリのシステムに侵害、内部に個人情報 - USMH"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-12",
+          "kind": "disclosed",
+          "text": "公表。対象顧客にメールとアプリ内で案内。不正利用や二次被害は確認されておらず、原因と影響範囲を調査中",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "mobile-app",
+        "member-info"
+      ],
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "2026-11-19-rumoi-city",
+      "org": "rumoi-city",
+      "org_name": "留萌市",
+      "org_aliases": [
+        "留萌市",
+        "e-rumoi.jp"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "留萌市 委託先協力会社の端末がマルウェア感染、住民基本台帳データ最大 7.1 万件漏えいのおそれ",
+      "summary": "統合型 GIS 導入事業の委託先（GIS北海道）の協力会社の開発端末が情報窃取型マルウェアに感染した。契約終了後に削除するはずだった住民基本台帳データ最大 71,002 件と要支援者データ最大 4,503 件が端末に残っており、漏えいのおそれがある。マイナンバーは含まれず、流出や不正利用は確認されていない。",
+      "cause": "unauthorized_access",
+      "vector": "委託先の協力会社（リムゲート）の開発端末が情報窃取型マルウェア「K2F」に感染。契約終了後も端末にデータが残存",
+      "data_types": [
+        "name",
+        "address",
+        "birthday",
+        "health",
+        "other"
+      ],
+      "affected": 75505,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-11-02",
+      "detected_at": "2026-11-04",
+      "disclosed_at": "2026-11-19",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "留萌市",
+          "url": "https://www.e-rumoi.jp/soumu/page11_00252.html",
+          "published_at": "2026-11-19",
+          "title": "個人情報漏えいのおそれについて"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/20/130214",
+          "published_at": "2026-11-20",
+          "title": "北海道3市町委託先のマルウェア感染についてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-02",
+          "kind": "occurred",
+          "text": "11 月 2 日夜から 3 日にかけて協力会社の開発端末がマルウェアに感染",
+          "source": 0
+        },
+        {
+          "date": "2026-11-04",
+          "kind": "detected",
+          "text": "協力会社が感染の痕跡を発見し、端末をネットワークから遮断",
+          "source": 0
+        },
+        {
+          "date": "2026-11-13",
+          "kind": "updated",
+          "text": "委託先から市へ電話で報告。14 日に第 1 報の報告書を受理、16 日に説明を受けた",
+          "source": 0
+        },
+        {
+          "date": "2026-11-19",
+          "kind": "disclosed",
+          "text": "公表。件数は住民基本台帳データ 71,002 件と要支援者データ 4,503 件の合計（重複の有無は不明）",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "contractor",
+        "supply-chain",
+        "government"
+      ],
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "2026-11-18-iwamizawa-city",
+      "org": "iwamizawa-city",
+      "org_name": "岩見沢市",
+      "org_aliases": [
+        "岩見沢市",
+        "city.iwamizawa.hokkaido.jp"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "岩見沢市 委託先協力会社の端末感染で固定資産税の土地・家屋情報漏えいのおそれ",
+      "summary": "固定資産税に関する業務の委託先（GIS北海道）の協力会社の端末がマルウェアに感染し、2022 年 1 月 1 日時点の固定資産税の土地情報最大 10,348 筆と家屋情報最大 7,037 棟が漏えいしたおそれがある。所有者氏名など個人を特定する情報は含まれないとしている。",
+      "cause": "unauthorized_access",
+      "vector": "委託先の協力会社の端末がマルウェアに感染（留萌市の事案と同じ協力会社）",
+      "data_types": [
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-11-18",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/20/130214",
+          "published_at": "2026-11-20",
+          "title": "北海道3市町委託先のマルウェア感染についてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-16",
+          "kind": "detected",
+          "text": "委託先から報告を受けた",
+          "source": 0
+        },
+        {
+          "date": "2026-11-18",
+          "kind": "disclosed",
+          "text": "公表。対象は土地 10,348 筆・家屋 7,037 棟（人数ではないため affected は null）。市の公表ページは未読で、まとめ記事の本文で確認",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "contractor",
+        "supply-chain",
+        "government"
+      ],
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "2026-11-18-shintoku-town",
+      "org": "shintoku-town",
+      "org_name": "新得町",
+      "org_aliases": [
+        "新得町",
+        "shintoku-town.jp"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "新得町 委託先協力会社の端末への不正アクセスで住民基本台帳データ漏えいの可能性",
+      "summary": "2019 年度の災害時避難行動要支援者システム導入業務の委託先（GIS北海道）の協力会社が管理する端末に不正アクセスがあり、受託作業時点の住民基本台帳データ 6,001 件と要支援者データ 986 件が漏えいした可能性がある。マイナンバーは含まれず、流出や不正利用は確認されていない。",
+      "cause": "unauthorized_access",
+      "vector": "委託先の協力会社が管理する端末への不正アクセス（マルウェア感染。留萌市の事案と同じ協力会社）",
+      "data_types": [
+        "name",
+        "address",
+        "other"
+      ],
+      "affected": 6001,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-11-18",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/20/130214",
+          "published_at": "2026-11-20",
+          "title": "北海道3市町委託先のマルウェア感染についてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-16",
+          "kind": "detected",
+          "text": "委託先から報告を受けた",
+          "source": 0
+        },
+        {
+          "date": "2026-11-18",
+          "kind": "disclosed",
+          "text": "公表。住民基本台帳データ 6,001 件、要支援者データ 986 件（重複の有無は不明のため affected は前者）。町の公表ページは未読で、まとめ記事の本文で確認",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "contractor",
+        "supply-chain",
+        "government"
+      ],
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ]
 }

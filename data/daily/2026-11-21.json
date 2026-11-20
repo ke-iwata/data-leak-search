@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-21",
+  "generated_at": "2026-11-21T06:10:00+09:00",
+  "stats": {
+    "collected": 24,
+    "candidates": 14,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 2
+  },
+  "digest": [
+    {
+      "text": "EC 向け受注管理 SaaS「GoQSystem」が問い合わせフォームの脆弱性を突かれ、利用店舗 1,694 社の注文データ（本人 4,367,390 名）が持ち出された。オープンロジに続くサプライチェーン型の大規模事案。",
+      "incidents": [
+        "2026-11-12-goqsystem",
+        "2026-11-11-openlogi"
+      ]
+    },
+    {
+      "text": "小売で大規模な顧客情報の漏えい可能性が相次ぐ。ヤマダデンキはリフォーム管理システムで最大 350 万件、USMH は Scan&Go ignica で 64,003 アカウント、ソフト99 は通販サイト改ざんで最大 136,968 人（カード下 4 桁を含む）。",
+      "incidents": [
+        "2026-11-13-yamada-denki",
+        "2026-11-12-usmh",
+        "2026-11-10-soft99"
+      ]
+    },
+    {
+      "text": "デジタル庁が政府共通基盤 GSS のファイル共有サービスで、7 月 30 日以降に正規の共有相手以外からのアクセスがあったと公表。漏えいの範囲は調査中。",
+      "incidents": [
+        "2026-11-20-digital-agency"
+      ]
+    },
+    {
+      "text": "北海道の留萌市・岩見沢市・新得町で、同じ委託先の協力会社の端末がマルウェアに感染。契約終了後も残っていた住民基本台帳データなどに漏えいのおそれ。",
+      "incidents": [
+        "2026-11-19-rumoi-city",
+        "2026-11-18-iwamizawa-city",
+        "2026-11-18-shintoku-town"
+      ]
+    },
+    {
+      "text": "早稲田大学は MyWaseda のユーザー情報管理システムへの侵入で延べ 3,342 件、Gunosy は業務用アカウントの不正ログインで 132 人分の情報流出を公表。",
+      "incidents": [
+        "2026-11-09-waseda-univ",
+        "2026-10-26-gunosy"
+      ]
+    }
+  ],
+  "new": [
+    "2026-11-12-goqsystem",
+    "2026-11-20-digital-agency",
+    "2026-11-09-waseda-univ",
+    "2026-11-10-soft99",
+    "2026-11-13-yamada-denki",
+    "2026-11-12-usmh",
+    "2026-10-26-gunosy",
+    "2026-11-19-rumoi-city",
+    "2026-11-18-iwamizawa-city",
+    "2026-11-18-shintoku-town"
+  ],
+  "updated": [],
+  "skipped": [
+    {
+      "url": "https://haveibeenpwned.com/Breach/TooLost",
+      "reason": "HIBP の記載が「claimed」の段階で、組織・公的機関・メディアの公表を確認できず"
+    },
+    {
+      "url": "https://haveibeenpwned.com/Breach/Careers360",
+      "reason": "HIBP の記載も「allegedly」でハッキングフォーラム掲載のリーク主張。組織の公表を確認できず"
+    }
+  ]
+}

@@ -4508,6 +4508,88 @@
       ],
       "created_at": "2026-11-20",
       "updated_at": "2026-11-20"
+    },
+    {
+      "id": "2026-10-26-gunosy",
+      "org": "gunosy",
+      "org_name": "株式会社Gunosy",
+      "org_aliases": [
+        "Gunosy",
+        "グノシー",
+        "gunosy.co.jp"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "Gunosy 業務用アカウントへの不正ログインで役職員・取引先担当者 132 人分の情報流出",
+      "summary": "第三者が不正に入手した社内業務用アカウントの認証情報でログインし、クラウド環境や業務ツールにアクセスした。メールボックスの一部が閲覧され、取引先担当者 25 人の氏名・メールアドレス・所属などと、役職員・退職者等 107 人の氏名・メールアドレスなどが流出した。サービス利用者の情報流出は確認されていない。",
+      "cause": "unauthorized_access",
+      "vector": "不正に入手された社内業務用アカウントの ID・パスワードでクラウド環境と業務ツールにログイン（入手経路は調査中）",
+      "data_types": [
+        "name",
+        "email",
+        "other"
+      ],
+      "affected": 132,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-10-21",
+      "detected_at": "2026-10-21",
+      "disclosed_at": "2026-10-26",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社Gunosy",
+          "url": "https://gunosy.co.jp/news/464",
+          "published_at": "2026-10-26",
+          "title": "当社役職員等ならびに一部お取引先ご担当者様の個人情報の流出に関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/193094",
+          "published_at": "2026-11-20",
+          "title": "クラウド環境や業務ツールに不正アクセス、個人情報流出 - Gunosy"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/30/56634.html",
+          "published_at": "2026-10-30",
+          "title": "Gunosy の社内業務用アカウントの認証情報を用いた不正ログイン、取引先や役員・従業員等の情報が流出"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-21",
+          "kind": "detected",
+          "text": "監視システムで不正ログインを検知し、同日中にアカウントを停止",
+          "source": 0
+        },
+        {
+          "date": "2026-10-23",
+          "kind": "report_filed",
+          "text": "個人情報保護委員会へ報告",
+          "source": 0
+        },
+        {
+          "date": "2026-10-26",
+          "kind": "disclosed",
+          "text": "公表し、対象者へのメール連絡を開始。共有アカウントの廃止、多要素認証の徹底などを実施",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "credential-theft",
+        "account-takeover",
+        "employee-info",
+        "business-contacts"
+      ],
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ]
 }

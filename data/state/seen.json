@@ -1,4 +1,20 @@
 {
+ "https://www.digital.go.jp/press/a966ee61-478c-4194-8f13-f97599fae986": {
+  "incident": "2026-11-20-digital-agency",
+  "at": "2026-11-20"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/21/002438": {
+  "incident": "2026-11-20-digital-agency",
+  "at": "2026-11-21"
+ },
+ "https://www.e-rumoi.jp/soumu/page11_00252.html": {
+  "incident": "2026-11-19-rumoi-city",
+  "at": "2026-11-19"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/20/130214": {
+  "incident": "2026-11-18-iwamizawa-city",
+  "at": "2026-11-20"
+ },
  "https://www.osaki.co.jp/ja/notice/20261118.html": {
   "incident": "2026-11-18-osaki-electric",
   "at": "2026-11-18"
@@ -43,6 +59,14 @@
   "incident": "2026-11-14-pocketchange",
   "at": "2026-11-17"
  },
+ "https://news.web.nhk/newsweb/na/nd-20261113de75739": {
+  "incident": "2026-11-13-yamada-denki",
+  "at": "2026-11-13"
+ },
+ "https://www.security-next.com/192867": {
+  "incident": "2026-11-13-yamada-denki",
+  "at": "2026-11-20"
+ },
  "https://plaid.co.jp/news/20261116": {
   "incident": "2026-11-13-plaid",
   "at": "2026-11-16"
@@ -67,9 +91,25 @@
   "incident": "2026-11-13-kose",
   "at": "2026-11-19"
  },
+ "https://www.usmh.co.jp/wp-content/uploads/2026/11/us_20261112.pdf": {
+  "incident": "2026-11-12-usmh",
+  "at": "2026-11-12"
+ },
+ "https://www.security-next.com/192800": {
+  "incident": "2026-11-12-usmh",
+  "at": "2026-11-20"
+ },
  "https://www.security-next.com/192344": {
   "incident": "2026-11-12-tamura-city",
   "at": "2026-11-12"
+ },
+ "https://goq.co.jp/security-incident-2.html": {
+  "incident": "2026-11-12-goqsystem",
+  "at": "2026-11-13"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/20/225808": {
+  "incident": "2026-11-12-goqsystem",
+  "at": "2026-11-20"
  },
  "https://www.cscloud.co.jp/news/info/20261112-2": {
   "incident": "2026-11-12-cyber-security-cloud",
@@ -99,6 +139,14 @@
   "incident": "2026-11-11-openlogi",
   "at": "2026-11-19"
  },
+ "https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20261110/20261110571360.pdf": {
+  "incident": "2026-11-10-soft99",
+  "at": "2026-11-10"
+ },
+ "https://www.security-next.com/192805": {
+  "incident": "2026-11-10-soft99",
+  "at": "2026-11-20"
+ },
  "https://www.kentei.ne.jp/51816": {
   "incident": "2026-11-10-jcci",
   "at": "2026-11-10"
@@ -114,6 +162,14 @@
  "https://www.security-next.com/192495": {
   "incident": "2026-11-10-doutor-coffee",
   "at": "2026-11-10"
+ },
+ "https://www.waseda.jp/top/?p=124183": {
+  "incident": "2026-11-09-waseda-univ",
+  "at": "2026-11-09"
+ },
+ "https://www.security-next.com/192578": {
+  "incident": "2026-11-09-waseda-univ",
+  "at": "2026-11-21"
  },
  "https://corp.raksul.com/news/press/261109_unauthorized-access": {
   "incident": "2026-11-09-raksul",
@@ -394,6 +450,18 @@
  "https://www.security-next.com/192465": {
   "incident": "2026-10-26-jp-rouso",
   "at": "2026-11-16"
+ },
+ "https://gunosy.co.jp/news/464": {
+  "incident": "2026-10-26-gunosy",
+  "at": "2026-10-26"
+ },
+ "https://www.security-next.com/193094": {
+  "incident": "2026-10-26-gunosy",
+  "at": "2026-11-20"
+ },
+ "https://scan.netsecurity.ne.jp/article/2026/10/30/56634.html": {
+  "incident": "2026-10-26-gunosy",
+  "at": "2026-10-30"
  },
  "https://www.feps.co.jp/news/20261026": {
   "incident": "2026-10-26-furukawa-electric-power-systems",
@@ -878,5 +946,13 @@
  "https://www.security-next.com/192972": {
   "skipped": "証券会社をかたるフィッシングの注意喚起で事案ではない",
   "at": "2026-11-18"
+ },
+ "https://haveibeenpwned.com/Breach/TooLost": {
+  "skipped": "HIBP の記載が「claimed」の段階で、組織・公的機関・メディアの公表を確認できず",
+  "at": "2026-11-21"
+ },
+ "https://haveibeenpwned.com/Breach/Careers360": {
+  "skipped": "HIBP の記載も「allegedly」でハッキングフォーラム掲載のリーク主張。組織の公表を確認できず",
+  "at": "2026-11-21"
  }
 }
