@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-22",
+  "generated_at": "2026-11-22T06:10:00+09:00",
+  "stats": {
+    "collected": 8,
+    "candidates": 7,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "新規なし。候補 7 件はいずれも処理済みの出典（GoQSystem、デジタル庁 GSS、ソフト99、USMH、Gunosy、早稲田大学の続報記事と HIBP の Too Lost）で、新しい事案・続報は確認できなかった。",
+      "incidents": []
+    }
+  ],
+  "new": [],
+  "updated": [],
+  "skipped": []
+}
