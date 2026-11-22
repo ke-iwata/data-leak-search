@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-23",
+  "generated_at": "2026-11-23T06:10:00+09:00",
+  "stats": {
+    "collected": 0,
+    "candidates": 0,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "新規なし。全 7 ソースは正常に取得できたが、収集期間（11/21 夕方以降・週末と祝日）に新しい記事は 0 件で、新規事案・続報は確認できなかった。",
+      "incidents": []
+    }
+  ],
+  "new": [],
+  "updated": [],
+  "skipped": []
+}
