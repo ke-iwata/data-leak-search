@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-24",
+  "generated_at": "2026-11-24T05:30:00+09:00",
+  "stats": {
+    "collected": 1,
+    "candidates": 1,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "HIBP 経由で英国の学校向けソフト事業者 Bromcom の事案（9 月公表）を新規登録。旧 SSO 登録機能から教職員・生徒のメールアドレス約 35.5 万件が取得された。国内ソースは週明け前で新着なし。",
+      "incidents": [
+        "2026-09-24-bromcom"
+      ]
+    }
+  ],
+  "new": [
+    "2026-09-24-bromcom"
+  ],
+  "updated": [],
+  "skipped": []
+}

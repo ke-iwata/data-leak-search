@@ -787,6 +787,18 @@
   "incident": "2026-09-29-fukuoka-pref",
   "at": "2026-11-05"
  },
+ "https://docs.bromcom.com/knowledge-base/sso-personal-data-breach-faqs": {
+  "incident": "2026-09-24-bromcom",
+  "at": "2026-10-27"
+ },
+ "https://www.theregister.com/a/5301156": {
+  "incident": "2026-09-24-bromcom",
+  "at": "2026-10-06"
+ },
+ "https://haveibeenpwned.com/Breach/Bromcom": {
+  "incident": "2026-09-24-bromcom",
+  "at": "2026-11-23"
+ },
  "https://www.pref.aichi.jp/press-release/aiconnavikisya202609.html": {
   "incident": "2026-09-21-aichi-pref",
   "at": "2026-09-22"

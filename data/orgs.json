@@ -112,6 +112,21 @@
   "last": "2026-09-21",
   "affected_total": 771
  },
+ "bromcom": {
+  "name": "Bromcom Computers Plc",
+  "aliases": [
+   "Bromcom",
+   "bromcom.com"
+  ],
+  "industry": "education",
+  "country": "GB",
+  "incidents": [
+   "2026-09-24-bromcom"
+  ],
+  "first": "2026-09-24",
+  "last": "2026-09-24",
+  "affected_total": 355051
+ },
  "yamato-transport": {
   "name": "ヤマト運輸株式会社",
   "aliases": [

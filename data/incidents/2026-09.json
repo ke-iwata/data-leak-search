@@ -604,6 +604,91 @@
       ],
       "created_at": "2026-11-10",
       "updated_at": "2026-11-10"
+    },
+    {
+      "id": "2026-09-24-bromcom",
+      "org": "bromcom",
+      "org_name": "Bromcom Computers Plc",
+      "org_aliases": [
+        "Bromcom",
+        "bromcom.com"
+      ],
+      "industry": "education",
+      "country": "GB",
+      "title": "Bromcom 旧 SSO 登録機能への不正アクセスで英国の学校の教職員・生徒のメールアドレスが漏えい",
+      "summary": "英国の学校向け管理システム事業者 Bromcom で、本番に残っていた旧 SSO 登録機能に第三者が不正なスクリプトを実行し、SSO 登録に紐づく教職員・生徒のメールアドレスや登録参照番号などが取得された。パスワードや認証トークン、校務システム（MIS）のデータは含まれないとしている。HIBP は一意のメールアドレス 355,051 件を登録した。",
+      "cause": "unauthorized_access",
+      "vector": "置き換え後も社内システムから呼ばれていたため本番に残っていた旧 SSO 登録コンポーネントに対し、不正なスクリプトを実行",
+      "data_types": [
+        "email",
+        "other"
+      ],
+      "affected": 355051,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-09-06",
+      "disclosed_at": "2026-09-24",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "Bromcom",
+          "url": "https://docs.bromcom.com/knowledge-base/sso-personal-data-breach-faqs/",
+          "published_at": "2026-10-27",
+          "title": "SSO Personal Data Breach FAQs"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "The Register",
+          "url": "https://www.theregister.com/a/5301156",
+          "published_at": "2026-10-06",
+          "title": "Legacy sign-on service comes back to bite school software provider Bromcom"
+        },
+        {
+          "role": "secondary",
+          "trust": "aggregator",
+          "publisher": "Have I Been Pwned",
+          "url": "https://haveibeenpwned.com/Breach/Bromcom",
+          "published_at": "2026-11-23",
+          "title": "Bromcom (bromcom.com) — 355,051 accounts"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-06",
+          "kind": "detected",
+          "text": "SSO のアクセス障害の報告を受けて事案を把握",
+          "source": 0
+        },
+        {
+          "date": "2026-09-24",
+          "kind": "disclosed",
+          "text": "Bromcom のアカウントが EduGeek に投稿して公表し、顧客の学校へ通知（The Register の報道による）",
+          "source": 1
+        },
+        {
+          "date": "2026-10-27",
+          "kind": "updated",
+          "text": "FAQ を更新。旧コンポーネントは撤去済み。データ処理者の立場のため ICO への届出は各学校（管理者）の判断とする",
+          "source": 0
+        },
+        {
+          "date": "2026-11-23",
+          "kind": "updated",
+          "text": "HIBP が一意のメールアドレス 355,051 件を登録。件数は HIBP の集計で、Bromcom 自身は件数を公表していない",
+          "source": 2
+        }
+      ],
+      "keywords": [
+        "school-roster",
+        "saas",
+        "web-service"
+      ],
+      "created_at": "2026-11-24",
+      "updated_at": "2026-11-24"
     }
   ]
 }
