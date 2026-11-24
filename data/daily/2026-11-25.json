@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-25",
+  "generated_at": "2026-11-25T05:40:00+09:00",
+  "stats": {
+    "collected": 12,
+    "candidates": 4,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "タワーレコードの通販サイトが侵害され、ログイン情報 1,021 万件を含む約 1,100 万件の会員情報が流出。今月の国内事案で最大規模。",
+      "incidents": [
+        "2026-11-24-tower-records"
+      ]
+    },
+    {
+      "text": "読売巨人軍のファンクラブ「CLUB GIANTS」でメールアドレス約 80 万件が流出（11 月 13 日公表分を新規登録）。会員制サービスの大規模流出が続く。",
+      "incidents": [
+        "2026-11-13-yomiuri-giants"
+      ]
+    },
+    {
+      "text": "広島県の高校で修学旅行の引率中に、生徒の健康調査表や写真入り iPad を紛失。",
+      "incidents": [
+        "2026-11-24-hiroshima-pref"
+      ]
+    }
+  ],
+  "new": [
+    "2026-11-13-yomiuri-giants",
+    "2026-11-24-tower-records",
+    "2026-11-24-hiroshima-pref"
+  ],
+  "updated": [],
+  "skipped": [
+    {
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/24/214547",
+      "reason": "AI ペネトレーションテスト基盤 Cairn による攻撃活動のまとめで、被害組織名と漏えいの公表が無く事案として特定できない"
+    }
+  ]
+}

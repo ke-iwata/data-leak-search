@@ -1,4 +1,12 @@
 {
+ "https://www.security-next.com/193228": {
+  "incident": "2026-11-24-tower-records",
+  "at": "2026-11-24"
+ },
+ "https://www.security-next.com/192872": {
+  "incident": "2026-11-24-hiroshima-pref",
+  "at": "2026-11-24"
+ },
  "https://www.smbc.co.jp/news/pdf/j20261120_01.pdf": {
   "incident": "2026-11-13-plaid",
   "at": "2026-11-20"
@@ -62,6 +70,14 @@
  "https://piyolog.hatenadiary.jp/entry/2026/11/17/192656": {
   "incident": "2026-11-14-pocketchange",
   "at": "2026-11-17"
+ },
+ "https://www.security-next.com/192864": {
+  "incident": "2026-11-13-yomiuri-giants",
+  "at": "2026-11-24"
+ },
+ "https://news.web.nhk/newsweb/na/nd-20261113de75711": {
+  "incident": "2026-11-13-yomiuri-giants",
+  "at": "2026-11-13"
  },
  "https://news.web.nhk/newsweb/na/nd-20261113de75739": {
   "incident": "2026-11-13-yamada-denki",
@@ -970,5 +986,9 @@
  "https://haveibeenpwned.com/Breach/Careers360": {
   "skipped": "HIBP の記載も「allegedly」でハッキングフォーラム掲載のリーク主張。組織の公表を確認できず",
   "at": "2026-11-21"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/24/214547": {
+  "skipped": "AI ペネトレーションテスト基盤 Cairn による攻撃活動のまとめで、被害組織名と漏えいの公表が無く事案として特定できない",
+  "at": "2026-11-25"
  }
 }

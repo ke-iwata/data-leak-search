@@ -2934,6 +2934,215 @@
       ],
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "2026-11-13-yomiuri-giants",
+      "org": "yomiuri-giants",
+      "org_name": "株式会社読売巨人軍",
+      "org_aliases": [
+        "読売巨人軍",
+        "読売ジャイアンツ",
+        "巨人軍",
+        "CLUB GIANTS",
+        "giants.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "読売巨人軍 ファンクラブ会員システムへのサイバー攻撃で会員のメールアドレス約 80 万件が流出",
+      "summary": "公式ファンクラブ「CLUB GIANTS」の会員情報を管理するシステムが外部から繰り返し攻撃を受け、会員のメールアドレス 80 万 7,030 件が流出した。一部の会員は氏名・住所・電話番号・生年月日・性別、ハッシュ化されたパスワードも含まれる。不正利用の報告はないとしている。",
+      "cause": "unauthorized_access",
+      "vector": "会員情報管理システムへの外部からの繰り返しの攻撃（手口は未公表）",
+      "data_types": [
+        "email",
+        "name",
+        "address",
+        "phone",
+        "birthday",
+        "credential",
+        "other"
+      ],
+      "affected": 807030,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-11-12",
+      "detected_at": "2026-11-13",
+      "disclosed_at": "2026-11-13",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192864",
+          "published_at": "2026-11-24",
+          "title": "ファンクラブ会員の個人情報が流出 - 読売巨人"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "NHK",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261113de75711",
+          "published_at": "2026-11-13",
+          "title": "読売巨人軍 ファンクラブ会員のメールアドレス流出"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-12",
+          "kind": "occurred",
+          "text": "サーバ容量がひっ迫して会員システムにアクセスできなくなり、調査を開始",
+          "source": 0
+        },
+        {
+          "date": "2026-11-13",
+          "kind": "detected",
+          "text": "会員情報の流出が判明。攻撃を遮断し、個人情報保護委員会へ報告",
+          "source": 0
+        },
+        {
+          "date": "2026-11-13",
+          "kind": "disclosed",
+          "text": "会員のメールアドレス 80 万件あまりの流出を公表（NHK 報道による。球団の発表ページは確認できず）",
+          "source": 1
+        },
+        {
+          "date": "2026-11-24",
+          "kind": "updated",
+          "text": "氏名 16,998 件・住所 12,831 件・電話番号 15,434 件・生年月日 1,665 件・ハッシュ化パスワード 274 件など内訳が報じられる",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "member-info",
+        "web-service"
+      ],
+      "created_at": "2026-11-25",
+      "updated_at": "2026-11-25"
+    },
+    {
+      "id": "2026-11-24-tower-records",
+      "org": "tower-records",
+      "org_name": "タワーレコード株式会社",
+      "org_aliases": [
+        "タワーレコード",
+        "タワレコ",
+        "タワーレコードオンライン",
+        "TOWER RECORDS",
+        "tower.jp"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "タワーレコード 通販サイト「タワーレコードオンライン」の侵害で会員情報約 1,100 万件が流出",
+      "summary": "通販サイト「タワーレコードオンライン」が外部から侵害され、会員のログイン情報（メールアドレス・会員 ID・パスワードのハッシュ値）1,021 万 4,652 件などが流出した。会員属性（氏名・生年月日など）278 万件、配送先情報（氏名・住所・電話番号）77 万件を含み、全体で約 1,100 万件とされる。サービスを停止して調査中。",
+      "cause": "unauthorized_access",
+      "vector": "通販サイトへの外部からの侵害（手口は未公表）",
+      "data_types": [
+        "email",
+        "credential",
+        "name",
+        "birthday",
+        "address",
+        "phone",
+        "other"
+      ],
+      "affected": 10214652,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-11-19",
+      "disclosed_at": "2026-11-24",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/193228",
+          "published_at": "2026-11-24",
+          "title": "タワレコ通販サイト、顧客情報が流出"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-19",
+          "kind": "detected",
+          "text": "外部からの侵害を確認し、サービスを停止して緊急メンテナンスと調査を開始",
+          "source": 0
+        },
+        {
+          "date": "2026-11-24",
+          "kind": "disclosed",
+          "text": "約 1,100 万件の流出が報じられる。同社の発表は 11 月 21 日時点で二次被害未確認としているが、発表日と発表ページは確認できず、disclosed_at は報道日とした",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "ec-site",
+        "member-info",
+        "service-outage"
+      ],
+      "created_at": "2026-11-25",
+      "updated_at": "2026-11-25"
+    },
+    {
+      "id": "2026-11-24-hiroshima-pref",
+      "org": "hiroshima-pref",
+      "org_name": "広島県",
+      "org_aliases": [
+        "広島県教育委員会",
+        "広島県教委",
+        "pref.hiroshima.lg.jp"
+      ],
+      "industry": "education",
+      "country": "JP",
+      "title": "広島県 県立高校の修学旅行引率中に生徒の健康調査表など個人情報を紛失",
+      "summary": "県内の高校で修学旅行の引率中、教員のリュックサックが見つからなくなり、生徒 226 人分の氏名・保護者連絡先の書類、生徒 108 人分の病歴や服薬状況を記した健康調査表、生徒約 100 人分の写真が入った iPad、教職員 69 人分の緊急連絡網を紛失した。見つかっていない。",
+      "cause": "lost_device",
+      "vector": "新幹線のホームで待機中に書類と iPad を入れたリュックサックを紛失",
+      "data_types": [
+        "name",
+        "phone",
+        "health",
+        "other"
+      ],
+      "affected": 226,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-10-09",
+      "detected_at": "2026-10-09",
+      "disclosed_at": "2026-11-24",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192872",
+          "published_at": "2026-11-24",
+          "title": "高校の修学旅行引率中に生徒の個人情報を紛失 - 広島県"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-09",
+          "kind": "occurred",
+          "text": "修学旅行中、新幹線のホームで教員がリュックサックがないことに気付く。警察や鉄道会社に問い合わせたが未発見",
+          "source": 0
+        },
+        {
+          "date": "2026-11-24",
+          "kind": "disclosed",
+          "text": "県が公表（報道日。県の発表ページは確認できず）。学校は生徒に謝罪し保護者説明会を開催。件数は生徒 226 人（教職員 69 人は別）",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "lost-media",
+        "school-roster",
+        "health-info"
+      ],
+      "created_at": "2026-11-25",
+      "updated_at": "2026-11-25"
     }
   ]
 }

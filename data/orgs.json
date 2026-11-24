@@ -1561,6 +1561,24 @@
   "last": "2026-11-12",
   "affected_total": 0
  },
+ "yomiuri-giants": {
+  "name": "株式会社読売巨人軍",
+  "aliases": [
+   "読売巨人軍",
+   "読売ジャイアンツ",
+   "巨人軍",
+   "CLUB GIANTS",
+   "giants.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-11-13-yomiuri-giants"
+  ],
+  "first": "2026-11-13",
+  "last": "2026-11-13",
+  "affected_total": 807030
+ },
  "yamada-denki": {
   "name": "株式会社ヤマダデンキ",
   "aliases": [
@@ -1761,5 +1779,39 @@
   "first": "2026-11-20",
   "last": "2026-11-20",
   "affected_total": 0
+ },
+ "tower-records": {
+  "name": "タワーレコード株式会社",
+  "aliases": [
+   "タワーレコード",
+   "タワレコ",
+   "タワーレコードオンライン",
+   "TOWER RECORDS",
+   "tower.jp"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-11-24-tower-records"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24",
+  "affected_total": 10214652
+ },
+ "hiroshima-pref": {
+  "name": "広島県",
+  "aliases": [
+   "広島県教育委員会",
+   "広島県教委",
+   "pref.hiroshima.lg.jp"
+  ],
+  "industry": "education",
+  "country": "JP",
+  "incidents": [
+   "2026-11-24-hiroshima-pref"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24",
+  "affected_total": 226
  }
 }
