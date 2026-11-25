@@ -1751,6 +1751,14 @@
           "url": "https://www.smbc.co.jp/news/pdf/j20261120_01.pdf",
           "published_at": "2026-11-20",
           "title": "業務委託先への不正アクセスによる情報漏えいについて"
+        },
+        {
+          "role": "secondary",
+          "trust": "official",
+          "publisher": "株式会社ディーエイチシー",
+          "url": "https://dhc-corporate.co.jp/cms_dH8vjpRq/wp-content/uploads/2026/11/2d7a589cb5008fbc262624582782444f.pdf",
+          "published_at": "2026-11-18",
+          "title": "外部サービス「KARTE」への不正アクセスに伴うお客様情報漏えいに関するお詫びとお知らせ"
         }
       ],
       "timeline": [
@@ -1785,6 +1793,12 @@
           "source": 2
         },
         {
+          "date": "2026-11-18",
+          "kind": "updated",
+          "text": "利用企業の DHC が顧客の氏名・メールアドレス・生年月日など約 1,911 万件の漏えいを公表（別事案 2026-11-18-dhc として登録）。事案全体の影響人数（アカウントのメールアドレス 79,249 件）は変更なし",
+          "source": 5
+        },
+        {
           "date": "2026-11-19",
           "kind": "updated",
           "text": "利用企業のコーセーが ADDICTION ブランドサイト会員 139,990 人分の氏名（かな）の漏えいを公表。事案全体の影響人数（アカウントのメールアドレス 79,249 件）は変更なし",
@@ -1804,7 +1818,7 @@
         "credential-theft"
       ],
       "created_at": "2026-11-18",
-      "updated_at": "2026-11-21"
+      "updated_at": "2026-11-26"
     },
     {
       "id": "2026-11-14-pocketchange",
@@ -3143,6 +3157,138 @@
       ],
       "created_at": "2026-11-25",
       "updated_at": "2026-11-25"
+    },
+    {
+      "id": "2026-11-18-dhc",
+      "org": "dhc",
+      "org_name": "株式会社ディーエイチシー",
+      "org_aliases": [
+        "ディーエイチシー",
+        "DHC",
+        "DHCオンラインショップ",
+        "dhc.co.jp",
+        "dhc-corporate.co.jp"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "株式会社ディーエイチシー 外部サービス「KARTE」への不正アクセスによる顧客情報約 1,911 万件の漏えい",
+      "summary": "利用しているプレイドの「KARTE」が不正アクセスを受け、DHC が連携していた顧客の氏名・メールアドレス・生年月日・年齢・性別・会員 ID・メルマガ配信設定が約 1,911 万件漏えいした。ログインパスワードとカード情報は含まれず、二次被害は確認されていない。",
+      "cause": "unauthorized_access",
+      "vector": "委託先プレイドの KARTE サーバーへの不正アクセス",
+      "data_types": [
+        "name",
+        "email",
+        "birthday",
+        "other"
+      ],
+      "affected": 19110000,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-11-13",
+      "detected_at": "2026-11-13",
+      "disclosed_at": "2026-11-18",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ディーエイチシー",
+          "url": "https://dhc-corporate.co.jp/cms_dH8vjpRq/wp-content/uploads/2026/11/2d7a589cb5008fbc262624582782444f.pdf",
+          "published_at": "2026-11-18",
+          "title": "外部サービス「KARTE」への不正アクセスに伴うお客様情報漏えいに関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "ネットショップ担当者フォーラム",
+          "url": "https://netshop.impress.co.jp/n/2026/11/19/17067",
+          "published_at": "2026-11-19",
+          "title": "DHC、しまむら、ワールド、JINS、RIZAPなどで顧客情報が漏えい。マーケプラットフォーム「KARTE」への不正アクセスの影響で"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-13",
+          "kind": "detected",
+          "text": "プレイドから KARTE への不正アクセス発生の連絡を受け、連携用の認証情報を無効化",
+          "source": 0
+        },
+        {
+          "date": "2026-11-18",
+          "kind": "disclosed",
+          "text": "約 1,911 万件の漏えいを公表。プレイドと連名で個人情報保護委員会へ報告予定。対象者には個別に連絡予定",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "supply-chain",
+        "saas",
+        "member-info"
+      ],
+      "created_at": "2026-11-26",
+      "updated_at": "2026-11-26"
+    },
+    {
+      "id": "2026-11-20-mcdonalds-japan",
+      "org": "mcdonalds-japan",
+      "org_name": "日本マクドナルド株式会社",
+      "org_aliases": [
+        "日本マクドナルド",
+        "マクドナルド",
+        "マクドナルド公式アプリ",
+        "McDonald's Japan",
+        "mcdonalds.co.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "日本マクドナルド 公式アプリのデータベースへの不正アクセス",
+      "summary": "公式アプリのデータベースが不正アクセスを受け、商品購入履歴、内部用の顧客管理 ID、IP アドレス、サービス利用時の端末の位置情報が対象となった。氏名・メールアドレス・電話番号・住所・カード情報は含まれず、件数は公表されていない。",
+      "cause": "unauthorized_access",
+      "vector": "認証情報を使った不正アクセス（詳細は非公表）",
+      "data_types": [
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": null,
+      "disclosed_at": "2026-11-20",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "日本マクドナルド株式会社",
+          "url": "https://www.mcdonalds.co.jp/company/info/261120a/",
+          "published_at": "2026-11-20",
+          "title": "マクドナルド公式アプリのデータベースへの不正アクセスに関するお知らせとお詫び"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/193232",
+          "published_at": "2026-11-25",
+          "title": "アプリの顧客情報DBに不正アクセス - マクドナルド"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-20",
+          "kind": "disclosed",
+          "text": "公式アプリ DB への不正アクセスを公表。使用された認証情報を無効化し、個人情報保護委員会へ報告。関連システムを調査中で、件数や外部流出の有無は未公表",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "mobile-app",
+        "order-history",
+        "food-service",
+        "credential-theft"
+      ],
+      "created_at": "2026-11-26",
+      "updated_at": "2026-11-26"
     }
   ]
 }

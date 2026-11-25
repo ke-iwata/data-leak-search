@@ -11,6 +11,14 @@
   "incident": "2026-11-13-plaid",
   "at": "2026-11-20"
  },
+ "https://www.mcdonalds.co.jp/company/info/261120a": {
+  "incident": "2026-11-20-mcdonalds-japan",
+  "at": "2026-11-20"
+ },
+ "https://www.security-next.com/193232": {
+  "incident": "2026-11-20-mcdonalds-japan",
+  "at": "2026-11-25"
+ },
  "https://www.digital.go.jp/press/a966ee61-478c-4194-8f13-f97599fae986": {
   "incident": "2026-11-20-digital-agency",
   "at": "2026-11-20"
@@ -33,6 +41,14 @@
  },
  "https://www.security-next.com/193088": {
   "incident": "2026-11-18-osaki-electric",
+  "at": "2026-11-19"
+ },
+ "https://dhc-corporate.co.jp/cms_dH8vjpRq/wp-content/uploads/2026/11/2d7a589cb5008fbc262624582782444f.pdf": {
+  "incident": "2026-11-13-plaid",
+  "at": "2026-11-18"
+ },
+ "https://netshop.impress.co.jp/n/2026/11/19/17067": {
+  "incident": "2026-11-18-dhc",
   "at": "2026-11-19"
  },
  "https://www.rakuten-sec.co.jp/web/info/info20261117-02.html": {
@@ -338,6 +354,10 @@
  "https://piyolog.hatenadiary.jp/entry/2026/11/04/132901": {
   "incident": "2026-10-30-mofa",
   "at": "2026-11-04"
+ },
+ "https://www.security-next.com/193316": {
+  "incident": "2026-10-30-dhc",
+  "at": "2026-11-25"
  },
  "https://nttse.com/news/pressrelease/2026/10-30/3288": {
   "incident": "2026-10-29-ntt-smile-energy",
@@ -803,6 +823,14 @@
   "incident": "2026-09-29-fukuoka-pref",
   "at": "2026-11-05"
  },
+ "https://www.keio.co.jp/news/update/news_release/news_release2026/pdf/nr20261124_newsrelease.pdf": {
+  "incident": "2026-09-26-keio",
+  "at": "2026-11-24"
+ },
+ "https://www.security-next.com/193305": {
+  "incident": "2026-09-26-keio",
+  "at": "2026-11-25"
+ },
  "https://docs.bromcom.com/knowledge-base/sso-personal-data-breach-faqs": {
   "incident": "2026-09-24-bromcom",
   "at": "2026-10-27"
@@ -990,5 +1018,9 @@
  "https://piyolog.hatenadiary.jp/entry/2026/11/24/214547": {
   "skipped": "AI ペネトレーションテスト基盤 Cairn による攻撃活動のまとめで、被害組織名と漏えいの公表が無く事案として特定できない",
   "at": "2026-11-25"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/25/120114": {
+  "skipped": "米 CIA・ODNI の非機密システム侵害は匿名関係者の話に基づく報道で、組織の公表がなく漏えいした情報の内容も不明",
+  "at": "2026-11-26"
  }
 }

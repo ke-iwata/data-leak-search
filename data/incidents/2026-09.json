@@ -689,6 +689,87 @@
       ],
       "created_at": "2026-11-24",
       "updated_at": "2026-11-24"
+    },
+    {
+      "id": "2026-09-26-keio",
+      "org": "keio",
+      "org_name": "京王電鉄株式会社",
+      "org_aliases": [
+        "京王電鉄",
+        "京王グループ",
+        "京王",
+        "Keio Corporation",
+        "keio.co.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "京王電鉄 ランサムウェア攻撃によるグループの顧客・従業員情報の漏えい",
+      "summary": "グループのネットワークがランサムウェア攻撃を受け、賃貸物件契約者・採用応募者・従業員などの個人情報の漏えいを確認した。さらにグループの顧客や取引先など約 1,063 万人分の情報が漏えいした可能性があり、一部にマイナンバー、パスポートの写しや番号、クレジットカード番号、本人確認書類を含む。",
+      "cause": "ransomware",
+      "vector": null,
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "email",
+        "mynumber",
+        "card",
+        "internal_doc",
+        "other"
+      ],
+      "affected": 10630000,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-09-26",
+      "detected_at": "2026-09-26",
+      "disclosed_at": "2026-09-26",
+      "status": "reported",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "京王電鉄株式会社",
+          "url": "https://www.keio.co.jp/news/update/news_release/news_release2026/pdf/nr20261124_newsrelease.pdf",
+          "published_at": "2026-11-24",
+          "title": "ランサムウェア攻撃による個人情報漏洩に関するお知らせとお詫び"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/193305",
+          "published_at": "2026-11-25",
+          "title": "ランサム攻撃で個人情報流出、パスポート写しも - 京王電鉄"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-26",
+          "kind": "detected",
+          "text": "グループのネットワークへのランサムウェア攻撃を検知し、ネットワークを遮断。個人情報保護委員会へ速報を提出",
+          "source": 0
+        },
+        {
+          "date": "2026-09-26",
+          "kind": "disclosed",
+          "text": "攻撃を受けたことを公表（報道による。当時は漏えいの有無を調査中）。グループのホテル予約や決済・ポイントなど営業システムに障害",
+          "source": null
+        },
+        {
+          "date": "2026-11-24",
+          "kind": "report_filed",
+          "text": "個人情報保護委員会へ確報を提出し調査結果を公表。漏えい確認は賃貸契約者など約 150 人、採用応募者約 160 人、従業員・退職者と扶養家族約 1.2 万人。漏えいの可能性は顧客・取引先など約 1,063 万人、採用応募者約 36 万人、従業員など約 7.7 万人（区分間に重複あり）。二次被害は未確認",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "member-info",
+        "employee-info",
+        "travel",
+        "network-intrusion"
+      ],
+      "created_at": "2026-11-26",
+      "updated_at": "2026-11-26"
     }
   ]
 }

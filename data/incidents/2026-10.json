@@ -4590,6 +4590,68 @@
       ],
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "2026-10-30-dhc",
+      "org": "dhc",
+      "org_name": "株式会社ディーエイチシー",
+      "org_aliases": [
+        "ディーエイチシー",
+        "DHC",
+        "DHCオンラインショップ",
+        "dhc.co.jp",
+        "dhc-corporate.co.jp"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "株式会社ディーエイチシー オンラインショップへの不正アクセスによる会員情報の改ざん",
+      "summary": "公式オンラインショップが脆弱性を突かれて不正アクセスを受け、5,096 アカウントの会員情報が書き換えられたほか、不審な注文 27 件と不正な新規会員登録 71 件が発生した。会員番号、届け先の氏名・住所・電話番号、購入履歴、カード番号下 4 桁が閲覧された可能性がある。",
+      "cause": "unauthorized_access",
+      "vector": "オンラインショップの脆弱性を悪用（詳細は非公表）",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "other"
+      ],
+      "affected": 5096,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-10-28",
+      "disclosed_at": "2026-10-30",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/193316",
+          "published_at": "2026-11-25",
+          "title": "通販サイトに不正アクセス、会員情報改ざんや不正注文も - DHC"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-28",
+          "kind": "detected",
+          "text": "オンラインショップへの不正アクセスを確認し、アクセス元からの通信を遮断",
+          "source": 0
+        },
+        {
+          "date": "2026-10-30",
+          "kind": "disclosed",
+          "text": "会員情報の改ざん 5,096 アカウント、不審な注文 27 件、不正な新規会員登録 71 件（10 月 30 日時点）を公表（公表日は報道による。同社の発表ページは確認できず）。脆弱性を修正し会員情報を復元、個人情報保護委員会へ報告",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "ec-site",
+        "account-takeover",
+        "member-info"
+      ],
+      "created_at": "2026-11-26",
+      "updated_at": "2026-11-26"
     }
   ]
 }

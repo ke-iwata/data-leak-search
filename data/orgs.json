@@ -127,6 +127,24 @@
   "last": "2026-09-24",
   "affected_total": 355051
  },
+ "keio": {
+  "name": "京王電鉄株式会社",
+  "aliases": [
+   "京王電鉄",
+   "京王グループ",
+   "京王",
+   "Keio Corporation",
+   "keio.co.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-09-26-keio"
+  ],
+  "first": "2026-09-26",
+  "last": "2026-09-26",
+  "affected_total": 10630000
+ },
  "yamato-transport": {
   "name": "ヤマト運輸株式会社",
   "aliases": [
@@ -1127,6 +1145,25 @@
   "last": "2026-10-30",
   "affected_total": 3600
  },
+ "dhc": {
+  "name": "株式会社ディーエイチシー",
+  "aliases": [
+   "ディーエイチシー",
+   "DHC",
+   "DHCオンラインショップ",
+   "dhc.co.jp",
+   "dhc-corporate.co.jp"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-11-18-dhc",
+   "2026-10-30-dhc"
+  ],
+  "first": "2026-10-30",
+  "last": "2026-11-18",
+  "affected_total": 19115096
+ },
  "club-tourism": {
   "name": "クラブツーリズム株式会社",
   "aliases": [
@@ -1762,6 +1799,24 @@
   "first": "2026-11-20",
   "last": "2026-11-20",
   "affected_total": 14000000
+ },
+ "mcdonalds-japan": {
+  "name": "日本マクドナルド株式会社",
+  "aliases": [
+   "日本マクドナルド",
+   "マクドナルド",
+   "マクドナルド公式アプリ",
+   "McDonald's Japan",
+   "mcdonalds.co.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-11-20-mcdonalds-japan"
+  ],
+  "first": "2026-11-20",
+  "last": "2026-11-20",
+  "affected_total": 0
  },
  "digital-agency": {
   "name": "デジタル庁",
