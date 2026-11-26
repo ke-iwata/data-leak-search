@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-27",
+  "generated_at": "2026-11-27T05:40:00+09:00",
+  "stats": {
+    "collected": 16,
+    "candidates": 8,
+    "sources_ok": 7,
+    "sources_total": 7,
+    "failed_sources": [],
+    "skipped_count": 0
+  },
+  "digest": [
+    {
+      "text": "カタログギフトのリンベルで公式オンラインストアに不正アクセス。会員約 72 万人・非会員約 177 万人の個人情報が漏えいした可能性があり、受託する東京都「赤ちゃんファースト」の QUO カード Pay が使えなくなる事象も起きた（関係は調査中）。",
+      "incidents": [
+        "2026-11-19-ringbell"
+      ]
+    },
+    {
+      "text": "1Password が従業員の GitHub アカウント侵害を公表。CI/CD やバックエンドに侵入され一部利用者のアカウント記録が取得されたが、保管庫の中身や鍵は影響なしとしている。",
+      "incidents": [
+        "2026-11-25-1password"
+      ]
+    },
+    {
+      "text": "歯科人材マッチング「ハノワ」でクラウド設定不備により最大約 4.8 万人分の情報と約 1 万人分の本人確認書類画像が閲覧可能だった。富士ユナイト HD もサーバ侵入でデータ流出を公表。",
+      "incidents": [
+        "2026-11-26-hanowa",
+        "2026-11-26-fuji-united-hd"
+      ]
+    }
+  ],
+  "new": [
+    "2026-11-19-ringbell",
+    "2026-11-25-1password",
+    "2026-11-26-hanowa",
+    "2026-11-26-fuji-united-hd"
+  ],
+  "updated": [],
+  "skipped": [
+    {
+      "url": "https://www.security-next.com/193365",
+      "reason": "フィッシングの注意喚起で事案ではない"
+    }
+  ]
+}

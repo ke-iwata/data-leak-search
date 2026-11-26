@@ -1782,6 +1782,23 @@
   "last": "2026-11-19",
   "affected_total": 75505
  },
+ "ringbell": {
+  "name": "リンベル株式会社",
+  "aliases": [
+   "リンベル",
+   "リンベル公式オンラインストア",
+   "Ringbell",
+   "catalog-gift.net"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-11-19-ringbell"
+  ],
+  "first": "2026-11-19",
+  "last": "2026-11-19",
+  "affected_total": 2490000
+ },
  "smbc": {
   "name": "株式会社三井住友銀行",
   "aliases": [
@@ -1868,5 +1885,54 @@
   "first": "2026-11-24",
   "last": "2026-11-24",
   "affected_total": 226
+ },
+ "1password": {
+  "name": "1Password",
+  "aliases": [
+   "AgileBits",
+   "1password.com"
+  ],
+  "industry": "it",
+  "country": "CA",
+  "incidents": [
+   "2026-11-25-1password"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25",
+  "affected_total": 0
+ },
+ "hanowa": {
+  "name": "株式会社HANOWA",
+  "aliases": [
+   "ハノワ",
+   "HANOWA",
+   "hanowa.co.jp"
+  ],
+  "industry": "service",
+  "country": "JP",
+  "incidents": [
+   "2026-11-26-hanowa"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26",
+  "affected_total": 47683
+ },
+ "fuji-united-hd": {
+  "name": "富士ユナイトホールディングス株式会社",
+  "aliases": [
+   "富士ユナイトホールディングス",
+   "富士ユナイトHD",
+   "富士興産",
+   "FUJI UNITED HOLDINGS",
+   "fujiunited.com"
+  ],
+  "industry": "manufacturing",
+  "country": "JP",
+  "incidents": [
+   "2026-11-26-fuji-united-hd"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26",
+  "affected_total": 0
  }
 }

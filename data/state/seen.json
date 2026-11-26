@@ -1,4 +1,20 @@
 {
+ "https://www.security-next.com/192812": {
+  "incident": "2026-11-26-hanowa",
+  "at": "2026-11-26"
+ },
+ "https://www.security-next.com/193313": {
+  "incident": "2026-11-26-fuji-united-hd",
+  "at": "2026-11-26"
+ },
+ "https://1password.com/blog/update-on-nov-2026-security-incident": {
+  "incident": "2026-11-25-1password",
+  "at": "2026-11-25"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/26/153937": {
+  "incident": "2026-11-25-1password",
+  "at": "2026-11-26"
+ },
  "https://www.security-next.com/193228": {
   "incident": "2026-11-24-tower-records",
   "at": "2026-11-24"
@@ -34,6 +50,14 @@
  "https://piyolog.hatenadiary.jp/entry/2026/11/20/130214": {
   "incident": "2026-11-18-iwamizawa-city",
   "at": "2026-11-20"
+ },
+ "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026112507": {
+  "incident": "2026-11-19-ringbell",
+  "at": "2026-11-25"
+ },
+ "https://piyolog.hatenadiary.jp/entry/2026/11/27/004031": {
+  "incident": "2026-11-19-ringbell",
+  "at": "2026-11-27"
  },
  "https://www.osaki.co.jp/ja/notice/20261118.html": {
   "incident": "2026-11-18-osaki-electric",
@@ -1022,5 +1046,9 @@
  "https://piyolog.hatenadiary.jp/entry/2026/11/25/120114": {
   "skipped": "米 CIA・ODNI の非機密システム侵害は匿名関係者の話に基づく報道で、組織の公表がなく漏えいした情報の内容も不明",
   "at": "2026-11-26"
+ },
+ "https://www.security-next.com/193365": {
+  "skipped": "フィッシングの注意喚起で事案ではない",
+  "at": "2026-11-27"
  }
 }

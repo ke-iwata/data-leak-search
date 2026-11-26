@@ -3289,6 +3289,282 @@
       ],
       "created_at": "2026-11-26",
       "updated_at": "2026-11-26"
+    },
+    {
+      "id": "2026-11-19-ringbell",
+      "org": "ringbell",
+      "org_name": "リンベル株式会社",
+      "org_aliases": [
+        "リンベル",
+        "リンベル公式オンラインストア",
+        "Ringbell",
+        "catalog-gift.net"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "リンベル 公式オンラインストアへの不正アクセスによる個人情報漏えいの可能性",
+      "summary": "カタログギフト大手のオンラインストアのサーバーが不正アクセスを受け、退会者を含む会員約 72 万人と非会員（購入者・お届け先）約 177 万人の個人情報が漏えいした可能性。同社はカード情報を保持していない。同社が東京都から受託する「赤ちゃんファースト」ポイント交換サイトも停止し、交換済み QUO カード Pay が使えなくなる事象が起きたが、都は不正アクセスとの関係を調査中としている。",
+      "cause": "unauthorized_access",
+      "vector": "オンラインストアのサーバーへの外部からの不正アクセス（手口は調査中）",
+      "data_types": [
+        "other"
+      ],
+      "affected": 2490000,
+      "affected_is_estimate": true,
+      "occurred_at": "2026-11-11",
+      "detected_at": "2026-11-12",
+      "disclosed_at": "2026-11-19",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "authority",
+          "publisher": "東京都 福祉局",
+          "url": "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026112507",
+          "published_at": "2026-11-25",
+          "title": "赤ちゃんファースト事業で交換したＱＵＯカードＰａｙが使用できない事象について"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/27/004031",
+          "published_at": "2026-11-27",
+          "title": "東京都「赤ちゃんファースト」で交換したQUOカードPayが使えなくなった件についてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-11",
+          "kind": "occurred",
+          "text": "公式オンラインストアに不正アクセスが発生",
+          "source": 1
+        },
+        {
+          "date": "2026-11-12",
+          "kind": "detected",
+          "text": "不正アクセスを確認し、サイトを一時停止してサーバーをネットワークから隔離",
+          "source": 1
+        },
+        {
+          "date": "2026-11-19",
+          "kind": "disclosed",
+          "text": "不正アクセスを公表。東京都は受託先の赤ちゃんファーストポイント交換サイトの一時閉鎖を公表",
+          "source": 0
+        },
+        {
+          "date": "2026-11-20",
+          "kind": "updated",
+          "text": "第 2 報で会員約 72 万人・非会員約 177 万人の個人情報が漏えいした可能性を公表（合計約 249 万人として記録。重複の有無は未確認）",
+          "source": 1
+        },
+        {
+          "date": "2026-11-25",
+          "kind": "updated",
+          "text": "東京都が交換済み QUO カード Pay の使用不能・残高減少を公表。不足分のデジタルコードを再発行。個人情報の不正閲覧・漏えいは都の発表時点で確認されていないとし、不正アクセスとの関係は調査中",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "ec-site",
+        "member-info",
+        "contractor",
+        "point-service"
+      ],
+      "created_at": "2026-11-27",
+      "updated_at": "2026-11-27"
+    },
+    {
+      "id": "2026-11-25-1password",
+      "org": "1password",
+      "org_name": "1Password",
+      "org_aliases": [
+        "AgileBits",
+        "1password.com"
+      ],
+      "industry": "it",
+      "country": "CA",
+      "title": "1Password 従業員の GitHub アカウント侵害によるバックエンドからの顧客アカウント情報取得",
+      "summary": "従業員の業務用 GitHub アカウントが侵害され、ソースコードの複製、バックエンドへの悪意あるコードの push、CI/CD への侵入が行われた。一部利用者のアカウント記録（氏名、メールアドレス、ID、公開鍵、SRP パラメータ、招待・復旧メールのトークンなど）が取得された。保管庫の中身や暗号鍵、Secret Key は影響を受けていないとしている。",
+      "cause": "unauthorized_access",
+      "vector": "従業員の業務用 GitHub アカウントの侵害（認証情報の入手経路は非公表）",
+      "data_types": [
+        "name",
+        "email",
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-11-19",
+      "disclosed_at": "2026-11-25",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "1Password",
+          "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+          "published_at": "2026-11-25",
+          "title": "Update on a security incident involving 1Password's backend systems."
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/26/153937",
+          "published_at": "2026-11-26",
+          "title": "1Passwordへの不正アクセスについてまとめてみた"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-19",
+          "kind": "detected",
+          "text": "従業員の GitHub アカウントへの不正アクセスの兆候を受けて調査を開始",
+          "source": 0
+        },
+        {
+          "date": "2026-11-25",
+          "kind": "disclosed",
+          "text": "公式ブログで公表（現地時間）。侵害アカウントの無効化、トークン失効、認証情報のローテーション、招待・復旧コードの桁数拡大を実施。影響件数は「一部の利用者」とのみ説明し、外部専門家と調査を継続",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "source-code-repository",
+        "supply-chain",
+        "credential-theft",
+        "saas"
+      ],
+      "created_at": "2026-11-27",
+      "updated_at": "2026-11-27"
+    },
+    {
+      "id": "2026-11-26-hanowa",
+      "org": "hanowa",
+      "org_name": "株式会社HANOWA",
+      "org_aliases": [
+        "ハノワ",
+        "HANOWA",
+        "hanowa.co.jp"
+      ],
+      "industry": "service",
+      "country": "JP",
+      "title": "HANOWA 歯科人材マッチング「ハノワ」のクラウド設定不備による個人情報の閲覧可能状態",
+      "summary": "歯科医療人材マッチングサービスで、クラウドの閲覧制限の設定に不備があり、登録者の氏名・メールアドレス・医院名など最大 47,683 人分と、本人確認書類・免許証・口座確認書類の画像最大 10,311 人分が第三者から閲覧可能だった。2020 年 6 月以降はログインしていなくても一定の操作で閲覧できた。",
+      "cause": "other",
+      "vector": "クラウド上の保存領域の閲覧制限設定の不備",
+      "data_types": [
+        "name",
+        "email",
+        "bank",
+        "other"
+      ],
+      "affected": 47683,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-10-14",
+      "disclosed_at": "2026-11-26",
+      "status": "disclosed",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/192812",
+          "published_at": "2026-11-26",
+          "title": "歯科医療人材マッチングサービスで設定ミス - 個人情報が閲覧可能に"
+        }
+      ],
+      "timeline": [
+        {
+          "date": null,
+          "kind": "occurred",
+          "text": "2019 年 6 月からログイン中の他の利用者が閲覧可能な状態に。2020 年 6 月 18 日以降はログインなしでも閲覧可能に",
+          "source": 0
+        },
+        {
+          "date": "2026-10-14",
+          "kind": "detected",
+          "text": "社内点検で判明。10 月 16 日まで閲覧可能な状態が続いた",
+          "source": 0
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "disclosed",
+          "text": "Security NEXT が報道。組織の発表ページは確認できず、disclosed_at は報道日で記録（検索結果では 10 月 19 日に発表したとの記載があるが本文未確認）",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "cloud-storage",
+        "web-misconfiguration",
+        "member-info",
+        "web-service"
+      ],
+      "created_at": "2026-11-27",
+      "updated_at": "2026-11-27"
+    },
+    {
+      "id": "2026-11-26-fuji-united-hd",
+      "org": "fuji-united-hd",
+      "org_name": "富士ユナイトホールディングス株式会社",
+      "org_aliases": [
+        "富士ユナイトホールディングス",
+        "富士ユナイトHD",
+        "富士興産",
+        "FUJI UNITED HOLDINGS",
+        "fujiunited.com"
+      ],
+      "industry": "manufacturing",
+      "country": "JP",
+      "title": "富士ユナイトホールディングス サーバへの不正アクセスによる個人情報を含むデータの流出",
+      "summary": "同社と子会社の富士興産が運用するサーバに第三者がアクセスし、保管されていた個人情報を含むデータの一部が外部に流出した。同じサーバ上の他の個人情報も流出した可能性があり、件数やデータ項目は公表されていない。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "other"
+      ],
+      "affected": null,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-11-05",
+      "disclosed_at": "2026-11-26",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/193313",
+          "published_at": "2026-11-26",
+          "title": "個人情報含むデータが外部に流出 - 富士ユナイトHD"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-05",
+          "kind": "detected",
+          "text": "サーバの異常を検知して調査し、第三者のアクセスが判明",
+          "source": 0
+        },
+        {
+          "date": "2026-11-26",
+          "kind": "disclosed",
+          "text": "個人情報を含むデータの流出を公表（報道日で記録。組織の発表ページは未確認）。侵入経路を遮断し、外部の協力で調査継続、対象者に個別通知予定",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "network-intrusion"
+      ],
+      "created_at": "2026-11-27",
+      "updated_at": "2026-11-27"
     }
   ]
 }
