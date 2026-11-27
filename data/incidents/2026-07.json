@@ -1,0 +1,118 @@
+{
+  "month": "2026-07",
+  "incidents": [
+    {
+      "id": "2026-07-08-weleda-japan",
+      "org": "weleda-japan",
+      "org_name": "株式会社ヴェレダ・ジャパン",
+      "org_aliases": [
+        "ヴェレダ・ジャパン",
+        "ヴェレダ",
+        "WELEDA",
+        "ヴェレダ 公式オンラインショップ",
+        "weleda.jp"
+      ],
+      "industry": "retail",
+      "country": "JP",
+      "title": "ヴェレダ・ジャパン 公式オンラインショップへの不正アクセスによる個人情報・カード情報の漏えい",
+      "summary": "化粧品通販「ヴェレダ 公式オンラインショップ」がシステムの脆弱性を突かれて改ざんされ、2021年10月から2026年6月までの利用者の個人情報 198,792 件とクレジットカード情報 45,689 件が漏えいした可能性がある。カード情報にはセキュリティコードが含まれる。サイトは停止中で、2027年3月頃の再開を目指すとしている。",
+      "cause": "unauthorized_access",
+      "vector": "サイトのシステムの一部の脆弱性を突かれ、第三者に改ざんされた",
+      "data_types": [
+        "name",
+        "address",
+        "email",
+        "phone",
+        "birthday",
+        "card",
+        "other"
+      ],
+      "affected": 198792,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-06-30",
+      "disclosed_at": "2026-07-08",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ヴェレダ・ジャパン",
+          "url": "https://weleda-notice-static-apne1.s3.ap-northeast-1.amazonaws.com/news/20261116.html",
+          "published_at": "2026-11-24",
+          "title": "弊社が運営する「ヴェレダ 公式オンラインショップ」への不正アクセスによる情報漏えいに関するお詫びとお知らせ"
+        },
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "株式会社ヴェレダ・ジャパン",
+          "url": "https://www.weleda.jp/news_20260703",
+          "published_at": null,
+          "title": "不正アクセスによるシステム侵害発生のお詫びとヴェレダ公式オンラインショップサービス一時停止のお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/07/27/55784.html",
+          "published_at": "2026-07-27",
+          "title": "ヴェレダ・ジャパン、公式オンラインショップへの不正アクセスを発表 個人情報流出の懸念でカード決済を一時停止"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/193310",
+          "published_at": "2026-11-27",
+          "title": "化粧品通販サイトに不正アクセス - 個人情報流出の可能性"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-30",
+          "kind": "detected",
+          "text": "警視庁から不正アクセスの可能性について連絡を受ける",
+          "source": 0
+        },
+        {
+          "date": "2026-07-03",
+          "kind": "updated",
+          "text": "サイトでのカード決済を停止し、個人情報保護委員会へ報告（以後複数回）",
+          "source": 0
+        },
+        {
+          "date": "2026-07-08",
+          "kind": "disclosed",
+          "text": "システム侵害の発生とカード決済の一時停止を公表（日付は報道による）",
+          "source": 2
+        },
+        {
+          "date": "2026-08-19",
+          "kind": "updated",
+          "text": "個人情報の流出が懸念されたためサイト全体を一時停止",
+          "source": 0
+        },
+        {
+          "date": "2026-08-29",
+          "kind": "updated",
+          "text": "調査機関の調査が完了し、2021年10月1日〜2026年6月30日の利用者の会員データとカード情報を漏えい懸念対象と結論",
+          "source": 0
+        },
+        {
+          "date": "2026-11-24",
+          "kind": "updated",
+          "text": "個人情報 198,792 件・カード情報 45,689 件が漏えいした可能性を公表し、対象者へ個別連絡を開始。2027年3月頃のサイト再開を目指す",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "ec-site",
+        "payment-skimming",
+        "member-info"
+      ],
+      "created_at": "2026-11-28",
+      "updated_at": "2026-11-28"
+    }
+  ]
+}

@@ -3565,6 +3565,234 @@
       ],
       "created_at": "2026-11-27",
       "updated_at": "2026-11-27"
+    },
+    {
+      "id": "2026-11-05-tokio-marine-direct",
+      "org": "tokio-marine-direct",
+      "org_name": "東京海上ダイレクト損害保険株式会社",
+      "org_aliases": [
+        "東京海上ダイレクト損害保険",
+        "東京海上ダイレクト",
+        "イーデザイン損保",
+        "ドコモの自動車保険",
+        "e-design.net"
+      ],
+      "industry": "finance",
+      "country": "JP",
+      "title": "東京海上ダイレクト損害保険 契約者向けマイページへの不正アクセスによる個人情報の漏えい",
+      "summary": "契約者向け「マイページ」と同社アプリが不正アクセスを受け、契約 71 件に関わる関係者を含む 93 人分の個人情報が漏えいした。氏名・連絡先・生年月日のほか、車両情報、保険契約内容、事故関連情報、カード番号下 4 桁などが含まれる。経路となった接続先サービスとの接続を止め、Web での手続きを一時停止している。",
+      "cause": "unauthorized_access",
+      "vector": "同社が接続していたサービスが不正アクセスの経路として利用された（詳細は調査中）",
+      "data_types": [
+        "name",
+        "address",
+        "phone",
+        "birthday",
+        "email",
+        "card",
+        "other"
+      ],
+      "affected": 93,
+      "affected_is_estimate": false,
+      "occurred_at": null,
+      "detected_at": "2026-11-04",
+      "disclosed_at": "2026-11-05",
+      "status": "investigating",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "東京海上ダイレクト損害保険株式会社",
+          "url": "https://www.e-design.net/company/news/2026/2026_11_05.html",
+          "published_at": "2026-11-05",
+          "title": "当社Webサービスへの不正アクセスに伴う個人情報の漏えいに関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/10/56725.html",
+          "published_at": "2026-11-10",
+          "title": "東京海上ダイレクト損害保険の契約者向け「マイページ」等に不正アクセス"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/193168",
+          "published_at": "2026-11-27",
+          "title": "契約者向けマイページに不正アクセス、個人情報が流出 - 東京海上ダイレクト"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-11-04",
+          "kind": "detected",
+          "text": "マイページへの不審なアクセスを検知し、該当 IP アドレスからのアクセスを遮断",
+          "source": 0
+        },
+        {
+          "date": "2026-11-05",
+          "kind": "disclosed",
+          "text": "個人情報の漏えいを公表。Web サイトでの全手続きを一時停止し、監督官庁へ報告",
+          "source": 0
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "updated",
+          "text": "発表を更新し、対象を契約 71 件・関係者を含む 93 人と公表。二次被害やマルウェア感染は確認されていないとした",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "member-info",
+        "supply-chain",
+        "service-outage"
+      ],
+      "created_at": "2026-11-28",
+      "updated_at": "2026-11-28"
+    },
+    {
+      "id": "2026-11-10-sourcenext",
+      "org": "sourcenext",
+      "org_name": "ソースネクスト株式会社",
+      "org_aliases": [
+        "ソースネクスト",
+        "SOURCENEXT",
+        "sourcenext.com"
+      ],
+      "industry": "it",
+      "country": "JP",
+      "title": "ソースネクスト IR 問い合わせフォームの設定不備による個人情報の閲覧可能状態",
+      "summary": "外部サービスで設置した「株主・投資家の皆様からのお問い合わせフォーム」の設定不備で、送信後の画面に他の利用者の入力内容を閲覧できるリンクが表示されていた。2026年6月7日〜11月9日の問い合わせ 137 件の氏名・メールアドレス・問い合わせ内容が対象。同社は10月公表の不正アクセスとは別事案としている。",
+      "cause": "misdelivery",
+      "vector": "問い合わせフォームの設定と公開時の確認が不十分で、送信完了画面に他者の入力内容へのリンクが表示されていた",
+      "data_types": [
+        "name",
+        "email",
+        "other"
+      ],
+      "affected": 137,
+      "affected_is_estimate": false,
+      "occurred_at": "2026-06-07",
+      "detected_at": "2026-11-09",
+      "disclosed_at": "2026-11-10",
+      "status": "disclosed",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "role": "primary",
+          "trust": "official",
+          "publisher": "ソースネクスト株式会社",
+          "url": "https://www.sourcenext.com/support/i/2026/1110_info/",
+          "published_at": "2026-11-10",
+          "title": "「株主・投資家の皆様からのお問い合わせフォーム」における、お客様情報の閲覧可能状態に関するお詫びとお知らせ"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56852.html",
+          "published_at": "2026-11-20",
+          "title": "ソースネクスト、IR問い合わせフォーム設定不備で137件の個人情報が閲覧可能に ~ 10 / 15 の不正アクセスとは別事案"
+        },
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/193162",
+          "published_at": "2026-11-27",
+          "title": "問合フォームで設定不備、個人情報が閲覧可能に - ソースネクスト"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-07",
+          "kind": "occurred",
+          "text": "閲覧可能状態となった対象期間の開始",
+          "source": 0
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "detected",
+          "text": "外部からの指摘で判明し、フォームの設定を修正",
+          "source": 0
+        },
+        {
+          "date": "2026-11-10",
+          "kind": "disclosed",
+          "text": "公表。登録 166 件からテスト・重複を除く 137 件が対象で、第三者の実際の閲覧有無は外部サービスの仕様上確認できないとした。対象者へメールで個別連絡",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "web-form",
+        "web-misconfiguration",
+        "saas"
+      ],
+      "created_at": "2026-11-28",
+      "updated_at": "2026-11-28"
+    },
+    {
+      "id": "2026-11-27-mext",
+      "org": "mext",
+      "org_name": "文部科学省",
+      "org_aliases": [
+        "文部科学省",
+        "文科省",
+        "MEXT",
+        "mext.go.jp"
+      ],
+      "industry": "public",
+      "country": "JP",
+      "title": "文部科学省 政府調達情報システムのサーバ侵害による個人情報流出の可能性",
+      "summary": "政府調達情報システムを構成するサーバが第三者に侵害され、データベースに保管されていたメールアドレス最大 1,778 件と、事業者の会社名・代表者氏名など最大 163,953 件が流出した可能性がある。不特定多数への公開や不正利用は確認されていないとしている。",
+      "cause": "unauthorized_access",
+      "vector": null,
+      "data_types": [
+        "email",
+        "name",
+        "internal_doc"
+      ],
+      "affected": 163953,
+      "affected_is_estimate": true,
+      "occurred_at": null,
+      "detected_at": "2026-10-01",
+      "disclosed_at": "2026-11-27",
+      "status": "investigating",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "role": "secondary",
+          "trust": "media",
+          "publisher": "Security NEXT",
+          "url": "https://www.security-next.com/193439",
+          "published_at": "2026-11-27",
+          "title": "政府調達情報システムのサーバから個人情報流出か - 文科省"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-01",
+          "kind": "detected",
+          "text": "政府調達情報システムのサーバへの第三者のアクセスを検知",
+          "source": 0
+        },
+        {
+          "date": "2026-11-27",
+          "kind": "disclosed",
+          "text": "流出の可能性を公表（報道日で記録。省の発表ページは未確認）。通信を遮断し、個人情報保護委員会へ報告、外部と連携して調査継続",
+          "source": 0
+        }
+      ],
+      "keywords": [
+        "government",
+        "business-contacts",
+        "network-intrusion"
+      ],
+      "created_at": "2026-11-28",
+      "updated_at": "2026-11-28"
     }
   ]
 }

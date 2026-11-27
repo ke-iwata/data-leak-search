@@ -63,6 +63,24 @@
   "last": "2026-05-17",
   "affected_total": 117574
  },
+ "weleda-japan": {
+  "name": "株式会社ヴェレダ・ジャパン",
+  "aliases": [
+   "ヴェレダ・ジャパン",
+   "ヴェレダ",
+   "WELEDA",
+   "ヴェレダ 公式オンラインショップ",
+   "weleda.jp"
+  ],
+  "industry": "retail",
+  "country": "JP",
+  "incidents": [
+   "2026-07-08-weleda-japan"
+  ],
+  "first": "2026-07-08",
+  "last": "2026-07-08",
+  "affected_total": 198792
+ },
  "rohto": {
   "name": "ロート製薬株式会社",
   "aliases": [
@@ -322,11 +340,12 @@
   "industry": "it",
   "country": "JP",
   "incidents": [
+   "2026-11-10-sourcenext",
    "2026-10-15-sourcenext"
   ],
   "first": "2026-10-15",
-  "last": "2026-10-15",
-  "affected_total": 22519960
+  "last": "2026-11-10",
+  "affected_total": 22520097
  },
  "bk-japan": {
   "name": "ビーケー・ジャパン",
@@ -1250,6 +1269,24 @@
   "last": "2026-11-03",
   "affected_total": 0
  },
+ "tokio-marine-direct": {
+  "name": "東京海上ダイレクト損害保険株式会社",
+  "aliases": [
+   "東京海上ダイレクト損害保険",
+   "東京海上ダイレクト",
+   "イーデザイン損保",
+   "ドコモの自動車保険",
+   "e-design.net"
+  ],
+  "industry": "finance",
+  "country": "JP",
+  "incidents": [
+   "2026-11-05-tokio-marine-direct"
+  ],
+  "first": "2026-11-05",
+  "last": "2026-11-05",
+  "affected_total": 93
+ },
  "ntt-docomo": {
   "name": "株式会社NTTドコモ",
   "aliases": [
@@ -1934,5 +1971,21 @@
   "first": "2026-11-26",
   "last": "2026-11-26",
   "affected_total": 0
+ },
+ "mext": {
+  "name": "文部科学省",
+  "aliases": [
+   "文科省",
+   "MEXT",
+   "mext.go.jp"
+  ],
+  "industry": "public",
+  "country": "JP",
+  "incidents": [
+   "2026-11-27-mext"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27",
+  "affected_total": 163953
  }
 }

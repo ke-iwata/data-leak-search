@@ -1,4 +1,8 @@
 {
+ "https://www.security-next.com/193439": {
+  "incident": "2026-11-27-mext",
+  "at": "2026-11-27"
+ },
  "https://www.security-next.com/192812": {
   "incident": "2026-11-26-hanowa",
   "at": "2026-11-26"
@@ -199,6 +203,18 @@
   "incident": "2026-11-11-openlogi",
   "at": "2026-11-19"
  },
+ "https://www.sourcenext.com/support/i/2026/1110_info": {
+  "incident": "2026-11-10-sourcenext",
+  "at": "2026-11-10"
+ },
+ "https://scan.netsecurity.ne.jp/article/2026/11/20/56852.html": {
+  "incident": "2026-11-10-sourcenext",
+  "at": "2026-11-20"
+ },
+ "https://www.security-next.com/193162": {
+  "incident": "2026-11-10-sourcenext",
+  "at": "2026-11-27"
+ },
  "https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20261110/20261110571360.pdf": {
   "incident": "2026-11-10-soft99",
   "at": "2026-11-10"
@@ -290,6 +306,18 @@
  "https://www.security-next.com/192491": {
   "incident": "2026-11-06-jnsa",
   "at": "2026-11-09"
+ },
+ "https://www.e-design.net/company/news/2026/2026_11_05.html": {
+  "incident": "2026-11-05-tokio-marine-direct",
+  "at": "2026-11-05"
+ },
+ "https://scan.netsecurity.ne.jp/article/2026/11/10/56725.html": {
+  "incident": "2026-11-05-tokio-marine-direct",
+  "at": "2026-11-10"
+ },
+ "https://www.security-next.com/193168": {
+  "incident": "2026-11-05-tokio-marine-direct",
+  "at": "2026-11-27"
  },
  "https://www.docomo.ne.jp/info/notice/page/261106_00_m.html": {
   "incident": "2026-11-05-ntt-docomo",
@@ -902,6 +930,22 @@
  "https://www.security-next.com/192493": {
   "incident": "2026-09-11-rohto",
   "at": "2026-11-09"
+ },
+ "https://weleda-notice-static-apne1.s3.ap-northeast-1.amazonaws.com/news/20261116.html": {
+  "incident": "2026-07-08-weleda-japan",
+  "at": "2026-11-24"
+ },
+ "https://www.weleda.jp/news_20260703": {
+  "incident": "2026-07-08-weleda-japan",
+  "at": "2026-07-08"
+ },
+ "https://scan.netsecurity.ne.jp/article/2026/07/27/55784.html": {
+  "incident": "2026-07-08-weleda-japan",
+  "at": "2026-07-27"
+ },
+ "https://www.security-next.com/193310": {
+  "incident": "2026-07-08-weleda-japan",
+  "at": "2026-11-27"
  },
  "https://www.economiematin.fr/?p=221403": {
   "incident": "2026-05-17-gites-de-france",
